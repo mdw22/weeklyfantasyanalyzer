@@ -1,0 +1,133 @@
+{
+  "syncedAt": "2026-09-13T04:47:50Z",
+  "myTeam": {
+    "espnTeamId": 12,
+    "roster": [
+      {
+        "slot": "QB",
+        "playerId": "00-0033873"
+      },
+      {
+        "slot": "RB1",
+        "playerId": "00-0037840"
+      },
+      {
+        "slot": "RB2",
+        "playerId": "00-0040715"
+      },
+      {
+        "slot": "TE",
+        "playerId": "00-0039065"
+      },
+      {
+        "slot": "WR1",
+        "playerId": "00-0039075"
+      },
+      {
+        "slot": "WR2",
+        "playerId": "00-0039064"
+      },
+      {
+        "slot": "FLEX",
+        "playerId": "00-0035261"
+      },
+      {
+        "slot": "K",
+        "playerId": "00-0035358"
+      },
+      {
+        "slot": "BN1",
+        "playerId": "00-0037261"
+      },
+      {
+        "slot": "BN2",
+        "playerId": "00-0040236"
+      },
+      {
+        "slot": "BN3",
+        "playerId": "00-0037816"
+      },
+      {
+        "slot": "BN4",
+        "playerId": "00-0036040"
+      },
+      {
+        "slot": "BN5",
+        "playerId": "00-0039880"
+      },
+      {
+        "slot": "BN6",
+        "playerId": "00-0034869"
+      },
+      {
+        "slot": "BN7",
+        "playerId": "00-0030279"
+      }
+    ]
+  },
+  "opponent": {
+    "espnTeamId": 8,
+    "roster": [
+      {
+        "slot": "QB",
+        "playerId": "00-0034796"
+      },
+      {
+        "slot": "RB1",
+        "playerId": "00-0040666"
+      },
+      {
+        "slot": "RB2",
+        "playerId": "00-0040122"
+      },
+      {
+        "slot": "TE",
+        "playerId": "00-0034753"
+      },
+      {
+        "slot": "WR1",
+        "playerId": "00-0036613"
+      },
+      {
+        "slot": "WR2",
+        "playerId": "00-0036252"
+      },
+      {
+        "slot": "FLEX",
+        "playerId": "00-0031408"
+      },
+      {
+        "slot": "K",
+        "playerId": "00-0037224"
+      },
+      {
+        "slot": "BN1",
+        "playerId": "00-0034960"
+      },
+      {
+        "slot": "BN2",
+        "playerId": "00-0033293"
+      },
+      {
+        "slot": "BN3",
+        "playerId": "00-0035710"
+      },
+      {
+        "slot": "BN4",
+        "playerId": "00-0038611"
+      },
+      {
+        "slot": "BN5",
+        "playerId": "00-0039890"
+      },
+      {
+        "slot": "BN6",
+        "playerId": "00-0036259"
+      },
+      {
+        "slot": "BN7",
+        "playerId": "00-0039410"
+      }
+    ]
+  }
+}
