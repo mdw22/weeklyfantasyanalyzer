@@ -97,7 +97,14 @@ SLOT_ID_ORDER = {
 
 
 def fetch_espn_league(season, league_id, espn_s2, swid):
-    url = f"https://fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/segments/0/leagues/{league_id}"
+    # NOT fantasy.espn.com -- that host 302-redirects (to a marketing page,
+    # which then 403s) rather than serving the API directly. Confirmed
+    # working host for reads, from the prior project's own working
+    # leaguedefaults lookup (see CLAUDE.md): lm-api-reads.fantasy.espn.com.
+    url = (
+        f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/"
+        f"seasons/{season}/segments/0/leagues/{league_id}"
+    )
     resp = requests.get(
         url,
         params={"view": ["mRoster", "mMatchup", "mTeam"]},
