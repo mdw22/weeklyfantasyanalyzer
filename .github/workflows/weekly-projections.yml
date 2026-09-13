@@ -1,0 +1,49 @@
+name: Update Weekly Projections
+
+# Runs the nflreadpy-based projection script daily and commits the output
+# back into the repo, so the static frontend always has fresh JSON to read.
+# GitHub Pages can't run this itself (no server) -- this workflow is the
+# entire "backend."
+
+on:
+  schedule:
+    # 13:00 UTC ≈ 6am PT / 9am ET. Adjust to taste -- daily is what you
+    # asked for; just be mindful this also uses your repo's free Actions
+    # minutes every single day.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write # needed to commit the regenerated data/ files back
+
+jobs:
+  update-projections:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Generate projections + history
+        run: python scripts/generate_projections.py
+
+      - name: Commit and push if the data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit today."
+          else
+            git commit -m "chore: update weekly projections ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git push
+          fi

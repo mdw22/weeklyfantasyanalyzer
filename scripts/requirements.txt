@@ -1,0 +1,2 @@
+nflreadpy>=0.1
+polars>=1.0
