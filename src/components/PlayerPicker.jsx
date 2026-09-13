@@ -4,8 +4,10 @@ import { usePlayerList } from "../lib/usePlayerList.js";
 import { CloseIcon } from "./icons.jsx";
 
 /** Modal for filling one roster slot. Scoped to the slot's eligible
- * positions, reuses the same filter/sort logic as WeeklyProjectionsTable. */
-export function PlayerPicker({ slot, onPick, onClose }) {
+ * positions, reuses the same filter/sort logic as WeeklyProjectionsTable.
+ * Players already rostered elsewhere (either team, any slot) stay visible
+ * but aren't selectable -- a real player can't occupy two slots at once. */
+export function PlayerPicker({ slot, excludedIds, onPick, onClose }) {
   const { weekData, scoringSettings } = useApp();
   const [search, setSearch] = useState("");
 
@@ -34,14 +36,25 @@ export function PlayerPicker({ slot, onPick, onClose }) {
           </button>
         </div>
         <div className="picker__list">
-          {players.slice(0, 100).map((p) => (
-            <div key={p.id} className="picker__item" onClick={() => onPick(p.id)}>
-              <span>
-                {p.name} <span className="roster-row__meta">{p.position} · {p.team}</span>
-              </span>
-              <span className="mono">{p.points.toFixed(1)}</span>
-            </div>
-          ))}
+          {players.slice(0, 100).map((p) => {
+            const rostered = excludedIds?.has(p.id);
+            return (
+              <div
+                key={p.id}
+                className={`picker__item${rostered ? " picker__item--disabled" : ""}`}
+                onClick={rostered ? undefined : () => onPick(p.id)}
+              >
+                <span>
+                  {p.name} <span className="roster-row__meta">{p.position} · {p.team}</span>
+                </span>
+                {rostered ? (
+                  <span className="picker__item__rostered-tag">Already rostered</span>
+                ) : (
+                  <span className="mono">{p.points.toFixed(1)}</span>
+                )}
+              </div>
+            );
+          })}
           {players.length === 0 && <div className="state-message">No players match.</div>}
         </div>
       </div>

@@ -485,105 +485,135 @@ svg {
 
 /* ---------- Team builder ---------- */
 
-.team-builder__tabs {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 20px;
-}
-
-.team-builder__tab {
-  appearance: none;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text-secondary);
-  padding: 8px 16px;
-  border-radius: 10px;
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.team-builder__tab.active--mine {
-  background: var(--blue-wash);
-  border-color: var(--blue);
-  color: var(--blue);
-}
-
-.team-builder__tab.active--opponent {
-  background: var(--orange-wash);
-  border-color: var(--orange);
-  color: var(--orange);
-}
-
-.manual-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 5px 12px;
-  margin-bottom: 20px;
-}
-
-.roster-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.slot-card {
+.team-builder__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 14px;
+  margin-bottom: 20px;
 }
 
-.slot-card__slot {
-  font-size: 10px;
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badge-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.team-builder__tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.tab {
+  appearance: none;
+  background: none;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 4px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.tab.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--blue);
+}
+
+.roster-section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.slot {
+  display: grid;
+  grid-template-columns: 56px 1fr auto auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.slot:last-child {
+  border-bottom: none;
+}
+
+.slot-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  width: 42px;
-  flex: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 5px 0;
+  text-align: center;
 }
 
-.slot-card__player {
-  flex: 1;
-  min-width: 0;
-}
-
-.slot-card__name {
+.slot-name {
   font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.slot-card__meta {
+.slot-name__meta {
   font-size: 11px;
   color: var(--text-muted);
+  margin-left: 6px;
 }
 
-.slot-card__pts {
+.slot-pts {
   font-family: var(--font-mono);
   font-size: 13px;
+  font-weight: 600;
   color: var(--text-secondary);
-  margin-right: 10px;
 }
 
-.slot-card--empty .slot-card__name {
+.slot-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.slot.empty {
+  border-style: dashed;
+}
+
+.slot.empty .slot-tag {
+  border: 1px dashed var(--border);
+  background: transparent;
+}
+
+.slot.empty .slot-name {
   color: var(--text-muted);
   font-style: italic;
 }
 
-.slot-btn {
+.slot-icon-btn {
   appearance: none;
   background: var(--surface-raised);
   border: 1px solid var(--border);
@@ -598,8 +628,14 @@ svg {
   flex: none;
 }
 
-.slot-btn:hover {
+.slot-icon-btn:hover {
   color: var(--text-primary);
+}
+
+.slot-icon-btn--add {
+  color: var(--blue);
+  border-color: var(--blue);
+  background: var(--blue-wash);
 }
 
 /* ---------- Player picker modal ---------- */
@@ -651,6 +687,25 @@ svg {
 
 .picker__item:hover {
   background: var(--surface-raised);
+}
+
+.picker__item--disabled {
+  cursor: default;
+  color: var(--text-muted);
+}
+
+.picker__item--disabled:hover {
+  background: none;
+}
+
+.picker__item__rostered-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 8px;
+  border-radius: 999px;
 }
 
 /* ---------- Settings drawer ---------- */
@@ -791,9 +846,14 @@ svg {
     flex-direction: row;
   }
 
-  .roster-columns,
-  .roster-grid {
+  .roster-columns {
     grid-template-columns: 1fr;
+  }
+
+  .slot {
+    grid-template-columns: 44px 1fr auto auto;
+    padding: 12px 16px;
+    gap: 10px;
   }
 
   .app-header__nav {

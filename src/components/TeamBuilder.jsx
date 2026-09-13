@@ -1,9 +1,72 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useApp } from "../lib/AppContext.jsx";
 import { computeFantasyPoints } from "../lib/scoring.js";
-import { ROSTER_SLOTS } from "../lib/rosterSlots.js";
+import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { PlayerPicker } from "./PlayerPicker.jsx";
 import { PlusIcon, SwapIcon } from "./icons.jsx";
+
+const STARTER_SLOTS = ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id));
+const BENCH_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("BN"));
+const IR_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("IR"));
+
+function SlotRow({ slot, player, points, onPick, onClear }) {
+  if (!player) {
+    return (
+      <div className="slot empty">
+        <span className="slot-tag">{slot.label}</span>
+        <span className="slot-name">Empty</span>
+        <span />
+        <div className="slot-actions">
+          <button className="slot-icon-btn slot-icon-btn--add" aria-label="Add player" onClick={onPick}>
+            <PlusIcon />
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="slot">
+      <span className="slot-tag">{slot.label}</span>
+      <span className="slot-name">
+        {player.player_name}
+        <span className="slot-name__meta">{player.team}</span>
+      </span>
+      <span className="slot-pts mono">{points.toFixed(1)}</span>
+      <div className="slot-actions">
+        <button className="slot-icon-btn" aria-label="Swap player" onClick={onPick}>
+          <SwapIcon />
+        </button>
+        <button className="slot-icon-btn" aria-label="Remove player" onClick={onClear}>
+          ×
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function RosterSection({ title, slots, roster, projections, scoringValues, onPick, onClear }) {
+  return (
+    <div className="card roster-section">
+      <div className="section-header">{title}</div>
+      {slots.map((slot) => {
+        const playerId = roster[slot.id];
+        const player = playerId ? projections[playerId] : null;
+        const points = player ? computeFantasyPoints(player.projected_stats, scoringValues) : 0;
+        return (
+          <SlotRow
+            key={slot.id}
+            slot={slot}
+            player={player}
+            points={points}
+            onPick={() => onPick(slot)}
+            onClear={() => onClear(slot.id)}
+          />
+        );
+      })}
+    </div>
+  );
+}
 
 export function TeamBuilder({ initialTeam = "mine" }) {
   const { weekData, scoringSettings, myRoster, setMyRoster, opponentRoster, setOpponentRoster } =
@@ -15,6 +78,20 @@ export function TeamBuilder({ initialTeam = "mine" }) {
   const setRoster = team === "mine" ? setMyRoster : setOpponentRoster;
   const projections = weekData.status === "ready" ? weekData.projections : {};
 
+  // A real player can only occupy one slot across both rosters at once.
+  // Recomputed from current state every render, so a picker opened right
+  // after a removal immediately sees that player as available again.
+  const excludedIds = useMemo(() => {
+    const ids = new Set();
+    for (const [slotId, playerId] of Object.entries(myRoster)) {
+      if (playerId && !(team === "mine" && pickingSlot?.id === slotId)) ids.add(playerId);
+    }
+    for (const [slotId, playerId] of Object.entries(opponentRoster)) {
+      if (playerId && !(team === "opponent" && pickingSlot?.id === slotId)) ids.add(playerId);
+    }
+    return ids;
+  }, [myRoster, opponentRoster, team, pickingSlot]);
+
   function assign(slotId, playerId) {
     setRoster({ ...roster, [slotId]: playerId });
     setPickingSlot(null);
@@ -24,68 +101,38 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     setRoster({ ...roster, [slotId]: null });
   }
 
+  const sectionProps = {
+    roster,
+    projections,
+    scoringValues: scoringSettings.values,
+    onPick: setPickingSlot,
+    onClear: clearSlot,
+  };
+
   return (
     <div className="page page--narrow">
+      <div className="team-builder__header">
+        <span className="page-title">Edit Lineup</span>
+        <span className="badge-chip">MANUAL MODE</span>
+      </div>
+
       <div className="team-builder__tabs">
-        <button
-          className={`team-builder__tab${team === "mine" ? " active--mine" : ""}`}
-          onClick={() => setTeam("mine")}
-        >
+        <button className={`tab${team === "mine" ? " active" : ""}`} onClick={() => setTeam("mine")}>
           My Team
         </button>
-        <button
-          className={`team-builder__tab${team === "opponent" ? " active--opponent" : ""}`}
-          onClick={() => setTeam("opponent")}
-        >
+        <button className={`tab${team === "opponent" ? " active" : ""}`} onClick={() => setTeam("opponent")}>
           Opponent
         </button>
       </div>
 
-      <div className="manual-badge">MANUAL MODE — ESPN sync not connected yet</div>
-
-      <div className="roster-grid">
-        {ROSTER_SLOTS.map((slot) => {
-          const playerId = roster[slot.id];
-          const player = playerId ? projections[playerId] : null;
-          const points = player ? computeFantasyPoints(player.projected_stats, scoringSettings.values) : 0;
-
-          return (
-            <div className={`slot-card${player ? "" : " slot-card--empty"}`} key={slot.id}>
-              <span className="slot-card__slot">{slot.label}</span>
-              <div className="slot-card__player">
-                <div className="slot-card__name">{player ? player.player_name : "Empty"}</div>
-                {player && (
-                  <div className="slot-card__meta">
-                    {player.position} · {player.team}
-                  </div>
-                )}
-              </div>
-              {player && <span className="slot-card__pts mono">{points.toFixed(1)}</span>}
-              <button
-                className="slot-btn"
-                aria-label={player ? "Swap player" : "Add player"}
-                onClick={() => setPickingSlot(slot)}
-              >
-                {player ? <SwapIcon /> : <PlusIcon />}
-              </button>
-              {player && (
-                <button
-                  className="slot-btn"
-                  aria-label="Remove player"
-                  style={{ marginLeft: 6 }}
-                  onClick={() => clearSlot(slot.id)}
-                >
-                  ×
-                </button>
-              )}
-            </div>
-          );
-        })}
-      </div>
+      <RosterSection title="STARTERS" slots={STARTER_SLOTS} {...sectionProps} />
+      <RosterSection title="BENCH (7)" slots={BENCH_SLOTS} {...sectionProps} />
+      <RosterSection title="IR (1)" slots={IR_SLOTS} {...sectionProps} />
 
       {pickingSlot && (
         <PlayerPicker
           slot={pickingSlot}
+          excludedIds={excludedIds}
           onPick={(playerId) => assign(pickingSlot.id, playerId)}
           onClose={() => setPickingSlot(null)}
         />
