@@ -37,7 +37,13 @@ export function useWeekData() {
         const [projections, history, espnSync] = await Promise.all([
           fetchJSON(`data/week_${weekStr}/projections.json`),
           fetchJSON(`data/week_${weekStr}/history.json`),
-          fetchJSONOptional(`data/week_${weekStr}/espn-sync.json`),
+          // latest.json says whether espn-sync.json actually exists this
+          // week -- skip the request entirely when it doesn't, instead of
+          // firing a fetch that's guaranteed to 404 (and log as one, in
+          // every browser, no matter how the rejection is caught).
+          latest.espnSync
+            ? fetchJSONOptional(`data/week_${weekStr}/espn-sync.json`)
+            : Promise.resolve(null),
         ]);
         if (!cancelled) {
           setState({

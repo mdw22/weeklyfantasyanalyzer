@@ -232,6 +232,14 @@ def main():
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "espn-sync.json").write_text(json.dumps(out, indent=2))
 
+        # generate_projections.py (which runs before this script) already
+        # wrote latest.json's espnSync flag based on whether a file from a
+        # PRIOR day existed -- flip it to True now so the frontend doesn't
+        # wait until tomorrow's run to know today's sync succeeded.
+        if not latest.get("espnSync"):
+            latest["espnSync"] = True
+            latest_path.write_text(json.dumps(latest, indent=2))
+
         print(
             f"Synced ESPN rosters for week {week}: {len(my_roster)} of my players, "
             f"{len(opponent_roster)} opponent players -> {out_dir}/espn-sync.json"

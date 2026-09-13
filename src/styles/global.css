@@ -579,6 +579,10 @@ svg {
   margin-left: 6px;
 }
 
+.slot-name__meta--edited {
+  color: var(--text-muted);
+}
+
 .slot-pts {
   font-family: var(--font-mono);
   font-size: 13px;

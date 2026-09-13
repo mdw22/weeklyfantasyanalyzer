@@ -9,7 +9,7 @@ const STARTER_SLOTS = ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)
 const BENCH_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("BN"));
 const IR_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("IR"));
 
-function SlotRow({ slot, player, points, onPick, onClear }) {
+function SlotRow({ slot, player, points, edited, onPick, onClear }) {
   if (!player) {
     return (
       <div className="slot empty">
@@ -31,6 +31,7 @@ function SlotRow({ slot, player, points, onPick, onClear }) {
       <span className="slot-name">
         {player.player_name}
         <span className="slot-name__meta">{player.team}</span>
+        {edited && <span className="slot-name__meta slot-name__meta--edited"> &middot; edited</span>}
       </span>
       <span className="slot-pts mono">{points.toFixed(1)}</span>
       <div className="slot-actions">
@@ -45,7 +46,7 @@ function SlotRow({ slot, player, points, onPick, onClear }) {
   );
 }
 
-function RosterSection({ title, slots, roster, projections, scoringValues, onPick, onClear }) {
+function RosterSection({ title, slots, roster, projections, scoringValues, isEdited, onPick, onClear }) {
   return (
     <div className="card roster-section">
       <div className="section-header">{title}</div>
@@ -59,6 +60,7 @@ function RosterSection({ title, slots, roster, projections, scoringValues, onPic
             slot={slot}
             player={player}
             points={points}
+            edited={isEdited(slot.id)}
             onPick={() => onPick(slot)}
             onClear={() => onClear(slot.id)}
           />
@@ -86,6 +88,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     opponentRoster,
     assignPlayer,
     clearSlot,
+    isSlotOverridden,
     isSynced,
     syncedAt,
   } = useApp();
@@ -118,10 +121,15 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     clearSlot(team, slotId);
   }
 
+  // Only worth flagging when sync is actually active -- when it's off,
+  // every slot is manual by definition and the tag would just be noise.
+  const isEdited = (slotId) => isSynced && isSlotOverridden(team, slotId);
+
   const sectionProps = {
     roster,
     projections,
     scoringValues: scoringSettings.values,
+    isEdited,
     onPick: setPickingSlot,
     onClear: handleClear,
   };

@@ -186,9 +186,22 @@ def main() -> None:
     # The frontend is static and has no other way to know which week
     # folder is current -- it fetches this manifest first, then
     # data/week_{week}/*.json using the week number it names.
+    #
+    # espnSync reflects whether an espn-sync.json already exists for this
+    # week (from an earlier successful run -- sync_espn.py runs after this
+    # script and rewrites this flag to True the moment it succeeds today).
+    # The frontend uses this to skip fetching espn-sync.json entirely when
+    # it's False, instead of firing a request that's guaranteed to 404.
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "latest.json").write_text(
-        json.dumps({"season": season, "week": week}, indent=2)
+        json.dumps(
+            {
+                "season": season,
+                "week": week,
+                "espnSync": (out_dir / "espn-sync.json").exists(),
+            },
+            indent=2,
+        )
     )
 
     print(f"Wrote projections + history for season {season}, week {week} "

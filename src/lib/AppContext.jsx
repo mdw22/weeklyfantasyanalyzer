@@ -3,7 +3,7 @@ import { useWeekData } from "./weekData.js";
 import { loadJSON, saveJSON } from "./storage.js";
 import { DEFAULT_SCORING_SETTINGS } from "./scoring.js";
 import { ROSTER_SLOTS } from "./rosterSlots.js";
-import { emptyOverrides, mergeSyncedRoster, withOverride } from "./rosterSync.js";
+import { emptyOverrides, isOverridden, mergeSyncedRoster, withOverride } from "./rosterSync.js";
 
 const AppContext = createContext(null);
 
@@ -67,6 +67,18 @@ export function AppProvider({ children }) {
     assignPlayer(team, slotId, null);
   }
 
+  /** True only for a slot that's both (a) a manual override made this
+   * week and (b) sync is actually active -- the one state a user could
+   * genuinely forget about ("why doesn't this match my real ESPN
+   * lineup?"). Meaningless noise when sync isn't configured at all
+   * (every slot is manual by definition then), so callers should gate
+   * on `isSynced` too rather than rely on this alone. */
+  function isSlotOverridden(team, slotId) {
+    const week = weekData.status === "ready" ? weekData.week : null;
+    const overrides = team === "mine" ? myOverrides : opponentOverrides;
+    return isOverridden(overrides, week, slotId);
+  }
+
   // Fold in the daily ESPN sync, if present for the current week: fills
   // every slot that hasn't been manually overridden this week, without
   // touching ones the user has already chosen differently. A missing or
@@ -122,6 +134,7 @@ export function AppProvider({ children }) {
       opponentRoster,
       assignPlayer,
       clearSlot,
+      isSlotOverridden,
       isSynced: weekData.status === "ready" && !!weekData.espnSync,
       syncedAt: weekData.status === "ready" ? weekData.espnSync?.syncedAt ?? null : null,
     }),
