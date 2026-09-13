@@ -6,9 +6,23 @@ async function fetchJSON(path) {
   return res.json();
 }
 
+/** Same as fetchJSON, but a missing/failed fetch resolves to null instead
+ * of throwing -- used for espn-sync.json, which is optional: it may not
+ * exist yet (sync never configured) or may be stale from a failed daily
+ * run, and neither case should break the rest of the app. */
+async function fetchJSONOptional(path) {
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}${path}`);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
 /** Loads the current week's data/latest.json manifest, then that week's
- * projections.json + history.json -- the only three files the whole
- * frontend needs to fetch. Static data, generated daily by
+ * projections.json + history.json (required) and espn-sync.json
+ * (optional). Static data, generated daily by
  * .github/workflows/weekly-projections.yml. */
 export function useWeekData() {
   const [state, setState] = useState({ status: "loading" });
@@ -20,9 +34,10 @@ export function useWeekData() {
       try {
         const latest = await fetchJSON("data/latest.json");
         const weekStr = String(latest.week).padStart(2, "0");
-        const [projections, history] = await Promise.all([
+        const [projections, history, espnSync] = await Promise.all([
           fetchJSON(`data/week_${weekStr}/projections.json`),
           fetchJSON(`data/week_${weekStr}/history.json`),
+          fetchJSONOptional(`data/week_${weekStr}/espn-sync.json`),
         ]);
         if (!cancelled) {
           setState({
@@ -31,6 +46,7 @@ export function useWeekData() {
             week: latest.week,
             projections,
             history,
+            espnSync,
           });
         }
       } catch (error) {

@@ -1,2 +1,3 @@
 nflreadpy>=0.1
 polars>=1.0
+requests>=2.31

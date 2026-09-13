@@ -4,6 +4,15 @@ name: Update Weekly Projections
 # back into the repo, so the static frontend always has fresh JSON to read.
 # GitHub Pages can't run this itself (no server) -- this workflow is the
 # entire "backend."
+#
+# Also runs the (optional) ESPN roster sync. It stays off until you add
+# four values in this repo's Settings -> Secrets and variables -> Actions:
+#   Secrets:   ESPN_S2, ESPN_SWID       (from your browser's ESPN cookies)
+#   Variables: ESPN_LEAGUE_ID, ESPN_TEAM_ID  (from your league's URL, not secret)
+# See scripts/sync_espn.py's docstring and the README's "ESPN Sync Setup"
+# section for exactly how to get these. Until they're set, sync_espn.py
+# prints a message and exits cleanly -- manual roster entry keeps working
+# either way.
 
 on:
   schedule:
@@ -35,6 +44,14 @@ jobs:
 
       - name: Generate projections + history
         run: python scripts/generate_projections.py
+
+      - name: Sync ESPN league rosters (optional -- no-ops if not configured)
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          ESPN_LEAGUE_ID: ${{ vars.ESPN_LEAGUE_ID }}
+          ESPN_TEAM_ID: ${{ vars.ESPN_TEAM_ID }}
+        run: python scripts/sync_espn.py
 
       - name: Commit and push if the data changed
         run: |

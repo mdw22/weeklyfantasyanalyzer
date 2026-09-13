@@ -68,14 +68,31 @@ function RosterSection({ title, slots, roster, projections, scoringValues, onPic
   );
 }
 
+function formatSyncDate(isoString) {
+  try {
+    return new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" }).format(
+      new Date(isoString)
+    );
+  } catch {
+    return null;
+  }
+}
+
 export function TeamBuilder({ initialTeam = "mine" }) {
-  const { weekData, scoringSettings, myRoster, setMyRoster, opponentRoster, setOpponentRoster } =
-    useApp();
+  const {
+    weekData,
+    scoringSettings,
+    myRoster,
+    opponentRoster,
+    assignPlayer,
+    clearSlot,
+    isSynced,
+    syncedAt,
+  } = useApp();
   const [team, setTeam] = useState(initialTeam);
   const [pickingSlot, setPickingSlot] = useState(null);
 
   const roster = team === "mine" ? myRoster : opponentRoster;
-  const setRoster = team === "mine" ? setMyRoster : setOpponentRoster;
   const projections = weekData.status === "ready" ? weekData.projections : {};
 
   // A real player can only occupy one slot across both rosters at once.
@@ -92,13 +109,13 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     return ids;
   }, [myRoster, opponentRoster, team, pickingSlot]);
 
-  function assign(slotId, playerId) {
-    setRoster({ ...roster, [slotId]: playerId });
+  function handlePick(playerId) {
+    assignPlayer(team, pickingSlot.id, playerId);
     setPickingSlot(null);
   }
 
-  function clearSlot(slotId) {
-    setRoster({ ...roster, [slotId]: null });
+  function handleClear(slotId) {
+    clearSlot(team, slotId);
   }
 
   const sectionProps = {
@@ -106,14 +123,18 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     projections,
     scoringValues: scoringSettings.values,
     onPick: setPickingSlot,
-    onClear: clearSlot,
+    onClear: handleClear,
   };
+
+  const syncDateLabel = isSynced ? formatSyncDate(syncedAt) : null;
 
   return (
     <div className="page page--narrow">
       <div className="team-builder__header">
         <span className="page-title">Edit Lineup</span>
-        <span className="badge-chip">MANUAL MODE</span>
+        <span className="badge-chip">
+          {isSynced ? `SYNCED FROM ESPN${syncDateLabel ? ` · ${syncDateLabel}` : ""}` : "MANUAL MODE"}
+        </span>
       </div>
 
       <div className="team-builder__tabs">
@@ -133,7 +154,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
         <PlayerPicker
           slot={pickingSlot}
           excludedIds={excludedIds}
-          onPick={(playerId) => assign(pickingSlot.id, playerId)}
+          onPick={handlePick}
           onClose={() => setPickingSlot(null)}
         />
       )}
