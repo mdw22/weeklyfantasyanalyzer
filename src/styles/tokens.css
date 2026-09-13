@@ -1,0 +1,23 @@
+:root {
+  --bg: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-raised: #212120;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --border: rgba(255, 255, 255, 0.1);
+  --gridline: #2c2c2a;
+  --axis: #383835;
+
+  --blue: #3987e5;
+  --blue-wash: rgba(57, 135, 229, 0.12);
+  --blue-row: rgba(57, 135, 229, 0.07);
+
+  --orange: #d95926;
+  --orange-wash: rgba(217, 89, 38, 0.12);
+
+  --radius: 14px;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}

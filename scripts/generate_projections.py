@@ -79,7 +79,10 @@ STAT_COLUMNS = [
     "fumbles_lost_total",
 ]
 
-DATA_DIR = Path("data")
+# Lives under public/ (not repo-root data/) so the Vite dev server serves
+# it and `vite build` bundles it into dist/ automatically -- no separate
+# copy step needed anywhere in the deploy pipeline.
+DATA_DIR = Path("public/data")
 
 
 def current_season() -> int:
@@ -179,6 +182,14 @@ def main() -> None:
 
     (out_dir / "projections.json").write_text(json.dumps(projections, indent=2))
     (out_dir / "history.json").write_text(json.dumps(history, indent=2))
+
+    # The frontend is static and has no other way to know which week
+    # folder is current -- it fetches this manifest first, then
+    # data/week_{week}/*.json using the week number it names.
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (DATA_DIR / "latest.json").write_text(
+        json.dumps({"season": season, "week": week}, indent=2)
+    )
 
     print(f"Wrote projections + history for season {season}, week {week} "
           f"({len(projections)} players) to {out_dir}/")

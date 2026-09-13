@@ -1,1 +1,9 @@
 CLAUDE.md
+
+# Frontend build
+node_modules/
+dist/
+
+# Python pipeline (run locally to test scripts/generate_projections.py)
+__pycache__/
+*.pyc
