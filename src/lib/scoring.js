@@ -11,12 +11,24 @@ export const STAT_FIELDS = [
   { key: "receiving_yards", label: "Receiving Yard", group: "Receiving" },
   { key: "receiving_tds", label: "Receiving TD", group: "Receiving" },
   { key: "fumbles_lost_total", label: "Fumble Lost", group: "Misc" },
+  { key: "def_sacks", label: "Sack", group: "Defense" },
+  { key: "def_interceptions", label: "Interception", group: "Defense" },
+  { key: "def_fumble_recoveries", label: "Fumble Recovery", group: "Defense" },
+  { key: "def_safeties", label: "Safety", group: "Defense" },
+  { key: "def_touchdowns", label: "Defensive/ST TD", group: "Defense" },
+  { key: "def_blocked_kicks", label: "Blocked Kick", group: "Defense" },
+  { key: "def_two_point_returns", label: "2pt Return", group: "Defense" },
 ];
 
 // Full-PPR values match the prior draft tool's league config (see
 // CLAUDE.md) so both tools agree: 0.04/yd passing (1pt/25yd), 4pt passing
 // TD, -2 INT; 0.1/yd rushing+receiving (1pt/10yd), 6pt rushing+receiving
-// TD; -2 fumble lost. Presets differ only in the reception value.
+// TD; -2 fumble lost; sack 1, INT 2, fumble recovery 2, safety 2,
+// defensive/ST TD 6, blocked kick 2, 2pt return 2. Presets differ only in
+// the reception value -- defense scoring is identical across all three.
+// Points-allowed/yards-allowed tiers are NOT implemented (see
+// scripts/generate_projections.py's docstring -- tiered scoring doesn't
+// fit this linear amount*value model; a real, deliberately deferred gap).
 const BASE_VALUES = {
   passing_yards: 0.04,
   passing_tds: 4,
@@ -26,6 +38,13 @@ const BASE_VALUES = {
   receiving_yards: 0.1,
   receiving_tds: 6,
   fumbles_lost_total: -2,
+  def_sacks: 1,
+  def_interceptions: 2,
+  def_fumble_recoveries: 2,
+  def_safeties: 2,
+  def_touchdowns: 6,
+  def_blocked_kicks: 2,
+  def_two_point_returns: 2,
 };
 
 export const SCORING_PRESETS = {

@@ -279505,5 +279505,2885 @@
       "season": 2025,
       "week": 20
     }
+  ],
+  "DEF_ARI": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_ATL": [
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 3,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 2,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 2,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_BAL": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_BUF": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 21
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    }
+  ],
+  "DEF_CAR": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    }
+  ],
+  "DEF_CHI": [
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_CIN": [
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 4,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_CLE": [
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_DAL": [
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_DEN": [
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 21
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 3,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 7.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    }
+  ],
+  "DEF_DET": [
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    }
+  ],
+  "DEF_GB": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_HOU": [
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 4,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 1,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    }
+  ],
+  "DEF_IND": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 3,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 3,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_JAX": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    }
+  ],
+  "DEF_KC": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 22
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 21
+    },
+    {
+      "def_sacks": 8.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    }
+  ],
+  "DEF_LA": [
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 21
+    },
+    {
+      "def_sacks": 7.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 3,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 9.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    }
+  ],
+  "DEF_LAC": [
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_LV": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 8.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_MIA": [
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_MIN": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 4,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    }
+  ],
+  "DEF_NE": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 22
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 21
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 4,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    }
+  ],
+  "DEF_NO": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 8.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 8.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_NYG": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_NYJ": [
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_PHI": [
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 22
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 3,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 21
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 3,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    }
+  ],
+  "DEF_PIT": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_SEA": [
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 22
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 21
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 7.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    }
+  ],
+  "DEF_SF": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 20
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 19
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    }
+  ],
+  "DEF_TB": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 0.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 2,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 5.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 1,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    }
+  ],
+  "DEF_TEN": [
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 1,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 16
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 2,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 15
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 15
+    }
+  ],
+  "DEF_WAS": [
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 21
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 4,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 1,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 20
+    },
+    {
+      "def_sacks": 1.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 19
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 18
+    },
+    {
+      "def_sacks": 3.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 18
+    },
+    {
+      "def_sacks": 2.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 17
+    },
+    {
+      "def_sacks": 6.0,
+      "def_interceptions": 0,
+      "def_fumble_recoveries": 0,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2025,
+      "week": 17
+    },
+    {
+      "def_sacks": 4.0,
+      "def_interceptions": 1,
+      "def_fumble_recoveries": 1,
+      "def_safeties": 0,
+      "def_touchdowns": 0,
+      "def_blocked_kicks": 0,
+      "def_two_point_returns": 0,
+      "season": 2024,
+      "week": 16
+    }
   ]
 }

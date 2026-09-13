@@ -52225,5 +52225,485 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     }
+  },
+  "DEF_ARI": {
+    "player_name": "ARI D/ST",
+    "position": "DEF",
+    "team": "ARI",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.62,
+      "def_interceptions": 0.5,
+      "def_fumble_recoveries": 0.25,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.25,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_ATL": {
+    "player_name": "ATL D/ST",
+    "position": "DEF",
+    "team": "ATL",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.25,
+      "def_interceptions": 1.38,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.38,
+      "def_blocked_kicks": 0.38,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_BAL": {
+    "player_name": "BAL D/ST",
+    "position": "DEF",
+    "team": "BAL",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.88,
+      "def_interceptions": 0.75,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_BUF": {
+    "player_name": "BUF D/ST",
+    "position": "DEF",
+    "team": "BUF",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.62,
+      "def_interceptions": 0.75,
+      "def_fumble_recoveries": 0.62,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_CAR": {
+    "player_name": "CAR D/ST",
+    "position": "DEF",
+    "team": "CAR",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.88,
+      "def_interceptions": 0.75,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.25,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_CHI": {
+    "player_name": "CHI D/ST",
+    "position": "DEF",
+    "team": "CHI",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.25,
+      "def_interceptions": 0.25,
+      "def_fumble_recoveries": 0.5,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_CIN": {
+    "player_name": "CIN D/ST",
+    "position": "DEF",
+    "team": "CIN",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.25,
+      "def_interceptions": 1.25,
+      "def_fumble_recoveries": 0.75,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_CLE": {
+    "player_name": "CLE D/ST",
+    "position": "DEF",
+    "team": "CLE",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.12,
+      "def_interceptions": 0.12,
+      "def_fumble_recoveries": 0.25,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_DAL": {
+    "player_name": "DAL D/ST",
+    "position": "DEF",
+    "team": "DAL",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.75,
+      "def_interceptions": 0.5,
+      "def_fumble_recoveries": 0.62,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_DEN": {
+    "player_name": "DEN D/ST",
+    "position": "DEF",
+    "team": "DEN",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.62,
+      "def_interceptions": 0.5,
+      "def_fumble_recoveries": 0.62,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_DET": {
+    "player_name": "DET D/ST",
+    "position": "DEF",
+    "team": "DET",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.88,
+      "def_interceptions": 0.38,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_GB": {
+    "player_name": "GB D/ST",
+    "position": "DEF",
+    "team": "GB",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.38,
+      "def_interceptions": 0.62,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_HOU": {
+    "player_name": "HOU D/ST",
+    "position": "DEF",
+    "team": "HOU",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.12,
+      "def_interceptions": 1.0,
+      "def_fumble_recoveries": 0.75,
+      "def_safeties": 0.25,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.12
+    }
+  },
+  "DEF_IND": {
+    "player_name": "IND D/ST",
+    "position": "DEF",
+    "team": "IND",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.0,
+      "def_interceptions": 1.12,
+      "def_fumble_recoveries": 0.12,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_JAX": {
+    "player_name": "JAX D/ST",
+    "position": "DEF",
+    "team": "JAX",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.75,
+      "def_interceptions": 0.62,
+      "def_fumble_recoveries": 0.25,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_KC": {
+    "player_name": "KC D/ST",
+    "position": "DEF",
+    "team": "KC",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.88,
+      "def_interceptions": 0.75,
+      "def_fumble_recoveries": 0.25,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_LA": {
+    "player_name": "LA D/ST",
+    "position": "DEF",
+    "team": "LA",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 4.12,
+      "def_interceptions": 1.0,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_LAC": {
+    "player_name": "LAC D/ST",
+    "position": "DEF",
+    "team": "LAC",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.38,
+      "def_interceptions": 0.62,
+      "def_fumble_recoveries": 0.62,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_LV": {
+    "player_name": "LV D/ST",
+    "position": "DEF",
+    "team": "LV",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.5,
+      "def_interceptions": 0.38,
+      "def_fumble_recoveries": 0.5,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_MIA": {
+    "player_name": "MIA D/ST",
+    "position": "DEF",
+    "team": "MIA",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.38,
+      "def_interceptions": 0.62,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.25,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_MIN": {
+    "player_name": "MIN D/ST",
+    "position": "DEF",
+    "team": "MIN",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.12,
+      "def_interceptions": 0.88,
+      "def_fumble_recoveries": 0.75,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_NE": {
+    "player_name": "NE D/ST",
+    "position": "DEF",
+    "team": "NE",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.25,
+      "def_interceptions": 0.88,
+      "def_fumble_recoveries": 0.5,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_NO": {
+    "player_name": "NO D/ST",
+    "position": "DEF",
+    "team": "NO",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.38,
+      "def_interceptions": 0.38,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_NYG": {
+    "player_name": "NYG D/ST",
+    "position": "DEF",
+    "team": "NYG",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.12,
+      "def_interceptions": 0.88,
+      "def_fumble_recoveries": 0.75,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_NYJ": {
+    "player_name": "NYJ D/ST",
+    "position": "DEF",
+    "team": "NYJ",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.12,
+      "def_interceptions": 0.62,
+      "def_fumble_recoveries": 0.5,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_PHI": {
+    "player_name": "PHI D/ST",
+    "position": "DEF",
+    "team": "PHI",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.25,
+      "def_interceptions": 1.5,
+      "def_fumble_recoveries": 1.25,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_PIT": {
+    "player_name": "PIT D/ST",
+    "position": "DEF",
+    "team": "PIT",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.12,
+      "def_interceptions": 0.75,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_SEA": {
+    "player_name": "SEA D/ST",
+    "position": "DEF",
+    "team": "SEA",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 3.38,
+      "def_interceptions": 0.88,
+      "def_fumble_recoveries": 0.62,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.25,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_SF": {
+    "player_name": "SF D/ST",
+    "position": "DEF",
+    "team": "SF",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.12,
+      "def_interceptions": 0.12,
+      "def_fumble_recoveries": 0.12,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_TB": {
+    "player_name": "TB D/ST",
+    "position": "DEF",
+    "team": "TB",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.0,
+      "def_interceptions": 0.25,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.12,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_TEN": {
+    "player_name": "TEN D/ST",
+    "position": "DEF",
+    "team": "TEN",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 1.88,
+      "def_interceptions": 0.38,
+      "def_fumble_recoveries": 0.5,
+      "def_safeties": 0.12,
+      "def_touchdowns": 0.0,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
+  },
+  "DEF_WAS": {
+    "player_name": "WAS D/ST",
+    "position": "DEF",
+    "team": "WAS",
+    "games_used": 8,
+    "projected_stats": {
+      "def_sacks": 2.75,
+      "def_interceptions": 0.88,
+      "def_fumble_recoveries": 0.38,
+      "def_safeties": 0.0,
+      "def_touchdowns": 0.12,
+      "def_blocked_kicks": 0.0,
+      "def_two_point_returns": 0.0
+    }
   }
 }

@@ -40,8 +40,12 @@ Without this, Team Builder works entirely with manual roster entry — nothing b
 
 A slot you edit manually in Team Builder during a given week is never overwritten by that week's sync — sync only fills gaps you haven't touched yourself. The override resets each new week.
 
-**Not verified against a real league**: `scripts/sync_espn.py` was written against publicly documented (unofficial) ESPN API shapes, but was never run against an actual account's cookies in the environment that built it. Run it once locally with real secrets as env vars and sanity-check the printed roster before trusting the daily workflow — see the script's own docstring for what's most likely to need adjusting.
+**Verified against a real league.** Two real issues were found and fixed this way: the API host (`fantasy.espn.com` redirects and 403s; the correct host is `lm-api-reads.fantasy.espn.com`) and team defenses (see below). If sync ever 401s for you, double-check your `SWID` cookie value includes its surrounding curly braces (`{...}`) exactly as shown in your browser — that's the most common cause.
+
+## Known limitation: DEF scoring
+
+Team defense/special-teams (DEF) projections cover sacks, interceptions, fumble recoveries, safeties, defensive/special-teams touchdowns, blocked kicks, and 2-point returns — but **not points-allowed or yards-allowed tiers**, which many leagues also score. Tiered/bucketed scoring doesn't fit the simple per-stat point-value model every other stat in this app uses, so it was deliberately left out rather than bolted on. DEF projections and ESPN DEF sync both otherwise work normally.
 
 ## Status
 
-Data pipeline, ESPN sync, and the full frontend (matchup comparison, players table, team builder, scoring settings) are built. See `CLAUDE.md` (untracked, local reference) for the full architecture and build plan.
+Data pipeline (including team defenses), ESPN sync, and the full frontend (matchup comparison, players table, team builder, scoring settings) are built and verified against a real league. See `CLAUDE.md` (untracked, local reference) for the full architecture and build plan.

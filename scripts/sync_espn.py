@@ -30,22 +30,20 @@ chat or committed):
 Sync silently stays off (falls back to manual entry) until all four are
 set.
 
-NOT VERIFIED AGAINST A REAL LEAGUE: this was written and reviewed against
-publicly documented reverse-engineering of ESPN's fantasy API (the same
-kind of unofficial-endpoint work as the leaguedefaults lookup used
-elsewhere in this project -- see CLAUDE.md), but there is no way to test
-it without a real ESPN account's own session cookies, which never reach
-this environment. Before trusting the daily workflow, run this script
-once locally with real secrets as env vars and check the printed roster
-against your actual team by eye (see README's "ESPN Sync Setup" section).
-The two things most likely to need adjusting after that first real run:
-  - ESPN_SLOT_CATEGORY below (lineupSlotId -> our position category) --
-    widely cited reverse-engineered values, but never confirmed against
-    an actual API response in this environment.
-  - The JSON path assumptions in extract_roster() / find_opponent_team_id()
-    (e.g. `team["roster"]["entries"]`, `matchup["home"]["teamId"]`) --
-    ESPN's response shape is undocumented and could differ by a level of
-    nesting from what's assumed here.
+UPDATE (first real run against the user's actual league, 2026 season):
+the host in fetch_espn_league() was originally `fantasy.espn.com`, which
+302-redirected to a marketing page and 403'd -- fixed to
+`lm-api-reads.fantasy.espn.com` (the same host the prior project's own
+leaguedefaults lookup already used, see CLAUDE.md). After that fix, auth
+and the response shape both worked: `ESPN_SLOT_CATEGORY`, the
+`team["roster"]["entries"]` / `matchup["home"]["teamId"]` JSON paths, and
+15-of-17 real players matched correctly per team. The only real gap
+found was team defenses (ESPN espn_id is negative and has no gsis_id at
+all -- see `resolve_def_team_id()` and `ESPN_PRO_TEAM_ABBR` below, now
+fixed and confirmed against two real espn_id values from this same
+league). So this script IS now verified against a real league, not just
+reviewed -- the risk profile here is much lower than when this docstring
+was first written.
 """
 
 import json
@@ -94,6 +92,38 @@ SLOT_ID_ORDER = {
     "BENCH": [f"BN{i}" for i in range(1, 8)],
     "IR": ["IR"],
 }
+
+# ESPN's team defense "players" have no gsis_id at all (they're not
+# individual players, so nflreadpy's load_ff_playerids() crosswalk can
+# never match them) -- their espn_id instead encodes ESPN's own numeric
+# proTeamId as a negative number. CONFIRMED against two real espn_id
+# values pulled from an actual league (not just cited elsewhere):
+#   -16030 -> 16030 - 16000 = 30 -> Jacksonville
+#   -16033 -> 16033 - 16000 = 33 -> Baltimore
+# both matched this exact `-(16000 + proTeamId)` formula with zero
+# deviation. The proTeamId -> abbreviation table itself is the standard
+# reverse-engineered ESPN mapping cited across community ESPN API
+# projects (unchanged for years); abbreviations below are normalized to
+# nflreadpy's own team codes (confirmed via load_team_stats()), which use
+# "LA" not "LAR", "WAS" not "WSH", "LV" not "OAK", "LAC" not "SD".
+ESPN_PRO_TEAM_ABBR = {
+    1: "ATL", 2: "BUF", 3: "CHI", 4: "CIN", 5: "CLE", 6: "DAL", 7: "DEN", 8: "DET",
+    9: "GB", 10: "TEN", 11: "IND", 12: "KC", 13: "LV", 14: "LA", 15: "MIA", 16: "MIN",
+    17: "NE", 18: "NO", 19: "NYG", 20: "NYJ", 21: "PHI", 22: "ARI", 23: "PIT", 24: "LAC",
+    25: "SF", 26: "SEA", 27: "TB", 28: "WAS", 29: "CAR", 30: "JAX", 33: "BAL", 34: "HOU",
+}
+
+
+def resolve_def_team_id(espn_player_id: str) -> str | None:
+    """ESPN D/ST espn_id -> our `DEF_{team}` id (must match
+    generate_projections.py's `DEF_{team}` scheme exactly)."""
+    try:
+        raw = int(espn_player_id)
+    except (TypeError, ValueError):
+        return None
+    pro_team_id = -raw - 16000
+    abbr = ESPN_PRO_TEAM_ABBR.get(pro_team_id)
+    return f"DEF_{abbr}" if abbr else None
 
 
 def fetch_espn_league(season, league_id, espn_s2, swid):
@@ -168,15 +198,24 @@ def extract_roster(team_json, espn_to_gsis):
             print(f"WARNING: unknown ESPN lineupSlotId {raw_slot} for {name} -- skipping")
             continue
 
-        gsis_id = espn_to_gsis.get(espn_player_id)
-        if gsis_id is None:
-            print(
-                f"WARNING: no nflverse player_id match for ESPN player "
-                f"{name} (espn_id={espn_player_id}) -- skipping"
-            )
-            continue
+        if category == "DEF":
+            our_id = resolve_def_team_id(espn_player_id)
+            if our_id is None:
+                print(
+                    f"WARNING: couldn't resolve team defense {name} "
+                    f"(espn_id={espn_player_id}) to a known proTeamId -- skipping"
+                )
+                continue
+        else:
+            our_id = espn_to_gsis.get(espn_player_id)
+            if our_id is None:
+                print(
+                    f"WARNING: no nflverse player_id match for ESPN player "
+                    f"{name} (espn_id={espn_player_id}) -- skipping"
+                )
+                continue
 
-        by_category[category].append(gsis_id)
+        by_category[category].append(our_id)
 
     roster_out = []
     for category, our_slot_ids in SLOT_ID_ORDER.items():
@@ -186,8 +225,8 @@ def extract_roster(team_json, espn_to_gsis):
                 f"WARNING: ESPN roster has {len(players)} {category} player(s) but "
                 f"only {len(our_slot_ids)} matching slot(s) -- extra one(s) dropped"
             )
-        for slot_id, gsis_id in zip(our_slot_ids, players):
-            roster_out.append({"slot": slot_id, "playerId": gsis_id})
+        for slot_id, resolved_id in zip(our_slot_ids, players):
+            roster_out.append({"slot": slot_id, "playerId": resolved_id})
 
     return roster_out
 

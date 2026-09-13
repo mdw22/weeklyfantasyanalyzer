@@ -6,14 +6,15 @@ Run daily by .github/workflows/weekly-projections.yml.
 Produces two files for the *current* NFL week:
 
   data/week_{NN}/projections.json
-      Per-player RAW projected stat lines (not fantasy points -- scoring
-      is applied client-side so any scoring settings, PPR or otherwise,
-      can be recomputed instantly without touching this pipeline).
+      Per-player (and per-team-defense) RAW projected stat lines (not
+      fantasy points -- scoring is applied client-side so any scoring
+      settings, PPR or otherwise, can be recomputed instantly without
+      touching this pipeline).
 
   data/week_{NN}/history.json
-      Per-player list of their last N actual game stat-lines, for
-      bootstrap-resampling in the Monte Carlo win-probability step
-      the frontend runs later.
+      Per-player (and per-team-defense) list of their last N actual game
+      stat-lines, for bootstrap-resampling in the Monte Carlo
+      win-probability step the frontend runs later.
 
 v1 projection method is deliberately dumb: a simple average of each
 player's last N games. That's enough to get the whole pipeline (Actions
@@ -43,6 +44,20 @@ instructions:
     0 "past" rows. Fixed by loading a lookback window of
     `LOOKBACK_SEASONS` prior seasons alongside the current one, same
     pattern the prior project's model used for this reason.
+
+TEAM DEFENSE (DEF) -- added after a real gap surfaced via ESPN sync:
+`load_player_stats()` is per-INDIVIDUAL-player only; it has no team
+defense/special-teams "player" at all, so DEF was previously never
+fillable anywhere in the app (sync or manual). Added below from
+`load_team_stats()`, keyed by a synthesized `DEF_{team}` id (e.g.
+`DEF_KC`) -- this exact id scheme must match `sync_espn.py`'s
+`f"DEF_{abbr}"` construction, another hand-maintained cross-file seam
+(see CLAUDE.md). Only count-based defensive stats are included (sacks,
+INTs, fumble recoveries, safeties, defensive/ST TDs, blocked kicks, 2pt
+returns) -- points-allowed and yards-allowed tiers are NOT implemented
+(tiered/bucketed scoring doesn't fit the linear `amount * point_value`
+scoring engine `src/lib/scoring.js` uses everywhere else; a real,
+deliberately deferred gap, not an oversight).
 """
 
 import json
@@ -79,6 +94,18 @@ STAT_COLUMNS = [
     "fumbles_lost_total",
 ]
 
+# Output field names for team defense, matching the categories
+# src/lib/scoring.js's "Defense" STAT_FIELDS group scores on.
+DEF_STAT_COLUMNS = [
+    "def_sacks",
+    "def_interceptions",
+    "def_fumble_recoveries",
+    "def_safeties",
+    "def_touchdowns",
+    "def_blocked_kicks",
+    "def_two_point_returns",
+]
+
 # Lives under public/ (not repo-root data/) so the Vite dev server serves
 # it and `vite build` bundles it into dist/ automatically -- no separate
 # copy step needed anywhere in the deploy pipeline.
@@ -108,62 +135,110 @@ def get_current_season_and_week(schedules: pl.DataFrame) -> tuple[int, int]:
     return first["season"], first["week"]
 
 
-def _partition_by_player(df: pl.DataFrame) -> dict:
+def _partition_by(df: pl.DataFrame, id_col: str) -> dict:
     """Wrapper around polars partition_by so a version difference in how
     the dict keys come back (bare value vs. 1-tuple) doesn't break both
     call sites below."""
-    groups = df.partition_by("player_id", as_dict=True)
+    groups = df.partition_by(id_col, as_dict=True)
     return {(k[0] if isinstance(k, tuple) else k): v for k, v in groups.items()}
 
 
-def build_projections(stats: pl.DataFrame, season: int, week: int) -> dict:
-    """v1 baseline: each player's projection = mean of their last
-    N_GAMES games across STAT_COLUMNS. No opponent adjustment yet."""
-    past = stats.filter(
+def build_projections(df: pl.DataFrame, season: int, week: int, id_col: str, stat_columns: list, describe_row) -> dict:
+    """v1 baseline: each entity's (player OR team-defense) projection =
+    mean of their last N_GAMES games across `stat_columns`. No opponent
+    adjustment yet. `describe_row` turns one row into the entry's
+    name/position/team fields."""
+    past = df.filter(
         (pl.col("season") < season)
         | ((pl.col("season") == season) & (pl.col("week") < week))
     )
 
     projections = {}
-    for player_id, games in _partition_by_player(past).items():
+    for entity_id, games in _partition_by(past, id_col).items():
         recent = games.sort("week", descending=True).head(N_GAMES)
         if recent.height == 0:
             continue
         row0 = recent.row(0, named=True)
         means = {
             stat: round(float(recent[stat].mean() or 0.0), 2)
-            for stat in STAT_COLUMNS
+            for stat in stat_columns
             if stat in recent.columns
         }
-        projections[str(player_id)] = {
-            "player_name": row0["player_display_name"],
-            "position": row0["position"],
-            "team": row0["team"],
-            "games_used": recent.height,
-            "projected_stats": means,
-        }
+        entry = describe_row(row0)
+        entry["games_used"] = recent.height
+        entry["projected_stats"] = means
+        projections[str(entity_id)] = entry
     return projections
 
 
-def build_history(stats: pl.DataFrame, season: int, week: int) -> dict:
-    """Per-player list of actual past game stat-lines (raw, un-scored)
+def build_history(df: pl.DataFrame, season: int, week: int, id_col: str, stat_columns: list) -> dict:
+    """Per-entity list of actual past game stat-lines (raw, un-scored)
     for the frontend's Monte Carlo bootstrap sampling."""
-    past = stats.filter(
+    past = df.filter(
         (pl.col("season") < season)
         | ((pl.col("season") == season) & (pl.col("week") < week))
     )
 
     history = {}
-    for player_id, games in _partition_by_player(past).items():
+    for entity_id, games in _partition_by(past, id_col).items():
         recent = games.sort("week", descending=True).head(N_GAMES)
         game_rows = []
         for row in recent.iter_rows(named=True):
-            line = {stat: row.get(stat, 0.0) for stat in STAT_COLUMNS if stat in recent.columns}
+            line = {stat: row.get(stat, 0.0) for stat in stat_columns if stat in recent.columns}
             line["season"] = row["season"]
             line["week"] = row["week"]
             game_rows.append(line)
-        history[str(player_id)] = game_rows
+        history[str(entity_id)] = game_rows
     return history
+
+
+def describe_player(row0: dict) -> dict:
+    return {
+        "player_name": row0["player_display_name"],
+        "position": row0["position"],
+        "team": row0["team"],
+    }
+
+
+def describe_defense(row0: dict) -> dict:
+    team = row0["team"]
+    return {
+        "player_name": f"{team} D/ST",
+        "position": "DEF",
+        "team": team,
+    }
+
+
+def add_def_stat_columns(team_stats: pl.DataFrame) -> pl.DataFrame:
+    """Combines nflreadpy's granular team-defense columns into the
+    handful of categories this app actually scores on, matching the
+    prior project's Full-PPR defense scoring (see CLAUDE.md): sack, INT,
+    fumble recovery, safety, defensive/ST TD, blocked kick, 2pt return.
+
+    Two real judgment calls, made from inspecting real 2025-season data:
+      - `fumble_recovery_opp` (recovering the OPPONENT's fumble) is the
+        turnover stat, not `def_fumbles` -- a much smaller, differently
+        defined column (49 vs 264 league-wide across a season; not
+        documented, `fumble_recovery_opp`'s definition is unambiguous by
+        name, `def_fumbles`'s is not).
+      - `def_touchdowns` = def_tds (INT/fumble return TDs) +
+        special_teams_tds (kick/punt return TDs) only. Does NOT also add
+        `fumble_recovery_tds` -- that column is almost certainly already
+        a subset of `def_tds` (a fumble recovered and returned for a
+        touchdown IS a defensive touchdown), and adding it separately
+        would double-count. Not verified with certainty (nflreadpy
+        doesn't document the overlap), but double-counting was judged
+        the worse failure mode than a small undercount here.
+    """
+    return team_stats.with_columns(
+        (pl.col("fumble_recovery_opp")).alias("def_fumble_recoveries"),
+        (pl.col("def_tds") + pl.col("special_teams_tds")).alias("def_touchdowns"),
+        (pl.col("def_punt_blocks") + pl.col("def_pat_blocks") + pl.col("def_fg_blocks")).alias(
+            "def_blocked_kicks"
+        ),
+        (pl.col("def_2pt_made")).alias("def_two_point_returns"),
+        (pl.lit("DEF_") + pl.col("team")).alias("def_id"),
+    )
 
 
 def main() -> None:
@@ -172,10 +247,21 @@ def main() -> None:
     season, week = get_current_season_and_week(schedules)
 
     lookback_seasons = list(range(season - LOOKBACK_SEASONS, season + 1))
-    stats = nfl.load_player_stats(seasons=lookback_seasons, summary_level="week")
 
-    projections = build_projections(stats, season, week)
-    history = build_history(stats, season, week)
+    stats = nfl.load_player_stats(seasons=lookback_seasons, summary_level="week")
+    projections = build_projections(stats, season, week, "player_id", STAT_COLUMNS, describe_player)
+    history = build_history(stats, season, week, "player_id", STAT_COLUMNS)
+
+    team_stats = add_def_stat_columns(
+        nfl.load_team_stats(seasons=lookback_seasons, summary_level="week")
+    )
+    def_projections = build_projections(
+        team_stats, season, week, "def_id", DEF_STAT_COLUMNS, describe_defense
+    )
+    def_history = build_history(team_stats, season, week, "def_id", DEF_STAT_COLUMNS)
+
+    projections.update(def_projections)
+    history.update(def_history)
 
     out_dir = DATA_DIR / f"week_{week:02d}"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -204,8 +290,11 @@ def main() -> None:
         )
     )
 
-    print(f"Wrote projections + history for season {season}, week {week} "
-          f"({len(projections)} players) to {out_dir}/")
+    print(
+        f"Wrote projections + history for season {season}, week {week}: "
+        f"{len(projections) - len(def_projections)} players + "
+        f"{len(def_projections)} team defenses -> {out_dir}/"
+    )
 
 
 if __name__ == "__main__":
