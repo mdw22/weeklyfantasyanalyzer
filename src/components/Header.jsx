@@ -15,7 +15,7 @@ export function Header({ view, onNavigate, onOpenSettings }) {
           {TABS.map((tab) => (
             <button
               key={tab.id}
-              className={`nav-tab${view === tab.id ? " active" : ""}`}
+              className={`tab${view === tab.id ? " active" : ""}`}
               onClick={() => onNavigate(tab.id)}
             >
               {tab.label}

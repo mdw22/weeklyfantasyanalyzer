@@ -62,31 +62,16 @@ svg {
 
 .app-header__nav {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 36px;
+  height: 100%;
   flex: 1;
 }
 
-.nav-tab {
-  appearance: none;
-  background: none;
-  border: none;
-  color: var(--text-secondary);
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 14px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.nav-tab:hover {
-  background: var(--surface-raised);
-  color: var(--text-primary);
-}
-
-.nav-tab.active {
-  background: var(--blue-wash);
-  color: var(--blue);
+.app-header__nav .tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .icon-btn {
@@ -514,6 +499,15 @@ svg {
   margin-bottom: 24px;
 }
 
+.team-builder__tabs .tab {
+  padding: 10px 4px;
+  margin-bottom: -1px;
+}
+
+/* Shared underline-tab pattern -- used identically by the header nav
+ * (This Week/Players) and Team Builder (My Team/Opponent). Each container
+ * adds its own layout (height/padding/gap); the tab itself only owns the
+ * color + border-bottom state so the two stay visually in sync. */
 .tab {
   appearance: none;
   background: none;
@@ -521,8 +515,6 @@ svg {
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 600;
-  padding: 10px 4px;
-  margin-bottom: -1px;
   border-bottom: 2px solid transparent;
   color: var(--text-secondary);
   cursor: pointer;
@@ -600,7 +592,7 @@ svg {
 }
 
 .slot.empty {
-  border-style: dashed;
+  border-bottom-style: dashed;
 }
 
 .slot.empty .slot-tag {
@@ -857,11 +849,10 @@ svg {
   }
 
   .app-header__nav {
-    gap: 0;
+    gap: 16px;
   }
 
-  .nav-tab {
-    padding: 8px 10px;
+  .app-header__nav .tab {
     font-size: 13px;
   }
 }
