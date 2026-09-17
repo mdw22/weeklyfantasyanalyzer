@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-16T17:26:43Z",
+  "syncedAt": "2026-09-17T17:26:18Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -25,11 +25,11 @@
       },
       {
         "slot": "WR2",
-        "playerId": "00-0039064"
+        "playerId": "00-0037261"
       },
       {
         "slot": "FLEX",
-        "playerId": "00-0035261"
+        "playerId": "00-0039064"
       },
       {
         "slot": "DEF",
@@ -41,7 +41,7 @@
       },
       {
         "slot": "BN1",
-        "playerId": "00-0037261"
+        "playerId": "00-0035261"
       },
       {
         "slot": "BN2",
@@ -57,15 +57,19 @@
       },
       {
         "slot": "BN5",
-        "playerId": "00-0034869"
-      },
-      {
-        "slot": "BN6",
         "playerId": "00-0030279"
       },
       {
-        "slot": "BN7",
+        "slot": "BN6",
         "playerId": "00-0041052"
+      },
+      {
+        "slot": "BN7",
+        "playerId": "00-0033307"
+      },
+      {
+        "slot": "IR",
+        "playerId": "00-0034869"
       }
     ]
   },
