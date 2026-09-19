@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-18T16:55:03Z",
+  "syncedAt": "2026-09-19T16:12:09Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -29,7 +29,7 @@
       },
       {
         "slot": "FLEX",
-        "playerId": "00-0039064"
+        "playerId": "00-0035261"
       },
       {
         "slot": "DEF",
@@ -41,7 +41,7 @@
       },
       {
         "slot": "BN1",
-        "playerId": "00-0035261"
+        "playerId": "00-0039064"
       },
       {
         "slot": "BN2",
