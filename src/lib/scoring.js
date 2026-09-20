@@ -18,6 +18,11 @@ export const STAT_FIELDS = [
   { key: "def_touchdowns", label: "Defensive/ST TD", group: "Defense" },
   { key: "def_blocked_kicks", label: "Blocked Kick", group: "Defense" },
   { key: "def_two_point_returns", label: "2pt Return", group: "Defense" },
+  { key: "fg_made_0_39", label: "FG Made (0-39 yd)", group: "Kicking" },
+  { key: "fg_made_40_49", label: "FG Made (40-49 yd)", group: "Kicking" },
+  { key: "fg_made_50_plus", label: "FG Made (50+ yd)", group: "Kicking" },
+  { key: "fg_missed_total", label: "FG Missed/Blocked", group: "Kicking" },
+  { key: "pat_made", label: "Extra Point Made", group: "Kicking" },
 ];
 
 // Full-PPR values match the prior draft tool's league config (see
@@ -26,6 +31,8 @@ export const STAT_FIELDS = [
 // TD; -2 fumble lost; sack 1, INT 2, fumble recovery 2, safety 2,
 // defensive/ST TD 6, blocked kick 2, 2pt return 2. Presets differ only in
 // the reception value -- defense scoring is identical across all three.
+// Kicker values (also identical across presets): FG 3/4/5 pts by distance,
+// -1 miss or block, +1 PAT, no penalty for a missed PAT.
 // Points-allowed/yards-allowed tiers are NOT implemented (see
 // scripts/generate_projections.py's docstring -- tiered scoring doesn't
 // fit this linear amount*value model; a real, deliberately deferred gap).
@@ -45,6 +52,11 @@ const BASE_VALUES = {
   def_touchdowns: 6,
   def_blocked_kicks: 2,
   def_two_point_returns: 2,
+  fg_made_0_39: 3,
+  fg_made_40_49: 4,
+  fg_made_50_plus: 5,
+  fg_missed_total: -1,
+  pat_made: 1,
 };
 
 export const SCORING_PRESETS = {

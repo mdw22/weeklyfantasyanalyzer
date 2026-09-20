@@ -860,3 +860,15 @@ svg {
     font-size: 13px;
   }
 }
+
+/* Below this width brand + 3 tabs + gear can't fit on one row (the third
+ * tab clips), so drop the brand text and let the tabs have the room. */
+@media (max-width: 560px) {
+  .app-header__brand {
+    display: none;
+  }
+
+  .app-header__nav {
+    gap: 20px;
+  }
+}

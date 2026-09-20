@@ -16,9 +16,13 @@ function emptyRoster() {
 export function AppProvider({ children }) {
   const weekData = useWeekData();
 
-  const [scoringSettings, setScoringSettingsState] = useState(() =>
-    loadJSON("scoringSettings", DEFAULT_SCORING_SETTINGS)
-  );
+  // Merge over defaults so stat fields added after the user last saved
+  // settings (e.g. kicker/defense fields) get their default point values
+  // instead of silently scoring 0.
+  const [scoringSettings, setScoringSettingsState] = useState(() => {
+    const stored = loadJSON("scoringSettings", DEFAULT_SCORING_SETTINGS);
+    return { ...stored, values: { ...DEFAULT_SCORING_SETTINGS.values, ...stored.values } };
+  });
   const [myRoster, setMyRosterRaw] = useState(() => loadJSON("myRoster", emptyRoster()));
   const [opponentRoster, setOpponentRosterRaw] = useState(() =>
     loadJSON("opponentRoster", emptyRoster())

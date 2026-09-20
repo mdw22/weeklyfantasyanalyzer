@@ -106,6 +106,17 @@ DEF_STAT_COLUMNS = [
     "def_two_point_returns",
 ]
 
+# Kicker output fields, matching src/lib/scoring.js's "Kicking" group.
+# Kickers get their own build pass (like DEF) so the ~2,500 non-kickers
+# don't each carry five always-zero fields.
+K_STAT_COLUMNS = [
+    "fg_made_0_39",
+    "fg_made_40_49",
+    "fg_made_50_plus",
+    "fg_missed_total",
+    "pat_made",
+]
+
 # Lives under public/ (not repo-root data/) so the Vite dev server serves
 # it and `vite build` bundles it into dist/ automatically -- no separate
 # copy step needed anywhere in the deploy pipeline.
@@ -241,6 +252,21 @@ def add_def_stat_columns(team_stats: pl.DataFrame) -> pl.DataFrame:
     )
 
 
+def add_k_stat_columns(kickers: pl.DataFrame) -> pl.DataFrame:
+    """Collapses nflreadpy's per-distance field-goal columns into the
+    buckets FG scoring actually uses (3 / 4 / 5 pts by distance), and
+    combines misses with blocks for the -1 penalty. Verified against real
+    2025 data: fg_att == fg_made + fg_missed + fg_blocked on every one of
+    569 kicker-games (so blocks are NOT already inside fg_missed and must
+    be added), and the six distance buckets sum exactly to fg_made. A
+    missed/blocked PAT carries no penalty, so only pat_made is kept."""
+    return kickers.with_columns(
+        (pl.col("fg_made_0_19") + pl.col("fg_made_20_29") + pl.col("fg_made_30_39")).alias("fg_made_0_39"),
+        (pl.col("fg_made_50_59") + pl.col("fg_made_60_")).alias("fg_made_50_plus"),
+        (pl.col("fg_missed") + pl.col("fg_blocked")).alias("fg_missed_total"),
+    )
+
+
 def main() -> None:
     season = current_season()
     schedules = nfl.load_schedules(seasons=season)
@@ -249,8 +275,14 @@ def main() -> None:
     lookback_seasons = list(range(season - LOOKBACK_SEASONS, season + 1))
 
     stats = nfl.load_player_stats(seasons=lookback_seasons, summary_level="week")
-    projections = build_projections(stats, season, week, "player_id", STAT_COLUMNS, describe_player)
-    history = build_history(stats, season, week, "player_id", STAT_COLUMNS)
+    is_k = (pl.col("position") == "K").fill_null(False)
+    non_kickers = stats.filter(~is_k)
+    kickers = add_k_stat_columns(stats.filter(is_k))
+
+    projections = build_projections(non_kickers, season, week, "player_id", STAT_COLUMNS, describe_player)
+    history = build_history(non_kickers, season, week, "player_id", STAT_COLUMNS)
+    projections.update(build_projections(kickers, season, week, "player_id", K_STAT_COLUMNS, describe_player))
+    history.update(build_history(kickers, season, week, "player_id", K_STAT_COLUMNS))
 
     team_stats = add_def_stat_columns(
         nfl.load_team_stats(seasons=lookback_seasons, summary_level="week")
@@ -290,9 +322,10 @@ def main() -> None:
         )
     )
 
+    n_k = sum(1 for p in projections.values() if p["position"] == "K")
     print(
         f"Wrote projections + history for season {season}, week {week}: "
-        f"{len(projections) - len(def_projections)} players + "
+        f"{len(projections) - len(def_projections) - n_k} players + {n_k} kickers + "
         f"{len(def_projections)} team defenses -> {out_dir}/"
     )
 

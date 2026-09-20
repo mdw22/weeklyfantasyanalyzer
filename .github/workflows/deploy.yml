@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages
 
 # Builds the static frontend and publishes it to GitHub Pages. Runs on
-# every push to main -- including the daily commit from
-# weekly-projections.yml, so a fresh data commit republishes the site
-# automatically (this is what makes the static site "feel live").
+# every push to main, and again whenever the daily weekly-projections.yml
+# run finishes (see the workflow_run note below for why both are needed) --
+# that's what makes the static site "feel live".
 #
 # One-time setup: in the repo's Settings -> Pages, set "Source" to
 # "GitHub Actions" (not "Deploy from a branch").
@@ -11,6 +11,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # The daily projections commit is pushed by the Actions bot using
+  # GITHUB_TOKEN, and GitHub deliberately does NOT fire `push` workflows
+  # for those pushes -- so without this, the site only ever redeploys when
+  # a human pushes, and serves stale data in between. workflow_run has no
+  # such restriction.
+  workflow_run:
+    workflows: ["Update Weekly Projections"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -24,6 +32,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo

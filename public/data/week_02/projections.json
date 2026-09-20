@@ -20,48 +20,6 @@
       "fumbles_lost_total": 0.25
     }
   },
-  "00-0023853": {
-    "player_name": "Matt Prater",
-    "position": "K",
-    "team": "BUF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0025565": {
-    "player_name": "Nick Folk",
-    "position": "K",
-    "team": "NYJ",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0026190": {
     "player_name": "Calais Campbell",
     "position": "DE",
@@ -102,27 +60,6 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.12
-    }
-  },
-  "00-0026858": {
-    "player_name": "Graham Gano",
-    "position": "K",
-    "team": "NYG",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
     }
   },
   "00-0027114": {
@@ -377,27 +314,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0029597": {
-    "player_name": "Justin Tucker",
-    "position": "K",
-    "team": "BAL",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0029604": {
     "player_name": "Kirk Cousins",
     "position": "QB",
@@ -444,27 +360,6 @@
     "player_name": "Demario Davis",
     "position": "OLB",
     "team": "NO",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0029621": {
-    "player_name": "Greg Zuerlein",
-    "position": "K",
-    "team": "NYJ",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -654,27 +549,6 @@
     "player_name": "Sam Martin",
     "position": "P",
     "team": "BUF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0030098": {
-    "player_name": "Dustin Hopkins",
-    "position": "K",
-    "team": "CLE",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -948,48 +822,6 @@
     "player_name": "DaQuan Jones",
     "position": "DT",
     "team": "BUF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0031136": {
-    "player_name": "Chris Boswell",
-    "position": "K",
-    "team": "PIT",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0031203": {
-    "player_name": "Cairo Santos",
-    "position": "K",
-    "team": "CHI",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -1284,27 +1116,6 @@
     "player_name": "Joel Bitonio",
     "position": "G",
     "team": "CLE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0031492": {
-    "player_name": "Jason Myers",
-    "position": "K",
-    "team": "SEA",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -2309,27 +2120,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0032569": {
-    "player_name": "Wil Lutz",
-    "position": "K",
-    "team": "DEN",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0032574": {
     "player_name": "Michael Pierce",
     "position": "DT",
@@ -2397,27 +2187,6 @@
     "player_name": "Morgan Fox",
     "position": "DE",
     "team": "LAC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0032726": {
-    "player_name": "Ka'imi Fairbairn",
-    "position": "K",
-    "team": "HOU",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -3338,27 +3107,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0033303": {
-    "player_name": "Harrison Butker",
-    "position": "K",
-    "team": "KC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0033336": {
     "player_name": "Eric Wilson",
     "position": "LB",
@@ -3800,27 +3548,6 @@
       "fumbles_lost_total": 0.12
     }
   },
-  "00-0033702": {
-    "player_name": "Younghoe Koo",
-    "position": "K",
-    "team": "ATL",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0033729": {
     "player_name": "Cameron Johnston",
     "position": "P",
@@ -3867,27 +3594,6 @@
     "player_name": "Eddie Jackson",
     "position": "FS",
     "team": "LAC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0033787": {
-    "player_name": "Jake Elliott",
-    "position": "K",
-    "team": "PHI",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -4850,52 +4556,10 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0034161": {
-    "player_name": "Daniel Carlson",
-    "position": "K",
-    "team": "LV",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0034162": {
     "player_name": "J.K. Scott",
     "position": "P",
     "team": "LAC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0034173": {
-    "player_name": "Eddy Pineiro",
-    "position": "K",
-    "team": "SF",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -6320,27 +5984,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0034794": {
-    "player_name": "Jason Sanders",
-    "position": "K",
-    "team": "MIA",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0034796": {
     "player_name": "Lamar Jackson",
     "position": "QB",
@@ -7391,27 +7034,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0035192": {
-    "player_name": "Joey Slye",
-    "position": "K",
-    "team": "NE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0035202": {
     "player_name": "Del'Shawn Phillips",
     "position": "LB",
@@ -8109,27 +7731,6 @@
     "player_name": "Cam Lewis",
     "position": "CB",
     "team": "BUF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0035358": {
-    "player_name": "Chase McLaughlin",
-    "position": "K",
-    "team": "TB",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -9453,27 +9054,6 @@
     "player_name": "Joshua Uche",
     "position": "LB",
     "team": "KC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0036162": {
-    "player_name": "Tyler Bass",
-    "position": "K",
-    "team": "BUF",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -12074,27 +11654,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0036854": {
-    "player_name": "Evan McPherson",
-    "position": "K",
-    "team": "CIN",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0036866": {
     "player_name": "James Hudson",
     "position": "OT",
@@ -13964,27 +13523,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0037224": {
-    "player_name": "Cameron Dicker",
-    "position": "K",
-    "team": "LAC",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0037228": {
     "player_name": "Jaylen Warren",
     "position": "RB",
@@ -15644,27 +15182,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0037692": {
-    "player_name": "Brandon Aubrey",
-    "position": "K",
-    "team": "DAL",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.12,
-      "rushing_yards": 0.75,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0037711": {
     "player_name": "Jeremiah Pharms Jr.",
     "position": "DT",
@@ -16468,27 +15985,6 @@
     "position": "P",
     "team": "BAL",
     "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0038097": {
-    "player_name": "Cade York",
-    "position": "K",
-    "team": "CIN",
-    "games_used": 6,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -17492,27 +16988,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0038562": {
-    "player_name": "Jake Moody",
-    "position": "K",
-    "team": "SF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0038563": {
     "player_name": "Tre Tucker",
     "position": "WR",
@@ -18336,27 +17811,6 @@
     "player_name": "Caleb Murphy",
     "position": "LB",
     "team": "NE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0038905": {
-    "player_name": "Blake Grupe",
-    "position": "K",
-    "team": "NO",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -19781,27 +19235,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0039172": {
-    "player_name": "Jake Bates",
-    "position": "K",
-    "team": "DET",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0039232": {
     "player_name": "Nate Wiggins",
     "position": "CB",
@@ -20537,48 +19970,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0039404": {
-    "player_name": "Will Reichard",
-    "position": "K",
-    "team": "MIN",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0039409": {
-    "player_name": "Cam Little",
-    "position": "K",
-    "team": "JAX",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0039412": {
     "player_name": "Javontae Jean-Baptiste",
     "position": "LB",
@@ -20667,27 +20058,6 @@
     "player_name": "Storm Duck",
     "position": "CB",
     "team": "MIA",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0039576": {
-    "player_name": "Spencer Shrader",
-    "position": "K",
-    "team": "KC",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -20806,27 +20176,6 @@
       "receptions": 1.62,
       "targets": 2.62,
       "receiving_yards": 11.25,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0039649": {
-    "player_name": "Brayden Narveson",
-    "position": "K",
-    "team": "TEN",
-    "games_used": 7,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     }
@@ -21002,27 +20351,6 @@
   "00-0039749": {
     "player_name": "Tyler Davis",
     "position": "DE",
-    "team": "LA",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0039750": {
-    "player_name": "Joshua Karty",
-    "position": "K",
     "team": "LA",
     "games_used": 8,
     "projected_stats": {
@@ -23015,27 +22343,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0035145": {
-    "player_name": "Austin Seibert",
-    "position": "K",
-    "team": "WAS",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0035149": {
     "player_name": "Nick Allegretti",
     "position": "G",
@@ -23146,27 +22453,6 @@
     "position": "G",
     "team": "TB",
     "games_used": 6,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0035269": {
-    "player_name": "Matt Gay",
-    "position": "K",
-    "team": "IND",
-    "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -26757,27 +26043,6 @@
     "player_name": "Tim Settle",
     "position": "DT",
     "team": "HOU",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0034450": {
-    "player_name": "Greg Joseph",
-    "position": "K",
-    "team": "NYJ",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -32108,27 +31373,6 @@
       "fumbles_lost_total": 0.12
     }
   },
-  "00-0038567": {
-    "player_name": "Chad Ryland",
-    "position": "K",
-    "team": "ARI",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0038584": {
     "player_name": "Jaquelin Roy",
     "position": "DT",
@@ -32869,27 +32113,6 @@
     "position": "OT",
     "team": "LV",
     "games_used": 2,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0035189": {
-    "player_name": "Matthew Wright",
-    "position": "K",
-    "team": "TEN",
-    "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -33935,27 +33158,6 @@
       "fumbles_lost_total": 0.38
     }
   },
-  "00-0029822": {
-    "player_name": "Brandon McManus",
-    "position": "K",
-    "team": "GB",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0031254": {
     "player_name": "Denico Autry",
     "position": "DT",
@@ -34612,27 +33814,6 @@
     "position": "DB",
     "team": "DEN",
     "games_used": 3,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0038402": {
-    "player_name": "Anders Carlson",
-    "position": "K",
-    "team": "NYJ",
-    "games_used": 7,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -36266,27 +35447,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0036816": {
-    "player_name": "Riley Patterson",
-    "position": "K",
-    "team": "ATL",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0036841": {
     "player_name": "Austin Trammell",
     "position": "WR",
@@ -36812,27 +35972,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0039934": {
-    "player_name": "Jude McAtamney",
-    "position": "K",
-    "team": "NYG",
-    "games_used": 5,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0032445": {
     "player_name": "Ted Karras",
     "position": "G",
@@ -36880,27 +36019,6 @@
     "position": "DT",
     "team": "BAL",
     "games_used": 4,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0033862": {
-    "player_name": "Zane Gonzalez",
-    "position": "K",
-    "team": "WAS",
-    "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -37237,27 +36355,6 @@
     "position": "C",
     "team": "CAR",
     "games_used": 7,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0037542": {
-    "player_name": "John Parker Romo",
-    "position": "K",
-    "team": "MIN",
-    "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -42398,27 +41495,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0038428": {
-    "player_name": "Andre Szmyt",
-    "position": "K",
-    "team": "CLE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0038492": {
     "player_name": "Jason Brownlee",
     "position": "WR",
@@ -42737,27 +41813,6 @@
   "00-0040069": {
     "player_name": "Teddye Buchanan",
     "position": "LB",
-    "team": "BAL",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0040074": {
-    "player_name": "Tyler Loop",
-    "position": "K",
     "team": "BAL",
     "games_used": 8,
     "projected_stats": {
@@ -43742,27 +42797,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0040200": {
-    "player_name": "Andy Borregales",
-    "position": "K",
-    "team": "NE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0040202": {
     "player_name": "Devin Neal",
     "position": "RB",
@@ -43977,27 +43011,6 @@
     "player_name": "Donovan McMillon",
     "position": "SAF",
     "team": "CLE",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0040279": {
-    "player_name": "Ryan Fitzgerald",
-    "position": "K",
-    "team": "CAR",
     "games_used": 8,
     "projected_stats": {
       "completions": 0.0,
@@ -48341,27 +47354,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0034084": {
-    "player_name": "Mike Badgley",
-    "position": "K",
-    "team": "BUF",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0034112": {
     "player_name": "Austin Schlottmann",
     "position": "C",
@@ -48409,27 +47401,6 @@
     "position": "OT",
     "team": "DEN",
     "games_used": 1,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0038152": {
-    "player_name": "Lucas Havrisik",
-    "position": "K",
-    "team": "GB",
-    "games_used": 3,
     "projected_stats": {
       "completions": 0.0,
       "attempts": 0.0,
@@ -49643,27 +48614,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0039498": {
-    "player_name": "Harrison Mevis",
-    "position": "K",
-    "team": "LA",
-    "games_used": 8,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0039513": {
     "player_name": "Chris Edmonds",
     "position": "SAF",
@@ -50588,27 +49538,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0039229": {
-    "player_name": "Charlie Smyth",
-    "position": "K",
-    "team": "NO",
-    "games_used": 6,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0040004": {
     "player_name": "T.J. Maguranyanga",
     "position": "DE",
@@ -51390,27 +50319,6 @@
     "player_name": "Austin Brinkman",
     "position": "LS",
     "team": "HOU",
-    "games_used": 3,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0040530": {
-    "player_name": "Ben Sauls",
-    "position": "K",
-    "team": "NYG",
     "games_used": 3,
     "projected_stats": {
       "completions": 0.0,
@@ -52961,27 +51869,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0040899": {
-    "player_name": "Trey Smack",
-    "position": "K",
-    "team": "GB",
-    "games_used": 1,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0040957": {
     "player_name": "Xavier Nwankpa",
     "position": "SAF",
@@ -53780,27 +52667,6 @@
       "fumbles_lost_total": 0.0
     }
   },
-  "00-0041145": {
-    "player_name": "Dominic Zvada",
-    "position": "K",
-    "team": "NYG",
-    "games_used": 1,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
   "00-0041148": {
     "player_name": "Aaron Hall",
     "position": "DT",
@@ -53847,27 +52713,6 @@
     "player_name": "Skyler Thomas",
     "position": "SAF",
     "team": "CHI",
-    "games_used": 1,
-    "projected_stats": {
-      "completions": 0.0,
-      "attempts": 0.0,
-      "passing_yards": 0.0,
-      "passing_tds": 0.0,
-      "passing_interceptions": 0.0,
-      "carries": 0.0,
-      "rushing_yards": 0.0,
-      "rushing_tds": 0.0,
-      "receptions": 0.0,
-      "targets": 0.0,
-      "receiving_yards": 0.0,
-      "receiving_tds": 0.0,
-      "fumbles_lost_total": 0.0
-    }
-  },
-  "00-0041182": {
-    "player_name": "Drew Stevens",
-    "position": "K",
-    "team": "WAS",
     "games_used": 1,
     "projected_stats": {
       "completions": 0.0,
@@ -55059,6 +53904,721 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
+    }
+  },
+  "00-0023853": {
+    "player_name": "Matt Prater",
+    "position": "K",
+    "team": "BUF",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.0,
+      "pat_made": 3.25
+    }
+  },
+  "00-0025565": {
+    "player_name": "Nick Folk",
+    "position": "K",
+    "team": "NYJ",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.75,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.12,
+      "pat_made": 1.38
+    }
+  },
+  "00-0026858": {
+    "player_name": "Graham Gano",
+    "position": "K",
+    "team": "NYG",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.25,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.25,
+      "pat_made": 1.88
+    }
+  },
+  "00-0029597": {
+    "player_name": "Justin Tucker",
+    "position": "K",
+    "team": "BAL",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.38,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.25,
+      "pat_made": 3.38
+    }
+  },
+  "00-0029621": {
+    "player_name": "Greg Zuerlein",
+    "position": "K",
+    "team": "NYJ",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.0,
+      "fg_made_40_49": 0.12,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.75,
+      "pat_made": 1.62
+    }
+  },
+  "00-0030098": {
+    "player_name": "Dustin Hopkins",
+    "position": "K",
+    "team": "CLE",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.12,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.75,
+      "pat_made": 1.0
+    }
+  },
+  "00-0031136": {
+    "player_name": "Chris Boswell",
+    "position": "K",
+    "team": "PIT",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.25,
+      "pat_made": 1.5
+    }
+  },
+  "00-0031203": {
+    "player_name": "Cairo Santos",
+    "position": "K",
+    "team": "CHI",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.0,
+      "pat_made": 1.88
+    }
+  },
+  "00-0031492": {
+    "player_name": "Jason Myers",
+    "position": "K",
+    "team": "SEA",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.12,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.62
+    }
+  },
+  "00-0032569": {
+    "player_name": "Wil Lutz",
+    "position": "K",
+    "team": "DEN",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.25,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.38
+    }
+  },
+  "00-0032726": {
+    "player_name": "Ka'imi Fairbairn",
+    "position": "K",
+    "team": "HOU",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 1.0,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.25,
+      "pat_made": 1.62
+    }
+  },
+  "00-0033303": {
+    "player_name": "Harrison Butker",
+    "position": "K",
+    "team": "KC",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.12,
+      "pat_made": 1.38
+    }
+  },
+  "00-0033702": {
+    "player_name": "Younghoe Koo",
+    "position": "K",
+    "team": "ATL",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.5,
+      "pat_made": 1.5
+    }
+  },
+  "00-0033787": {
+    "player_name": "Jake Elliott",
+    "position": "K",
+    "team": "PHI",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.5,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.88
+    }
+  },
+  "00-0034161": {
+    "player_name": "Daniel Carlson",
+    "position": "K",
+    "team": "LV",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.75,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.12,
+      "pat_made": 1.0
+    }
+  },
+  "00-0034173": {
+    "player_name": "Eddy Pineiro",
+    "position": "K",
+    "team": "SF",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.25,
+      "pat_made": 3.0
+    }
+  },
+  "00-0034794": {
+    "player_name": "Jason Sanders",
+    "position": "K",
+    "team": "MIA",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.38,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.75,
+      "fg_missed_total": 0.0,
+      "pat_made": 1.75
+    }
+  },
+  "00-0035192": {
+    "player_name": "Joey Slye",
+    "position": "K",
+    "team": "NE",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.12
+    }
+  },
+  "00-0035358": {
+    "player_name": "Chase McLaughlin",
+    "position": "K",
+    "team": "TB",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.25,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.88
+    }
+  },
+  "00-0036162": {
+    "player_name": "Tyler Bass",
+    "position": "K",
+    "team": "BUF",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.12,
+      "pat_made": 3.5
+    }
+  },
+  "00-0036854": {
+    "player_name": "Evan McPherson",
+    "position": "K",
+    "team": "CIN",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.0,
+      "pat_made": 2.88
+    }
+  },
+  "00-0037224": {
+    "player_name": "Cameron Dicker",
+    "position": "K",
+    "team": "LAC",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.75,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.25,
+      "pat_made": 1.62
+    }
+  },
+  "00-0037692": {
+    "player_name": "Brandon Aubrey",
+    "position": "K",
+    "team": "DAL",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 0.88,
+      "fg_made_50_plus": 0.75,
+      "fg_missed_total": 0.75,
+      "pat_made": 2.0
+    }
+  },
+  "00-0038097": {
+    "player_name": "Cade York",
+    "position": "K",
+    "team": "CIN",
+    "games_used": 6,
+    "projected_stats": {
+      "fg_made_0_39": 1.17,
+      "fg_made_40_49": 0.17,
+      "fg_made_50_plus": 0.17,
+      "fg_missed_total": 0.67,
+      "pat_made": 2.67
+    }
+  },
+  "00-0038562": {
+    "player_name": "Jake Moody",
+    "position": "K",
+    "team": "SF",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.62,
+      "pat_made": 2.12
+    }
+  },
+  "00-0038905": {
+    "player_name": "Blake Grupe",
+    "position": "K",
+    "team": "NO",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.0,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.62,
+      "fg_missed_total": 0.0,
+      "pat_made": 1.5
+    }
+  },
+  "00-0039172": {
+    "player_name": "Jake Bates",
+    "position": "K",
+    "team": "DET",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.38,
+      "pat_made": 3.12
+    }
+  },
+  "00-0039404": {
+    "player_name": "Will Reichard",
+    "position": "K",
+    "team": "MIN",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.12,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.75,
+      "fg_missed_total": 0.38,
+      "pat_made": 1.62
+    }
+  },
+  "00-0039409": {
+    "player_name": "Cam Little",
+    "position": "K",
+    "team": "JAX",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.88,
+      "fg_made_50_plus": 0.62,
+      "fg_missed_total": 0.12,
+      "pat_made": 2.62
+    }
+  },
+  "00-0039576": {
+    "player_name": "Spencer Shrader",
+    "position": "K",
+    "team": "KC",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.25,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.12,
+      "pat_made": 2.5
+    }
+  },
+  "00-0039649": {
+    "player_name": "Brayden Narveson",
+    "position": "K",
+    "team": "TEN",
+    "games_used": 7,
+    "projected_stats": {
+      "fg_made_0_39": 1.0,
+      "fg_made_40_49": 0.71,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.86,
+      "pat_made": 2.57
+    }
+  },
+  "00-0039750": {
+    "player_name": "Joshua Karty",
+    "position": "K",
+    "team": "LA",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.38,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.0,
+      "pat_made": 2.0
+    }
+  },
+  "00-0035145": {
+    "player_name": "Austin Seibert",
+    "position": "K",
+    "team": "WAS",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.38,
+      "fg_made_40_49": 0.88,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.75
+    }
+  },
+  "00-0035269": {
+    "player_name": "Matt Gay",
+    "position": "K",
+    "team": "IND",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.5,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.12
+    }
+  },
+  "00-0034450": {
+    "player_name": "Greg Joseph",
+    "position": "K",
+    "team": "NYJ",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.25,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.5,
+      "pat_made": 1.38
+    }
+  },
+  "00-0038567": {
+    "player_name": "Chad Ryland",
+    "position": "K",
+    "team": "ARI",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.62,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.25
+    }
+  },
+  "00-0035189": {
+    "player_name": "Matthew Wright",
+    "position": "K",
+    "team": "TEN",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.62,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.12,
+      "pat_made": 1.12
+    }
+  },
+  "00-0029822": {
+    "player_name": "Brandon McManus",
+    "position": "K",
+    "team": "GB",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.12,
+      "fg_made_40_49": 0.12,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.38,
+      "pat_made": 1.88
+    }
+  },
+  "00-0038402": {
+    "player_name": "Anders Carlson",
+    "position": "K",
+    "team": "NYJ",
+    "games_used": 7,
+    "projected_stats": {
+      "fg_made_0_39": 0.71,
+      "fg_made_40_49": 0.71,
+      "fg_made_50_plus": 0.43,
+      "fg_missed_total": 0.29,
+      "pat_made": 1.71
+    }
+  },
+  "00-0036816": {
+    "player_name": "Riley Patterson",
+    "position": "K",
+    "team": "ATL",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.0,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.38,
+      "pat_made": 2.38
+    }
+  },
+  "00-0039934": {
+    "player_name": "Jude McAtamney",
+    "position": "K",
+    "team": "NYG",
+    "games_used": 5,
+    "projected_stats": {
+      "fg_made_0_39": 0.6,
+      "fg_made_40_49": 0.0,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.0,
+      "pat_made": 2.0
+    }
+  },
+  "00-0033862": {
+    "player_name": "Zane Gonzalez",
+    "position": "K",
+    "team": "WAS",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.75,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.5,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.62
+    }
+  },
+  "00-0037542": {
+    "player_name": "John Parker Romo",
+    "position": "K",
+    "team": "MIN",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.12,
+      "fg_made_40_49": 0.62,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.25,
+      "pat_made": 1.75
+    }
+  },
+  "00-0038428": {
+    "player_name": "Andre Szmyt",
+    "position": "K",
+    "team": "CLE",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.75,
+      "fg_made_40_49": 0.38,
+      "fg_made_50_plus": 0.38,
+      "fg_missed_total": 0.0,
+      "pat_made": 1.38
+    }
+  },
+  "00-0040074": {
+    "player_name": "Tyler Loop",
+    "position": "K",
+    "team": "BAL",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 1.5,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.62
+    }
+  },
+  "00-0040200": {
+    "player_name": "Andy Borregales",
+    "position": "K",
+    "team": "NE",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.62,
+      "fg_made_40_49": 0.25,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.5,
+      "pat_made": 3.0
+    }
+  },
+  "00-0040279": {
+    "player_name": "Ryan Fitzgerald",
+    "position": "K",
+    "team": "CAR",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.25,
+      "pat_made": 2.0
+    }
+  },
+  "00-0034084": {
+    "player_name": "Mike Badgley",
+    "position": "K",
+    "team": "BUF",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.5,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.25,
+      "fg_missed_total": 0.12,
+      "pat_made": 2.0
+    }
+  },
+  "00-0038152": {
+    "player_name": "Lucas Havrisik",
+    "position": "K",
+    "team": "GB",
+    "games_used": 3,
+    "projected_stats": {
+      "fg_made_0_39": 0.67,
+      "fg_made_40_49": 0.33,
+      "fg_made_50_plus": 0.33,
+      "fg_missed_total": 0.0,
+      "pat_made": 2.33
+    }
+  },
+  "00-0039498": {
+    "player_name": "Harrison Mevis",
+    "position": "K",
+    "team": "LA",
+    "games_used": 8,
+    "projected_stats": {
+      "fg_made_0_39": 0.88,
+      "fg_made_40_49": 1.0,
+      "fg_made_50_plus": 0.12,
+      "fg_missed_total": 0.12,
+      "pat_made": 3.88
+    }
+  },
+  "00-0039229": {
+    "player_name": "Charlie Smyth",
+    "position": "K",
+    "team": "NO",
+    "games_used": 6,
+    "projected_stats": {
+      "fg_made_0_39": 0.83,
+      "fg_made_40_49": 0.5,
+      "fg_made_50_plus": 0.67,
+      "fg_missed_total": 0.67,
+      "pat_made": 2.17
+    }
+  },
+  "00-0040530": {
+    "player_name": "Ben Sauls",
+    "position": "K",
+    "team": "NYG",
+    "games_used": 3,
+    "projected_stats": {
+      "fg_made_0_39": 2.33,
+      "fg_made_40_49": 0.33,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.0,
+      "pat_made": 2.33
+    }
+  },
+  "00-0040899": {
+    "player_name": "Trey Smack",
+    "position": "K",
+    "team": "GB",
+    "games_used": 1,
+    "projected_stats": {
+      "fg_made_0_39": 1.0,
+      "fg_made_40_49": 1.0,
+      "fg_made_50_plus": 1.0,
+      "fg_missed_total": 0.0,
+      "pat_made": 1.0
+    }
+  },
+  "00-0041145": {
+    "player_name": "Dominic Zvada",
+    "position": "K",
+    "team": "NYG",
+    "games_used": 1,
+    "projected_stats": {
+      "fg_made_0_39": 0.0,
+      "fg_made_40_49": 0.0,
+      "fg_made_50_plus": 0.0,
+      "fg_missed_total": 0.0,
+      "pat_made": 4.0
+    }
+  },
+  "00-0041182": {
+    "player_name": "Drew Stevens",
+    "position": "K",
+    "team": "WAS",
+    "games_used": 1,
+    "projected_stats": {
+      "fg_made_0_39": 0.0,
+      "fg_made_40_49": 0.0,
+      "fg_made_50_plus": 1.0,
+      "fg_missed_total": 1.0,
+      "pat_made": 1.0
     }
   },
   "DEF_ARI": {
