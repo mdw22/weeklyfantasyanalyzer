@@ -797,6 +797,12 @@ svg {
   color: var(--text-secondary);
 }
 
+.stat-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 4px 0 8px;
+}
+
 .stat-input {
   width: 72px;
   background: var(--bg);

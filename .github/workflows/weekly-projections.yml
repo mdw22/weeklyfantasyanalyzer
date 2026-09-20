@@ -20,7 +20,12 @@ on:
     # asked for; just be mindful this also uses your repo's free Actions
     # minutes every single day.
     - cron: "0 13 * * *"
-  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+  workflow_dispatch: # lets you trigger a run manually from the Actions tab
+    inputs:
+      log_espn_scoring:
+        description: "Also print your league's ESPN scoring rules to the log (one-off check for the DEF tier tables)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # needed to commit the regenerated data/ files back
@@ -51,6 +56,7 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           ESPN_LEAGUE_ID: ${{ vars.ESPN_LEAGUE_ID }}
           ESPN_TEAM_ID: ${{ vars.ESPN_TEAM_ID }}
+          ESPN_LOG_SCORING: ${{ inputs.log_espn_scoring && '1' || '' }}
         run: python scripts/sync_espn.py
 
       - name: Commit and push if the data changed

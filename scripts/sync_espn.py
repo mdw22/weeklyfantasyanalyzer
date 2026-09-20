@@ -126,6 +126,33 @@ def resolve_def_team_id(espn_player_id: str) -> str | None:
     return f"DEF_{abbr}" if abbr else None
 
 
+def log_scoring_settings(season, league_id, espn_s2, swid):
+    """One-off diagnostic (opt-in via ESPN_LOG_SCORING=1): prints the
+    league's real scoring rules so the DEF points/yards-allowed tier
+    tables in generate_projections.py can be checked against them. Prints
+    every statId with its points, plus any per-position overrides -- the
+    D/ST points-allowed and yards-allowed brackets are a contiguous run of
+    statIds in here, but the ids are undocumented, so DON'T map them from
+    memory: cross-check the values against ESPN's UI (Settings -> Scoring
+    -> Team Defense & Special Teams) to confirm which id is which."""
+    url = (
+        f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/"
+        f"seasons/{season}/segments/0/leagues/{league_id}"
+    )
+    resp = requests.get(
+        url,
+        params={"view": "mSettings"},
+        cookies={"espn_s2": espn_s2, "SWID": swid},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    items = resp.json().get("settings", {}).get("scoringSettings", {}).get("scoringItems", [])
+    print(f"ESPN scoringItems ({len(items)}):")
+    for item in sorted(items, key=lambda i: i.get("statId", -1)):
+        extra = f" overrides={item['pointsOverrides']}" if item.get("pointsOverrides") else ""
+        print(f"  statId={item.get('statId')} points={item.get('points')}{extra}")
+
+
 def fetch_espn_league(season, league_id, espn_s2, swid):
     # NOT fantasy.espn.com -- that host 302-redirects (to a marketing page,
     # which then 403s) rather than serving the API directly. Confirmed
@@ -250,6 +277,12 @@ def main():
         latest_path = DATA_DIR / "latest.json"
         latest = json.loads(latest_path.read_text())
         season, week = latest["season"], latest["week"]
+
+        if os.environ.get("ESPN_LOG_SCORING") == "1":
+            try:
+                log_scoring_settings(season, league_id, espn_s2, swid)
+            except Exception as exc:  # noqa: BLE001 -- diagnostic only, never block the sync
+                print(f"WARNING: couldn't log ESPN scoring settings ({exc!r})")
 
         league_json = fetch_espn_league(season, league_id, espn_s2, swid)
 

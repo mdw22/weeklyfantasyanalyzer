@@ -104,7 +104,17 @@ DEF_STAT_COLUMNS = [
     "def_touchdowns",
     "def_blocked_kicks",
     "def_two_point_returns",
+    "def_points_allowed_bonus",
+    "def_yards_allowed_bonus",
 ]
+
+# Bonus-per-game tier tables for DEF points/yards allowed, as
+# (lowest value in bracket, bonus points), ascending. These are ESPN's
+# commonly-used defaults, NOT yet confirmed against the user's actual
+# league settings -- pull the real ones via the `mSettings` view (see
+# sync_espn.py's ESPN_LOG_SCORING) and swap these two constants.
+POINTS_ALLOWED_TIERS = [(0, 10), (1, 7), (7, 4), (14, 1), (21, 0), (28, -1), (35, -3), (46, -5)]
+YARDS_ALLOWED_TIERS = [(0, 5), (100, 3), (200, 2), (300, 0), (350, -1), (400, -3), (450, -5), (500, -6)]
 
 # Kicker output fields, matching src/lib/scoring.js's "Kicking" group.
 # Kickers get their own build pass (like DEF) so the ~2,500 non-kickers
@@ -166,7 +176,7 @@ def build_projections(df: pl.DataFrame, season: int, week: int, id_col: str, sta
 
     projections = {}
     for entity_id, games in _partition_by(past, id_col).items():
-        recent = games.sort("week", descending=True).head(N_GAMES)
+        recent = games.sort(["season", "week"], descending=True).head(N_GAMES)
         if recent.height == 0:
             continue
         row0 = recent.row(0, named=True)
@@ -192,7 +202,7 @@ def build_history(df: pl.DataFrame, season: int, week: int, id_col: str, stat_co
 
     history = {}
     for entity_id, games in _partition_by(past, id_col).items():
-        recent = games.sort("week", descending=True).head(N_GAMES)
+        recent = games.sort(["season", "week"], descending=True).head(N_GAMES)
         game_rows = []
         for row in recent.iter_rows(named=True):
             line = {stat: row.get(stat, 0.0) for stat in stat_columns if stat in recent.columns}
@@ -220,7 +230,15 @@ def describe_defense(row0: dict) -> dict:
     }
 
 
-def add_def_stat_columns(team_stats: pl.DataFrame) -> pl.DataFrame:
+def _tier_bonus(col: str, tiers: list) -> pl.Expr:
+    """Maps a per-game value through a (lower_bound, bonus) bracket table."""
+    expr = pl.lit(tiers[0][1])
+    for lower, bonus in tiers[1:]:
+        expr = pl.when(pl.col(col) >= lower).then(bonus).otherwise(expr)
+    return expr
+
+
+def add_def_stat_columns(team_stats: pl.DataFrame, schedules: pl.DataFrame) -> pl.DataFrame:
     """Combines nflreadpy's granular team-defense columns into the
     handful of categories this app actually scores on, matching the
     prior project's Full-PPR defense scoring (see CLAUDE.md): sack, INT,
@@ -240,8 +258,33 @@ def add_def_stat_columns(team_stats: pl.DataFrame) -> pl.DataFrame:
         would double-count. Not verified with certainty (nflreadpy
         doesn't document the overlap), but double-counting was judged
         the worse failure mode than a small undercount here.
+
+    Points/yards-allowed bonuses are computed PER GAME and then averaged
+    like every other stat (rather than averaging points/yards allowed and
+    mapping that average through the tier table): the tiers are
+    non-linear, so mapping an average misstates the expected bonus, and
+    per-game bonuses in history.json give the Monte Carlo real variance.
+      - points allowed = the opponent's final score (load_schedules).
+      - yards allowed = opponent's passing + rushing yards + sack_yards_lost
+        (which is negative, so this is net yardage). Checked on 2025 data:
+        327 yds and 23 pts per team-game league-wide, and team codes and
+        game_ids join 100% between load_team_stats and load_schedules.
     """
+    pts_allowed = pl.concat([
+        schedules.select("game_id", pl.col("home_team").alias("team"), pl.col("away_score").alias("points_allowed")),
+        schedules.select("game_id", pl.col("away_team").alias("team"), pl.col("home_score").alias("points_allowed")),
+    ])
+    opp_yards = team_stats.select(
+        "game_id",
+        pl.col("team").alias("opponent_team"),
+        (pl.col("passing_yards") + pl.col("rushing_yards") + pl.col("sack_yards_lost")).alias("yards_allowed"),
+    )
+    team_stats = team_stats.join(pts_allowed, on=["game_id", "team"], how="left").join(
+        opp_yards, on=["game_id", "opponent_team"], how="left"
+    )
     return team_stats.with_columns(
+        _tier_bonus("points_allowed", POINTS_ALLOWED_TIERS).alias("def_points_allowed_bonus"),
+        _tier_bonus("yards_allowed", YARDS_ALLOWED_TIERS).alias("def_yards_allowed_bonus"),
         (pl.col("fumble_recovery_opp")).alias("def_fumble_recoveries"),
         (pl.col("def_tds") + pl.col("special_teams_tds")).alias("def_touchdowns"),
         (pl.col("def_punt_blocks") + pl.col("def_pat_blocks") + pl.col("def_fg_blocks")).alias(
@@ -285,7 +328,8 @@ def main() -> None:
     history.update(build_history(kickers, season, week, "player_id", K_STAT_COLUMNS))
 
     team_stats = add_def_stat_columns(
-        nfl.load_team_stats(seasons=lookback_seasons, summary_level="week")
+        nfl.load_team_stats(seasons=lookback_seasons, summary_level="week"),
+        nfl.load_schedules(seasons=lookback_seasons),
     )
     def_projections = build_projections(
         team_stats, season, week, "def_id", DEF_STAT_COLUMNS, describe_defense

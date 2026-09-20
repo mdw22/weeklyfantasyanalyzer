@@ -22,7 +22,7 @@ export function ScoringSettingsPanel({ onClose }) {
   }
 
   const groups = [];
-  for (const field of STAT_FIELDS) {
+  for (const field of STAT_FIELDS.filter((f) => !f.fixed)) {
     let group = groups.find((g) => g.name === field.group);
     if (!group) {
       group = { name: field.group, fields: [] };
@@ -72,6 +72,11 @@ export function ScoringSettingsPanel({ onClose }) {
                   />
                 </div>
               ))}
+              {group.name === "Defense" && (
+                <div className="stat-note">
+                  Points/yards allowed bonus: standard tiers, not customizable.
+                </div>
+              )}
             </div>
           ))}
         </div>

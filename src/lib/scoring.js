@@ -18,6 +18,11 @@ export const STAT_FIELDS = [
   { key: "def_touchdowns", label: "Defensive/ST TD", group: "Defense" },
   { key: "def_blocked_kicks", label: "Blocked Kick", group: "Defense" },
   { key: "def_two_point_returns", label: "2pt Return", group: "Defense" },
+  // Already expressed in points (tier tables applied in the pipeline), so
+  // they score at a fixed 1x and aren't editable -- `fixed` hides them from
+  // the settings drawer.
+  { key: "def_points_allowed_bonus", label: "Points Allowed Bonus", group: "Defense", fixed: true },
+  { key: "def_yards_allowed_bonus", label: "Yards Allowed Bonus", group: "Defense", fixed: true },
   { key: "fg_made_0_39", label: "FG Made (0-39 yd)", group: "Kicking" },
   { key: "fg_made_40_49", label: "FG Made (40-49 yd)", group: "Kicking" },
   { key: "fg_made_50_plus", label: "FG Made (50+ yd)", group: "Kicking" },
@@ -33,9 +38,10 @@ export const STAT_FIELDS = [
 // the reception value -- defense scoring is identical across all three.
 // Kicker values (also identical across presets): FG 3/4/5 pts by distance,
 // -1 miss or block, +1 PAT, no penalty for a missed PAT.
-// Points-allowed/yards-allowed tiers are NOT implemented (see
-// scripts/generate_projections.py's docstring -- tiered scoring doesn't
-// fit this linear amount*value model; a real, deliberately deferred gap).
+// Points-allowed/yards-allowed tiers don't fit the linear amount*value
+// model, so the pipeline pre-converts them to points per game and they
+// score at a fixed 1x here (not customizable; see POINTS_ALLOWED_TIERS in
+// scripts/generate_projections.py).
 const BASE_VALUES = {
   passing_yards: 0.04,
   passing_tds: 4,
@@ -52,6 +58,8 @@ const BASE_VALUES = {
   def_touchdowns: 6,
   def_blocked_kicks: 2,
   def_two_point_returns: 2,
+  def_points_allowed_bonus: 1,
+  def_yards_allowed_bonus: 1,
   fg_made_0_39: 3,
   fg_made_40_49: 4,
   fg_made_50_plus: 5,
