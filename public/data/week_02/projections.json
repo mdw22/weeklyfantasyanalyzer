@@ -54634,7 +54634,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.38,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -1.25,
+      "def_points_allowed_bonus": -1.38,
       "def_yards_allowed_bonus": -1.0
     }
   },
@@ -54651,7 +54651,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.38,
+      "def_points_allowed_bonus": 0.0,
       "def_yards_allowed_bonus": 0.5
     }
   },
@@ -54668,7 +54668,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.5,
+      "def_points_allowed_bonus": 0.75,
       "def_yards_allowed_bonus": -0.25
     }
   },
@@ -54685,7 +54685,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.62,
+      "def_points_allowed_bonus": 0.25,
       "def_yards_allowed_bonus": 0.62
     }
   },
@@ -54702,8 +54702,8 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.25,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -0.38,
-      "def_yards_allowed_bonus": -0.75
+      "def_points_allowed_bonus": -0.75,
+      "def_yards_allowed_bonus": -0.88
     }
   },
   "DEF_CHI": {
@@ -54719,7 +54719,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.38,
+      "def_points_allowed_bonus": -0.25,
       "def_yards_allowed_bonus": -1.75
     }
   },
@@ -54736,7 +54736,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.0,
+      "def_points_allowed_bonus": -0.12,
       "def_yards_allowed_bonus": 0.12
     }
   },
@@ -54753,7 +54753,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.12,
+      "def_points_allowed_bonus": 0.5,
       "def_yards_allowed_bonus": 0.88
     }
   },
@@ -54787,7 +54787,7 @@
       "def_touchdowns": 0.25,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.62,
+      "def_points_allowed_bonus": 1.0,
       "def_yards_allowed_bonus": 0.5
     }
   },
@@ -54838,7 +54838,7 @@
       "def_touchdowns": 0.25,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.0,
+      "def_points_allowed_bonus": 0.38,
       "def_yards_allowed_bonus": 0.62
     }
   },
@@ -54855,7 +54855,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -1.5,
+      "def_points_allowed_bonus": -1.75,
       "def_yards_allowed_bonus": -2.12
     }
   },
@@ -54872,7 +54872,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 2.38,
+      "def_points_allowed_bonus": 1.38,
       "def_yards_allowed_bonus": 1.38
     }
   },
@@ -54889,7 +54889,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.0,
+      "def_points_allowed_bonus": 0.5,
       "def_yards_allowed_bonus": 0.62
     }
   },
@@ -54906,7 +54906,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -0.5,
+      "def_points_allowed_bonus": -0.62,
       "def_yards_allowed_bonus": -1.12
     }
   },
@@ -54923,7 +54923,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.25,
+      "def_points_allowed_bonus": 0.75,
       "def_yards_allowed_bonus": 0.38
     }
   },
@@ -54940,7 +54940,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.62,
+      "def_points_allowed_bonus": 0.38,
       "def_yards_allowed_bonus": 0.88
     }
   },
@@ -54957,7 +54957,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.25,
       "def_two_point_returns": 0.12,
-      "def_points_allowed_bonus": 0.38,
+      "def_points_allowed_bonus": 0.12,
       "def_yards_allowed_bonus": -0.5
     }
   },
@@ -54974,7 +54974,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 3.12,
+      "def_points_allowed_bonus": 1.88,
       "def_yards_allowed_bonus": 1.0
     }
   },
@@ -54991,7 +54991,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 2.88,
+      "def_points_allowed_bonus": 2.0,
       "def_yards_allowed_bonus": 1.5
     }
   },
@@ -55008,7 +55008,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.12,
+      "def_points_allowed_bonus": 0.5,
       "def_yards_allowed_bonus": 1.0
     }
   },
@@ -55025,7 +55025,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.5,
+      "def_points_allowed_bonus": 0.25,
       "def_yards_allowed_bonus": 0.5
     }
   },
@@ -55042,7 +55042,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -1.12,
+      "def_points_allowed_bonus": -1.25,
       "def_yards_allowed_bonus": -1.38
     }
   },
@@ -55059,7 +55059,7 @@
       "def_touchdowns": 0.0,
       "def_blocked_kicks": 0.25,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.88,
+      "def_points_allowed_bonus": 1.0,
       "def_yards_allowed_bonus": 1.12
     }
   },
@@ -55076,7 +55076,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 1.0,
+      "def_points_allowed_bonus": 0.75,
       "def_yards_allowed_bonus": -0.38
     }
   },
@@ -55093,8 +55093,8 @@
       "def_touchdowns": 0.38,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 3.0,
-      "def_yards_allowed_bonus": 0.12
+      "def_points_allowed_bonus": 1.88,
+      "def_yards_allowed_bonus": 0.0
     }
   },
   "DEF_SF": {
@@ -55110,7 +55110,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.88,
+      "def_points_allowed_bonus": 0.38,
       "def_yards_allowed_bonus": 0.25
     }
   },
@@ -55127,7 +55127,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.0,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": 0.0,
+      "def_points_allowed_bonus": -0.12,
       "def_yards_allowed_bonus": 0.12
     }
   },
@@ -55144,7 +55144,7 @@
       "def_touchdowns": 0.12,
       "def_blocked_kicks": 0.12,
       "def_two_point_returns": 0.0,
-      "def_points_allowed_bonus": -0.62,
+      "def_points_allowed_bonus": -0.75,
       "def_yards_allowed_bonus": -0.75
     }
   },

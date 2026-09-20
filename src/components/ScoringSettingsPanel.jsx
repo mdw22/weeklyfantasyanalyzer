@@ -74,7 +74,7 @@ export function ScoringSettingsPanel({ onClose }) {
               ))}
               {group.name === "Defense" && (
                 <div className="stat-note">
-                  Points/yards allowed bonus: standard tiers, not customizable.
+                  Points/yards allowed bonus: this league's configured tiers, not customizable.
                 </div>
               )}
             </div>

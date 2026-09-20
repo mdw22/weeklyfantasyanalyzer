@@ -109,12 +109,12 @@ DEF_STAT_COLUMNS = [
 ]
 
 # Bonus-per-game tier tables for DEF points/yards allowed, as
-# (lowest value in bracket, bonus points), ascending. These are ESPN's
-# commonly-used defaults, NOT yet confirmed against the user's actual
-# league settings -- pull the real ones via the `mSettings` view (see
-# sync_espn.py's ESPN_LOG_SCORING) and swap these two constants.
-POINTS_ALLOWED_TIERS = [(0, 10), (1, 7), (7, 4), (14, 1), (21, 0), (28, -1), (35, -3), (46, -5)]
-YARDS_ALLOWED_TIERS = [(0, 5), (100, 3), (200, 2), (300, 0), (350, -1), (400, -3), (450, -5), (500, -6)]
+# (lowest value in bracket, bonus points), ascending. CONFIRMED against
+# the user's real league (read off ESPN's Settings -> Scoring -> Team
+# Defense & Special Teams), not defaults. ESPN's UI splits points allowed
+# 18-21 / 22-27 into two brackets that are both worth 0, merged here.
+POINTS_ALLOWED_TIERS = [(0, 5), (1, 4), (7, 3), (14, 1), (18, 0), (28, -1), (35, -3), (46, -5)]
+YARDS_ALLOWED_TIERS = [(0, 5), (100, 3), (200, 2), (300, 0), (350, -1), (400, -3), (450, -5), (500, -6), (550, -7)]
 
 # Kicker output fields, matching src/lib/scoring.js's "Kicking" group.
 # Kickers get their own build pass (like DEF) so the ~2,500 non-kickers

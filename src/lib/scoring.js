@@ -40,8 +40,8 @@ export const STAT_FIELDS = [
 // -1 miss or block, +1 PAT, no penalty for a missed PAT.
 // Points-allowed/yards-allowed tiers don't fit the linear amount*value
 // model, so the pipeline pre-converts them to points per game and they
-// score at a fixed 1x here (not customizable; see POINTS_ALLOWED_TIERS in
-// scripts/generate_projections.py).
+// score at a fixed 1x here (not customizable; the league's real tiers live in POINTS_ALLOWED_TIERS /
+// YARDS_ALLOWED_TIERS in scripts/generate_projections.py).
 const BASE_VALUES = {
   passing_yards: 0.04,
   passing_tds: 4,

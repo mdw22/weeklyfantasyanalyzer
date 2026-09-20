@@ -280284,7 +280284,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 13
@@ -280312,7 +280312,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -280351,7 +280351,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 16
@@ -280403,7 +280403,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 12
@@ -280470,7 +280470,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 10,
+      "def_points_allowed_bonus": 5,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 15
@@ -280509,7 +280509,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 12
@@ -280563,7 +280563,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -280576,7 +280576,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 17
@@ -280589,7 +280589,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 16
@@ -280631,7 +280631,7 @@
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
       "def_points_allowed_bonus": -5,
-      "def_yards_allowed_bonus": -6,
+      "def_yards_allowed_bonus": -7,
       "season": 2026,
       "week": 1
     },
@@ -280682,7 +280682,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 16
@@ -280695,7 +280695,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 15
@@ -280721,7 +280721,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 12
@@ -280749,7 +280749,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 20
@@ -280775,7 +280775,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -3,
       "season": 2025,
       "week": 18
@@ -280814,7 +280814,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 15
@@ -280855,7 +280855,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 18
@@ -280961,7 +280961,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 1,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 18
@@ -280974,7 +280974,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 17
@@ -281039,7 +281039,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 12
@@ -281173,7 +281173,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 21
@@ -281199,7 +281199,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 18
@@ -281212,7 +281212,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 17
@@ -281504,7 +281504,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 19
@@ -281556,7 +281556,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 15
@@ -281569,7 +281569,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 14
@@ -281636,7 +281636,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 15
@@ -281662,7 +281662,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 13
@@ -281690,7 +281690,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -281716,7 +281716,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -281742,7 +281742,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -3,
       "season": 2025,
       "week": 16
@@ -281755,7 +281755,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 15
@@ -281768,7 +281768,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 14
@@ -281781,7 +281781,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 13
@@ -281796,7 +281796,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2026,
       "week": 1
@@ -281822,7 +281822,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 17
@@ -281861,7 +281861,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 14
@@ -281887,7 +281887,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 12
@@ -281954,7 +281954,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 18
@@ -282034,7 +282034,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 18
@@ -282047,7 +282047,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 17
@@ -282073,7 +282073,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 15
@@ -282086,7 +282086,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 14
@@ -282114,7 +282114,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -282127,7 +282127,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -282285,7 +282285,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 14
@@ -282311,7 +282311,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 11
@@ -282339,7 +282339,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -282352,7 +282352,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 17
@@ -282365,7 +282365,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 16
@@ -282391,7 +282391,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 10,
+      "def_points_allowed_bonus": 5,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 14
@@ -282432,7 +282432,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -282458,7 +282458,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 1,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 21
@@ -282484,7 +282484,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 19
@@ -282497,7 +282497,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -282510,7 +282510,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 17
@@ -282551,7 +282551,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 18
@@ -282577,7 +282577,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 16
@@ -282603,7 +282603,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 14
@@ -282644,7 +282644,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -282670,7 +282670,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 17
@@ -282750,7 +282750,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2026,
       "week": 1
@@ -282895,7 +282895,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 1,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 17
@@ -282908,7 +282908,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 16
@@ -282921,7 +282921,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 10,
+      "def_points_allowed_bonus": 5,
       "def_yards_allowed_bonus": 5,
       "season": 2025,
       "week": 15
@@ -282962,7 +282962,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -283001,7 +283001,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 17
@@ -283068,7 +283068,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -283081,7 +283081,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 22
@@ -283107,7 +283107,7 @@
       "def_touchdowns": 1,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 20
@@ -283120,7 +283120,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 7,
+      "def_points_allowed_bonus": 4,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 18
@@ -283133,7 +283133,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 17
@@ -283147,7 +283147,7 @@
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
       "def_points_allowed_bonus": -3,
-      "def_yards_allowed_bonus": -6,
+      "def_yards_allowed_bonus": -7,
       "season": 2025,
       "week": 16
     },
@@ -283174,7 +283174,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2026,
       "week": 1
@@ -283200,7 +283200,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 0,
       "season": 2025,
       "week": 19
@@ -283213,7 +283213,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": -1,
       "season": 2025,
       "week": 18
@@ -283265,7 +283265,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 13
@@ -283306,7 +283306,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 1,
+      "def_points_allowed_bonus": 0,
       "def_yards_allowed_bonus": 2,
       "season": 2025,
       "week": 17
@@ -283425,7 +283425,7 @@
       "def_touchdowns": 0,
       "def_blocked_kicks": 0,
       "def_two_point_returns": 0,
-      "def_points_allowed_bonus": 4,
+      "def_points_allowed_bonus": 3,
       "def_yards_allowed_bonus": 3,
       "season": 2025,
       "week": 16
