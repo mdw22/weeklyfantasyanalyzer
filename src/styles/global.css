@@ -891,6 +891,30 @@ svg {
   white-space: nowrap;
 }
 
+.advisor-panel__baseline {
+  padding: 2px 0 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.advisor-candidate__score {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+/* Neutral on purpose: green means "real result" here, so a positive delta
+ * doesn't get it. Weight and the sign carry the meaning. */
+.advisor-candidate__delta {
+  min-width: 5.2ch;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
 .advisor-candidate__pts {
   min-width: 3.4em;
   text-align: right;

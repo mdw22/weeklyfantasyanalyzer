@@ -1,4 +1,5 @@
-import { getReplacementCandidates } from "../lib/lineupAdvisor.js";
+import { formatDelta, getReplacementCandidates } from "../lib/lineupAdvisor.js";
+import { effectivePoints } from "../lib/liveScores.js";
 import { AlertIcon, ChevronDownIcon, ChevronUpIcon } from "./icons.jsx";
 
 const LABEL = { QUESTIONABLE: "Questionable", DOUBTFUL: "Doubtful", OUT: "Out", IR: "IR" };
@@ -56,6 +57,23 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
   const result = expanded
     ? getReplacementCandidates(slot, roster, projections, ownership, scoringValues, 5, live)
     : null;
+
+  // What the candidates' deltas are measured against: the starter's current
+  // number by the same rule Matchup uses (real points once his game has
+  // begun, 0 if he's not playing, otherwise his projection). None for an
+  // empty slot -- a delta against nothing is just the candidate's own total.
+  const starterId = roster[slot.id];
+  const starterEntry = starterId ? projections[starterId] : null;
+  const baseline = expanded && starterEntry ? effectivePoints(starterId, starterEntry, live, scoringValues) : null;
+  const basis = !baseline
+    ? null
+    : baseline.status === "final"
+      ? "actual"
+      : baseline.status === "in_progress"
+        ? "so far"
+        : baseline.sittingOut
+          ? "not playing, counts as 0"
+          : "projected";
   return (
     <div className="advisor-panel">
       <button className="advisor-panel__toggle" aria-expanded={expanded} onClick={onToggle}>
@@ -65,6 +83,11 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
       </button>
       {expanded && (
         <>
+          {baseline && (
+            <div className="advisor-panel__baseline">
+              Compared with {starterEntry.player_name}: {baseline.points.toFixed(1)} {basis}
+            </div>
+          )}
           {result.candidates.map((c) => (
             <div className="advisor-candidate" key={c.playerId}>
               <span>
@@ -75,7 +98,12 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
                 <RiskPill risk={c.risk} />
               </span>
               <span className="advisor-source">{c.source === "bench" ? "BENCH" : "FREE AGENT"}</span>
-              <span className="advisor-candidate__pts">{c.points.toFixed(1)}</span>
+              <span className="advisor-candidate__score">
+                <span className="advisor-candidate__pts">{c.points.toFixed(1)}</span>
+                {baseline && (
+                  <span className="advisor-candidate__delta">({formatDelta(c.points, baseline.points)})</span>
+                )}
+              </span>
             </div>
           ))}
           {result.candidates.length === 0 && (

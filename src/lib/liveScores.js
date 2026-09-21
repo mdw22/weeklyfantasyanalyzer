@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { computeFantasyPoints } from "./scoring.js";
 import { REPO } from "./config.js";
+import { isExpectedOut } from "./lineupAdvisor.js";
 
 /** One player's points for display: their real stat line once their game
  * has started (in progress or final), otherwise the projection. Live stats
@@ -19,6 +20,18 @@ export function resolvePlayerPoints(projection, liveEntry, scoringValues) {
     status: "not_started",
     clock: null,
   };
+}
+
+/** THE number a player counts for right now -- the single rule Matchup totals
+ * and the replacement comparison both use, so they can't disagree:
+ *   - game started/finished -> real points so far (live stats)
+ *   - not started, but Out / IR / on a bye (incl. live ESPN status) -> 0
+ *   - otherwise -> the projection.
+ * Questionable/Doubtful keep their full projection (genuinely uncertain). */
+export function effectivePoints(playerId, entry, live, scoringValues) {
+  const resolved = resolvePlayerPoints(entry, live?.players?.[playerId], scoringValues);
+  const sittingOut = resolved.status === "not_started" && isExpectedOut(entry, live?.injuries?.[playerId]);
+  return { ...resolved, points: sittingOut ? 0 : resolved.points, sittingOut };
 }
 
 const EMPTY_LIVE = { players: {} };

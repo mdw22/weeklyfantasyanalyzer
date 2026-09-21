@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useApp } from "../lib/AppContext.jsx";
-import { resolvePlayerPoints, useLiveScores } from "../lib/liveScores.js";
+import { effectivePoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
@@ -14,13 +14,7 @@ function rosterRows(roster, projections, scoringValues, live) {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
     if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null };
-    const resolved = resolvePlayerPoints(player, live.players[playerId], scoringValues);
-    // Someone who's Out / on IR / on a bye is projected to score nothing --
-    // counting their average would show a fictional number for a player who
-    // isn't playing. Only applies pre-kickoff; a started game's real stats win.
-    const { status, clock } = resolved;
-    const points =
-      status === "not_started" && isExpectedOut(player, live.injuries?.[playerId]) ? 0 : resolved.points;
+    const { points, status, clock } = effectivePoints(playerId, player, live, scoringValues);
     return { slot, playerId, player, points, status, clock, risk: currentRisk(playerId, player, live) };
   });
 }

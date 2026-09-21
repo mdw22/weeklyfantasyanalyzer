@@ -115,3 +115,10 @@ export function getReplacementCandidates(slot, roster, projections, ownership, s
   pool.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name));
   return { candidates: pool.slice(0, limit), freeAgentsAvailable };
 }
+
+/** Signed, one-decimal difference: "+8.1", "-2.3", "+0.0". */
+export function formatDelta(candidatePoints, baselinePoints) {
+  const delta = candidatePoints - baselinePoints;
+  const rounded = Math.round(delta * 10) / 10;
+  return `${rounded < 0 ? "-" : "+"}${Math.abs(rounded).toFixed(1)}`;
+}
