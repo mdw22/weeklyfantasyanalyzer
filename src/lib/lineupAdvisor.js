@@ -100,6 +100,10 @@ export function getReplacementCandidates(slot, roster, projections, ownership, s
       points: computeFantasyPoints(entry.projected_stats, scoringValues),
       source,
       risk,
+      // ESPN's own projection, present only for Questionable/Doubtful players
+      // whose game hasn't started (see sync_live_scores.py). Shown next to ours
+      // so a large disagreement is visible rather than hidden.
+      espn: live?.espnProjections?.[playerId] ?? null,
     });
   }
 
@@ -115,6 +119,10 @@ export function getReplacementCandidates(slot, roster, projections, ownership, s
   pool.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name));
   return { candidates: pool.slice(0, limit), freeAgentsAvailable };
 }
+
+/** How far apart our projection and ESPN's must be (in points) before the
+ * ESPN chip is emphasized as a real disagreement. */
+export const ESPN_GAP_POINTS = 5;
 
 /** Signed, one-decimal difference: "+8.1", "-2.3", "+0.0". */
 export function formatDelta(candidatePoints, baselinePoints) {

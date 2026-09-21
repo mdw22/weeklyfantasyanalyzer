@@ -880,6 +880,30 @@ svg {
   font-size: 11px;
 }
 
+.advisor-panel__baseline .advisor-espn,
+.advisor-candidate .advisor-espn {
+  margin-left: 8px;
+}
+
+.advisor-espn {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* A big gap between our number and ESPN's is the whole point of the chip:
+ * neutral colors only (amber/red/green all mean something else here). */
+.advisor-espn--gap {
+  color: var(--text-primary);
+  font-weight: 700;
+  outline: 1px solid var(--text-muted);
+}
+
 .advisor-source {
   padding: 3px 9px;
   border-radius: 999px;

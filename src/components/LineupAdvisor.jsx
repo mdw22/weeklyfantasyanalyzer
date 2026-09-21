@@ -1,4 +1,4 @@
-import { formatDelta, getReplacementCandidates } from "../lib/lineupAdvisor.js";
+import { ESPN_GAP_POINTS, availabilityRisk, formatDelta, getReplacementCandidates } from "../lib/lineupAdvisor.js";
 import { effectivePoints } from "../lib/liveScores.js";
 import { AlertIcon, ChevronDownIcon, ChevronUpIcon } from "./icons.jsx";
 
@@ -11,6 +11,24 @@ export function RiskPill({ risk }) {
   if (!risk) return null;
   if (risk.severity === "bye") return <span className="risk-bye">BYE</span>;
   return <span className={`risk-pill risk-pill--${risk.severity}`}>{LABEL[risk.reason]}</span>;
+}
+
+/** ESPN's own projected points for a player, shown beside ours. It exists for
+ * Questionable/Doubtful players, where our model (a rolling average with no
+ * injury-severity concept) can sit far from ESPN's; emphasized when the two
+ * differ by ESPN_GAP_POINTS or more. Shown as ESPN shows it -- not
+ * interpreted: an ESPN 0.0 isn't reliably "ESPN thinks he's out". */
+function EspnChip({ ours, espn }) {
+  if (espn == null) return null;
+  const gap = Math.abs(ours - espn) >= ESPN_GAP_POINTS;
+  return (
+    <span
+      className={`advisor-espn${gap ? " advisor-espn--gap" : ""}`}
+      title="ESPN's own projection for this week (its default PPR scoring)"
+    >
+      ESPN {espn.toFixed(1)}
+    </span>
+  );
 }
 
 /** Hard-to-miss banner above the roster: who might not play, and a link to
@@ -65,6 +83,9 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
   const starterId = roster[slot.id];
   const starterEntry = starterId ? projections[starterId] : null;
   const baseline = expanded && starterEntry ? effectivePoints(starterId, starterEntry, live, scoringValues) : null;
+  const starterInDoubt =
+    !!starterEntry && availabilityRisk(starterEntry, live?.injuries?.[starterId])?.severity === "risk";
+  const starterEspn = starterInDoubt ? live?.espnProjections?.[starterId] ?? null : null;
   const basis = !baseline
     ? null
     : baseline.status === "final"
@@ -86,6 +107,7 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
           {baseline && (
             <div className="advisor-panel__baseline">
               Compared with {starterEntry.player_name}: {baseline.points.toFixed(1)} {basis}
+              {starterEspn != null && <EspnChip ours={baseline.points} espn={starterEspn} />}
             </div>
           )}
           {result.candidates.map((c) => (
@@ -96,6 +118,7 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
                   {c.position} · {c.team}
                 </span>
                 <RiskPill risk={c.risk} />
+                <EspnChip ours={c.points} espn={c.espn} />
               </span>
               <span className="advisor-source">{c.source === "bench" ? "BENCH" : "FREE AGENT"}</span>
               <span className="advisor-candidate__score">
@@ -108,6 +131,14 @@ export function ReplacementPanel({ slot, roster, projections, ownership, scoring
           ))}
           {result.candidates.length === 0 && (
             <div className="advisor-panel__note">No eligible replacements found.</div>
+          )}
+          {(starterInDoubt || result.candidates.some((c) => c.risk)) && (
+            <div className="advisor-panel__note">
+              Questionable/Doubtful players are shown at a normal healthy-game projection — it doesn't
+              reflect how likely they are to play.
+              {(starterEspn != null || result.candidates.some((c) => c.espn != null)) &&
+                " \"ESPN\" is ESPN's own projection for the week under its default PPR scoring."}
+            </div>
           )}
           {!result.freeAgentsAvailable && (
             <div className="advisor-panel__note">

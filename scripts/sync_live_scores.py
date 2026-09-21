@@ -199,6 +199,52 @@ def injury_overrides(pool, box_entries, espn_to_gsis, projections) -> dict:
     return overrides
 
 
+def espn_week_projection(pool_entry, season, week):
+    """ESPN's own projected points for one scoring period: the stats entry
+    with statSourceId 1 (1 = projected, 0 = actual), statSplitTypeId 1 (a
+    single period). Confirmed present on the public pool we already fetch --
+    no extra request. Points are under ESPN's DEFAULT PPR scoring, so this
+    approximates rather than equals this league's scoring."""
+    for s in pool_entry.get("player", {}).get("stats", []):
+        if (
+            s.get("seasonId") == season
+            and s.get("scoringPeriodId") == week
+            and s.get("statSourceId") == 1
+            and s.get("statSplitTypeId") == 1
+        ):
+            return s.get("appliedTotal")
+    return None
+
+
+def espn_projections(pool, season, week, espn_to_gsis, projections, injuries, team_status) -> dict:
+    """{our id: ESPN's projected points} -- ONLY for players whose status is
+    Questionable/Doubtful and whose game hasn't started. That is exactly
+    where a second number is useful (our model has no injury-severity
+    concept, so it can sit far from ESPN's), and keeping it narrow keeps
+    live.json small and stops it churning every time ESPN nudges a healthy
+    player's decimals. Rounded to 0.1 for the same reason.
+
+    NOTE an empty ESPN projection (0.0, no stats) is NOT a reliable "ESPN
+    thinks he's out": measured on the real pool, most empty projections
+    among not-started games belong to players ESPN lists as ACTIVE. So the
+    number is passed through as ESPN shows it, without interpretation."""
+    out = {}
+    for entry in pool:
+        our_id = espn_to_gsis.get(str(entry.get("id")))
+        proj = projections.get(our_id) if our_id else None
+        if not proj:
+            continue
+        status = injuries.get(our_id, proj.get("injury_status", "ACTIVE"))
+        if status not in ("QUESTIONABLE", "DOUBTFUL"):
+            continue
+        if team_status.get(proj.get("team"), {}).get("status", "not_started") != "not_started":
+            continue
+        value = espn_week_projection(entry, season, week)
+        if value is not None:
+            out[our_id] = round(value, 1)
+    return out
+
+
 # ----------------------------------------------------------------- parsing
 
 def _clock_text(status: dict) -> str:
@@ -440,18 +486,23 @@ def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=b
     proj_path, live_path = week_dir / "projections.json", week_dir / "live.json"
     projections = json.loads(proj_path.read_text()) if proj_path.exists() else {}
     try:
-        injuries = injury_overrides(fetch_pool(season), entries, espn_to_gsis, projections)
-    except Exception as exc:  # noqa: BLE001 -- carry the last good overrides forward
-        print(f"WARNING: ESPN player pool unavailable ({exc!r}); keeping previous injury overrides")
-        injuries = {}
+        pool = fetch_pool(season)
+        injuries = injury_overrides(pool, entries, espn_to_gsis, projections)
+        espn_proj = espn_projections(pool, season, week, espn_to_gsis, projections, injuries, scoreboard_status)
+    except Exception as exc:  # noqa: BLE001 -- carry the last good values forward
+        print(f"WARNING: ESPN player pool unavailable ({exc!r}); keeping previous injury overrides/projections")
+        injuries, espn_proj = {}, {}
         if live_path.exists():
             try:
-                injuries = json.loads(live_path.read_text()).get("injuries", {})
+                previous = json.loads(live_path.read_text())
+                injuries, espn_proj = previous.get("injuries", {}), previous.get("espnProjections", {})
             except ValueError:
                 pass
 
     if debug:
         print_debug(entries, rows, roster_key)
+        print(f"[debug] {len(espn_proj)} ESPN weekly projections kept (Questionable/Doubtful, not started): "
+              + ", ".join(f"{projections.get(k, {}).get('player_name', k)}={v}" for k, v in list(espn_proj.items())[:10]))
         print(f"[debug] {len(injuries)} injury overrides vs the daily nflverse status:")
         for our_id, status in list(injuries.items())[:20]:
             was = projections.get(our_id, {}).get("injury_status", "ACTIVE")
@@ -459,7 +510,7 @@ def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=b
 
     # `teams` lets the frontend tell whether ANY player's game (free agents
     # included, who have no per-player entry) has started or finished.
-    payload = {"players": players, "teams": scoreboard_status, "injuries": injuries}
+    payload = {"players": players, "teams": scoreboard_status, "injuries": injuries, "espnProjections": espn_proj}
     changed = write_if_changed(week_dir, payload)
     started = sum(1 for p in players.values() if p["status"] != "not_started")
     going = True if activity is None else keep_going(activity)
