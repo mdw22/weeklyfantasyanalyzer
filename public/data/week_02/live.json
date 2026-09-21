@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T04:05:21Z",
+  "updatedAt": "2026-09-21T04:55:36Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -228,5 +228,137 @@
     "00-0041042": {
       "status": "not_started"
     }
+  },
+  "teams": {
+    "LA": {
+      "status": "not_started"
+    },
+    "NYG": {
+      "status": "not_started"
+    },
+    "BUF": {
+      "status": "final"
+    },
+    "DET": {
+      "status": "final"
+    },
+    "ATL": {
+      "status": "final"
+    },
+    "CAR": {
+      "status": "final"
+    },
+    "CHI": {
+      "status": "final"
+    },
+    "MIN": {
+      "status": "final"
+    },
+    "TEN": {
+      "status": "final"
+    },
+    "PHI": {
+      "status": "final"
+    },
+    "NE": {
+      "status": "final"
+    },
+    "PIT": {
+      "status": "final"
+    },
+    "NYJ": {
+      "status": "final"
+    },
+    "GB": {
+      "status": "final"
+    },
+    "TB": {
+      "status": "final"
+    },
+    "CLE": {
+      "status": "final"
+    },
+    "BAL": {
+      "status": "final"
+    },
+    "NO": {
+      "status": "final"
+    },
+    "HOU": {
+      "status": "final"
+    },
+    "CIN": {
+      "status": "final"
+    },
+    "DEN": {
+      "status": "final"
+    },
+    "JAX": {
+      "status": "final"
+    },
+    "LAC": {
+      "status": "final"
+    },
+    "LV": {
+      "status": "final"
+    },
+    "DAL": {
+      "status": "final"
+    },
+    "WAS": {
+      "status": "final"
+    },
+    "ARI": {
+      "status": "final"
+    },
+    "SEA": {
+      "status": "final"
+    },
+    "SF": {
+      "status": "final"
+    },
+    "MIA": {
+      "status": "final"
+    },
+    "KC": {
+      "status": "final"
+    },
+    "IND": {
+      "status": "final"
+    }
+  },
+  "injuries": {
+    "00-0034844": "QUESTIONABLE",
+    "00-0039338": "OUT",
+    "00-0037239": "ACTIVE",
+    "00-0039064": "OUT",
+    "00-0039915": "ACTIVE",
+    "00-0034827": "QUESTIONABLE",
+    "00-0039910": "DOUBTFUL",
+    "00-0041512": "QUESTIONABLE",
+    "00-0031408": "QUESTIONABLE",
+    "00-0036442": "ACTIVE",
+    "00-0036252": "OUT",
+    "00-0035700": "QUESTIONABLE",
+    "00-0039344": "QUESTIONABLE",
+    "00-0039918": "QUESTIONABLE",
+    "00-0036139": "QUESTIONABLE",
+    "00-0037664": "QUESTIONABLE",
+    "00-0036158": "QUESTIONABLE",
+    "00-0034351": "QUESTIONABLE",
+    "00-0040730": "OUT",
+    "00-0039146": "QUESTIONABLE",
+    "00-0039855": "ACTIVE",
+    "00-0039165": "OUT",
+    "00-0041523": "QUESTIONABLE",
+    "00-0034173": "ACTIVE",
+    "00-0041052": "ACTIVE",
+    "00-0039874": "QUESTIONABLE",
+    "00-0035537": "OUT",
+    "00-0037666": "OUT",
+    "00-0038551": "OUT",
+    "00-0040179": "OUT",
+    "00-0033885": "QUESTIONABLE",
+    "00-0036212": "OUT"
   }
 }
