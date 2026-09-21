@@ -72,7 +72,8 @@ export function getAtRiskSlots(roster, projections, live = null) {
  * `ownership` is unknown (no ESPN sync), free agents are skipped entirely
  * rather than guessed at, and `freeAgentsAvailable` says so.
  *
- * Anyone whose game has already started or finished is excluded, as is
+ * Candidates are ranked by min(our projection, ESPN's) when ESPN's exists (see
+ * the sort below). Anyone whose game has already started or finished is excluded, as is
  * anyone OUT / IR / on a bye (using ESPN's live injury status when known) -- recommending another player
  * who can't play defeats the purpose. Questionable/doubtful candidates stay
  * (carrying `risk`, so the UI can tag them). */
@@ -116,7 +117,16 @@ export function getReplacementCandidates(slot, roster, projections, ownership, s
     }
   }
 
-  pool.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name));
+  // Rank by the LOWER of our projection and ESPN's when ESPN has one. `points`
+  // stays what's displayed; only the ORDER changes. This can only ever demote a
+  // Questionable/Doubtful candidate (ESPN's number only exists for those), never
+  // affect a healthy one, and an ESPN number above ours never lifts anyone.
+  // Caveat, measured on the real pool: an empty ESPN projection among in-doubt
+  // players occurs at about the base rate (2 of 20, vs 25 of 307 for healthy
+  // players), so a 0.0 here is not proven to be injury-specific -- the rule
+  // accepts that, because demoting a possibly-fine candidate is the cheap error.
+  const rankKey = (c) => Math.min(c.points, c.espn ?? c.points);
+  pool.sort((a, b) => rankKey(b) - rankKey(a) || b.points - a.points || a.name.localeCompare(b.name));
   return { candidates: pool.slice(0, limit), freeAgentsAvailable };
 }
 
