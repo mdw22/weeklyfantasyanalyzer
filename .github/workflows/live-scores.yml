@@ -14,14 +14,19 @@ name: Update Live Scores
 # best-effort basis, often several minutes late at busy times, so treat
 # "every 10 minutes" as "roughly every 10-20".
 #   Thu night:  23 UTC Thu, 00-05 UTC Fri
+#   Saturday:   13-23 UTC Sat, 00-05 UTC Sun   (late-season Saturday games;
+#               on the ~46 Saturdays with none, ticks just find nothing
+#               changed and make no commit -- cheap, so left on year-round)
 #   Sunday:     13-23 UTC Sun, 00-05 UTC Mon
 #   Mon night:  23 UTC Mon, 00-05 UTC Tue
-# Use "Run workflow" for off-schedule checks (Saturdays, holidays).
+# Use "Run workflow" for off-schedule checks (holidays, e.g. Thanksgiving).
 
 on:
   schedule:
     - cron: "*/10 23 * * 4"
     - cron: "*/10 0-5 * * 5"
+    - cron: "*/10 13-23 * * 6"
+    - cron: "*/10 0-5 * * 0"
     - cron: "*/10 13-23 * * 0"
     - cron: "*/10 0-5 * * 1"
     - cron: "*/10 23 * * 1"

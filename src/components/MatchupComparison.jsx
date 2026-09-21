@@ -4,6 +4,7 @@ import { resolvePlayerPoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
+import { ScoringBadge } from "./ScoringBadge.jsx";
 
 function rosterRows(roster, projections, scoringValues, livePlayers) {
   return ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)).map((slot) => {
@@ -83,6 +84,9 @@ export function MatchupComparison({ onEditTeam }) {
 
   return (
     <div className="page">
+      <div className="page-meta">
+        <ScoringBadge />
+      </div>
       <div className="card matchup-summary">
         <div className="matchup-summary__team">
           <span className="team-label">

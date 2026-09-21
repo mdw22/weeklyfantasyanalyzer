@@ -395,6 +395,12 @@ svg {
   fill: var(--text-primary);
 }
 
+.page-meta {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
 /* ---------- Toolbar / filters ---------- */
 
 .table-toolbar {
@@ -403,6 +409,10 @@ svg {
   gap: 16px;
   margin-bottom: 16px;
   flex-wrap: wrap;
+}
+
+.table-toolbar__badge {
+  margin-left: auto;
 }
 
 .search-input {

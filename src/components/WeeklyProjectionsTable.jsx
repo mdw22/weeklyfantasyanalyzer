@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useApp } from "../lib/AppContext.jsx";
 import { usePlayerList } from "../lib/usePlayerList.js";
 import { ChevronDownIcon, ChevronUpIcon } from "./icons.jsx";
+import { ScoringBadge } from "./ScoringBadge.jsx";
 
 const POSITIONS = ["All", "QB", "RB", "WR", "TE", "K", "DEF"];
 const PAGE_SIZE = 20;
@@ -82,6 +83,9 @@ export function WeeklyProjectionsTable() {
             </button>
           ))}
         </div>
+        <span className="table-toolbar__badge">
+          <ScoringBadge />
+        </span>
       </div>
 
       <div className="card table-wrap">
