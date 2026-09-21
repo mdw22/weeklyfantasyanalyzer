@@ -29,6 +29,7 @@ on:
 
 permissions:
   contents: write # needed to commit the regenerated data/ files back
+  actions: write  # to start the live-scores loop after each run
 
 # Serialize with the live-scores job so their pushes never race.
 concurrency:
@@ -73,5 +74,21 @@ jobs:
             echo "No changes to commit today."
           else
             git commit -m "chore: update weekly projections ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
-            git push
+            # The live-scores loop pushes to main too; rebase and retry so a
+            # near-simultaneous push can't fail this run.
+            for attempt in 1 2 3; do
+              git pull --rebase -q origin main && git push && exit 0
+              sleep 5
+            done
+            echo "Could not push after 3 attempts" >&2
+            exit 1
           fi
+
+      # This job does fire on its own schedule (though hours late), so it's a
+      # useful nudge: start the live-scores loop. On a quiet day the loop
+      # sees no games and exits within about a minute.
+      - name: Start the live-scores loop
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run live-scores.yml --ref main
+        continue-on-error: true

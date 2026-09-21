@@ -17,6 +17,15 @@ export function availabilityRisk(entry) {
   return null;
 }
 
+/** True when a player is effectively certain NOT to play: Out, IR, or on a
+ * bye. Questionable/Doubtful are deliberately excluded -- those are
+ * genuinely uncertain, so their full average projection stays the fair
+ * expected value and the pill communicates the risk. */
+export function isExpectedOut(entry) {
+  const risk = availabilityRisk(entry);
+  return !!risk && risk.severity !== "risk";
+}
+
 /** Starters (never bench/IR -- those are already benched by choice) whose
  * player might not play. `roster` is slotId -> playerId. */
 export function getAtRiskSlots(roster, projections) {

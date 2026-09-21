@@ -155,8 +155,9 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     onClear: handleClear,
   };
 
-  // Availability pills show on starter rows only (bench/IR are benched by choice).
-  const riskFor = (slot, player) => (STARTER_SLOT_IDS.includes(slot.id) ? availabilityRisk(player) : null);
+  // Availability pills show on every row (informational). Only starters get
+  // the banner / replacements panel -- bench and IR aren't playing anyway.
+  const riskFor = (slot, player) => availabilityRisk(player);
   const panelFor = (slot) =>
     atRiskSlotIds.has(slot.id) ? (
       <ReplacementPanel
@@ -194,8 +195,8 @@ export function TeamBuilder({ initialTeam = "mine" }) {
       <AdvisorBanner atRisk={atRisk} projections={projections} onShow={showReplacements} />
 
       <RosterSection title="STARTERS" slots={STARTER_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={panelFor} />
-      <RosterSection title="BENCH (7)" slots={BENCH_SLOTS} {...sectionProps} riskFor={() => null} panelFor={noPanel} />
-      <RosterSection title="IR (1)" slots={IR_SLOTS} {...sectionProps} riskFor={() => null} panelFor={noPanel} />
+      <RosterSection title="BENCH (7)" slots={BENCH_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} />
+      <RosterSection title="IR (1)" slots={IR_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} />
 
       {pickingSlot && (
         <PlayerPicker

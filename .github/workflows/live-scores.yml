@@ -1,55 +1,59 @@
 name: Update Live Scores
 
-# Lightweight job for game days: pulls each rostered player's live stat line
-# from ESPN and writes public/data/week_NN/live.json. Separate from the
-# once-daily full projections pipeline. It only commits (and only then
-# redeploys the site) when live.json actually changed, so quiet ticks are
-# cheap no-ops.
+# HOW THIS RUNS -- and why it isn't a 10-minute cron:
+# GitHub's `schedule` trigger is best-effort and, for this repo, badly late:
+# the daily projections job (scheduled 13:00 UTC) has started 3-5 HOURS late
+# on all 8 of 8 runs, and a `*/10` schedule here produced zero runs in 75+
+# minutes of active windows. So a cron can't deliver a 10-minute cadence.
 #
-# CRON WINDOWS are UTC, and games that start in the evening ET run PAST
-# MIDNIGHT UTC -- so the after-midnight hours belong to the NEXT weekday
-# number (Thursday night's late hours are Friday `5`, not Thursday `4`).
-# Hours are generous on purpose (covers EDT and EST, plus early London
-# games at 9:30am ET = 13:30 UTC). GitHub runs scheduled workflows on a
-# best-effort basis, often several minutes late at busy times, so treat
-# "every 10 minutes" as "roughly every 10-20".
-#   Thu night:  23 UTC Thu, 00-05 UTC Fri
-#   Saturday:   13-23 UTC Sat, 00-05 UTC Sun   (late-season Saturday games;
-#               on the ~46 Saturdays with none, ticks just find nothing
-#               changed and make no commit -- cheap, so left on year-round)
-#   Sunday:     13-23 UTC Sun, 00-05 UTC Mon
-#   Mon night:  23 UTC Mon, 00-05 UTC Tue
-# Use "Run workflow" for off-schedule checks (holidays, e.g. Thanksgiving).
+# Instead ONE job loops on its own (every 5 minutes) while games are on:
+# each pass runs sync_live_scores.py, commits live.json if it changed, then
+# asks the script whether to keep going. The script says stop once no game
+# is in progress or starting within 8 hours (LOOKAHEAD_MIN), so an idle
+# day's trigger costs about a minute, while a late-morning nudge on a game
+# day still keeps the loop alive until the evening kickoff. A job is capped
+# at 6h, so after ~5.5h it hands off to a fresh run of itself if the slate
+# isn't over.
+#
+# The loop only needs to be STARTED, by any of:
+#   - the daily projections job (dispatches this at the end of every run)
+#   - the best-effort schedule anchors below (may fire late or not at all)
+#   - "Run workflow" by hand, e.g. right before kickoff -- the reliable option
+# Extra starts while a loop is running just queue one pending run that exits
+# immediately when it finds nothing happening.
+#
+# live.json is read by the site through the GitHub contents API, NOT through
+# the Pages CDN, so no redeploy is needed per tick (see src/lib/liveScores.js).
 
 on:
   schedule:
-    - cron: "*/10 23 * * 4"
-    - cron: "*/10 0-5 * * 5"
-    - cron: "*/10 13-23 * * 6"
-    - cron: "*/10 0-5 * * 0"
-    - cron: "*/10 13-23 * * 0"
-    - cron: "*/10 0-5 * * 1"
-    - cron: "*/10 23 * * 1"
-    - cron: "*/10 0-5 * * 2"
+    # Best-effort starters only; minutes are off the top of the hour, when
+    # GitHub is busiest. UTC: evening-ET games run past midnight UTC.
+    - cron: "17 23 * * 4"          # Thursday night
+    - cron: "17 16,19 * * 6"       # Saturday games (late season)
+    - cron: "17 13,16,19 * * 0"    # Sunday: London game, main slate, late window
+    - cron: "17 23 * * 1"          # Monday night
   workflow_dispatch:
     inputs:
       debug:
-        description: "Print the raw box-score shape and a per-player self-check (our points vs ESPN's) -- one-off verification"
+        description: "Print the raw box-score shape and a per-player self-check (our points vs ESPN's) on the first pass"
         type: boolean
         default: false
 
 permissions:
   contents: write # commit live.json
-  actions: write  # dispatch the deploy workflow after a change
+  actions: write  # hand off to a fresh run when the 6h job cap approaches
 
-# Serialize with the daily projections run so their pushes never race.
+# One loop at a time. Kept separate from the daily job's group on purpose: a
+# 5-hour loop must never block the daily projections run.
 concurrency:
-  group: data-commits
+  group: live-loop
   cancel-in-progress: false
 
 jobs:
   live-scores:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -64,36 +68,49 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Sync live scores (no-ops if ESPN isn't configured)
+      - name: Live scores loop
         env:
+          GH_TOKEN: ${{ github.token }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           ESPN_LEAGUE_ID: ${{ vars.ESPN_LEAGUE_ID }}
           ESPN_TEAM_ID: ${{ vars.ESPN_TEAM_ID }}
-          LIVE_SCORES_DEBUG: ${{ inputs.debug && '1' || '' }}
-        run: python scripts/sync_live_scores.py
-
-      - name: Commit, push, and redeploy if live.json changed
-        env:
-          GH_TOKEN: ${{ github.token }}
+          LIVE_STATE_FILE: ${{ runner.temp }}/live_state.json
+          DEBUG_FIRST_PASS: ${{ inputs.debug && '1' || '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
-          if git diff --cached --quiet; then
-            echo "No live-score changes this tick."
-            exit 0
-          fi
-          git commit -m "chore: live scores ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
-          # The daily job may have pushed since checkout; rebase and retry.
-          for attempt in 1 2 3; do
-            if git pull --rebase origin main && git push; then
-              # Pushes made with GITHUB_TOKEN don't trigger deploy.yml, so
-              # dispatch it explicitly (dispatch IS allowed with GITHUB_TOKEN).
-              gh workflow run deploy.yml --ref main
+
+          deadline=$(( $(date +%s) + 19800 ))   # 5h30m, under the 6h job cap
+          debug="$DEBUG_FIRST_PASS"
+
+          while true; do
+            # Pick up the daily job's commits (and the week rollover) each pass.
+            git pull --rebase -q origin main || true
+
+            rm -f "$LIVE_STATE_FILE"
+            LIVE_SCORES_DEBUG="$debug" python scripts/sync_live_scores.py || true
+            debug=""   # the verbose dump is only useful once
+
+            git add public/data/
+            if ! git diff --cached --quiet; then
+              git commit -q -m "chore: live scores ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+              # The daily job may have pushed meanwhile; rebase and retry.
+              for attempt in 1 2 3; do
+                git pull --rebase -q origin main && git push -q && break
+                sleep 5
+              done
+            fi
+
+            keep=$(python -c "import json,os;p=os.environ['LIVE_STATE_FILE'];print(json.load(open(p)).get('keep_going', True) if os.path.exists(p) else True)")
+            if [ "$keep" != "True" ]; then
+              echo "No game in progress or starting within 8h -- stopping."
               exit 0
             fi
-            sleep 5
+            if [ "$(date +%s)" -ge "$deadline" ]; then
+              echo "Approaching the 6h job cap with games still on -- handing off to a fresh run."
+              gh workflow run live-scores.yml --ref main
+              exit 0
+            fi
+            sleep 300
           done
-          echo "Could not push after 3 attempts" >&2
-          exit 1

@@ -61,7 +61,7 @@ deliberately deferred gap, not an oversight).
 """
 
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import nflreadpy as nfl
@@ -454,16 +454,22 @@ def main() -> None:
                 "season": season,
                 "week": week,
                 "espnSync": (out_dir / "espn-sync.json").exists(),
-                # Same idea as espnSync: lets the frontend skip requesting a
-                # live.json that doesn't exist yet (no console 404s).
-                # sync_live_scores.py flips this true when it first writes one.
-                "liveScores": (out_dir / "live.json").exists(),
             },
             indent=2,
         )
     )
 
     n_k = sum(1 for p in projections.values() if p["position"] == "K")
+    # Every week gets a live.json from the start (empty until games begin),
+    # so the frontend can poll it without ever hitting a 404 for the current
+    # week. sync_live_scores.py fills it in; never clobber real data here.
+    live_path = out_dir / "live.json"
+    if not live_path.exists():
+        live_path.write_text(json.dumps(
+            {"updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"), "players": {}},
+            indent=2,
+        ))
+
     print(
         f"Wrote projections + history for season {season}, week {week}: "
         f"{len(projections) - len(def_projections) - n_k} players + {n_k} kickers + "

@@ -18,6 +18,12 @@ Two sources, deliberately different:
     It exposes state (pre/in/post), period and displayClock directly, which
     is more reliable than digging a status out of the fantasy response.
 
+LOOP CONTRACT: live-scores.yml runs this repeatedly inside one long job (GitHub's
+`schedule` trigger proved far too late and unreliable for a 10-minute cadence).
+After each run this writes {"keep_going": bool} to $LIVE_STATE_FILE (if set): true
+while any game is in progress or kicks off within LOOKAHEAD_MIN, false once the
+slate is idle -- that's how the loop knows when to stop.
+
 Soft-fails like sync_espn.py: any problem prints a warning, writes nothing,
 exits 0. Only rewrites live.json when the players data actually changed, so
 quiet ticks make no commit.
@@ -38,7 +44,7 @@ debug self-check exists to catch exactly this.
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -162,6 +168,42 @@ def game_status_by_team(scoreboard: dict) -> dict:
             if abbr:
                 out[SCOREBOARD_ABBR_FIX.get(abbr, abbr)] = info
     return out
+
+
+# Keep looping if a game kicks off within this many minutes. 8h, not less: the
+# daily job that nudges the loop starts ~17:00 UTC (it runs hours late), and
+# Monday/Thursday night games kick off ~7h later -- a shorter lookahead would
+# have the loop quit before the game. Still stops when the next game is a day
+# away (Tue/Wed/Fri), so idle days cost about a minute.
+LOOKAHEAD_MIN = 480
+
+
+def slate_activity(scoreboard: dict, now: datetime) -> dict:
+    """{"in_progress": n, "next_kickoff_min": minutes|None} -- what the loop
+    uses to decide whether to keep going. Finished games don't count."""
+    in_progress, soonest = 0, None
+    for event in scoreboard.get("events", []):
+        state = event.get("status", {}).get("type", {}).get("state")
+        if state == "in":
+            in_progress += 1
+        elif state == "pre":
+            try:
+                kickoff = datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
+            except (KeyError, ValueError):
+                continue
+            minutes = (kickoff - now).total_seconds() / 60
+            if soonest is None or minutes < soonest:
+                soonest = minutes
+    return {"in_progress": in_progress, "next_kickoff_min": soonest}
+
+
+def keep_going(activity: dict) -> bool:
+    if activity["in_progress"] > 0:
+        return True
+    soonest = activity["next_kickoff_min"]
+    # A game that "should" have started already but still reads pre-game
+    # (negative minutes) is a delay, not idleness -- keep going.
+    return soonest is not None and soonest <= LOOKAHEAD_MIN
 
 
 def actual_stat_entry(player_stats, week):
@@ -299,19 +341,25 @@ def write_if_changed(week_dir: Path, players: dict) -> bool:
     return True
 
 
-def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=build_espn_to_gsis_map) -> str:
-    latest_path = DATA_DIR / "latest.json"
-    latest = json.loads(latest_path.read_text())
+def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=build_espn_to_gsis_map,
+        now=None) -> tuple:
+    """(summary message, keep_going). keep_going is True whenever activity is
+    unknown (scoreboard/ESPN trouble) -- the loop's own time cap bounds it."""
+    now = now or datetime.now(timezone.utc)
+    latest = json.loads((DATA_DIR / "latest.json").read_text())
     season, week = latest["season"], latest["week"]
     debug = env.get("LIVE_SCORES_DEBUG") == "1"
 
     league_json = fetch_box(season, env["ESPN_LEAGUE_ID"], env["ESPN_S2"], env["ESPN_SWID"], week)
     entries, roster_key = matchup_entries(league_json, int(env["ESPN_TEAM_ID"]), week)
     if not entries:
-        return "no box-score entries found for this matchup -- nothing written"
+        return "no box-score entries found for this matchup -- nothing written", True
 
+    activity = None
     try:
-        scoreboard_status = game_status_by_team(fetch_board(season, week))
+        scoreboard = fetch_board(season, week)
+        scoreboard_status = game_status_by_team(scoreboard)
+        activity = slate_activity(scoreboard, now)
     except Exception as exc:  # noqa: BLE001 -- status is best-effort
         print(f"WARNING: scoreboard unavailable ({exc!r}); treating every game as not started")
         scoreboard_status = {}
@@ -322,11 +370,14 @@ def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=b
         print_debug(entries, rows, roster_key)
 
     changed = write_if_changed(DATA_DIR / f"week_{week:02d}", players)
-    if changed and not latest.get("liveScores"):
-        latest["liveScores"] = True
-        latest_path.write_text(json.dumps(latest, indent=2))
     started = sum(1 for p in players.values() if p["status"] != "not_started")
-    return f"{len(players)} players ({started} started); live.json {'updated' if changed else 'unchanged'}"
+    going = True if activity is None else keep_going(activity)
+    detail = "scoreboard unavailable" if activity is None else (
+        f"{activity['in_progress']} in progress, next kickoff in "
+        + ("n/a" if activity["next_kickoff_min"] is None else f"{activity['next_kickoff_min']:.0f} min")
+    )
+    return (f"{len(players)} players ({started} started); live.json "
+            f"{'updated' if changed else 'unchanged'}; {detail}; keep_going={going}"), going
 
 
 def main():
@@ -335,10 +386,15 @@ def main():
     if not all(env[k] for k in ("ESPN_S2", "ESPN_SWID", "ESPN_LEAGUE_ID", "ESPN_TEAM_ID")):
         print("ESPN not configured -- skipping live scores.")
         return
+    going = True  # on any failure, keep the loop alive; its time cap bounds it
     try:
-        print(f"Live scores: {run(env)}")
+        message, going = run(env)
+        print(f"Live scores: {message}")
     except Exception as exc:  # noqa: BLE001 -- soft-fail, see docstring
         print(f"WARNING: live scores failed ({exc!r}) -- leaving any existing live.json untouched.")
+    state_file = os.environ.get("LIVE_STATE_FILE")
+    if state_file:
+        Path(state_file).write_text(json.dumps({"keep_going": going}))
 
 
 if __name__ == "__main__":

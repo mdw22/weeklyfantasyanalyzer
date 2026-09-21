@@ -5,7 +5,7 @@ import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
 import { ScoringBadge } from "./ScoringBadge.jsx";
-import { availabilityRisk } from "../lib/lineupAdvisor.js";
+import { availabilityRisk, isExpectedOut } from "../lib/lineupAdvisor.js";
 import { RiskPill } from "./LineupAdvisor.jsx";
 
 function rosterRows(roster, projections, scoringValues, livePlayers) {
@@ -13,7 +13,12 @@ function rosterRows(roster, projections, scoringValues, livePlayers) {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
     if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null };
-    const { points, status, clock } = resolvePlayerPoints(player, livePlayers[playerId], scoringValues);
+    const resolved = resolvePlayerPoints(player, livePlayers[playerId], scoringValues);
+    // Someone who's Out / on IR / on a bye is projected to score nothing --
+    // counting their average would show a fictional number for a player who
+    // isn't playing. Only applies pre-kickoff; a started game's real stats win.
+    const { status, clock } = resolved;
+    const points = status === "not_started" && isExpectedOut(player) ? 0 : resolved.points;
     return { slot, playerId, player, points, status, clock, risk: availabilityRisk(player) };
   });
 }
@@ -36,6 +41,12 @@ function LiveTag({ status, clock }) {
 
 function starterIds(roster) {
   return STARTER_SLOT_IDS.map((id) => roster[id]).filter(Boolean);
+}
+
+/** Starters who can actually contribute -- expected-out players are dropped
+ * from the win-probability simulation (they contribute 0), matching the totals. */
+function simulatedIds(roster, projections) {
+  return starterIds(roster).filter((id) => !isExpectedOut(projections[id]));
 }
 
 export function MatchupComparison({ onEditTeam }) {
@@ -62,12 +73,14 @@ export function MatchupComparison({ onEditTeam }) {
   const oppPlayerIds = useMemo(() => starterIds(opponentRoster), [opponentRoster]);
 
   const bothTeamsFilled = myPlayerIds.length > 0 && oppPlayerIds.length > 0;
+  const mySimIds = useMemo(() => simulatedIds(myRoster, projections), [myRoster, projections]);
+  const oppSimIds = useMemo(() => simulatedIds(opponentRoster, projections), [opponentRoster, projections]);
 
   const simulation = useMemo(() => {
     if (!ready || !bothTeamsFilled) return null;
     return simulateMatchup({
-      myPlayerIds,
-      opponentPlayerIds: oppPlayerIds,
+      myPlayerIds: mySimIds,
+      opponentPlayerIds: oppSimIds,
       projections,
       history,
       scoringValues: scoringSettings.values,
