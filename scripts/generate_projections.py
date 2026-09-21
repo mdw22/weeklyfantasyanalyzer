@@ -230,6 +230,16 @@ def describe_defense(row0: dict) -> dict:
     }
 
 
+def tier_bonus_value(value: float, tiers: list) -> int:
+    """Plain-Python twin of _tier_bonus, for one value (used by
+    sync_live_scores.py so live DEF bonuses use the same tier tables)."""
+    bonus = tiers[0][1]
+    for lower, b in tiers[1:]:
+        if value >= lower:
+            bonus = b
+    return bonus
+
+
 def _tier_bonus(col: str, tiers: list) -> pl.Expr:
     """Maps a per-game value through a (lower_bound, bonus) bracket table."""
     expr = pl.lit(tiers[0][1])
@@ -361,6 +371,10 @@ def main() -> None:
                 "season": season,
                 "week": week,
                 "espnSync": (out_dir / "espn-sync.json").exists(),
+                # Same idea as espnSync: lets the frontend skip requesting a
+                # live.json that doesn't exist yet (no console 404s).
+                # sync_live_scores.py flips this true when it first writes one.
+                "liveScores": (out_dir / "live.json").exists(),
             },
             indent=2,
         )

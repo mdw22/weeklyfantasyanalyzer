@@ -1,0 +1,94 @@
+name: Update Live Scores
+
+# Lightweight job for game days: pulls each rostered player's live stat line
+# from ESPN and writes public/data/week_NN/live.json. Separate from the
+# once-daily full projections pipeline. It only commits (and only then
+# redeploys the site) when live.json actually changed, so quiet ticks are
+# cheap no-ops.
+#
+# CRON WINDOWS are UTC, and games that start in the evening ET run PAST
+# MIDNIGHT UTC -- so the after-midnight hours belong to the NEXT weekday
+# number (Thursday night's late hours are Friday `5`, not Thursday `4`).
+# Hours are generous on purpose (covers EDT and EST, plus early London
+# games at 9:30am ET = 13:30 UTC). GitHub runs scheduled workflows on a
+# best-effort basis, often several minutes late at busy times, so treat
+# "every 10 minutes" as "roughly every 10-20".
+#   Thu night:  23 UTC Thu, 00-05 UTC Fri
+#   Sunday:     13-23 UTC Sun, 00-05 UTC Mon
+#   Mon night:  23 UTC Mon, 00-05 UTC Tue
+# Use "Run workflow" for off-schedule checks (Saturdays, holidays).
+
+on:
+  schedule:
+    - cron: "*/10 23 * * 4"
+    - cron: "*/10 0-5 * * 5"
+    - cron: "*/10 13-23 * * 0"
+    - cron: "*/10 0-5 * * 1"
+    - cron: "*/10 23 * * 1"
+    - cron: "*/10 0-5 * * 2"
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Print the raw box-score shape and a per-player self-check (our points vs ESPN's) -- one-off verification"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # commit live.json
+  actions: write  # dispatch the deploy workflow after a change
+
+# Serialize with the daily projections run so their pushes never race.
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+jobs:
+  live-scores:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Sync live scores (no-ops if ESPN isn't configured)
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          ESPN_LEAGUE_ID: ${{ vars.ESPN_LEAGUE_ID }}
+          ESPN_TEAM_ID: ${{ vars.ESPN_TEAM_ID }}
+          LIVE_SCORES_DEBUG: ${{ inputs.debug && '1' || '' }}
+        run: python scripts/sync_live_scores.py
+
+      - name: Commit, push, and redeploy if live.json changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          if git diff --cached --quiet; then
+            echo "No live-score changes this tick."
+            exit 0
+          fi
+          git commit -m "chore: live scores ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          # The daily job may have pushed since checkout; rebase and retry.
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              # Pushes made with GITHUB_TOKEN don't trigger deploy.yml, so
+              # dispatch it explicitly (dispatch IS allowed with GITHUB_TOKEN).
+              gh workflow run deploy.yml --ref main
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Could not push after 3 attempts" >&2
+          exit 1

@@ -30,6 +30,11 @@ on:
 permissions:
   contents: write # needed to commit the regenerated data/ files back
 
+# Serialize with the live-scores job so their pushes never race.
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
 jobs:
   update-projections:
     runs-on: ubuntu-latest

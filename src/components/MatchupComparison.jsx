@@ -1,17 +1,34 @@
 import { useMemo } from "react";
 import { useApp } from "../lib/AppContext.jsx";
-import { computeFantasyPoints } from "../lib/scoring.js";
+import { resolvePlayerPoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
 
-function rosterRows(roster, projections, scoringValues) {
+function rosterRows(roster, projections, scoringValues, livePlayers) {
   return ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)).map((slot) => {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
-    const points = player ? computeFantasyPoints(player.projected_stats, scoringValues) : 0;
-    return { slot, playerId, player, points };
+    if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null };
+    const { points, status, clock } = resolvePlayerPoints(player, livePlayers[playerId], scoringValues);
+    return { slot, playerId, player, points, status, clock };
   });
+}
+
+/** Muted status next to a player's points: "Final", or a pulsing dot plus
+ * the game clock while live. Nothing pre-kickoff -- that number is still a
+ * projection, same as before. */
+function LiveTag({ status, clock }) {
+  if (status === "final") return <span className="live-tag">Final</span>;
+  if (status === "in_progress") {
+    return (
+      <span className="live-tag">
+        <span className="live-dot" aria-hidden="true" />
+        {clock}
+      </span>
+    );
+  }
+  return null;
 }
 
 function starterIds(roster) {
@@ -24,14 +41,15 @@ export function MatchupComparison({ onEditTeam }) {
   const ready = weekData.status === "ready";
   const projections = ready ? weekData.projections : {};
   const history = ready ? weekData.history : {};
+  const live = useLiveScores(weekData);
 
   const myRows = useMemo(
-    () => rosterRows(myRoster, projections, scoringSettings.values),
-    [myRoster, projections, scoringSettings]
+    () => rosterRows(myRoster, projections, scoringSettings.values, live.players),
+    [myRoster, projections, scoringSettings, live]
   );
   const oppRows = useMemo(
-    () => rosterRows(opponentRoster, projections, scoringSettings.values),
-    [opponentRoster, projections, scoringSettings]
+    () => rosterRows(opponentRoster, projections, scoringSettings.values, live.players),
+    [opponentRoster, projections, scoringSettings, live]
   );
 
   const myTotal = myRows.reduce((sum, r) => sum + r.points, 0);
@@ -116,6 +134,7 @@ export function MatchupComparison({ onEditTeam }) {
               <span className={r.player ? "roster-row__name" : "roster-row--empty"}>
                 {r.player ? r.player.player_name : `Empty ${r.slot.label}`}
                 {r.player && <span className="roster-row__meta">{r.player.position} · {r.player.team}</span>}
+                {r.player && <LiveTag status={r.status} clock={r.clock} />}
               </span>
               <span className="roster-row__pts">{r.player ? r.points.toFixed(1) : "—"}</span>
             </div>
@@ -136,6 +155,7 @@ export function MatchupComparison({ onEditTeam }) {
               <span className={r.player ? "roster-row__name" : "roster-row--empty"}>
                 {r.player ? r.player.player_name : `Empty ${r.slot.label}`}
                 {r.player && <span className="roster-row__meta">{r.player.position} · {r.player.team}</span>}
+                {r.player && <LiveTag status={r.status} clock={r.clock} />}
               </span>
               <span className="roster-row__pts">{r.player ? r.points.toFixed(1) : "—"}</span>
             </div>

@@ -9,3 +9,4 @@ dist/
 __pycache__/
 *.pyc
 DESIGNER_RESPONSE.md
+LIVE_SCORES_SPEC.md
