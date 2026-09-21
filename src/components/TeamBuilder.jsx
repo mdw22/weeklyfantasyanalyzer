@@ -1,17 +1,18 @@
 import { Fragment, useMemo, useState } from "react";
 import { useApp } from "../lib/AppContext.jsx";
-import { computeFantasyPoints } from "../lib/scoring.js";
+import { resolvePlayerPoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { PlayerPicker } from "./PlayerPicker.jsx";
 import { PlusIcon, SwapIcon } from "./icons.jsx";
-import { availabilityRisk, getAtRiskSlots } from "../lib/lineupAdvisor.js";
+import { currentRisk, getAtRiskSlots } from "../lib/lineupAdvisor.js";
+import { LiveTag } from "./LiveTag.jsx";
 import { AdvisorBanner, ReplacementPanel, RiskPill } from "./LineupAdvisor.jsx";
 
 const STARTER_SLOTS = ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id));
 const BENCH_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("BN"));
 const IR_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("IR"));
 
-function SlotRow({ slot, player, points, edited, risk, onPick, onClear }) {
+function SlotRow({ slot, player, points, status, clock, edited, risk, onPick, onClear }) {
   if (!player) {
     return (
       <div className="slot empty">
@@ -33,10 +34,10 @@ function SlotRow({ slot, player, points, edited, risk, onPick, onClear }) {
       <span className="slot-name">
         {player.player_name}
         <span className="slot-name__meta">{player.team}</span>
-        <RiskPill risk={risk} />
+        {status !== "not_started" ? <LiveTag status={status} clock={clock} /> : <RiskPill risk={risk} />}
         {edited && <span className="slot-name__meta slot-name__meta--edited"> &middot; edited</span>}
       </span>
-      <span className="slot-pts mono">{points.toFixed(1)}</span>
+      <span className={`slot-pts mono${status !== "not_started" ? " slot-pts--real" : ""}`}>{points.toFixed(1)}</span>
       <div className="slot-actions">
         <button className="slot-icon-btn" aria-label="Swap player" onClick={onPick}>
           <SwapIcon />
@@ -49,22 +50,26 @@ function SlotRow({ slot, player, points, edited, risk, onPick, onClear }) {
   );
 }
 
-function RosterSection({ title, slots, roster, projections, scoringValues, isEdited, riskFor, panelFor, onPick, onClear }) {
+function RosterSection({ title, slots, roster, projections, scoringValues, live, isEdited, riskFor, panelFor, onPick, onClear }) {
   return (
     <div className="card roster-section">
       <div className="section-header">{title}</div>
       {slots.map((slot) => {
         const playerId = roster[slot.id];
         const player = playerId ? projections[playerId] : null;
-        const points = player ? computeFantasyPoints(player.projected_stats, scoringValues) : 0;
+        // Once a player's game has started, show the real result (points +
+        // Final / clock) instead of the pre-game projection and injury tag.
+        const resolved = player ? resolvePlayerPoints(player, live.players[playerId], scoringValues) : null;
         return (
           <Fragment key={slot.id}>
             <SlotRow
               slot={slot}
               player={player}
-              points={points}
+              points={resolved?.points ?? 0}
+              status={resolved?.status ?? "not_started"}
+              clock={resolved?.clock ?? null}
               edited={isEdited(slot.id)}
-              risk={riskFor(slot, player)}
+              risk={riskFor(playerId, player)}
               onPick={() => onPick(slot)}
               onClear={() => onClear(slot.id)}
             />
@@ -101,6 +106,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
   const [team, setTeam] = useState(initialTeam);
   const [pickingSlot, setPickingSlot] = useState(null);
   const [expandedPanels, setExpandedPanels] = useState({});
+  const live = useLiveScores(weekData);
 
   const roster = team === "mine" ? myRoster : opponentRoster;
   const projections = weekData.status === "ready" ? weekData.projections : {};
@@ -109,8 +115,8 @@ export function TeamBuilder({ initialTeam = "mine" }) {
 
   // The advisor is about MY lineup only; the opponent tab just shows pills.
   const atRisk = useMemo(
-    () => (team === "mine" && weekData.status === "ready" ? getAtRiskSlots(myRoster, projections) : []),
-    [team, myRoster, projections, weekData.status]
+    () => (team === "mine" && weekData.status === "ready" ? getAtRiskSlots(myRoster, projections, live) : []),
+    [team, myRoster, projections, weekData.status, live]
   );
   const atRiskSlotIds = new Set(atRisk.map((a) => a.slotId));
 
@@ -150,6 +156,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
     roster,
     projections,
     scoringValues: scoringSettings.values,
+    live,
     isEdited,
     onPick: setPickingSlot,
     onClear: handleClear,
@@ -157,7 +164,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
 
   // Availability pills show on every row (informational). Only starters get
   // the banner / replacements panel -- bench and IR aren't playing anyway.
-  const riskFor = (slot, player) => availabilityRisk(player);
+  const riskFor = (playerId, player) => (player ? currentRisk(playerId, player, live) : null);
   const panelFor = (slot) =>
     atRiskSlotIds.has(slot.id) ? (
       <ReplacementPanel
@@ -166,6 +173,7 @@ export function TeamBuilder({ initialTeam = "mine" }) {
         projections={projections}
         ownership={ownership}
         scoringValues={scoringSettings.values}
+        live={live}
         expanded={!!expandedPanels[slot.id]}
         onToggle={() => setExpandedPanels((prev) => ({ ...prev, [slot.id]: !prev[slot.id] }))}
       />

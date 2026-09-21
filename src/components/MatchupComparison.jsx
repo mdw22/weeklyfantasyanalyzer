@@ -5,38 +5,24 @@ import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
 import { ScoringBadge } from "./ScoringBadge.jsx";
-import { availabilityRisk, isExpectedOut } from "../lib/lineupAdvisor.js";
+import { currentRisk, isExpectedOut } from "../lib/lineupAdvisor.js";
 import { RiskPill } from "./LineupAdvisor.jsx";
+import { LiveTag } from "./LiveTag.jsx";
 
-function rosterRows(roster, projections, scoringValues, livePlayers) {
+function rosterRows(roster, projections, scoringValues, live) {
   return ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)).map((slot) => {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
     if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null };
-    const resolved = resolvePlayerPoints(player, livePlayers[playerId], scoringValues);
+    const resolved = resolvePlayerPoints(player, live.players[playerId], scoringValues);
     // Someone who's Out / on IR / on a bye is projected to score nothing --
     // counting their average would show a fictional number for a player who
     // isn't playing. Only applies pre-kickoff; a started game's real stats win.
     const { status, clock } = resolved;
-    const points = status === "not_started" && isExpectedOut(player) ? 0 : resolved.points;
-    return { slot, playerId, player, points, status, clock, risk: availabilityRisk(player) };
+    const points =
+      status === "not_started" && isExpectedOut(player, live.injuries?.[playerId]) ? 0 : resolved.points;
+    return { slot, playerId, player, points, status, clock, risk: currentRisk(playerId, player, live) };
   });
-}
-
-/** Status pill beside a player's points: "Final", or a pulsing dot plus the
- * game clock while live (both green). Nothing pre-kickoff -- that number is
- * still a projection, shown dimmer instead (see .roster-row__pts). */
-function LiveTag({ status, clock }) {
-  if (status === "final") return <span className="live-pill">Final</span>;
-  if (status === "in_progress") {
-    return (
-      <span className="live-pill">
-        <span className="live-dot" aria-hidden="true" />
-        {clock}
-      </span>
-    );
-  }
-  return null;
 }
 
 function starterIds(roster) {
@@ -45,8 +31,8 @@ function starterIds(roster) {
 
 /** Starters who can actually contribute -- expected-out players are dropped
  * from the win-probability simulation (they contribute 0), matching the totals. */
-function simulatedIds(roster, projections) {
-  return starterIds(roster).filter((id) => !isExpectedOut(projections[id]));
+function simulatedIds(roster, projections, live) {
+  return starterIds(roster).filter((id) => !isExpectedOut(projections[id], live.injuries?.[id]));
 }
 
 export function MatchupComparison({ onEditTeam }) {
@@ -58,11 +44,11 @@ export function MatchupComparison({ onEditTeam }) {
   const live = useLiveScores(weekData);
 
   const myRows = useMemo(
-    () => rosterRows(myRoster, projections, scoringSettings.values, live.players),
+    () => rosterRows(myRoster, projections, scoringSettings.values, live),
     [myRoster, projections, scoringSettings, live]
   );
   const oppRows = useMemo(
-    () => rosterRows(opponentRoster, projections, scoringSettings.values, live.players),
+    () => rosterRows(opponentRoster, projections, scoringSettings.values, live),
     [opponentRoster, projections, scoringSettings, live]
   );
 
@@ -73,8 +59,8 @@ export function MatchupComparison({ onEditTeam }) {
   const oppPlayerIds = useMemo(() => starterIds(opponentRoster), [opponentRoster]);
 
   const bothTeamsFilled = myPlayerIds.length > 0 && oppPlayerIds.length > 0;
-  const mySimIds = useMemo(() => simulatedIds(myRoster, projections), [myRoster, projections]);
-  const oppSimIds = useMemo(() => simulatedIds(opponentRoster, projections), [opponentRoster, projections]);
+  const mySimIds = useMemo(() => simulatedIds(myRoster, projections, live), [myRoster, projections, live]);
+  const oppSimIds = useMemo(() => simulatedIds(opponentRoster, projections, live), [opponentRoster, projections, live]);
 
   const simulation = useMemo(() => {
     if (!ready || !bothTeamsFilled) return null;

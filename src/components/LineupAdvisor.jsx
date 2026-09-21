@@ -46,9 +46,9 @@ export function AdvisorBanner({ atRisk, projections, onShow }) {
 
 /** Collapsible "Suggested replacements" list under one flagged slot. Read-only:
  * the advisor recommends, it never changes the roster or touches ESPN. */
-export function ReplacementPanel({ slot, roster, projections, ownership, scoringValues, expanded, onToggle }) {
+export function ReplacementPanel({ slot, roster, projections, ownership, scoringValues, live, expanded, onToggle }) {
   const result = expanded
-    ? getReplacementCandidates(slot, roster, projections, ownership, scoringValues)
+    ? getReplacementCandidates(slot, roster, projections, ownership, scoringValues, 5, live)
     : null;
   return (
     <div className="advisor-panel">

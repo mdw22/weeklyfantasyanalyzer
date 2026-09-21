@@ -8,10 +8,13 @@ const BENCH_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("BN"));
  *   severity "risk" -- QUESTIONABLE / DOUBTFUL: might   (amber)
  *   severity "bye"  -- team has no game: won't play, but routine (no color)
  * A bye wins over an injury: nothing else matters if there's no game. */
-export function availabilityRisk(entry) {
+export function availabilityRisk(entry, injuryOverride) {
   if (!entry) return null;
   if (entry.on_bye) return { reason: "BYE", severity: "bye" };
-  const status = entry.injury_status;
+  // `injuryOverride` is ESPN's live status from the live-scores loop; it
+  // beats the once-a-day nflverse `injury_status` (which is ~a day stale).
+  // An override of "ACTIVE" clears the risk.
+  const status = injuryOverride ?? entry.injury_status;
   if (status === "OUT" || status === "IR") return { reason: status, severity: "out" };
   if (status === "QUESTIONABLE" || status === "DOUBTFUL") return { reason: status, severity: "risk" };
   return null;
@@ -21,18 +24,35 @@ export function availabilityRisk(entry) {
  * bye. Questionable/Doubtful are deliberately excluded -- those are
  * genuinely uncertain, so their full average projection stays the fair
  * expected value and the pill communicates the risk. */
-export function isExpectedOut(entry) {
-  const risk = availabilityRisk(entry);
+export function isExpectedOut(entry, injuryOverride) {
+  const risk = availabilityRisk(entry, injuryOverride);
   return !!risk && risk.severity !== "risk";
+}
+
+/** "not_started" | "in_progress" | "final" for one player's game. A rostered
+ * player's own live entry wins; otherwise the team's game state (live.json's
+ * `teams`), which also covers free agents. Defaults to not_started. */
+export function gameStatusOf(playerId, entry, live) {
+  const own = live?.players?.[playerId];
+  if (own) return own.status;
+  return live?.teams?.[entry?.team]?.status ?? "not_started";
+}
+
+/** The availability concern that's still ACTIONABLE, or null. Once a player's
+ * game has started or finished, the pre-game injury tag is stale -- the real
+ * result (Final / live clock) replaces it. Uses live ESPN injury overrides. */
+export function currentRisk(playerId, entry, live) {
+  if (gameStatusOf(playerId, entry, live) !== "not_started") return null;
+  return availabilityRisk(entry, live?.injuries?.[playerId]);
 }
 
 /** Starters (never bench/IR -- those are already benched by choice) whose
  * player might not play. `roster` is slotId -> playerId. */
-export function getAtRiskSlots(roster, projections) {
+export function getAtRiskSlots(roster, projections, live = null) {
   const flagged = [];
   for (const slotId of STARTER_SLOT_IDS) {
     const playerId = roster[slotId];
-    const risk = availabilityRisk(projections[playerId]);
+    const risk = playerId ? currentRisk(playerId, projections[playerId], live) : null;
     if (playerId && risk) {
       const slot = ROSTER_SLOTS.find((s) => s.id === slotId);
       flagged.push({ slotId, slot, playerId, ...risk });
@@ -52,10 +72,11 @@ export function getAtRiskSlots(roster, projections) {
  * `ownership` is unknown (no ESPN sync), free agents are skipped entirely
  * rather than guessed at, and `freeAgentsAvailable` says so.
  *
- * Anyone OUT / IR / on a bye is excluded -- recommending another player
+ * Anyone whose game has already started or finished is excluded, as is
+ * anyone OUT / IR / on a bye (using ESPN's live injury status when known) -- recommending another player
  * who can't play defeats the purpose. Questionable/doubtful candidates stay
  * (carrying `risk`, so the UI can tag them). */
-export function getReplacementCandidates(slot, roster, projections, ownership, scoringValues, limit = 5) {
+export function getReplacementCandidates(slot, roster, projections, ownership, scoringValues, limit = 5, live = null) {
   const eligible = new Set(slot.eligible);
   const atRiskId = roster[slot.id];
   const seen = new Set([atRiskId]);
@@ -65,7 +86,10 @@ export function getReplacementCandidates(slot, roster, projections, ownership, s
     if (!playerId || seen.has(playerId)) return;
     const entry = projections[playerId];
     if (!entry || !eligible.has(entry.position)) return;
-    const risk = availabilityRisk(entry);
+    // A game that's started or finished can't be used: the player is locked
+    // (or done), so recommending him on his pre-game projection is wrong.
+    if (gameStatusOf(playerId, entry, live) !== "not_started") return;
+    const risk = availabilityRisk(entry, live?.injuries?.[playerId]);
     if (risk && risk.severity !== "risk") return;
     seen.add(playerId);
     pool.push({

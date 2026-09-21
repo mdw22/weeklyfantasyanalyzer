@@ -692,6 +692,10 @@ svg {
   gap: 6px;
 }
 
+.slot-pts--real {
+  color: var(--text-primary);
+}
+
 .slot.empty {
   border-bottom-style: dashed;
 }

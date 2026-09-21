@@ -50,7 +50,7 @@ from pathlib import Path
 import requests
 
 from generate_projections import POINTS_ALLOWED_TIERS, YARDS_ALLOWED_TIERS, tier_bonus_value
-from sync_espn import ESPN_PRO_TEAM_ABBR, build_espn_to_gsis_map, resolve_def_team_id
+from sync_espn import ESPN_PRO_TEAM_ABBR, build_espn_to_gsis_map, resolve_def_team_id, resolve_entry_id
 
 DATA_DIR = Path("public/data")
 
@@ -132,6 +132,71 @@ def fetch_scoreboard(season, week):
     )
     resp.raise_for_status()
     return resp.json()
+
+
+# ESPN's player.injuryStatus -> our vocabulary. Field name and these values
+# confirmed against ESPN's real public player pool (ACTIVE / QUESTIONABLE /
+# DOUBTFUL / OUT / INJURY_RESERVE / DAY_TO_DAY / null). DAY_TO_DAY is ESPN's
+# unofficial "might miss time" tag, treated as Questionable.
+ESPN_INJURY_MAP = {
+    "ACTIVE": "ACTIVE",
+    "QUESTIONABLE": "QUESTIONABLE",
+    "DOUBTFUL": "DOUBTFUL",
+    "OUT": "OUT",
+    "INJURY_RESERVE": "IR",
+    "DAY_TO_DAY": "QUESTIONABLE",
+}
+POOL_LIMIT = 300  # deep enough to reach waiver-wire names (checked: down to WR ~100)
+
+
+def fetch_player_pool(season, limit=POOL_LIMIT):
+    """ESPN's PUBLIC player pool (no login) -- the same endpoint the prior
+    project used. Carries a live-updated `player.injuryStatus` for every
+    player, free agents included, unlike the once-a-day nflverse report
+    (nflverse's injuries file was measured updating ~once daily)."""
+    resp = requests.get(
+        f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/segments/0/leaguedefaults/3",
+        params={"view": "kona_player_info"},
+        headers={"x-fantasy-filter": json.dumps(
+            {"players": {"limit": limit, "sortDraftRanks": {"sortPriority": 100, "sortAsc": True, "value": "PPR"}}}
+        )},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    return resp.json().get("players", [])
+
+
+def injury_overrides(pool, box_entries, espn_to_gsis, projections) -> dict:
+    """{our id: status} where ESPN's LIVE status differs from the daily
+    projections.json one, so the frontend can prefer it. Boxscore entries
+    (league rosters) win over the pool when both carry a status.
+
+    One safety rule: ESPN saying ACTIVE never clears an official OUT/IR --
+    it can only clear Questionable/Doubtful. A false "healthy" on an
+    out player would recommend someone who can't play; a lagging "out" just
+    costs an opportunity."""
+    raw = {}
+    for entry in pool:
+        player = entry.get("player", {})
+        our_id = espn_to_gsis.get(str(entry.get("id")))
+        if our_id and player.get("injuryStatus"):
+            raw[our_id] = player["injuryStatus"]
+    for entry in box_entries:
+        player = entry.get("playerPoolEntry", {}).get("player", {})
+        our_id, _, espn_id = resolve_entry_id(entry, espn_to_gsis)
+        if our_id and not our_id.startswith("DEF_") and player.get("injuryStatus"):
+            raw[our_id] = player["injuryStatus"]
+
+    overrides = {}
+    for our_id, espn_status in raw.items():
+        mapped = ESPN_INJURY_MAP.get(espn_status)
+        if mapped is None or our_id not in projections:
+            continue
+        baseline = projections[our_id].get("injury_status", "ACTIVE")
+        if mapped == baseline or (mapped == "ACTIVE" and baseline in ("OUT", "IR")):
+            continue
+        overrides[our_id] = mapped
+    return overrides
 
 
 # ----------------------------------------------------------------- parsing
@@ -327,22 +392,25 @@ def print_debug(entries, rows, roster_key):
 
 # -------------------------------------------------------------------- main
 
-def write_if_changed(week_dir: Path, players: dict) -> bool:
+def write_if_changed(week_dir: Path, payload: dict) -> bool:
+    """Rewrites live.json only when its content (players, teams, injuries)
+    actually changed, so identical ticks make no commit."""
     path = week_dir / "live.json"
     if path.exists():
         try:
-            if json.loads(path.read_text()).get("players") == players:
+            existing = json.loads(path.read_text())
+            if all(existing.get(k) == payload[k] for k in payload):
                 return False
         except ValueError:
             pass
     week_dir.mkdir(parents=True, exist_ok=True)
-    payload = {"updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"), "players": players}
-    path.write_text(json.dumps(payload, indent=2))
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    path.write_text(json.dumps({"updatedAt": stamp, **payload}, indent=2))
     return True
 
 
 def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=build_espn_to_gsis_map,
-        now=None) -> tuple:
+        now=None, fetch_pool=fetch_player_pool) -> tuple:
     """(summary message, keep_going). keep_going is True whenever activity is
     unknown (scoreboard/ESPN trouble) -- the loop's own time cap bounds it."""
     now = now or datetime.now(timezone.utc)
@@ -365,11 +433,34 @@ def run(env, fetch_box=fetch_boxscore, fetch_board=fetch_scoreboard, crosswalk=b
         scoreboard_status = {}
 
     rows = [] if debug else None
-    players = build_live_players(entries, week, scoreboard_status, crosswalk(), rows)
+    espn_to_gsis = crosswalk()
+    players = build_live_players(entries, week, scoreboard_status, espn_to_gsis, rows)
+
+    week_dir = DATA_DIR / f"week_{week:02d}"
+    proj_path, live_path = week_dir / "projections.json", week_dir / "live.json"
+    projections = json.loads(proj_path.read_text()) if proj_path.exists() else {}
+    try:
+        injuries = injury_overrides(fetch_pool(season), entries, espn_to_gsis, projections)
+    except Exception as exc:  # noqa: BLE001 -- carry the last good overrides forward
+        print(f"WARNING: ESPN player pool unavailable ({exc!r}); keeping previous injury overrides")
+        injuries = {}
+        if live_path.exists():
+            try:
+                injuries = json.loads(live_path.read_text()).get("injuries", {})
+            except ValueError:
+                pass
+
     if debug:
         print_debug(entries, rows, roster_key)
+        print(f"[debug] {len(injuries)} injury overrides vs the daily nflverse status:")
+        for our_id, status in list(injuries.items())[:20]:
+            was = projections.get(our_id, {}).get("injury_status", "ACTIVE")
+            print(f"  {projections.get(our_id, {}).get('player_name', our_id):<24} {was} -> {status}")
 
-    changed = write_if_changed(DATA_DIR / f"week_{week:02d}", players)
+    # `teams` lets the frontend tell whether ANY player's game (free agents
+    # included, who have no per-player entry) has started or finished.
+    payload = {"players": players, "teams": scoreboard_status, "injuries": injuries}
+    changed = write_if_changed(week_dir, payload)
     started = sum(1 for p in players.values() if p["status"] != "not_started")
     going = True if activity is None else keep_going(activity)
     detail = "scoreboard unavailable" if activity is None else (
