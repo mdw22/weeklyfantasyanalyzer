@@ -729,6 +729,11 @@ svg {
   color: var(--text-primary);
 }
 
+.slot-icon-btn--active {
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+}
+
 .slot-icon-btn--add {
   color: var(--blue);
   border-color: var(--blue);
@@ -844,6 +849,13 @@ svg {
 
 .advisor-panel__toggle:hover {
   color: var(--text-primary);
+}
+
+.advisor-panel__reference {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .advisor-candidate {

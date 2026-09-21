@@ -3,8 +3,8 @@ import { useApp } from "../lib/AppContext.jsx";
 import { resolvePlayerPoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { PlayerPicker } from "./PlayerPicker.jsx";
-import { PlusIcon, SwapIcon } from "./icons.jsx";
-import { currentRisk, getAtRiskSlots } from "../lib/lineupAdvisor.js";
+import { CompareIcon, PlusIcon, SwapIcon } from "./icons.jsx";
+import { currentRisk, gameStatusOf, getAtRiskSlots } from "../lib/lineupAdvisor.js";
 import { LiveTag } from "./LiveTag.jsx";
 import { AdvisorBanner, ReplacementPanel, RiskPill } from "./LineupAdvisor.jsx";
 
@@ -12,7 +12,22 @@ const STARTER_SLOTS = ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)
 const BENCH_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("BN"));
 const IR_SLOTS = ROSTER_SLOTS.filter((s) => s.id.startsWith("IR"));
 
-function SlotRow({ slot, player, points, status, clock, edited, risk, onPick, onClear }) {
+function CompareButton({ compare }) {
+  if (!compare) return null;
+  return (
+    <button
+      className={`slot-icon-btn${compare.expanded ? " slot-icon-btn--active" : ""}`}
+      aria-label="Compare replacements"
+      aria-expanded={compare.expanded}
+      title="Compare replacements"
+      onClick={compare.onToggle}
+    >
+      <CompareIcon />
+    </button>
+  );
+}
+
+function SlotRow({ slot, player, points, status, clock, edited, risk, compare, onPick, onClear }) {
   if (!player) {
     return (
       <div className="slot empty">
@@ -20,6 +35,7 @@ function SlotRow({ slot, player, points, status, clock, edited, risk, onPick, on
         <span className="slot-name">Empty</span>
         <span />
         <div className="slot-actions">
+          <CompareButton compare={compare} />
           <button className="slot-icon-btn slot-icon-btn--add" aria-label="Add player" onClick={onPick}>
             <PlusIcon />
           </button>
@@ -39,6 +55,7 @@ function SlotRow({ slot, player, points, status, clock, edited, risk, onPick, on
       </span>
       <span className={`slot-pts mono${status !== "not_started" ? " slot-pts--real" : ""}`}>{points.toFixed(1)}</span>
       <div className="slot-actions">
+        <CompareButton compare={compare} />
         <button className="slot-icon-btn" aria-label="Swap player" onClick={onPick}>
           <SwapIcon />
         </button>
@@ -50,7 +67,7 @@ function SlotRow({ slot, player, points, status, clock, edited, risk, onPick, on
   );
 }
 
-function RosterSection({ title, slots, roster, projections, scoringValues, live, isEdited, riskFor, panelFor, onPick, onClear }) {
+function RosterSection({ title, slots, roster, projections, scoringValues, live, isEdited, riskFor, panelFor, compareFor, onPick, onClear }) {
   return (
     <div className="card roster-section">
       <div className="section-header">{title}</div>
@@ -70,6 +87,7 @@ function RosterSection({ title, slots, roster, projections, scoringValues, live,
               clock={resolved?.clock ?? null}
               edited={isEdited(slot.id)}
               risk={riskFor(playerId, player)}
+              compare={compareFor(slot)}
               onPick={() => onPick(slot)}
               onClear={() => onClear(slot.id)}
             />
@@ -165,8 +183,24 @@ export function TeamBuilder({ initialTeam = "mine" }) {
   // Availability pills show on every row (informational). Only starters get
   // the banner / replacements panel -- bench and IR aren't playing anyway.
   const riskFor = (playerId, player) => (player ? currentRisk(playerId, player, live) : null);
-  const panelFor = (slot) =>
-    atRiskSlotIds.has(slot.id) ? (
+  // Any of MY starters can be compared on demand (a healthy starter may just
+  // be outprojected by the bench). Flagged slots keep an always-visible
+  // toggle row; healthy ones show a panel only once opened, via the small
+  // compare button in the row, so nine collapsed rows don't clutter the card.
+  const togglePanel = (slotId) => setExpandedPanels((prev) => ({ ...prev, [slotId]: !prev[slotId] }));
+  const canCompare = (slot) => team === "mine" && STARTER_SLOT_IDS.includes(slot.id);
+  const compareFor = (slot) =>
+    canCompare(slot) ? { expanded: !!expandedPanels[slot.id], onToggle: () => togglePanel(slot.id) } : null;
+  const panelFor = (slot) => {
+    if (!canCompare(slot)) return null;
+    const flagged = atRiskSlotIds.has(slot.id);
+    const expanded = !!expandedPanels[slot.id];
+    if (!flagged && !expanded) return null;
+    const playerId = roster[slot.id];
+    // Once the starter's own game has begun the slot is locked: comparing is
+    // still fine, but it's not advice to act on.
+    const pastKickoff = playerId ? gameStatusOf(playerId, projections[playerId], live) !== "not_started" : false;
+    return (
       <ReplacementPanel
         slot={slot}
         roster={roster}
@@ -174,10 +208,13 @@ export function TeamBuilder({ initialTeam = "mine" }) {
         ownership={ownership}
         scoringValues={scoringSettings.values}
         live={live}
-        expanded={!!expandedPanels[slot.id]}
-        onToggle={() => setExpandedPanels((prev) => ({ ...prev, [slot.id]: !prev[slot.id] }))}
+        flagged={flagged}
+        pastKickoff={pastKickoff}
+        expanded={expanded}
+        onToggle={() => togglePanel(slot.id)}
       />
-    ) : null;
+    );
+  };
   const noPanel = () => null;
 
   const syncDateLabel = isSynced ? formatSyncDate(syncedAt) : null;
@@ -202,9 +239,9 @@ export function TeamBuilder({ initialTeam = "mine" }) {
 
       <AdvisorBanner atRisk={atRisk} projections={projections} onShow={showReplacements} />
 
-      <RosterSection title="STARTERS" slots={STARTER_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={panelFor} />
-      <RosterSection title="BENCH (7)" slots={BENCH_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} />
-      <RosterSection title="IR (1)" slots={IR_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} />
+      <RosterSection title="STARTERS" slots={STARTER_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={panelFor} compareFor={compareFor} />
+      <RosterSection title="BENCH (7)" slots={BENCH_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} compareFor={noPanel} />
+      <RosterSection title="IR (1)" slots={IR_SLOTS} {...sectionProps} riskFor={riskFor} panelFor={noPanel} compareFor={noPanel} />
 
       {pickingSlot && (
         <PlayerPicker

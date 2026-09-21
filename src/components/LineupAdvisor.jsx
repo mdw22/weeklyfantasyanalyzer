@@ -44,16 +44,23 @@ export function AdvisorBanner({ atRisk, projections, onShow }) {
   );
 }
 
-/** Collapsible "Suggested replacements" list under one flagged slot. Read-only:
- * the advisor recommends, it never changes the roster or touches ESPN. */
-export function ReplacementPanel({ slot, roster, projections, ownership, scoringValues, live, expanded, onToggle }) {
+/** Collapsible replacements list under a starter slot. Read-only: it
+ * recommends, it never changes the roster or touches ESPN.
+ *
+ * `flagged` slots (the advisor thinks the starter may not play) read
+ * "Suggested replacements". A healthy slot the user opened on demand reads
+ * "Compare replacements" -- same ranking, just no implied warning.
+ * `pastKickoff` means the starter's own game is underway or over: the slot is
+ * locked, so this is a retrospective comparison, not advice to act on. */
+export function ReplacementPanel({ slot, roster, projections, ownership, scoringValues, live, expanded, onToggle, flagged = true, pastKickoff = false }) {
   const result = expanded
     ? getReplacementCandidates(slot, roster, projections, ownership, scoringValues, 5, live)
     : null;
   return (
     <div className="advisor-panel">
       <button className="advisor-panel__toggle" aria-expanded={expanded} onClick={onToggle}>
-        Suggested replacements
+        {flagged ? "Suggested replacements" : "Compare replacements"}
+        {pastKickoff && <span className="advisor-panel__reference">· past kickoff, for reference only</span>}
         {expanded ? <ChevronUpIcon /> : <ChevronDownIcon />}
       </button>
       {expanded && (
