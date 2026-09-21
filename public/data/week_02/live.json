@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T03:52:29Z",
+  "updatedAt": "2026-09-21T04:05:21Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -66,8 +66,7 @@
       }
     },
     "00-0038997": {
-      "status": "in_progress",
-      "clock": "OT 0:42",
+      "status": "final",
       "stats": {
         "receiving_yards": 72.0,
         "receptions": 7.0
@@ -152,8 +151,7 @@
       }
     },
     "00-0033873": {
-      "status": "in_progress",
-      "clock": "OT 0:42",
+      "status": "final",
       "stats": {
         "passing_yards": 382.0,
         "passing_tds": 3.0,
@@ -192,8 +190,7 @@
       }
     },
     "00-0030279": {
-      "status": "in_progress",
-      "clock": "OT 0:42",
+      "status": "final",
       "stats": {
         "receiving_yards": 5.0,
         "receptions": 1.0
