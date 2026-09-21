@@ -1,0 +1,219 @@
+{
+  "updatedAt": "2026-09-21T00:03:59Z",
+  "players": {
+    "00-0037248": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 135.0,
+        "rushing_tds": 1.0,
+        "receiving_yards": 4.0,
+        "receptions": 1.0
+      }
+    },
+    "00-0037238": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": -2.0,
+        "receiving_yards": 51.0,
+        "receptions": 4.0
+      }
+    },
+    "00-0040124": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 101.0,
+        "receptions": 5.0
+      }
+    },
+    "00-0040719": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 65.0,
+        "rushing_tds": 1.0,
+        "receiving_yards": -3.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0039919": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 43.0,
+        "receptions": 3.0
+      }
+    },
+    "00-0038606": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 98.0,
+        "receptions": 7.0
+      }
+    },
+    "00-0038041": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 43.0,
+        "receiving_tds": 2.0,
+        "receptions": 4.0
+      }
+    },
+    "00-0037834": {
+      "status": "final",
+      "stats": {
+        "passing_yards": 287.0,
+        "passing_tds": 2.0,
+        "rushing_yards": 30.0,
+        "rushing_tds": 1.0
+      }
+    },
+    "00-0038997": {
+      "status": "not_started"
+    },
+    "00-0039738": {
+      "status": "not_started"
+    },
+    "00-0037746": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 51.0,
+        "receiving_yards": 16.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0038935": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 17.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0039409": {
+      "status": "final",
+      "stats": {
+        "fg_made_40_49": 1.0,
+        "fg_made_0_39": 1.0,
+        "fg_missed_total": 1.0,
+        "pat_made": 1.0
+      }
+    },
+    "00-0037291": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 9.0,
+        "receptions": 1.0
+      }
+    },
+    "DEF_LAC": {
+      "status": "final",
+      "stats": {
+        "def_interceptions": 1.0,
+        "def_sacks": 2.0,
+        "def_points_allowed_bonus": 0,
+        "def_yards_allowed_bonus": 0
+      }
+    },
+    "00-0041044": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 14.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0039075": {
+      "status": "not_started"
+    },
+    "00-0037840": {
+      "status": "not_started"
+    },
+    "00-0039064": {
+      "status": "final",
+      "stats": {}
+    },
+    "00-0040715": {
+      "status": "not_started"
+    },
+    "00-0035261": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 64.0,
+        "receiving_yards": 1.0,
+        "receptions": 1.0
+      }
+    },
+    "00-0037261": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 38.0,
+        "receptions": 3.0
+      }
+    },
+    "00-0033873": {
+      "status": "not_started"
+    },
+    "00-0040236": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 47.0,
+        "receiving_yards": 11.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0037816": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 96.0,
+        "receptions": 3.0
+      }
+    },
+    "00-0036040": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 66.0,
+        "receptions": 4.0
+      }
+    },
+    "00-0035358": {
+      "status": "final",
+      "stats": {
+        "fg_made_50_plus": 1.0,
+        "fg_made_40_49": 1.0,
+        "fg_made_0_39": 2.0,
+        "pat_made": 1.0
+      }
+    },
+    "00-0030279": {
+      "status": "not_started"
+    },
+    "00-0039065": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 52.0,
+        "receiving_tds": 1.0,
+        "receptions": 6.0
+      }
+    },
+    "00-0041052": {
+      "status": "final",
+      "stats": {
+        "rushing_yards": 25.0
+      }
+    },
+    "DEF_SF": {
+      "status": "final",
+      "stats": {
+        "def_sacks": 4.0,
+        "def_points_allowed_bonus": 3,
+        "def_yards_allowed_bonus": 2
+      }
+    },
+    "00-0033307": {
+      "status": "final",
+      "stats": {
+        "receiving_yards": 11.0,
+        "receptions": 2.0
+      }
+    },
+    "00-0041042": {
+      "status": "not_started"
+    }
+  }
+}
