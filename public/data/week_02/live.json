@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T05:34:25Z",
+  "updatedAt": "2026-09-21T18:26:59Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -341,7 +341,7 @@
     "00-0036252": "OUT",
     "00-0035700": "QUESTIONABLE",
     "00-0039344": "QUESTIONABLE",
-    "00-0039918": "QUESTIONABLE",
+    "00-0039918": "DOUBTFUL",
     "00-0036139": "QUESTIONABLE",
     "00-0037664": "QUESTIONABLE",
     "00-0036158": "QUESTIONABLE",
@@ -356,7 +356,6 @@
     "00-0039874": "QUESTIONABLE",
     "00-0035537": "OUT",
     "00-0037666": "OUT",
-    "00-0038551": "OUT",
     "00-0040179": "OUT",
     "00-0033885": "QUESTIONABLE",
     "00-0036212": "OUT"
