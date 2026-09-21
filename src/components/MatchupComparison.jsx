@@ -5,14 +5,16 @@ import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
 import { ScoringBadge } from "./ScoringBadge.jsx";
+import { availabilityRisk } from "../lib/lineupAdvisor.js";
+import { RiskPill } from "./LineupAdvisor.jsx";
 
 function rosterRows(roster, projections, scoringValues, livePlayers) {
   return ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)).map((slot) => {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
-    if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null };
+    if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null };
     const { points, status, clock } = resolvePlayerPoints(player, livePlayers[playerId], scoringValues);
-    return { slot, playerId, player, points, status, clock };
+    return { slot, playerId, player, points, status, clock, risk: availabilityRisk(player) };
   });
 }
 
@@ -141,6 +143,7 @@ export function MatchupComparison({ onEditTeam }) {
               </span>
               <span className="roster-row__score">
                 {r.player && <LiveTag status={r.status} clock={r.clock} />}
+                {r.player && r.status === "not_started" && <RiskPill risk={r.risk} />}
                 <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
                   {r.player ? r.points.toFixed(1) : "—"}
                 </span>
@@ -166,6 +169,7 @@ export function MatchupComparison({ onEditTeam }) {
               </span>
               <span className="roster-row__score">
                 {r.player && <LiveTag status={r.status} clock={r.clock} />}
+                {r.player && r.status === "not_started" && <RiskPill risk={r.risk} />}
                 <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
                   {r.player ? r.points.toFixed(1) : "—"}
                 </span>

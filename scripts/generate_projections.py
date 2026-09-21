@@ -320,6 +320,86 @@ def add_k_stat_columns(kickers: pl.DataFrame) -> pl.DataFrame:
     )
 
 
+def _injury_status(report_status) -> str | None:
+    text = (report_status or "").strip().lower()
+    for prefix, status in (("out", "OUT"), ("doubtful", "DOUBTFUL"), ("questionable", "QUESTIONABLE")):
+        if text.startswith(prefix):
+            return status
+    return None
+
+
+def load_availability(season: int, week: int) -> tuple[dict, set, set]:
+    """(injury status by gsis_id, active-roster ids, IR/reserve ids) from
+    nflreadpy -- public, keyed by the same gsis_id as everything else here.
+
+    Verified against real 2026 data: load_injuries has one row per player
+    per week, `report_status` is Questionable/Doubtful/Out/None (None =
+    only practice participation, treated as healthy), and Puka Nacua
+    (Questionable) / Zay Flowers (Doubtful) show up correctly.
+
+    - Injuries: CURRENT week only. Last week's game designations must not
+      carry over -- and before the new week's report is published there are
+      simply no rows, meaning everyone reads as healthy, not stale.
+    - IR: `status == "RES"` in weekly rosters (load_injuries stops emitting
+      rows once someone is on IR -- see CLAUDE.md). Uses the latest weekly
+      roster at or before the current week, since IR stays IR for weeks.
+    - Active: `status == "ACT"` (the ~1,700 players on real 53-man
+      rosters). Needed because projections.json holds anyone with stats in
+      the last 3 seasons -- 343 QB/RB/WR/TE in it aren't on an active roster
+      (retired, cut, practice squad, IR) and several project well, so
+      without this they'd surface as the best "free agents".
+    Any failure returns empty sets: the advisor then simply has less to
+    say, and the rest of the pipeline is unaffected.
+    """
+    injuries, active, reserve = {}, set(), set()
+    try:
+        inj = nfl.load_injuries(seasons=[season]).filter(pl.col("week") == week)
+        for row in inj.iter_rows(named=True):
+            status = _injury_status(row.get("report_status"))
+            if status and row.get("gsis_id"):
+                injuries[row["gsis_id"]] = status
+    except Exception as exc:  # noqa: BLE001 -- availability is best-effort
+        print(f"WARNING: injury report unavailable ({exc!r}); everyone reads as healthy")
+    try:
+        rosters = nfl.load_rosters_weekly(seasons=[season]).filter(pl.col("week") <= week)
+        if rosters.height:
+            latest = rosters.filter(pl.col("week") == rosters["week"].max())
+            for row in latest.select("gsis_id", "status").iter_rows(named=True):
+                if not row["gsis_id"]:
+                    continue
+                if row["status"] == "ACT":
+                    active.add(row["gsis_id"])
+                elif row["status"] == "RES":
+                    reserve.add(row["gsis_id"])
+    except Exception as exc:  # noqa: BLE001
+        print(f"WARNING: weekly rosters unavailable ({exc!r}); no active/IR flags written")
+    return injuries, active, reserve
+
+
+def apply_availability(projections: dict, schedules: pl.DataFrame, season: int, week: int,
+                       injuries: dict, active: set, reserve: set) -> None:
+    """Adds lineup-advisor fields IN PLACE, omitting defaults to keep the
+    file small (a missing field means the default):
+      injury_status: QUESTIONABLE | DOUBTFUL | OUT | IR   (default ACTIVE)
+      on_bye:        true when the player's team has no game this week
+      active:        true when on a real active NFL roster (defenses always)
+    """
+    all_teams = set(schedules["home_team"].to_list()) | set(schedules["away_team"].to_list())
+    this_week = schedules.filter((pl.col("season") == season) & (pl.col("week") == week))
+    playing = set(this_week["home_team"].to_list()) | set(this_week["away_team"].to_list())
+
+    for pid, entry in projections.items():
+        if entry["position"] == "DEF" or pid in active:
+            entry["active"] = True
+        status = "IR" if pid in reserve else injuries.get(pid)
+        if status:
+            entry["injury_status"] = status
+        # `playing` empty means the schedule had nothing for this week
+        # (e.g. offseason) -- don't mark the whole league as on a bye.
+        if playing and entry.get("team") in all_teams and entry["team"] not in playing:
+            entry["on_bye"] = True
+
+
 def main() -> None:
     season = current_season()
     schedules = nfl.load_schedules(seasons=season)
@@ -348,6 +428,9 @@ def main() -> None:
 
     projections.update(def_projections)
     history.update(def_history)
+
+    injuries, active, reserve = load_availability(season, week)
+    apply_availability(projections, schedules, season, week, injuries, active, reserve)
 
     out_dir = DATA_DIR / f"week_{week:02d}"
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -207,6 +207,21 @@ def find_opponent_team_id(league_json, my_team_id, week):
     return None
 
 
+def resolve_entry_id(entry, espn_to_gsis):
+    """(our id or None, display name, espn player id) for one roster entry.
+
+    Team defenses are recognized from the PLAYER (defaultPositionId 16 /
+    a negative espn id), not from the lineup slot: a D/ST on the bench or
+    IR has slot category BENCH/IR, and going by slot would send it down the
+    individual-player crosswalk, where it can never match."""
+    player = entry.get("playerPoolEntry", {}).get("player", {})
+    name = player.get("fullName", "?")
+    espn_player_id = str(entry.get("playerId"))
+    is_def = player.get("defaultPositionId") == 16 or espn_player_id.startswith("-")
+    our_id = resolve_def_team_id(espn_player_id) if is_def else espn_to_gsis.get(espn_player_id)
+    return our_id, name, espn_player_id
+
+
 def extract_roster(team_json, espn_to_gsis):
     """Translates one ESPN team's roster into our {slot, playerId} shape.
     Unmatched players are logged and skipped -- loud, not silent, per the
@@ -217,30 +232,17 @@ def extract_roster(team_json, espn_to_gsis):
     for entry in entries:
         raw_slot = entry.get("lineupSlotId")
         category = ESPN_SLOT_CATEGORY.get(raw_slot)
-        player = entry.get("playerPoolEntry", {}).get("player", {})
-        name = player.get("fullName", "?")
-        espn_player_id = str(entry.get("playerId"))
+        our_id, name, espn_player_id = resolve_entry_id(entry, espn_to_gsis)
 
         if category is None:
             print(f"WARNING: unknown ESPN lineupSlotId {raw_slot} for {name} -- skipping")
             continue
-
-        if category == "DEF":
-            our_id = resolve_def_team_id(espn_player_id)
-            if our_id is None:
-                print(
-                    f"WARNING: couldn't resolve team defense {name} "
-                    f"(espn_id={espn_player_id}) to a known proTeamId -- skipping"
-                )
-                continue
-        else:
-            our_id = espn_to_gsis.get(espn_player_id)
-            if our_id is None:
-                print(
-                    f"WARNING: no nflverse player_id match for ESPN player "
-                    f"{name} (espn_id={espn_player_id}) -- skipping"
-                )
-                continue
+        if our_id is None:
+            print(
+                f"WARNING: couldn't match ESPN player {name} "
+                f"(espn_id={espn_player_id}) to an nflverse/defense id -- skipping"
+            )
+            continue
 
         by_category[category].append(our_id)
 
@@ -256,6 +258,32 @@ def extract_roster(team_json, espn_to_gsis):
             roster_out.append({"slot": slot_id, "playerId": resolved_id})
 
     return roster_out
+
+
+def extract_ownership(teams, espn_to_gsis):
+    """{our id: {"owned": True, "espnTeamId": n}} for every player on ANY
+    of the league's teams (bench and IR included) -- everyone absent from
+    this map is a free agent, which is what the Lineup Advisor recommends
+    from. The sync response already carries every team's roster, so this
+    costs no extra ESPN request.
+
+    A rostered player we fail to match would wrongly read as a free agent
+    (and could be recommended), so unmatched ones are logged by name."""
+    owned, unmatched = {}, []
+    for team_id, team_json in teams.items():
+        for entry in team_json.get("roster", {}).get("entries", []):
+            our_id, name, _ = resolve_entry_id(entry, espn_to_gsis)
+            if our_id is None:
+                unmatched.append(f"{name} (team {team_id})")
+            else:
+                owned[our_id] = {"owned": True, "espnTeamId": team_id}
+    if unmatched:
+        shown = ", ".join(unmatched[:10]) + (" ..." if len(unmatched) > 10 else "")
+        print(
+            f"WARNING: {len(unmatched)} rostered player(s) unmatched for ownership "
+            f"-- they'll wrongly look like free agents: {shown}"
+        )
+    return owned
 
 
 def main():
@@ -305,6 +333,7 @@ def main():
             "syncedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
             "myTeam": {"espnTeamId": my_team_id, "roster": my_roster},
             "opponent": {"espnTeamId": opponent_team_id, "roster": opponent_roster},
+            "ownership": extract_ownership(teams, espn_to_gsis),
         }
 
         out_dir = DATA_DIR / f"week_{week:02d}"
@@ -321,7 +350,8 @@ def main():
 
         print(
             f"Synced ESPN rosters for week {week}: {len(my_roster)} of my players, "
-            f"{len(opponent_roster)} opponent players -> {out_dir}/espn-sync.json"
+            f"{len(opponent_roster)} opponent players, "
+            f"{len(out['ownership'])} rostered league-wide -> {out_dir}/espn-sync.json"
         )
 
     except Exception as exc:  # noqa: BLE001 -- soft-fail is the whole point, see docstring

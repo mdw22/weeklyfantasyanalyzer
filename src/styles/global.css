@@ -321,18 +321,44 @@ svg {
 
 /* ---------- Live status pill (green = real result, see --green) ---------- */
 
-.live-pill {
+.live-pill,
+.risk-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 2px 9px;
   border-radius: 999px;
-  background: var(--green-wash);
-  color: var(--green);
   font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.live-pill {
+  background: var(--green-wash);
+  color: var(--green);
+}
+
+/* Availability pills reuse the live pill's shape and placement so every
+ * "something is flagged about this player" reads as one visual language,
+ * differing only in color: amber = might not play, red = won't play. */
+.risk-pill--risk {
+  background: var(--amber-wash);
+  color: var(--amber);
+}
+
+.risk-pill--out {
+  background: var(--red-wash);
+  color: var(--red);
+}
+
+/* A bye is routine information, not a warning: plain muted text, no color. */
+.risk-bye {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
 }
 
 .live-dot {
@@ -703,6 +729,164 @@ svg {
   color: var(--blue);
   border-color: var(--blue);
   background: var(--blue-wash);
+}
+
+/* ---------- Lineup Advisor ---------- */
+
+.slot-name .risk-pill {
+  margin-left: 8px;
+  padding: 1px 8px;
+  font-size: 11px;
+}
+
+.advisor-banner {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.advisor-banner--risk {
+  background: var(--amber-wash);
+  border-color: var(--amber);
+}
+
+.advisor-banner--out {
+  background: var(--red-wash);
+  border-color: var(--red);
+}
+
+.advisor-banner--bye {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.advisor-banner__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.advisor-banner--risk .advisor-banner__title {
+  color: var(--amber);
+}
+
+.advisor-banner--out .advisor-banner__title {
+  color: var(--red);
+}
+
+.advisor-banner__list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.advisor-banner__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.advisor-banner__slot {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.advisor-link {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.advisor-link:hover {
+  color: var(--text-primary);
+}
+
+.advisor-panel {
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.025);
+  border-bottom: 1px solid var(--border);
+}
+
+.advisor-panel__toggle {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.advisor-panel__toggle:hover {
+  color: var(--text-primary);
+}
+
+.advisor-candidate {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid var(--gridline);
+  font-size: 13px;
+}
+
+.advisor-candidate__meta {
+  margin-left: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.advisor-candidate .risk-pill {
+  margin-left: 8px;
+  padding: 1px 8px;
+  font-size: 11px;
+}
+
+.advisor-source {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.advisor-candidate__pts {
+  min-width: 3.4em;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.advisor-panel__note {
+  padding: 8px 0 12px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-muted);
 }
 
 /* ---------- Player picker modal ---------- */

@@ -22,6 +22,16 @@
   --green: #2fb170;
   --green-wash: rgba(47, 177, 112, 0.16);
 
+  /* Availability warnings (Lineup Advisor). Amber = might not play
+     (Questionable/Doubtful), red = won't play (Out/IR). Separate from the
+     team colors and from --green. Red is a pinkish coral on purpose, so a
+     red "Out" pill on an opponent row can't be mistaken for --orange. Both
+     pass WCAG AA (4.5:1) as text on their 16% wash over the panel color. */
+  --amber: #e5a93a;
+  --amber-wash: rgba(229, 169, 58, 0.16);
+  --red: #f26d7b;
+  --red-wash: rgba(242, 109, 123, 0.16);
+
   --radius: 14px;
 
   --font-display: "Space Grotesk", system-ui, sans-serif;
