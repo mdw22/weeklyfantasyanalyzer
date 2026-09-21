@@ -16,6 +16,12 @@
   --orange: #d95926;
   --orange-wash: rgba(217, 89, 38, 0.12);
 
+  /* Status accent: "this is a real, completed/live result". Deliberately
+     neither blue (My Team) nor orange (Opponent) -- it's a status, not a
+     team identity, and must not be reused for either. */
+  --green: #2fb170;
+  --green-wash: rgba(47, 177, 112, 0.16);
+
   --radius: 14px;
 
   --font-display: "Space Grotesk", system-ui, sans-serif;

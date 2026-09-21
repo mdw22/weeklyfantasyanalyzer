@@ -15,14 +15,14 @@ function rosterRows(roster, projections, scoringValues, livePlayers) {
   });
 }
 
-/** Muted status next to a player's points: "Final", or a pulsing dot plus
- * the game clock while live. Nothing pre-kickoff -- that number is still a
- * projection, same as before. */
+/** Status pill beside a player's points: "Final", or a pulsing dot plus the
+ * game clock while live (both green). Nothing pre-kickoff -- that number is
+ * still a projection, shown dimmer instead (see .roster-row__pts). */
 function LiveTag({ status, clock }) {
-  if (status === "final") return <span className="live-tag">Final</span>;
+  if (status === "final") return <span className="live-pill">Final</span>;
   if (status === "in_progress") {
     return (
-      <span className="live-tag">
+      <span className="live-pill">
         <span className="live-dot" aria-hidden="true" />
         {clock}
       </span>
@@ -134,9 +134,13 @@ export function MatchupComparison({ onEditTeam }) {
               <span className={r.player ? "roster-row__name" : "roster-row--empty"}>
                 {r.player ? r.player.player_name : `Empty ${r.slot.label}`}
                 {r.player && <span className="roster-row__meta">{r.player.position} · {r.player.team}</span>}
-                {r.player && <LiveTag status={r.status} clock={r.clock} />}
               </span>
-              <span className="roster-row__pts">{r.player ? r.points.toFixed(1) : "—"}</span>
+              <span className="roster-row__score">
+                {r.player && <LiveTag status={r.status} clock={r.clock} />}
+                <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
+                  {r.player ? r.points.toFixed(1) : "—"}
+                </span>
+              </span>
             </div>
           ))}
         </div>
@@ -155,9 +159,13 @@ export function MatchupComparison({ onEditTeam }) {
               <span className={r.player ? "roster-row__name" : "roster-row--empty"}>
                 {r.player ? r.player.player_name : `Empty ${r.slot.label}`}
                 {r.player && <span className="roster-row__meta">{r.player.position} · {r.player.team}</span>}
-                {r.player && <LiveTag status={r.status} clock={r.clock} />}
               </span>
-              <span className="roster-row__pts">{r.player ? r.points.toFixed(1) : "—"}</span>
+              <span className="roster-row__score">
+                {r.player && <LiveTag status={r.status} clock={r.clock} />}
+                <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
+                  {r.player ? r.points.toFixed(1) : "—"}
+                </span>
+              </span>
             </div>
           ))}
         </div>

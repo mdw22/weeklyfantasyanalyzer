@@ -269,6 +269,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 8px 0;
   border-bottom: 1px solid var(--gridline);
   font-size: 13px;
@@ -280,6 +281,10 @@ svg {
 
 .roster-row__name {
   color: var(--text-primary);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .roster-row__meta {
@@ -288,9 +293,25 @@ svg {
   margin-left: 6px;
 }
 
+.roster-row__score {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+
+/* Dim = still a projection. Real (final / in-progress) numbers snap to full
+ * brightness at the same moment the status pill appears. */
 .roster-row__pts {
   font-family: var(--font-mono);
   color: var(--text-secondary);
+  min-width: 3.4em;
+  text-align: right;
+}
+
+.roster-row__pts--real {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .roster-row--empty {
@@ -298,23 +319,27 @@ svg {
   font-style: italic;
 }
 
-/* ---------- Live status tag (muted text only, no new color) ---------- */
+/* ---------- Live status pill (green = real result, see --green) ---------- */
 
-.live-tag {
+.live-pill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  margin-left: 8px;
+  gap: 6px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--green-wash);
+  color: var(--green);
   font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .live-dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: var(--text-secondary);
+  background: var(--green);
   animation: live-pulse 1.4s ease-in-out infinite;
 }
 
