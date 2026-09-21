@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T20:52:58Z",
+  "updatedAt": "2026-09-21T21:08:05Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -350,6 +350,7 @@
     "00-0039146": "QUESTIONABLE",
     "00-0039855": "ACTIVE",
     "00-0039165": "OUT",
+    "00-0037746": "QUESTIONABLE",
     "00-0041523": "QUESTIONABLE",
     "00-0034173": "ACTIVE",
     "00-0041052": "ACTIVE",
