@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T01:40:40Z",
+  "updatedAt": "2026-09-22T01:45:45Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -74,7 +74,7 @@
     },
     "00-0039738": {
       "status": "in_progress",
-      "clock": "Q2 0:25",
+      "clock": "Half",
       "stats": {
         "rushing_yards": 24.0
       }
@@ -128,12 +128,12 @@
     },
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 0:25",
+      "clock": "Half",
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 0:25",
+      "clock": "Half",
       "stats": {
         "rushing_yards": 25.0,
         "receiving_yards": 12.0,
@@ -148,7 +148,7 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q2 0:25",
+      "clock": "Half",
       "stats": {
         "rushing_yards": 18.0,
         "receiving_yards": 21.0,
@@ -247,7 +247,7 @@
     },
     "00-0041042": {
       "status": "in_progress",
-      "clock": "Q2 0:25",
+      "clock": "Half",
       "stats": {
         "receiving_yards": 14.0,
         "receptions": 1.0
@@ -257,11 +257,11 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 0:25"
+      "clock": "Half"
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q2 0:25"
+      "clock": "Half"
     },
     "BUF": {
       "status": "final"
