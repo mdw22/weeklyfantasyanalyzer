@@ -1,4 +1,258 @@
 {
-  "updatedAt": "2026-09-22T17:30:10Z",
-  "players": {}
+  "updatedAt": "2026-09-22T17:30:31Z",
+  "players": {
+    "00-0039075": {
+      "status": "not_started"
+    },
+    "00-0037840": {
+      "status": "not_started"
+    },
+    "00-0039064": {
+      "status": "not_started"
+    },
+    "00-0040715": {
+      "status": "not_started"
+    },
+    "00-0035261": {
+      "status": "not_started"
+    },
+    "00-0037261": {
+      "status": "not_started"
+    },
+    "00-0033873": {
+      "status": "not_started"
+    },
+    "00-0040236": {
+      "status": "not_started"
+    },
+    "00-0037816": {
+      "status": "not_started"
+    },
+    "00-0036040": {
+      "status": "not_started"
+    },
+    "00-0035358": {
+      "status": "not_started"
+    },
+    "00-0030279": {
+      "status": "not_started"
+    },
+    "00-0039065": {
+      "status": "not_started"
+    },
+    "00-0041052": {
+      "status": "not_started"
+    },
+    "DEF_SF": {
+      "status": "not_started"
+    },
+    "00-0041042": {
+      "status": "not_started"
+    },
+    "00-0034844": {
+      "status": "not_started"
+    },
+    "00-0039338": {
+      "status": "not_started"
+    },
+    "00-0040784": {
+      "status": "not_started"
+    },
+    "00-0036410": {
+      "status": "not_started"
+    },
+    "00-0040691": {
+      "status": "not_started"
+    },
+    "00-0034348": {
+      "status": "not_started"
+    },
+    "00-0031588": {
+      "status": "not_started"
+    },
+    "00-0039918": {
+      "status": "not_started"
+    },
+    "00-0035228": {
+      "status": "not_started"
+    },
+    "00-0032726": {
+      "status": "not_started"
+    },
+    "00-0039855": {
+      "status": "not_started"
+    },
+    "00-0040162": {
+      "status": "not_started"
+    },
+    "00-0031235": {
+      "status": "not_started"
+    },
+    "DEF_DET": {
+      "status": "not_started"
+    },
+    "00-0033885": {
+      "status": "not_started"
+    },
+    "00-0033908": {
+      "status": "not_started"
+    },
+    "00-0039066": {
+      "status": "not_started"
+    }
+  },
+  "teams": {
+    "GB": {
+      "status": "not_started"
+    },
+    "ATL": {
+      "status": "not_started"
+    },
+    "BUF": {
+      "status": "not_started"
+    },
+    "LAC": {
+      "status": "not_started"
+    },
+    "CLE": {
+      "status": "not_started"
+    },
+    "CAR": {
+      "status": "not_started"
+    },
+    "DET": {
+      "status": "not_started"
+    },
+    "NYJ": {
+      "status": "not_started"
+    },
+    "IND": {
+      "status": "not_started"
+    },
+    "HOU": {
+      "status": "not_started"
+    },
+    "MIA": {
+      "status": "not_started"
+    },
+    "KC": {
+      "status": "not_started"
+    },
+    "NYG": {
+      "status": "not_started"
+    },
+    "TEN": {
+      "status": "not_started"
+    },
+    "PIT": {
+      "status": "not_started"
+    },
+    "CIN": {
+      "status": "not_started"
+    },
+    "WAS": {
+      "status": "not_started"
+    },
+    "SEA": {
+      "status": "not_started"
+    },
+    "JAX": {
+      "status": "not_started"
+    },
+    "NE": {
+      "status": "not_started"
+    },
+    "SF": {
+      "status": "not_started"
+    },
+    "ARI": {
+      "status": "not_started"
+    },
+    "TB": {
+      "status": "not_started"
+    },
+    "MIN": {
+      "status": "not_started"
+    },
+    "DAL": {
+      "status": "not_started"
+    },
+    "BAL": {
+      "status": "not_started"
+    },
+    "NO": {
+      "status": "not_started"
+    },
+    "LV": {
+      "status": "not_started"
+    },
+    "DEN": {
+      "status": "not_started"
+    },
+    "LA": {
+      "status": "not_started"
+    },
+    "CHI": {
+      "status": "not_started"
+    },
+    "PHI": {
+      "status": "not_started"
+    }
+  },
+  "injuries": {
+    "00-0039075": "OUT",
+    "00-0034844": "QUESTIONABLE",
+    "00-0039338": "OUT",
+    "00-0036554": "OUT",
+    "00-0039337": "QUESTIONABLE",
+    "00-0039064": "OUT",
+    "00-0034827": "QUESTIONABLE",
+    "00-0039910": "DOUBTFUL",
+    "00-0041512": "QUESTIONABLE",
+    "00-0031408": "QUESTIONABLE",
+    "00-0036252": "OUT",
+    "00-0040691": "DOUBTFUL",
+    "00-0035700": "QUESTIONABLE",
+    "00-0039344": "DOUBTFUL",
+    "00-0039918": "DOUBTFUL",
+    "00-0036139": "QUESTIONABLE",
+    "00-0037664": "DOUBTFUL",
+    "00-0036158": "QUESTIONABLE",
+    "00-0034351": "DOUBTFUL",
+    "00-0040730": "OUT",
+    "00-0039146": "QUESTIONABLE",
+    "00-0039165": "OUT",
+    "00-0037746": "QUESTIONABLE",
+    "00-0041523": "QUESTIONABLE",
+    "00-0034869": "OUT",
+    "00-0036259": "OUT",
+    "00-0039874": "QUESTIONABLE",
+    "00-0037809": "OUT",
+    "00-0035537": "OUT",
+    "00-0038976": "OUT",
+    "00-0040179": "OUT",
+    "00-0036842": "OUT",
+    "00-0033885": "OUT",
+    "00-0036212": "OUT"
+  },
+  "espnProjections": {
+    "00-0034844": 17.4,
+    "00-0039337": 14.4,
+    "00-0034827": 12.6,
+    "00-0039910": 0.0,
+    "00-0041512": 12.1,
+    "00-0031408": 12.5,
+    "00-0040691": 0.0,
+    "00-0035700": 0.0,
+    "00-0039344": 0.0,
+    "00-0039918": 0.0,
+    "00-0036139": 10.4,
+    "00-0037664": 0.0,
+    "00-0036158": 10.6,
+    "00-0034351": 0.0,
+    "00-0039146": 0.0,
+    "00-0037746": 5.7,
+    "00-0041523": 8.8,
+    "00-0039874": 1.6
+  }
 }
