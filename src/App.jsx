@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { MatchupComparison } from "./components/MatchupComparison";
 import { WeeklyProjectionsTable } from "./components/WeeklyProjectionsTable";
 import { TeamBuilder } from "./components/TeamBuilder";
+import { RosterMoves } from "./components/RosterMoves";
 import { ScoringSettingsPanel } from "./components/ScoringSettingsPanel";
 
 function AppShell() {
@@ -27,6 +28,7 @@ function AppShell() {
         </div>
       )}
       {view === "team" && <TeamBuilder initialTeam={teamBuilderTeam} key={teamBuilderTeam} />}
+      {view === "roster" && <RosterMoves />}
 
       {settingsOpen && <ScoringSettingsPanel onClose={() => setSettingsOpen(false)} />}
     </>

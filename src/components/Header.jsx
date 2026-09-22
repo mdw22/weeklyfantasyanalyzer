@@ -4,6 +4,7 @@ const TABS = [
   { id: "matchup", label: "Matchup" },
   { id: "players", label: "Players" },
   { id: "team", label: "Team Builder" },
+  { id: "roster", label: "Roster Moves" },
 ];
 
 export function Header({ view, onNavigate, onOpenSettings }) {

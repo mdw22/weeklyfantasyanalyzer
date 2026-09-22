@@ -953,6 +953,135 @@ svg {
   color: var(--text-muted);
 }
 
+/* ---------- Roster Moves ---------- */
+
+.roster-subheader {
+  border-top: 1px solid var(--border);
+}
+
+.roster-note {
+  padding: 12px 20px;
+}
+
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.glance-tile {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.glance-tile:nth-child(3n) {
+  border-right: none;
+}
+
+.glance-tile__count {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.glance-tile__best {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.move-row {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.move-row__players {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.move-row__line {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.move-row__verb {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.move-row__pts {
+  color: var(--text-secondary);
+}
+
+.move-row__gain {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.trade-row {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  align-items: start;
+  gap: 14px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trade-row__headline {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.trade-row__detail {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Verdicts are neutral on purpose: green = real result, amber/red = availability,
+ * blue/orange = team identity. Strength gets the "mine" tint since it's about my
+ * roster; need is an outlined, bold pill; adequate is plain muted. */
+.verdict-pill {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.verdict-pill--strength {
+  background: var(--blue-wash);
+  color: var(--blue);
+}
+
+.verdict-pill--need {
+  color: var(--text-primary);
+  outline: 1px solid var(--text-secondary);
+}
+
+.verdict-pill--adequate {
+  color: var(--text-muted);
+  outline: 1px solid var(--border);
+}
+
 /* ---------- Player picker modal ---------- */
 
 .picker-backdrop {
@@ -1142,6 +1271,18 @@ svg {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
+  .glance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .glance-tile:nth-child(3n) {
+    border-right: 1px solid var(--border);
+  }
+
+  .glance-tile:nth-child(2n) {
+    border-right: none;
+  }
+
   .app-header__inner {
     padding: 0 16px;
   }
@@ -1178,7 +1319,9 @@ svg {
   }
 
   .app-header__nav {
-    gap: 16px;
+    gap: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
 
   .app-header__nav .tab {
@@ -1186,14 +1329,21 @@ svg {
   }
 }
 
-/* Below this width brand + 3 tabs + gear can't fit on one row (the third
- * tab clips), so drop the brand text and let the tabs have the room. */
+/* Below this width brand + 4 tabs + gear can't fit on one row (tabs clip), so
+ * drop the brand text, tighten the tabs, and let the nav scroll sideways as a
+ * last resort rather than clipping. */
 @media (max-width: 560px) {
   .app-header__brand {
     display: none;
   }
 
   .app-header__nav {
-    gap: 20px;
+    gap: 14px;
+  }
+
+  .app-header__nav .tab {
+    flex: none;
+    white-space: nowrap;
+    font-size: 12px;
   }
 }
