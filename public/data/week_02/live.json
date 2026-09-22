@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T22:53:51Z",
+  "updatedAt": "2026-09-22T00:19:41Z",
   "players": {
     "00-0037248": {
       "status": "final",
@@ -73,7 +73,9 @@
       }
     },
     "00-0039738": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27",
+      "stats": {}
     },
     "00-0037746": {
       "status": "final",
@@ -123,17 +125,25 @@
       }
     },
     "00-0039075": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27",
+      "stats": {}
     },
     "00-0037840": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27",
+      "stats": {}
     },
     "00-0039064": {
       "status": "final",
       "stats": {}
     },
     "00-0040715": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27",
+      "stats": {
+        "rushing_yards": 7.0
+      }
     },
     "00-0035261": {
       "status": "final",
@@ -226,15 +236,19 @@
       }
     },
     "00-0041042": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27",
+      "stats": {}
     }
   },
   "teams": {
     "LA": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27"
     },
     "NYG": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:27"
     },
     "BUF": {
       "status": "final"
