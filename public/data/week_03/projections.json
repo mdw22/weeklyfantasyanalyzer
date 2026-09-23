@@ -4522,7 +4522,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0034091": {
     "player_name": "George Odum",
@@ -5362,7 +5363,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0034381": {
     "player_name": "Josh Sweat",
@@ -5555,8 +5556,7 @@
       "receiving_yards": 4.62,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0034429": {
     "player_name": "Jordan Mailata",
@@ -6665,7 +6665,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0034960": {
     "player_name": "Jakobi Meyers",
@@ -8115,7 +8116,8 @@
       "receiving_yards": 43.25,
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0035537": {
     "player_name": "Ty Johnson",
@@ -8201,7 +8203,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0035625": {
     "player_name": "Juan Thornhill",
@@ -9896,8 +9899,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0036282": {
     "player_name": "Grant Delpit",
@@ -9941,7 +9943,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0036287": {
     "player_name": "Noah Igbinoghene",
@@ -16626,7 +16628,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0038111": {
     "player_name": "Kyler Gordon",
@@ -18633,7 +18635,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0038982": {
     "player_name": "Chamarri Conner",
@@ -20492,8 +20495,7 @@
       "receiving_yards": 14.5,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "injury_status": "IR"
+    }
   },
   "00-0039380": {
     "player_name": "Chau Smith-Wade",
@@ -25861,8 +25863,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "injury_status": "IR"
+    }
   },
   "00-0039753": {
     "player_name": "Beaux Limmer",
@@ -28272,7 +28273,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0038636": {
     "player_name": "Kenny McIntosh",
@@ -34538,8 +34540,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0036166": {
     "player_name": "Dane Jackson",
@@ -34582,7 +34583,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0036354": {
     "player_name": "Kyle Hinton",
@@ -49579,7 +49580,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0040172": {
     "player_name": "Jordan Watkins",
@@ -52627,8 +52629,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0040177": {
     "player_name": "Jordan James",
@@ -54296,8 +54297,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0041175": {
     "player_name": "Skyler Thomas",
