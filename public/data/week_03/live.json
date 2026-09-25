@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T01:23:06Z",
+  "updatedAt": "2026-09-25T01:28:10Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -104,11 +104,11 @@
   "teams": {
     "GB": {
       "status": "in_progress",
-      "clock": "Q2 4:48"
+      "clock": "Q2 3:52"
     },
     "ATL": {
       "status": "in_progress",
-      "clock": "Q2 4:48"
+      "clock": "Q2 3:52"
     },
     "BUF": {
       "status": "not_started"
