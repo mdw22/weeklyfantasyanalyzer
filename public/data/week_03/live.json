@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T00:32:26Z",
+  "updatedAt": "2026-09-25T00:37:31Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -104,11 +104,11 @@
   "teams": {
     "GB": {
       "status": "in_progress",
-      "clock": "Q1 10:06"
+      "clock": "Q1 7:10"
     },
     "ATL": {
       "status": "in_progress",
-      "clock": "Q1 10:06"
+      "clock": "Q1 7:10"
     },
     "BUF": {
       "status": "not_started"
@@ -243,7 +243,6 @@
     "00-0038976": "QUESTIONABLE",
     "00-0038619": "OUT",
     "00-0038551": "QUESTIONABLE",
-    "00-0041096": "QUESTIONABLE",
     "00-0036842": "QUESTIONABLE"
   },
   "espnProjections": {
@@ -282,7 +281,6 @@
     "00-0039901": 6.4,
     "00-0038976": 2.9,
     "00-0038551": 0.0,
-    "00-0041096": 1.1,
     "00-0036842": 0.1
   }
 }
