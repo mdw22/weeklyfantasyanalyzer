@@ -3618,8 +3618,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.25
-    },
-    "active": true
+    }
   },
   "00-0033699": {
     "player_name": "Austin Ekeler",
@@ -3921,7 +3920,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0033878": {
     "player_name": "Adoree' Jackson",
@@ -7337,7 +7337,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0035228": {
     "player_name": "Kyler Murray",
@@ -16129,7 +16130,6 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037819": {
@@ -16284,7 +16284,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037840": {
     "player_name": "Kyren Williams",
@@ -17485,7 +17486,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038557": {
     "player_name": "Dorian Williams",
@@ -19626,7 +19628,6 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039147": {
@@ -23744,7 +23745,6 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036618": {
@@ -42450,7 +42450,6 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034832": {
@@ -46609,7 +46608,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.12
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0040694": {
     "player_name": "Darius Alexander",
@@ -49356,7 +49355,6 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040135": {
@@ -52862,7 +52860,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0040056": {
     "player_name": "Jared Ivey",
@@ -55696,7 +55695,6 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0040873": {
@@ -56092,8 +56090,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 1.0
-    },
-    "active": true
+    }
   },
   "00-0041370": {
     "player_name": "Wydett Williams Jr.",
