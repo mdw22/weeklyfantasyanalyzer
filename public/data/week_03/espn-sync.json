@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T17:44:48Z",
+  "syncedAt": "2026-09-26T16:51:30Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -33,7 +33,7 @@
       },
       {
         "slot": "DEF",
-        "playerId": "DEF_SF"
+        "playerId": "DEF_CIN"
       },
       {
         "slot": "K",
@@ -923,11 +923,11 @@
       "owned": true,
       "espnTeamId": 12
     },
-    "DEF_SF": {
+    "00-0039880": {
       "owned": true,
       "espnTeamId": 12
     },
-    "00-0039880": {
+    "DEF_CIN": {
       "owned": true,
       "espnTeamId": 12
     },
