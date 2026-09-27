@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T21:44:22Z",
+  "updatedAt": "2026-09-27T21:49:26Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -9,7 +9,7 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q2 0:27",
+      "clock": "Half",
       "stats": {
         "receiving_yards": 29.0,
         "receptions": 2.0
@@ -59,7 +59,7 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q2 0:30",
+      "clock": "Q2 0:19",
       "stats": {
         "receiving_yards": 22.0,
         "receiving_tds": 1.0,
@@ -118,10 +118,10 @@
     },
     "00-0039338": {
       "status": "in_progress",
-      "clock": "Q2 0:30",
+      "clock": "Q2 0:19",
       "stats": {
-        "receiving_yards": 72.0,
-        "receptions": 6.0
+        "receiving_yards": 88.0,
+        "receptions": 7.0
       }
     },
     "00-0040784": {
@@ -197,7 +197,7 @@
     },
     "00-0039066": {
       "status": "in_progress",
-      "clock": "Q2 0:30",
+      "clock": "Q2 0:19",
       "stats": {
         "receiving_yards": 32.0,
         "receiving_tds": 1.0,
@@ -244,19 +244,19 @@
     },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q2 0:27"
+      "clock": "Half"
     },
     "BAL": {
       "status": "in_progress",
-      "clock": "Q2 0:27"
+      "clock": "Half"
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Q2 0:30"
+      "clock": "Q2 0:19"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q2 0:30"
+      "clock": "Q2 0:19"
     },
     "BUF": {
       "status": "final"
