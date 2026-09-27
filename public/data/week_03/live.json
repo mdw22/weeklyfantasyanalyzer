@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T17:51:19Z",
+  "updatedAt": "2026-09-27T17:56:22Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -12,16 +12,16 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q2 12:14",
+      "clock": "Q2 10:04",
       "stats": {
-        "rushing_yards": 5.0,
+        "rushing_yards": 9.0,
         "receiving_yards": 30.0,
         "receptions": 1.0
       }
     },
     "00-0035261": {
       "status": "in_progress",
-      "clock": "Q2 12:14",
+      "clock": "Q2 10:04",
       "stats": {
         "rushing_yards": 11.0,
         "receiving_yards": -1.0,
@@ -30,14 +30,14 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q2 10:22",
+      "clock": "Q2 7:06",
       "stats": {}
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q2 9:22",
+      "clock": "Q2 6:58",
       "stats": {
-        "passing_yards": 99.0,
+        "passing_yards": 131.0,
         "passing_tds": 1.0
       }
     },
@@ -46,8 +46,11 @@
     },
     "00-0037816": {
       "status": "in_progress",
-      "clock": "Q2 11:04",
-      "stats": {}
+      "clock": "Q2 9:12",
+      "stats": {
+        "receiving_yards": 7.0,
+        "receptions": 1.0
+      }
     },
     "00-0036040": {
       "status": "not_started"
@@ -57,7 +60,7 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q2 11:08",
+      "clock": "Q2 10:58",
       "stats": {
         "receiving_yards": 6.0,
         "receiving_tds": 1.0,
@@ -66,10 +69,10 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q2 5:40",
+      "clock": "Q2 5:26",
       "stats": {
-        "receiving_yards": 8.0,
-        "receptions": 1.0
+        "receiving_yards": 16.0,
+        "receptions": 2.0
       }
     },
     "00-0041052": {
@@ -77,7 +80,7 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q2 9:22",
+      "clock": "Q2 6:58",
       "stats": {
         "receiving_yards": 40.0,
         "receptions": 3.0
@@ -85,7 +88,7 @@
     },
     "DEF_CIN": {
       "status": "in_progress",
-      "clock": "Q2 10:16",
+      "clock": "Q2 9:25",
       "stats": {
         "def_points_allowed_bonus": 1,
         "def_yards_allowed_bonus": 3
@@ -99,14 +102,14 @@
     },
     "00-0040784": {
       "status": "in_progress",
-      "clock": "Q2 9:20",
+      "clock": "Q2 8:33",
       "stats": {
         "rushing_yards": 28.0
       }
     },
     "00-0036410": {
       "status": "in_progress",
-      "clock": "Q2 10:16",
+      "clock": "Q2 9:25",
       "stats": {
         "receiving_yards": 10.0,
         "receptions": 1.0
@@ -117,7 +120,7 @@
     },
     "00-0031588": {
       "status": "in_progress",
-      "clock": "Q2 13:27",
+      "clock": "Q2 12:39",
       "stats": {}
     },
     "00-0039918": {
@@ -128,7 +131,7 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q2 11:08",
+      "clock": "Q2 10:58",
       "stats": {}
     },
     "00-0039855": {
@@ -136,21 +139,21 @@
     },
     "00-0040162": {
       "status": "in_progress",
-      "clock": "Q2 9:20",
+      "clock": "Q2 8:33",
       "stats": {}
     },
     "DEF_DET": {
       "status": "in_progress",
-      "clock": "Q2 5:40",
+      "clock": "Q2 5:26",
       "stats": {
         "def_sacks": 1.0,
-        "def_points_allowed_bonus": 5,
-        "def_yards_allowed_bonus": 5
+        "def_points_allowed_bonus": 3,
+        "def_yards_allowed_bonus": 3
       }
     },
     "00-0033908": {
       "status": "in_progress",
-      "clock": "Q2 13:27",
+      "clock": "Q2 12:39",
       "stats": {}
     },
     "00-0039066": {
@@ -158,94 +161,94 @@
     },
     "00-0038797": {
       "status": "in_progress",
-      "clock": "Q2 13:27",
+      "clock": "Q2 12:39",
       "stats": {
         "rushing_yards": 6.0
       }
     },
     "00-0033090": {
       "status": "in_progress",
-      "clock": "Q2 11:04",
+      "clock": "Q2 9:12",
       "stats": {}
     },
     "00-0039451": {
       "status": "in_progress",
-      "clock": "Q2 5:40",
+      "clock": "Q2 5:26",
       "stats": {}
     }
   },
   "teams": {
     "BUF": {
       "status": "in_progress",
-      "clock": "Q2 10:22"
+      "clock": "Q2 7:06"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q2 10:22"
+      "clock": "Q2 7:06"
     },
     "CLE": {
       "status": "in_progress",
-      "clock": "Q2 9:20"
+      "clock": "Q2 8:33"
     },
     "CAR": {
       "status": "in_progress",
-      "clock": "Q2 9:20"
+      "clock": "Q2 8:33"
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Q2 5:40"
+      "clock": "Q2 5:26"
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q2 5:40"
+      "clock": "Q2 5:26"
     },
     "IND": {
       "status": "in_progress",
-      "clock": "Q2 11:08"
+      "clock": "Q2 10:58"
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q2 11:08"
+      "clock": "Q2 10:58"
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q2 9:22"
+      "clock": "Q2 6:58"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q2 9:22"
+      "clock": "Q2 6:58"
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q2 12:14"
+      "clock": "Q2 10:04"
     },
     "TEN": {
       "status": "in_progress",
-      "clock": "Q2 12:14"
+      "clock": "Q2 10:04"
     },
     "PIT": {
       "status": "in_progress",
-      "clock": "Q2 10:16"
+      "clock": "Q2 9:25"
     },
     "CIN": {
       "status": "in_progress",
-      "clock": "Q2 10:16"
+      "clock": "Q2 9:25"
     },
     "WAS": {
       "status": "in_progress",
-      "clock": "Q2 13:27"
+      "clock": "Q2 12:39"
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q2 13:27"
+      "clock": "Q2 12:39"
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q2 11:04"
+      "clock": "Q2 9:12"
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q2 11:04"
+      "clock": "Q2 9:12"
     },
     "SF": {
       "status": "not_started"
