@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T21:54:30Z",
+  "updatedAt": "2026-09-27T21:59:34Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -68,7 +68,7 @@
     },
     "00-0035358": {
       "status": "in_progress",
-      "clock": "Q3 13:38",
+      "clock": "Q3 12:21",
       "stats": {
         "fg_made_0_39": 1.0,
         "pat_made": 1.0
@@ -91,7 +91,7 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q3 13:38",
+      "clock": "Q3 11:46",
       "stats": {
         "rushing_yards": -2.0
       }
@@ -155,7 +155,7 @@
     },
     "00-0035228": {
       "status": "in_progress",
-      "clock": "Q3 13:38",
+      "clock": "Q3 12:21",
       "stats": {
         "passing_yards": 112.0,
         "passing_tds": 1.0,
@@ -171,7 +171,7 @@
     },
     "00-0039855": {
       "status": "in_progress",
-      "clock": "Q3 13:38",
+      "clock": "Q3 12:21",
       "stats": {}
     },
     "00-0040162": {
@@ -228,19 +228,19 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q3 13:38"
+      "clock": "Q3 11:46"
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q3 13:38"
+      "clock": "Q3 11:46"
     },
     "TB": {
       "status": "in_progress",
-      "clock": "Q3 13:38"
+      "clock": "Q3 12:21"
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q3 13:38"
+      "clock": "Q3 12:21"
     },
     "DAL": {
       "status": "in_progress",
@@ -338,6 +338,7 @@
     "00-0038120": "QUESTIONABLE",
     "00-0039064": "ACTIVE",
     "00-0034827": "ACTIVE",
+    "00-0031408": "OUT",
     "00-0036252": "ACTIVE",
     "00-0037228": "ACTIVE",
     "00-0035700": "QUESTIONABLE",
