@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T23:00:22Z",
+  "updatedAt": "2026-09-27T23:01:16Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -60,7 +60,7 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q4 14:57",
+      "clock": "Q4 14:18",
       "stats": {
         "receiving_yards": 35.0,
         "receiving_tds": 2.0,
@@ -69,7 +69,7 @@
     },
     "00-0035358": {
       "status": "in_progress",
-      "clock": "Q4 4:49",
+      "clock": "Q4 3:58",
       "stats": {
         "fg_made_50_plus": 1.0,
         "fg_made_0_39": 2.0,
@@ -93,7 +93,7 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 2:51",
+      "clock": "Q4 2:07",
       "stats": {
         "rushing_yards": 17.0
       }
@@ -120,7 +120,7 @@
     },
     "00-0039338": {
       "status": "in_progress",
-      "clock": "Q4 14:57",
+      "clock": "Q4 14:18",
       "stats": {
         "receiving_yards": 112.0,
         "receptions": 9.0
@@ -157,7 +157,7 @@
     },
     "00-0035228": {
       "status": "in_progress",
-      "clock": "Q4 4:49",
+      "clock": "Q4 3:58",
       "stats": {
         "passing_yards": 140.0,
         "passing_tds": 1.0,
@@ -174,7 +174,7 @@
     },
     "00-0039855": {
       "status": "in_progress",
-      "clock": "Q4 4:49",
+      "clock": "Q4 3:58",
       "stats": {}
     },
     "00-0040162": {
@@ -200,7 +200,7 @@
     },
     "00-0039066": {
       "status": "in_progress",
-      "clock": "Q4 14:57",
+      "clock": "Q4 14:18",
       "stats": {
         "receiving_yards": 32.0,
         "receiving_tds": 1.0,
@@ -231,19 +231,19 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 2:51"
+      "clock": "Q4 2:07"
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q4 2:51"
+      "clock": "Q4 2:07"
     },
     "TB": {
       "status": "in_progress",
-      "clock": "Q4 4:49"
+      "clock": "Q4 3:58"
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q4 4:49"
+      "clock": "Q4 3:58"
     },
     "DAL": {
       "status": "in_progress",
@@ -255,11 +255,11 @@
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Q4 14:57"
+      "clock": "Q4 14:18"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 14:57"
+      "clock": "Q4 14:18"
     },
     "BUF": {
       "status": "final"
