@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T23:11:23Z",
+  "updatedAt": "2026-09-27T23:16:27Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -9,7 +9,7 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q4 6:01",
+      "clock": "Q4 3:52",
       "stats": {
         "rushing_yards": 20.0,
         "receiving_yards": 29.0,
@@ -60,7 +60,7 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q4 9:21",
+      "clock": "Q4 7:48",
       "stats": {
         "receiving_yards": 35.0,
         "receiving_tds": 2.0,
@@ -69,7 +69,7 @@
     },
     "00-0035358": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:28",
       "stats": {
         "fg_made_50_plus": 1.0,
         "fg_made_0_39": 2.0,
@@ -93,7 +93,7 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 1:26",
+      "clock": "Q4 0:34",
       "stats": {
         "rushing_yards": 17.0
       }
@@ -120,7 +120,7 @@
     },
     "00-0039338": {
       "status": "in_progress",
-      "clock": "Q4 9:21",
+      "clock": "Q4 7:48",
       "stats": {
         "receiving_yards": 112.0,
         "receptions": 9.0
@@ -157,9 +157,9 @@
     },
     "00-0035228": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:28",
       "stats": {
-        "passing_yards": 156.0,
+        "passing_yards": 168.0,
         "passing_tds": 1.0,
         "passing_interceptions": 1.0,
         "rushing_yards": 17.0
@@ -174,7 +174,7 @@
     },
     "00-0039855": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:28",
       "stats": {}
     },
     "00-0040162": {
@@ -200,7 +200,7 @@
     },
     "00-0039066": {
       "status": "in_progress",
-      "clock": "Q4 9:21",
+      "clock": "Q4 7:48",
       "stats": {
         "receiving_yards": 32.0,
         "receiving_tds": 1.0,
@@ -231,35 +231,35 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 1:26"
+      "clock": "Q4 0:34"
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q4 1:26"
+      "clock": "Q4 0:34"
     },
     "TB": {
       "status": "in_progress",
-      "clock": "Q4 2:00"
+      "clock": "Q4 1:28"
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q4 2:00"
+      "clock": "Q4 1:28"
     },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q4 6:01"
+      "clock": "Q4 3:52"
     },
     "BAL": {
       "status": "in_progress",
-      "clock": "Q4 6:01"
+      "clock": "Q4 3:52"
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Q4 9:21"
+      "clock": "Q4 7:48"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 9:21"
+      "clock": "Q4 7:48"
     },
     "BUF": {
       "status": "final"
