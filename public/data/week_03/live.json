@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T23:31:38Z",
+  "updatedAt": "2026-09-27T23:36:41Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -9,7 +9,7 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q4 1:30",
+      "clock": "Q4 0:28",
       "stats": {
         "rushing_yards": 20.0,
         "receiving_yards": 57.0,
@@ -60,7 +60,7 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:48",
       "stats": {
         "receiving_yards": 57.0,
         "receiving_tds": 2.0,
@@ -118,7 +118,7 @@
     },
     "00-0039338": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:48",
       "stats": {
         "receiving_yards": 116.0,
         "receiving_tds": 1.0,
@@ -197,7 +197,7 @@
     },
     "00-0039066": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
+      "clock": "Q4 1:48",
       "stats": {
         "receiving_yards": 32.0,
         "receiving_tds": 1.0,
@@ -226,27 +226,21 @@
     }
   },
   "teams": {
-    "TB": {
-      "status": "final"
-    },
-    "MIN": {
-      "status": "final"
-    },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q4 1:30"
+      "clock": "Q4 0:28"
     },
     "BAL": {
       "status": "in_progress",
-      "clock": "Q4 1:30"
+      "clock": "Q4 0:28"
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Q4 2:00"
+      "clock": "Q4 1:48"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 2:00"
+      "clock": "Q4 1:48"
     },
     "BUF": {
       "status": "final"
@@ -308,6 +302,12 @@
     "ARI": {
       "status": "final"
     },
+    "TB": {
+      "status": "final"
+    },
+    "MIN": {
+      "status": "final"
+    },
     "DEN": {
       "status": "not_started"
     },
@@ -329,7 +329,7 @@
   },
   "injuries": {
     "00-0039075": "OUT",
-    "00-0036322": "OUT",
+    "00-0036322": "QUESTIONABLE",
     "00-0039040": "DOUBTFUL",
     "00-0039338": "ACTIVE",
     "00-0038120": "QUESTIONABLE",
