@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-28T01:12:41Z",
+  "updatedAt": "2026-09-28T01:17:44Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 13:17",
+      "clock": "Q2 11:45",
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 13:17",
+      "clock": "Q2 11:45",
       "stats": {
         "rushing_yards": 53.0,
         "receiving_yards": 23.0,
@@ -149,7 +149,7 @@
     },
     "00-0034348": {
       "status": "in_progress",
-      "clock": "Q2 13:17",
+      "clock": "Q2 11:45",
       "stats": {
         "receiving_yards": 10.0,
         "receptions": 1.0
@@ -238,11 +238,11 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q2 13:17"
+      "clock": "Q2 11:45"
     },
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 13:17"
+      "clock": "Q2 11:45"
     },
     "BUF": {
       "status": "final"
