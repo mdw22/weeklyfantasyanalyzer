@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-09-27T23:46:49Z",
+  "updatedAt": "2026-09-28T00:27:08Z",
   "players": {
     "00-0039075": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:29",
+      "stats": {}
     },
     "00-0037840": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:29",
+      "stats": {
+        "rushing_yards": 12.0
+      }
     },
     "00-0039064": {
       "status": "final",
@@ -140,7 +146,9 @@
       }
     },
     "00-0034348": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:29",
+      "stats": {}
     },
     "00-0031588": {
       "status": "final",
@@ -223,18 +231,6 @@
     }
   },
   "teams": {
-    "DAL": {
-      "status": "final"
-    },
-    "BAL": {
-      "status": "final"
-    },
-    "NO": {
-      "status": "final"
-    },
-    "LV": {
-      "status": "final"
-    },
     "BUF": {
       "status": "final"
     },
@@ -301,11 +297,25 @@
     "MIN": {
       "status": "final"
     },
+    "DAL": {
+      "status": "final"
+    },
+    "BAL": {
+      "status": "final"
+    },
+    "NO": {
+      "status": "final"
+    },
+    "LV": {
+      "status": "final"
+    },
     "DEN": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:29"
     },
     "LA": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:29"
     },
     "GB": {
       "status": "final"
