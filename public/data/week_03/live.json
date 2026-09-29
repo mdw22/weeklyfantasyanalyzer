@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T01:26:25Z",
+  "updatedAt": "2026-09-29T01:31:28Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -55,7 +55,7 @@
     },
     "00-0040236": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
+      "clock": "Q2 1:52",
       "stats": {
         "rushing_yards": -1.0
       }
@@ -124,7 +124,7 @@
     },
     "00-0034844": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
+      "clock": "Q2 1:52",
       "stats": {
         "rushing_yards": 73.0
       }
@@ -169,7 +169,7 @@
     },
     "00-0039918": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
+      "clock": "Q2 1:52",
       "stats": {}
     },
     "00-0035228": {
@@ -245,11 +245,11 @@
   "teams": {
     "CHI": {
       "status": "in_progress",
-      "clock": "Q2 2:00"
+      "clock": "Q2 1:52"
     },
     "PHI": {
       "status": "in_progress",
-      "clock": "Q2 2:00"
+      "clock": "Q2 1:52"
     },
     "GB": {
       "status": "final"
