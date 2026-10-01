@@ -1870,7 +1870,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0032366": {
     "player_name": "Tyler Matakevich",
@@ -2814,7 +2814,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0033106": {
     "player_name": "Jared Goff",
@@ -3598,7 +3598,8 @@
       "receiving_yards": 11.12,
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0033662": {
     "player_name": "Cooper Rush",
@@ -7735,7 +7736,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0035278": {
     "player_name": "Byron Cowart",
@@ -8801,7 +8802,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0035708": {
     "player_name": "Oshane Ximines",
@@ -10759,7 +10760,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0036403": {
     "player_name": "Casey Toohill",
@@ -11930,7 +11932,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0036728": {
     "player_name": "Curtis Robinson",
@@ -12781,7 +12784,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0036945": {
     "player_name": "Justin Fields",
@@ -15528,7 +15531,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037627": {
     "player_name": "Mike Greene",
@@ -17183,8 +17187,7 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "injury_status": "IR"
+    }
   },
   "00-0038496": {
     "player_name": "Xavier Gipson",
@@ -19631,7 +19634,7 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0039147": {
     "player_name": "Christian Gonzalez",
@@ -21425,7 +21428,7 @@
       "receiving_tds": 0.38,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0039860": {
     "player_name": "Kool-Aid McKinstry",
@@ -21709,7 +21712,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0039903": {
     "player_name": "Terrion Arnold",
@@ -23771,7 +23775,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036619": {
     "player_name": "Dillon Radunz",
@@ -35441,7 +35446,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0029963": {
     "player_name": "Chris Hubbard",
@@ -39376,7 +39382,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0037807": {
     "player_name": "Joshua Ezeudu",
@@ -40815,7 +40822,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0038114": {
     "player_name": "Max Mitchell",
@@ -56730,7 +56738,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0040405": {
     "player_name": "Jamaal Pritchett",
@@ -57166,7 +57175,8 @@
       "receiving_yards": 0.0,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
-    }
+    },
+    "active": true
   },
   "00-0041439": {
     "player_name": "Blake Miller",
