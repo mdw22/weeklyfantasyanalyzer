@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T03:41:24Z",
+  "updatedAt": "2026-10-02T03:46:27Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -103,12 +103,10 @@
   },
   "teams": {
     "CLE": {
-      "status": "in_progress",
-      "clock": "Q4 0:10"
+      "status": "final"
     },
     "PIT": {
-      "status": "in_progress",
-      "clock": "Q4 0:10"
+      "status": "final"
     },
     "WAS": {
       "status": "not_started"
