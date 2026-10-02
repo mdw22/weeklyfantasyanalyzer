@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T18:40:36Z",
+  "syncedAt": "2026-10-02T18:11:23Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -187,10 +187,6 @@
       "owned": true,
       "espnTeamId": 1
     },
-    "00-0040138": {
-      "owned": true,
-      "espnTeamId": 1
-    },
     "00-0040737": {
       "owned": true,
       "espnTeamId": 1
@@ -204,6 +200,10 @@
       "espnTeamId": 1
     },
     "00-0039798": {
+      "owned": true,
+      "espnTeamId": 1
+    },
+    "00-0036893": {
       "owned": true,
       "espnTeamId": 1
     },
@@ -859,11 +859,11 @@
       "owned": true,
       "espnTeamId": 11
     },
-    "00-0040189": {
+    "00-0034869": {
       "owned": true,
       "espnTeamId": 11
     },
-    "00-0034869": {
+    "00-0033090": {
       "owned": true,
       "espnTeamId": 11
     },
