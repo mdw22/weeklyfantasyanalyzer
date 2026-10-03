@@ -645,7 +645,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0030386": {
     "player_name": "William Gholston",
@@ -1075,7 +1076,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0031381": {
     "player_name": "Davante Adams",
@@ -1119,7 +1121,8 @@
       "receiving_tds": 0.5,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0031411": {
     "player_name": "DeMarcus Lawrence",
@@ -1632,7 +1635,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0032052": {
     "player_name": "Dante Fowler Jr.",
@@ -2494,7 +2498,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0032971": {
     "player_name": "Justin Simmons",
@@ -3406,7 +3411,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0033548": {
     "player_name": "Chidobe Awuzie",
@@ -4401,7 +4407,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0033941": {
     "player_name": "Rayshawn Jenkins",
@@ -5114,7 +5121,8 @@
       "receiving_tds": 0.88,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0034356": {
     "player_name": "Donte Jackson",
@@ -5136,7 +5144,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0034359": {
     "player_name": "Tyquan Lewis",
@@ -5394,7 +5403,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0034383": {
     "player_name": "Dalton Schultz",
@@ -5438,7 +5448,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0034385": {
     "player_name": "Ja'Whaun Bentley",
@@ -6153,7 +6164,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0034796": {
     "player_name": "Lamar Jackson",
@@ -6240,7 +6252,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0034805": {
     "player_name": "John Franklin-Myers",
@@ -6545,7 +6558,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.5
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0034856": {
     "player_name": "Denzel Ward",
@@ -6915,7 +6929,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0034999": {
     "player_name": "Ty Summers",
@@ -7000,7 +7015,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0035042": {
     "player_name": "Jamie Gillan",
@@ -7215,7 +7231,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0035190": {
     "player_name": "AJ Cole",
@@ -7974,7 +7991,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "DOUBTFUL"
   },
   "00-0035386": {
     "player_name": "T.J. Edwards",
@@ -8039,8 +8057,7 @@
       "receiving_yards": 17.38,
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0035409": {
     "player_name": "Shy Tuttle",
@@ -8434,7 +8451,8 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0035663": {
     "player_name": "Taylor Rapp",
@@ -8587,7 +8605,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0035680": {
     "player_name": "Quincy Williams",
@@ -8891,7 +8910,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0035718": {
     "player_name": "Quinnen Williams",
@@ -9607,7 +9627,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036244": {
     "player_name": "Colby Parkinson",
@@ -9629,7 +9650,8 @@
       "receiving_tds": 0.38,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036251": {
     "player_name": "Zack Moss",
@@ -10217,7 +10239,8 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036323": {
     "player_name": "Patrick Queen",
@@ -10936,7 +10959,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036422": {
     "player_name": "Adam Trautman",
@@ -12457,7 +12481,8 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036914": {
     "player_name": "Greg Rousseau",
@@ -13265,7 +13290,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036994": {
     "player_name": "Ernest Jones",
@@ -13397,7 +13423,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037007": {
     "player_name": "Patrick Jones II",
@@ -13529,7 +13556,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037086": {
     "player_name": "Grant Calcaterra",
@@ -13835,7 +13863,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037195": {
     "player_name": "Jaylen Watson",
@@ -13857,7 +13886,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037196": {
     "player_name": "Rasheed Walker",
@@ -14406,7 +14436,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037256": {
     "player_name": "Rachaad White",
@@ -14428,7 +14459,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037258": {
     "player_name": "Dameon Pierce",
@@ -14690,7 +14722,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037289": {
     "player_name": "Malcolm Rodriguez",
@@ -14800,7 +14833,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037316": {
     "player_name": "Mark Robinson",
@@ -15056,7 +15090,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037491": {
     "player_name": "J.J. Russell",
@@ -16296,7 +16331,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037840": {
     "player_name": "Kyren Williams",
@@ -16599,7 +16635,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038104": {
     "player_name": "Tyquan Thornton",
@@ -16774,7 +16811,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038121": {
     "player_name": "Alontae Taylor",
@@ -17495,7 +17533,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038557": {
     "player_name": "Dorian Williams",
@@ -17890,7 +17929,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038605": {
     "player_name": "JL Skinner",
@@ -18957,7 +18997,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039034": {
     "player_name": "Peter Skoronski",
@@ -19067,7 +19108,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039052": {
     "player_name": "Trey Palmer",
@@ -19154,7 +19196,8 @@
       "receiving_tds": 0.62,
       "fumbles_lost_total": 0.25
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039065": {
     "player_name": "Sam LaPorta",
@@ -19658,7 +19701,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039148": {
     "player_name": "Keion White",
@@ -19680,7 +19724,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039149": {
     "player_name": "Quan Martin",
@@ -20182,7 +20227,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039343": {
     "player_name": "Kamari Lassiter",
@@ -20815,7 +20861,7 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "injury_status": "IR"
   },
   "00-0039611": {
     "player_name": "Matthew Hayball",
@@ -21386,7 +21432,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039852": {
     "player_name": "Jared Verse",
@@ -21540,7 +21587,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.12
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039888": {
     "player_name": "Quinyon Mitchell",
@@ -21584,7 +21632,8 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039893": {
     "player_name": "Brian Thomas Jr.",
@@ -21779,7 +21828,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039911": {
     "player_name": "Chop Robinson",
@@ -21823,7 +21873,8 @@
       "receiving_tds": 0.25,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039918": {
     "player_name": "Caleb Williams",
@@ -21845,7 +21896,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039919": {
     "player_name": "Rome Odunze",
@@ -22638,7 +22690,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0033925": {
     "player_name": "D'Onta Foreman",
@@ -23755,7 +23808,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036618": {
     "player_name": "Sam Cosmi",
@@ -23973,7 +24027,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036843": {
     "player_name": "Isaiahh Loudermilk",
@@ -24276,7 +24331,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037085": {
     "player_name": "Tyler Badie",
@@ -24559,7 +24615,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037318": {
     "player_name": "Baylon Spector",
@@ -24841,7 +24898,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038096": {
     "player_name": "Joshua Paschal",
@@ -24928,7 +24986,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038383": {
     "player_name": "Andrew Vorhees",
@@ -26408,7 +26467,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0031795": {
     "player_name": "DeShawn Williams",
@@ -27048,7 +27108,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0034966": {
     "player_name": "D'Angelo Ross",
@@ -27284,7 +27345,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036254": {
     "player_name": "Collin Johnson",
@@ -27973,7 +28035,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037822": {
     "player_name": "Brian Asamoah II",
@@ -28058,8 +28121,7 @@
       "receiving_yards": 9.12,
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.12
-    },
-    "active": true
+    }
   },
   "00-0038477": {
     "player_name": "Bryce Ford-Wheaton",
@@ -28187,7 +28249,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038587": {
     "player_name": "Jammie Robinson",
@@ -28252,7 +28315,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038623": {
     "player_name": "Dante Stills",
@@ -28972,7 +29036,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.12
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039879": {
     "player_name": "Javon Solomon",
@@ -31021,7 +31086,8 @@
       "receiving_tds": 0.62,
       "fumbles_lost_total": 0.12
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039601": {
     "player_name": "Demani Richardson",
@@ -31106,7 +31172,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039744": {
     "player_name": "Tanor Bortolini",
@@ -32289,7 +32356,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038387": {
     "player_name": "Colby Wooden",
@@ -33320,7 +33388,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036553": {
     "player_name": "Carlos Basham",
@@ -33751,7 +33820,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038809": {
     "player_name": "Ben Sims",
@@ -34715,7 +34785,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036783": {
     "player_name": "Ryan McCollum",
@@ -37437,7 +37508,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.12
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037216": {
     "player_name": "Justyn Ross",
@@ -37969,7 +38041,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037207": {
     "player_name": "Mike Caliendo",
@@ -38335,7 +38408,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037275": {
     "player_name": "DaRon Bland",
@@ -39990,7 +40064,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0035629": {
     "player_name": "Jonah Williams",
@@ -40674,7 +40749,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0035665": {
     "player_name": "David Long",
@@ -41405,7 +41481,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039453": {
     "player_name": "Morice Norris Jr.",
@@ -42383,7 +42460,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0033050": {
     "player_name": "Xavien Howard",
@@ -43165,7 +43243,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040118": {
     "player_name": "Cooper McDonald",
@@ -43473,7 +43552,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040147": {
     "player_name": "Jared Wilson",
@@ -44001,7 +44081,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040188": {
     "player_name": "Yahya Black",
@@ -44614,7 +44695,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040581": {
     "player_name": "Dont'e Thornton Jr.",
@@ -45252,7 +45334,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040718": {
     "player_name": "Travis Hunter",
@@ -45560,7 +45643,8 @@
       "receiving_tds": 0.12,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040738": {
     "player_name": "Demetrius Knight Jr.",
@@ -45801,7 +45885,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036237": {
     "player_name": "Larrell Murchison",
@@ -46715,7 +46800,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "DOUBTFUL"
   },
   "00-0040726": {
     "player_name": "Anthony Belton",
@@ -46781,7 +46867,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040748": {
     "player_name": "Omarr Norman-Lott",
@@ -47364,7 +47451,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040189": {
     "player_name": "Oronde Gadsden II",
@@ -48790,7 +48878,8 @@
       "receiving_tds": 0.38,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0031622": {
     "player_name": "Bobby Hart",
@@ -49376,7 +49465,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040135": {
     "player_name": "Nick Martin",
@@ -49420,7 +49510,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040225": {
     "player_name": "Thomas Fidone II",
@@ -52772,7 +52863,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0039107": {
     "player_name": "Stetson Bennett",
@@ -53627,7 +53719,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041032": {
     "player_name": "Kenyon Sadiq",
@@ -53649,7 +53742,8 @@
       "receiving_tds": 0.33,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041034": {
     "player_name": "Monroe Freeling",
@@ -53671,7 +53765,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041036": {
     "player_name": "TJ Parker",
@@ -53825,7 +53920,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041046": {
     "player_name": "Domonique Orange",
@@ -54045,7 +54141,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041093": {
     "player_name": "Karson Sharar",
@@ -54483,7 +54580,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041390": {
     "player_name": "Christen Miller",
@@ -54593,7 +54691,8 @@
       "receiving_tds": 0.5,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041397": {
     "player_name": "Kaden Wetjen",
@@ -54923,7 +55022,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041479": {
     "player_name": "Anthony Hill Jr.",
@@ -55186,7 +55286,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.67
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041518": {
     "player_name": "Bryce Boettcher",
@@ -55274,7 +55375,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041524": {
     "player_name": "Will Kacmarek",
@@ -55582,7 +55684,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0031388": {
     "player_name": "Aaron Donald",
@@ -55604,7 +55707,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038429": {
     "player_name": "Liam Anderson",
@@ -55669,7 +55773,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040235": {
     "player_name": "Hunter Wohler",
@@ -55713,7 +55818,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040873": {
     "player_name": "Julian Neal",
@@ -55955,7 +56061,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041072": {
     "player_name": "Nick Barrett",
@@ -56439,7 +56546,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041556": {
     "player_name": "Romello Height",
@@ -56852,7 +56960,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040887": {
     "player_name": "Josh Cuevas",
@@ -57137,7 +57246,8 @@
       "receiving_tds": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0041358": {
     "player_name": "Bryson Eason",
