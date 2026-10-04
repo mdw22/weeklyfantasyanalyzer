@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T14:38:32Z",
+  "updatedAt": "2026-10-04T14:43:36Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -36,7 +36,7 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q2 5:13",
+      "clock": "Q2 3:23",
       "stats": {}
     },
     "00-0039065": {
@@ -68,7 +68,7 @@
     },
     "00-0039910": {
       "status": "in_progress",
-      "clock": "Q2 5:13",
+      "clock": "Q2 3:23",
       "stats": {}
     },
     "00-0033288": {
@@ -108,11 +108,11 @@
   "teams": {
     "WAS": {
       "status": "in_progress",
-      "clock": "Q2 5:13"
+      "clock": "Q2 3:23"
     },
     "IND": {
       "status": "in_progress",
-      "clock": "Q2 5:13"
+      "clock": "Q2 3:23"
     },
     "BUF": {
       "status": "not_started"
