@@ -164,19 +164,27 @@ def _partition_by(df: pl.DataFrame, id_col: str) -> dict:
     return {(k[0] if isinstance(k, tuple) else k): v for k, v in groups.items()}
 
 
-def build_projections(df: pl.DataFrame, season: int, week: int, id_col: str, stat_columns: list, describe_row) -> dict:
+def build_projections(df: pl.DataFrame, season: int, week: int, id_col: str, stat_columns: list, describe_row,
+                       n_games: int | None = N_GAMES) -> dict:
     """v1 baseline: each entity's (player OR team-defense) projection =
     mean of their last N_GAMES games across `stat_columns`. No opponent
     adjustment yet. `describe_row` turns one row into the entry's
-    name/position/team fields."""
+    name/position/team fields.
+
+    `n_games=None` lifts the games-back cap entirely -- used by
+    `scripts/backtest_evaluation.py` for the "plain full-season average"
+    baseline (source doc's other suggested baseline), reusing this exact
+    function/filter rather than a second implementation. Production
+    (`main()`, below) never passes this -- default is unchanged."""
     past = df.filter(
         (pl.col("season") < season)
         | ((pl.col("season") == season) & (pl.col("week") < week))
     )
+    cap = n_games if n_games is not None else past.height + 1
 
     projections = {}
     for entity_id, games in _partition_by(past, id_col).items():
-        recent = games.sort(["season", "week"], descending=True).head(N_GAMES)
+        recent = games.sort(["season", "week"], descending=True).head(cap)
         if recent.height == 0:
             continue
         row0 = recent.row(0, named=True)
