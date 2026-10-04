@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T23:41:04Z",
+  "updatedAt": "2026-10-04T23:46:08Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -53,12 +53,10 @@
       }
     },
     "00-0033873": {
-      "status": "in_progress",
-      "clock": "Q4 0:36",
+      "status": "final",
       "stats": {
         "passing_yards": 225.0,
-        "passing_tds": 2.0,
-        "rushing_yards": 1.0
+        "passing_tds": 2.0
       }
     },
     "00-0040236": {
@@ -206,11 +204,10 @@
       }
     },
     "00-0038563": {
-      "status": "in_progress",
-      "clock": "Q4 0:36",
+      "status": "final",
       "stats": {
-        "receiving_yards": 21.0,
-        "receptions": 3.0
+        "receiving_yards": 44.0,
+        "receptions": 4.0
       }
     },
     "00-0039172": {
@@ -244,12 +241,10 @@
   },
   "teams": {
     "LV": {
-      "status": "in_progress",
-      "clock": "Q4 0:36"
+      "status": "final"
     },
     "KC": {
-      "status": "in_progress",
-      "clock": "Q4 0:36"
+      "status": "final"
     },
     "SF": {
       "status": "final"
@@ -258,12 +253,10 @@
       "status": "final"
     },
     "SEA": {
-      "status": "in_progress",
-      "clock": "Q4 1:42"
+      "status": "final"
     },
     "LAC": {
-      "status": "in_progress",
-      "clock": "Q4 1:42"
+      "status": "final"
     },
     "WAS": {
       "status": "final"
