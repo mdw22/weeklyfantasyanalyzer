@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T23:05:38Z",
+  "updatedAt": "2026-10-04T23:10:42Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -54,9 +54,9 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 4:53",
+      "clock": "Q4 3:25",
       "stats": {
-        "passing_yards": 170.0,
+        "passing_yards": 225.0,
         "passing_tds": 2.0,
         "rushing_yards": 1.0
       }
@@ -96,7 +96,7 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 8:52",
+      "clock": "Q4 6:24",
       "stats": {
         "rushing_yards": 13.0
       }
@@ -157,7 +157,7 @@
     },
     "00-0033288": {
       "status": "in_progress",
-      "clock": "Q4 8:52",
+      "clock": "Q4 6:24",
       "stats": {
         "receiving_yards": 14.0,
         "receptions": 3.0
@@ -174,9 +174,9 @@
     },
     "00-0036158": {
       "status": "in_progress",
-      "clock": "Q4 8:52",
+      "clock": "Q4 6:24",
       "stats": {
-        "rushing_yards": 19.0,
+        "rushing_yards": 31.0,
         "receiving_yards": 12.0,
         "receptions": 2.0
       }
@@ -209,7 +209,7 @@
     },
     "00-0038563": {
       "status": "in_progress",
-      "clock": "Q4 4:53",
+      "clock": "Q4 3:25",
       "stats": {
         "receiving_yards": 13.0,
         "receptions": 2.0
@@ -253,27 +253,27 @@
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 4:53"
+      "clock": "Q4 3:25"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 4:53"
+      "clock": "Q4 3:25"
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 8:52"
+      "clock": "Q4 6:24"
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 8:52"
+      "clock": "Q4 6:24"
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q4 11:26"
+      "clock": "Q4 7:54"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 11:26"
+      "clock": "Q4 7:54"
     },
     "WAS": {
       "status": "final"
