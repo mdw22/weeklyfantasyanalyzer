@@ -5,11 +5,14 @@ export const STAT_FIELDS = [
   { key: "passing_yards", label: "Passing Yard", group: "Passing" },
   { key: "passing_tds", label: "Passing TD", group: "Passing" },
   { key: "passing_interceptions", label: "Interception", group: "Passing" },
+  { key: "passing_2pt_conversions", label: "2pt Conversion", group: "Passing" },
   { key: "rushing_yards", label: "Rushing Yard", group: "Rushing" },
   { key: "rushing_tds", label: "Rushing TD", group: "Rushing" },
+  { key: "rushing_2pt_conversions", label: "2pt Conversion", group: "Rushing" },
   { key: "receptions", label: "Reception", group: "Receiving" },
   { key: "receiving_yards", label: "Receiving Yard", group: "Receiving" },
   { key: "receiving_tds", label: "Receiving TD", group: "Receiving" },
+  { key: "receiving_2pt_conversions", label: "2pt Conversion", group: "Receiving" },
   { key: "fumbles_lost_total", label: "Fumble Lost", group: "Misc" },
   { key: "def_sacks", label: "Sack", group: "Defense" },
   { key: "def_interceptions", label: "Interception", group: "Defense" },
@@ -33,7 +36,9 @@ export const STAT_FIELDS = [
 // Full-PPR values match the prior draft tool's league config (see
 // CLAUDE.md) so both tools agree: 0.04/yd passing (1pt/25yd), 4pt passing
 // TD, -2 INT; 0.1/yd rushing+receiving (1pt/10yd), 6pt rushing+receiving
-// TD; -2 fumble lost; sack 1, INT 2, fumble recovery 2, safety 2,
+// TD; -2 fumble lost; +2 for a passing/rushing/receiving 2-point conversion
+// (confirmed against the real league's own ESPN scoringItems, 2026-10-04 --
+// statId 19/26/44 all score 2.0); sack 1, INT 2, fumble recovery 2, safety 2,
 // defensive/ST TD 6, blocked kick 2, 2pt return 2. Presets differ only in
 // the reception value -- defense scoring is identical across all three.
 // Kicker values (also identical across presets): FG 3/4/5 pts by distance,
@@ -46,10 +51,13 @@ const BASE_VALUES = {
   passing_yards: 0.04,
   passing_tds: 4,
   passing_interceptions: -2,
+  passing_2pt_conversions: 2,
   rushing_yards: 0.1,
   rushing_tds: 6,
+  rushing_2pt_conversions: 2,
   receiving_yards: 0.1,
   receiving_tds: 6,
+  receiving_2pt_conversions: 2,
   fumbles_lost_total: -2,
   def_sacks: 1,
   def_interceptions: 2,

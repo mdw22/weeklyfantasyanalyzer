@@ -49,15 +49,22 @@ OUT_PATH = Path(__file__).parent.parent / "BACKTEST_REPORT.md"  # gitignored, sa
 # full_ppr preset (receptions: 1) -- used ONLY for this offline analysis, not
 # imported into/from the JS file. If scoring.js's values ever change, this
 # needs a matching manual update (same class of cross-language seam as
-# SLOT_ID_ORDER/DEF_{team}, see CLAUDE.md).
+# SLOT_ID_ORDER/DEF_{team}, see CLAUDE.md). Resynced 2026-10-04 to include
+# the passing/rushing/receiving 2pt-conversion keys added to scoring.js --
+# compute_points() only sums over this dict's own keys, so adding them here
+# doesn't change any already-reported Baseline A/B/C or calibration number,
+# it just keeps the NEXT run consistent with production again.
 FULL_PPR_VALUES = {
     "passing_yards": 0.04,
     "passing_tds": 4,
     "passing_interceptions": -2,
+    "passing_2pt_conversions": 2,
     "rushing_yards": 0.1,
     "rushing_tds": 6,
+    "rushing_2pt_conversions": 2,
     "receiving_yards": 0.1,
     "receiving_tds": 6,
+    "receiving_2pt_conversions": 2,
     "receptions": 1,
     "fumbles_lost_total": -2,
     "def_sacks": 1,

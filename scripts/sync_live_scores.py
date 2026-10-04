@@ -56,14 +56,20 @@ DATA_DIR = Path("public/data")
 
 # ESPN statId -> our STAT_FIELDS key (multiple ids may feed one field).
 STAT_ID_TO_FIELD = {
-    # Offense
+    # Offense. 19/26/44 (2pt conversions) are CONFIRMED, not guessed -- read
+    # directly off the real league's own scoringItems response via
+    # ESPN_LOG_SCORING (2026-10-04) and cross-checked against the
+    # independent cwendt94/espn-api library's statId map.
     3: "passing_yards",
     4: "passing_tds",
+    19: "passing_2pt_conversions",
     20: "passing_interceptions",
     24: "rushing_yards",
     25: "rushing_tds",
+    26: "rushing_2pt_conversions",
     42: "receiving_yards",
     43: "receiving_tds",
+    44: "receiving_2pt_conversions",
     53: "receptions",
     72: "fumbles_lost_total",
     # Kicker -- UNVERIFIED, see docstring
@@ -97,8 +103,10 @@ SCOREBOARD_ABBR_FIX = {"LAR": "LA", "WSH": "WAS", "JAC": "JAX"}
 # the debug self-check. Another hand-kept cross-language duplicate.
 SELF_CHECK_VALUES = {
     "passing_yards": 0.04, "passing_tds": 4, "passing_interceptions": -2,
-    "rushing_yards": 0.1, "rushing_tds": 6, "receiving_yards": 0.1,
-    "receiving_tds": 6, "receptions": 1, "fumbles_lost_total": -2,
+    "passing_2pt_conversions": 2, "rushing_yards": 0.1, "rushing_tds": 6,
+    "rushing_2pt_conversions": 2, "receiving_yards": 0.1,
+    "receiving_tds": 6, "receiving_2pt_conversions": 2, "receptions": 1,
+    "fumbles_lost_total": -2,
     "def_sacks": 1, "def_interceptions": 2, "def_fumble_recoveries": 2,
     "def_safeties": 2, "def_touchdowns": 6, "def_blocked_kicks": 2,
     "def_two_point_returns": 2, "def_points_allowed_bonus": 1,

@@ -84,13 +84,16 @@ STAT_COLUMNS = [
     "passing_yards",
     "passing_tds",
     "passing_interceptions",
+    "passing_2pt_conversions",
     "carries",
     "rushing_yards",
     "rushing_tds",
+    "rushing_2pt_conversions",
     "receptions",
     "targets",
     "receiving_yards",
     "receiving_tds",
+    "receiving_2pt_conversions",
     "fumbles_lost_total",
 ]
 
