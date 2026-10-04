@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T21:59:24Z",
+  "updatedAt": "2026-10-04T22:04:28Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -54,7 +54,7 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q3 14:51",
+      "clock": "Q3 11:41",
       "stats": {
         "passing_yards": 139.0,
         "passing_tds": 1.0,
@@ -103,7 +103,7 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q3 10:22",
+      "clock": "Q3 8:01",
       "stats": {
         "rushing_yards": 3.0,
         "receiving_yards": 27.0,
@@ -191,12 +191,12 @@
     },
     "00-0037525": {
       "status": "in_progress",
-      "clock": "Q3 10:22",
+      "clock": "Q3 8:01",
       "stats": {}
     },
     "00-0035229": {
       "status": "in_progress",
-      "clock": "Q3 10:22",
+      "clock": "Q3 8:01",
       "stats": {
         "receiving_yards": 49.0,
         "receptions": 5.0
@@ -212,7 +212,7 @@
     },
     "00-0038563": {
       "status": "in_progress",
-      "clock": "Q3 14:51",
+      "clock": "Q3 11:41",
       "stats": {
         "receiving_yards": 14.0,
         "receptions": 1.0
@@ -250,19 +250,19 @@
   "teams": {
     "MIN": {
       "status": "in_progress",
-      "clock": "Q3 10:22"
+      "clock": "Q3 8:01"
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q3 10:22"
+      "clock": "Q3 8:01"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q3 14:51"
+      "clock": "Q3 11:41"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q3 14:51"
+      "clock": "Q3 11:41"
     },
     "SF": {
       "status": "in_progress",
@@ -274,11 +274,11 @@
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q2 0:18"
+      "clock": "Half"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q2 0:18"
+      "clock": "Half"
     },
     "WAS": {
       "status": "final"
@@ -369,6 +369,7 @@
     "00-0039032": "ACTIVE",
     "00-0039165": "OUT",
     "00-0030279": "OUT",
+    "00-0037291": "QUESTIONABLE",
     "00-0038555": "QUESTIONABLE",
     "00-0041032": "ACTIVE",
     "00-0039875": "ACTIVE",
