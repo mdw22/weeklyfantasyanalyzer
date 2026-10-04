@@ -1,5 +1,6 @@
 {
   "season": 2026,
   "week": 4,
-  "espnSync": true
+  "espnSync": true,
+  "modelMeta": true
 }
