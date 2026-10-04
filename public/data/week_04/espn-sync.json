@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-03T16:56:45Z",
+  "syncedAt": "2026-10-04T06:19:04Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -21,11 +21,11 @@
       },
       {
         "slot": "WR1",
-        "playerId": "00-0039064"
+        "playerId": "00-0039075"
       },
       {
         "slot": "WR2",
-        "playerId": "00-0030279"
+        "playerId": "00-0039064"
       },
       {
         "slot": "FLEX",
@@ -69,7 +69,7 @@
       },
       {
         "slot": "IR",
-        "playerId": "00-0039075"
+        "playerId": "00-0030279"
       }
     ]
   },
