@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T23:36:00Z",
+  "updatedAt": "2026-10-04T23:41:04Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -54,7 +54,7 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 1:16",
+      "clock": "Q4 0:36",
       "stats": {
         "passing_yards": 225.0,
         "passing_tds": 2.0,
@@ -95,8 +95,7 @@
       "status": "not_started"
     },
     "00-0041052": {
-      "status": "in_progress",
-      "clock": "Q4 1:13",
+      "status": "final",
       "stats": {
         "rushing_yards": 13.0
       }
@@ -156,8 +155,7 @@
       "stats": {}
     },
     "00-0033288": {
-      "status": "in_progress",
-      "clock": "Q4 1:13",
+      "status": "final",
       "stats": {
         "receiving_yards": 70.0,
         "receiving_tds": 1.0,
@@ -174,8 +172,7 @@
       }
     },
     "00-0036158": {
-      "status": "in_progress",
-      "clock": "Q4 1:13",
+      "status": "final",
       "stats": {
         "rushing_yards": 40.0,
         "receiving_yards": 12.0,
@@ -210,7 +207,7 @@
     },
     "00-0038563": {
       "status": "in_progress",
-      "clock": "Q4 1:16",
+      "clock": "Q4 0:36",
       "stats": {
         "receiving_yards": 21.0,
         "receptions": 3.0
@@ -248,27 +245,25 @@
   "teams": {
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 1:16"
+      "clock": "Q4 0:36"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 1:16"
+      "clock": "Q4 0:36"
     },
     "SF": {
-      "status": "in_progress",
-      "clock": "Q4 1:13"
+      "status": "final"
     },
     "DEN": {
-      "status": "in_progress",
-      "clock": "Q4 1:13"
+      "status": "final"
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q4 1:56"
+      "clock": "Q4 1:42"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 1:56"
+      "clock": "Q4 1:42"
     },
     "WAS": {
       "status": "final"
