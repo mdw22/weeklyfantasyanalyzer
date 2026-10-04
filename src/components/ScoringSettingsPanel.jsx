@@ -3,9 +3,24 @@ import { SCORING_PRESETS, STAT_FIELDS, matchingPresetKey } from "../lib/scoring.
 import { CloseIcon } from "./icons.jsx";
 
 const PRESET_ORDER = ["standard", "half_ppr", "full_ppr"];
+const SHRINK_POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"];
+
+function ModelNote({ meta }) {
+  if (!meta) return <div className="stat-note">v3 isn't available this week; running v2.</div>;
+  const [first, last] = [meta.window_weeks[0], meta.window_weeks[meta.window_weeks.length - 1]];
+  const betas = SHRINK_POSITIONS.filter((p) => meta.params[p])
+    .map((p) => `${p} ${meta.params[p].beta.toFixed(2)}`)
+    .join(" · ");
+  return (
+    <div className="stat-note">
+      v3 fit window: {first[0]} wk {first[1]} – {last[0]} wk {last[1]}. Shrink toward position average (β): {betas}.
+    </div>
+  );
+}
 
 export function ScoringSettingsPanel({ onClose }) {
-  const { scoringSettings, setScoringSettings } = useApp();
+  const { scoringSettings, setScoringSettings, weekData, effectiveModel, setProjectionModel } = useApp();
+  const modelMeta = weekData.status === "ready" ? weekData.modelMeta : null;
   const activeKey = matchingPresetKey(scoringSettings.values);
 
   function applyPreset(key) {
@@ -42,6 +57,25 @@ export function ScoringSettingsPanel({ onClose }) {
           </button>
         </div>
         <div className="drawer__body">
+          <div className="stat-group-title">Projection model</div>
+          <div className="segmented">
+            <button
+              className={`segmented__option${effectiveModel === "v3" ? " active" : ""}`}
+              disabled={!modelMeta}
+              onClick={() => setProjectionModel("v3")}
+            >
+              v3
+            </button>
+            <button
+              className={`segmented__option${effectiveModel === "v2" ? " active" : ""}`}
+              onClick={() => setProjectionModel("v2")}
+            >
+              v2 (legacy)
+            </button>
+          </div>
+          <ModelNote meta={modelMeta} />
+
+          <div className="stat-group-title">Scoring</div>
           <div className="segmented">
             {PRESET_ORDER.map((key) => (
               <button

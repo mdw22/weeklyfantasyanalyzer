@@ -91,36 +91,11 @@ OUT_PATH = Path(__file__).parent.parent / "PHASE2_OPPORTUNITY_REPORT.md"  # giti
 # attempts/carries/targets (not scored by FULL_PPR_VALUES, so irrelevant) or
 # fumbles_lost_total (nflverse has no fumble _exp column at all -- fumbles
 # aren't usage-predictable, nflverse apparently agrees).
-EXP_COLUMN_MAP = {
-    "pass_completions_exp": "completions",
-    "pass_yards_gained_exp": "passing_yards",
-    "pass_touchdown_exp": "passing_tds",
-    "pass_interception_exp": "passing_interceptions",
-    "rush_yards_gained_exp": "rushing_yards",
-    "rush_touchdown_exp": "rushing_tds",
-    "receptions_exp": "receptions",
-    "rec_yards_gained_exp": "receiving_yards",
-    "rec_touchdown_exp": "receiving_tds",
-    "full_name": "player_display_name",
-    "posteam": "team",
-}
-OPP_STAT_COLUMNS = [v for k, v in EXP_COLUMN_MAP.items() if k.endswith("_exp")]
+# Opportunity column map + loader live in model_core (shared with production);
+# re-exported here for existing importers.
+from model_core import EXP_COLUMN_MAP, OPP_STAT_COLUMNS, load_opportunity_frame  # noqa: E402,F401
+
 BLEND_WEIGHTS = [0.0, 0.25, 0.5, 0.75, 1.0]
-
-
-def load_opportunity_frame(seasons: list[int]) -> pl.DataFrame:
-    """Selects only the id/description columns plus the `_exp` columns before
-    renaming -- `load_ff_opportunity` also has RAW (non-`_exp`) columns with
-    the same target names (e.g. a raw `receptions` alongside `receptions_exp`),
-    so renaming in place without dropping the raw ones first collides."""
-    exp_cols = [k for k in EXP_COLUMN_MAP if k.endswith("_exp")]
-    keep = ["season", "week", "player_id", "full_name", "position", "posteam"] + exp_cols
-    return (
-        nfl.load_ff_opportunity(seasons=seasons)
-        .with_columns(pl.col("season").cast(pl.Int64), pl.col("week").cast(pl.Int64))
-        .select(keep)
-        .rename(EXP_COLUMN_MAP)
-    )
 
 
 def format_blend_table(all_rows: dict) -> str:

@@ -1,0 +1,286 @@
+"""
+phase4_ship_check.py
+
+PRODUCTION_MODEL_SPEC.md section 4, item 1 -- the final backtest the v3
+ship decision rests on. OFFLINE only.
+
+Setup (production-like history): 2023 is loaded as HISTORY ONLY. It feeds
+every fit (rolling shrink window, pos_var, residual pools, player
+histories) but is never scored, so every scored week (2024 wk1 onward) has
+full history and no weeks are excluded.
+
+Models, paired on identical roster draws (roster RNG separate from both
+simulation RNGs), both seeds, realistic top-K and all-players pools:
+- Production today: Baseline A center + raw bootstrap of the last 8 games.
+- v3 stack (spec section 2): Baseline C -> D-rolling -> variance pooling
+  (k=3) + predictive scale, with the spec section 2.4 fallback for s=0 or
+  n<2 (revised 2026-10-04): multiplicative and mean-normalized,
+  x = t * r_j / mean(r), r_j = actual_j / D_j from same-position window
+  players in the same projection bin (bins <2, 2-5, 5-10, >=10 default
+  points), D_j >= 0.5, up to 200 most recent. A bin with < MIN_BIN ratios
+  merges with its adjacent bin(s), then the whole position pool; only if
+  even that is thin does the player stay a point mass (counted).
+
+Ship bar (spec section 4.1, clarified 2026-10-04): Var(z') within 0.9-1.15;
+per-position bias within +/-0.2; every bucket passes, where a bucket FAILS
+only if v3's actual win rate is outside v3's own 95% Wilson CI AND v3's
+|actual - predicted| gap is larger than production's. Also: the fallback's
+share of draws below zero vs. the real share for those players.
+
+Run: POLARS_SKIP_CPU_CHECK=1 python3 scripts/phase4_ship_check.py
+"""
+
+import math
+import random
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).parent))
+from backtest_evaluation import compute_points, summarize  # noqa: E402
+from calibration_check import PROB_BUCKETS, build_pool_by_position, draw_synthetic_matchup  # noqa: E402
+from phase4_combined_stack import (  # noqa: E402
+    MATCHUPS_PER_WEEK,
+    RNG_SEEDS,
+    SD_FLOOR,
+    TRIALS,
+    build_state,
+    realistic_pool,
+    resid_bin,
+)
+from phase4_tail_attribution import production_distribution  # noqa: E402
+from phase4_variance_pooling import K  # noqa: E402
+
+OUT_PATH = Path(__file__).parent.parent / "PHASE4_SHIP_CHECK_REPORT.md"  # gitignored
+POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"]
+MIN_BIN = 10
+VAR_Z_RANGE = (0.9, 1.15)
+BIAS_LIMIT = 0.2
+
+
+def wilson_ci(successes: int, n: int, z: float = 1.96):
+    p = successes / n
+    denom = 1 + z * z / n
+    center = (p + z * z / (2 * n)) / denom
+    half = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / denom
+    return center - half, center + half
+
+
+def ratio_pool(ratio_bins, position, b):
+    """Same bin; else merge with adjacent bins; else the whole position pool."""
+    own = ratio_bins.get((position, b))
+    if own is not None and len(own) >= MIN_BIN:
+        return own
+    merged = [ratio_bins[k] for k in [(position, b - 1), (position, b), (position, b + 1)] if k in ratio_bins]
+    if merged and sum(len(m) for m in merged) >= MIN_BIN:
+        return np.concatenate(merged)
+    everything = [v for (p, _), v in ratio_bins.items() if p == position]
+    if everything and sum(len(m) for m in everything) >= MIN_BIN:
+        return np.concatenate(everything)
+    return None
+
+
+def v3_distribution(eid, target, history, pos_var, ratio_bins, position, cache, stats):
+    if eid in cache:
+        return cache[eid]
+    games = history.get(eid)
+    n = len(games) if games else 0
+    raw = np.array([compute_points(g) for g in games]) if n else None
+    s2 = float(raw.var(ddof=0)) if n else 0.0
+    pv = pos_var.get(position)
+    var_i = s2 if pv is None else (n / (n + K)) * s2 + (1 - n / (n + K)) * pv
+    sd = math.sqrt(var_i * (n + 1) / (n - 1)) if n >= 2 else math.sqrt(var_i)
+    if s2 > 0 and n >= 2:
+        dist = target + (raw - raw.mean()) * (sd / math.sqrt(s2))
+    else:
+        pool = ratio_pool(ratio_bins, position, resid_bin(target))
+        if pool is not None and pool.mean() != 0:
+            dist = target * pool / pool.mean()
+            stats["neg"].setdefault(position, []).append(float(np.mean(dist < 0)))
+        else:
+            dist = np.array([target])
+            stats["point_mass"] += 1
+    cache[eid] = dist
+    return dist
+
+
+def simulate(ids_a, ids_b, sampler, rng):
+    def totals(ids):
+        t = np.zeros(TRIALS)
+        for eid in ids:
+            t += rng.choice(sampler(eid), size=TRIALS, replace=True)
+        return t
+    a, b = totals(ids_a), totals(ids_b)
+    return float(np.mean(a > b)), float(np.std(a - b))
+
+
+def var_zprime(rows, p, sd_key):
+    pred = np.array([r[p] for r in rows])
+    act = np.array([r["actual"] for r in rows])
+    sd = np.array([r[sd_key] for r in rows])
+    b, a = np.polyfit(pred, act, 1)
+    keep = sd >= SD_FLOOR
+    return float(np.var((act[keep] - (a + b * pred[keep])) / sd[keep])), int((~keep).sum()), b
+
+
+def buckets(rows, prob_key):
+    out = []
+    for lo, hi in PROB_BUCKETS:
+        bk = [r for r in rows if r["actual"] != 0 and lo <= max(r[prob_key], 1 - r[prob_key]) < hi]
+        n = len(bk)
+        if n == 0:
+            out.append((lo, hi, 0, None, None, None))
+            continue
+        mp = sum(max(r[prob_key], 1 - r[prob_key]) for r in bk) / n
+        wins = sum((r["actual"] > 0) == (r[prob_key] >= 0.5) for r in bk)
+        out.append((lo, hi, n, mp, wins / n, wilson_ci(wins, n)))
+    return out
+
+
+def main() -> None:
+    targets, weekly_state, point_results = build_state(extra_history_seasons=1)
+    print(f"Scored window: {targets[0]} .. {targets[-1]} ({len(targets)} weeks)")
+
+    # Per-position bias (ship bar), scored weeks only.
+    bias_lines = ["| Position | n | MAE | RMSE | Bias | Within ±0.2? |", "|---|---|---|---|---|---|"]
+    bias_ok = True
+    v3_rows = point_results["Combined stack (D-rolling)"]
+    for pos in POSITIONS:
+        s = summarize([r for r in v3_rows if r["position"] == pos])
+        ok = abs(s["bias"]) <= BIAS_LIMIT
+        bias_ok &= ok
+        bias_lines.append(f"| {pos} | {s['n']} | {s['mae']:.2f} | {s['rmse']:.2f} | {s['bias']:+.2f} | {'yes' if ok else 'NO'} |")
+    s_all = summarize(v3_rows)
+    a_all = summarize(point_results["Baseline A -- last 8"])
+    bias_lines.append(f"| **Overall** | {s_all['n']} | {s_all['mae']:.2f} | {s_all['rmse']:.2f} | {s_all['bias']:+.2f} | |")
+    bias_lines.append(f"\nBaseline A (production) overall on the same weeks: MAE {a_all['mae']:.2f}, "
+                      f"RMSE {a_all['rmse']:.2f}, bias {a_all['bias']:+.2f}")
+
+    # Real below-zero share for degenerate-history player-weeks (what the fallback should mimic).
+    real_neg = {}
+    for st in weekly_state.values():
+        for eid, row in st["actuals"].items():
+            proj = st["projections"].get(eid)
+            if proj is None:
+                continue
+            games = st["history"].get(eid) or []
+            if len(games) < 2 or np.var([compute_points(g) for g in games]) == 0:
+                real_neg.setdefault(proj["position"], []).append(compute_points(row) < 0)
+
+    pools = {
+        "all players": lambda st: build_pool_by_position(st["projections"], st["actuals"]),
+        "realistic top-K": lambda st: realistic_pool(st["projections"], st["actuals"], st["baseline_d"]),
+    }
+    stats = {"neg": {}, "point_mass": 0}
+    sections, verdicts = [], []
+    for pool_name, make_pool in pools.items():
+        for seed in RNG_SEEDS:
+            rng_py = random.Random(seed)
+            rng_v3, rng_prod = np.random.default_rng(seed), np.random.default_rng(seed + 1)
+            rows = []
+            for season, week in targets:
+                st = weekly_state[(season, week)]
+                pool = make_pool(st)
+                pos_of = {e: p["position"] for e, p in st["projections"].items()}
+                v3_cache, prod_cache = {}, {}
+
+                def v3_sampler(e):
+                    return v3_distribution(e, st["baseline_d"][e], st["history"], st["pos_var"],
+                                           st["ratio_bins"], pos_of[e], v3_cache, stats)
+
+                def prod_sampler(e):
+                    return production_distribution(e, st["history"], st["baseline_a"], prod_cache)
+
+                for _ in range(MATCHUPS_PER_WEEK):
+                    drawn = draw_synthetic_matchup(pool, rng_py)
+                    if drawn is None:
+                        continue
+                    ta, tb = drawn
+                    v3_p, v3_sd = simulate(ta, tb, v3_sampler, rng_v3)
+                    pr_p, pr_sd = simulate(ta, tb, prod_sampler, rng_prod)
+                    rows.append({
+                        "v3_p": v3_p, "v3_sd": v3_sd, "pr_p": pr_p, "pr_sd": pr_sd,
+                        "v3_pred": sum(st["baseline_d"][e] for e in ta) - sum(st["baseline_d"][e] for e in tb),
+                        "pr_pred": sum(st["baseline_a"][e] for e in ta) - sum(st["baseline_a"][e] for e in tb),
+                        "actual": sum(compute_points(st["actuals"][e]) for e in ta)
+                                  - sum(compute_points(st["actuals"][e]) for e in tb),
+                    })
+                print(f"  {pool_name} seed {seed}: done season {season} week {week}", end="\r")
+            print()
+
+            vz3, ex3, b3 = var_zprime(rows, "v3_pred", "v3_sd")
+            vzp, exp_, bp = var_zprime(rows, "pr_pred", "pr_sd")
+            bv3, bpr = buckets(rows, "v3_p"), buckets(rows, "pr_p")
+            lines = ["| Bucket | Production: n, pred→actual (gap) | v3: n, pred→actual (gap) | v3 Wilson 95% CI | "
+                     "Pred in CI? | v3 gap ≤ prod? | Bucket |", "|---|---|---|---|---|---|---|"]
+            no_worse = True
+            for (lo, hi, n3, mp3, wr3, ci3), (_, _, npr, mppr, wrpr, _) in zip(bv3, bpr):
+                if n3 == 0:
+                    lines.append(f"| {lo:.0%}-{hi:.0%} | {npr} | 0 | - | - | - | pass (empty) |")
+                    continue
+                g3, gp = abs(wr3 - mp3), (abs(wrpr - mppr) if npr else float("inf"))
+                in_ci = ci3[0] <= mp3 <= ci3[1]
+                ok = in_ci or g3 <= gp  # fails only if outside its own CI AND worse than production
+                no_worse &= ok
+                prod_cell = f"{npr}, {mppr:.1%}→{wrpr:.1%} ({gp*100:.1f})" if npr else "0"
+                lines.append(f"| {lo:.0%}-{hi:.0%} | {prod_cell} | {n3}, {mp3:.1%}→{wr3:.1%} ({g3*100:.1f}) | "
+                             f"[{ci3[0]:.1%}, {ci3[1]:.1%}] | {'yes' if in_ci else 'no'} | "
+                             f"{'yes' if g3 <= gp else 'no'} | {'pass' if ok else 'FAIL'} |")
+            var_ok = VAR_Z_RANGE[0] <= vz3 <= VAR_Z_RANGE[1]
+            verdicts.append((pool_name, seed, no_worse, var_ok))
+            head = (f"### {pool_name}, seed {seed} ({len(rows)} matchups)\n\n"
+                    f"v3: Var(z')={vz3:.3f} ({'within' if var_ok else 'OUTSIDE'} 0.9-1.15), slope {b3:.3f}, "
+                    f"{ex3} below SD floor. Production: Var(z')={vzp:.3f}, slope {bp:.3f}, {exp_} below SD floor.")
+            print(head)
+            print("\n".join(lines))
+            sections.append(head + "\n\n" + "\n".join(lines))
+
+    neg_lines = ["| Position | Fallback dists | Fallback draws < 0 | Real outcomes < 0 (degenerate history) |",
+                 "|---|---|---|---|"]
+    for pos in POSITIONS:
+        f = stats["neg"].get(pos, [])
+        r = real_neg.get(pos, [])
+        neg_lines.append(f"| {pos} | {len(f)} | {np.mean(f) if f else float('nan'):.1%} | "
+                         f"{np.mean(r) if r else float('nan'):.1%} (n={len(r)}) |")
+    neg_lines.append(f"\nPoint-mass fallbacks (bin too thin): {stats['point_mass']}")
+
+    verdict_lines = [f"- {p}, seed {s}: every bucket passes (fails only if outside v3's Wilson CI AND gap > "
+                     f"production's) = {'PASS' if nw else 'FAIL'}; "
+                     f"Var(z') in range = {'PASS' if vo else 'FAIL'}" for p, s, nw, vo in verdicts]
+    verdict_lines.append(f"- Per-position bias within ±0.2 = {'PASS' if bias_ok else 'FAIL'}")
+    overall = bias_ok and all(nw and vo for _, _, nw, vo in verdicts)
+    verdict_lines.insert(0, f"**Overall: {'MEETS' if overall else 'MISSES'} the ship bar.**\n")
+
+    print("\n" + "\n".join(bias_lines))
+    print("\n" + "\n".join(neg_lines))
+    print("\n" + "\n".join(verdict_lines))
+
+    report = f"""# Phase 4 Ship Check (PRODUCTION_MODEL_SPEC.md section 4, item 1)
+
+Generated {datetime.now(timezone.utc).isoformat(timespec="seconds")}. OFFLINE only. 2023 loaded as history only;
+scored weeks {targets[0]} .. {targets[-1]}, no exclusions.
+
+## Verdict
+
+{chr(10).join(verdict_lines)}
+
+## Per-position point accuracy (v3)
+
+{chr(10).join(bias_lines)}
+
+## Calibration, paired vs. production
+
+{chr(10).join(sections)}
+
+## Binned fallback floor
+
+{chr(10).join(neg_lines)}
+"""
+    OUT_PATH.write_text(report)
+    print(f"\nFull report written to {OUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

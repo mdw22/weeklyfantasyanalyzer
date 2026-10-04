@@ -45,49 +45,12 @@ from generate_projections import (  # noqa: E402
 
 OUT_PATH = Path(__file__).parent.parent / "BACKTEST_REPORT.md"  # gitignored, same as the other designer docs
 
-# Full-PPR point values, ported from src/lib/scoring.js's BASE_VALUES + the
-# full_ppr preset (receptions: 1) -- used ONLY for this offline analysis, not
-# imported into/from the JS file. If scoring.js's values ever change, this
-# needs a matching manual update (same class of cross-language seam as
-# SLOT_ID_ORDER/DEF_{team}, see CLAUDE.md). Resynced 2026-10-04 to include
-# the passing/rushing/receiving 2pt-conversion keys added to scoring.js --
-# compute_points() only sums over this dict's own keys, so adding them here
-# doesn't change any already-reported Baseline A/B/C or calibration number,
-# it just keeps the NEXT run consistent with production again.
-FULL_PPR_VALUES = {
-    "passing_yards": 0.04,
-    "passing_tds": 4,
-    "passing_interceptions": -2,
-    "passing_2pt_conversions": 2,
-    "rushing_yards": 0.1,
-    "rushing_tds": 6,
-    "rushing_2pt_conversions": 2,
-    "receiving_yards": 0.1,
-    "receiving_tds": 6,
-    "receiving_2pt_conversions": 2,
-    "receptions": 1,
-    "fumbles_lost_total": -2,
-    "def_sacks": 1,
-    "def_interceptions": 2,
-    "def_fumble_recoveries": 2,
-    "def_safeties": 2,
-    "def_touchdowns": 6,
-    "def_blocked_kicks": 2,
-    "def_two_point_returns": 2,
-    "def_points_allowed_bonus": 1,
-    "def_yards_allowed_bonus": 1,
-    "fg_made_0_39": 3,
-    "fg_made_40_49": 4,
-    "fg_made_50_plus": 5,
-    "fg_missed_total": -1,
-    "pat_made": 1,
-}
+# Scoring values and compute_points live in model_core (single source of truth,
+# shared with the production pipeline); re-exported here for existing importers.
+from model_core import FULL_PPR_VALUES, compute_points  # noqa: E402,F401
 
 POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"]
 
-
-def compute_points(stat_line: dict, values: dict = FULL_PPR_VALUES) -> float:
-    return sum((stat_line.get(k) or 0.0) * v for k, v in values.items())
 
 
 def list_backtest_weeks(schedules: pl.DataFrame, seasons: list[int]) -> list[tuple[int, int]]:

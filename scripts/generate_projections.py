@@ -67,6 +67,8 @@ from pathlib import Path
 import nflreadpy as nfl
 import polars as pl
 
+import model_core
+
 # How many past games to average for a projection / keep for Monte Carlo
 # history. 8 is a reasonable starting point -- recent enough to reflect
 # current role, long enough to smooth out one-off blowups.
@@ -411,6 +413,95 @@ def apply_availability(projections: dict, schedules: pl.DataFrame, season: int, 
             entry["on_bye"] = True
 
 
+def completed_weeks_before(schedules: pl.DataFrame, season: int, week: int) -> list[tuple[int, int]]:
+    """Every (season, week) strictly before the target whose games are all
+    final, oldest first -- the same week set the backtest iterates."""
+    out = []
+    for s in sorted(schedules["season"].unique().to_list()):
+        ss = schedules.filter(pl.col("season") == s)
+        for w in sorted(ss["week"].unique().to_list()):
+            if (s, w) >= (season, week):
+                continue
+            wk = ss.filter(pl.col("week") == w)
+            if wk.height > 0 and wk["home_score"].null_count() == 0:
+                out.append((s, w))
+    return out
+
+
+def _window_week_pairs(groups, opp: pl.DataFrame, season: int, week: int) -> list:
+    """(position, C stats, actual stats) for everyone who played (season, week),
+    with C built from games strictly before that week."""
+    pairs = []
+    played_ids = []
+    projections, actuals = {}, {}
+    for df, id_col, stat_columns, describe_row in groups:
+        rows = df.filter((pl.col("season") == season) & (pl.col("week") == week))
+        week_actuals = {str(r[id_col]): {c: r.get(c) for c in stat_columns} for r in rows.iter_rows(named=True)}
+        if not week_actuals:
+            continue
+        relevant = df.filter(pl.col(id_col).is_in(list(week_actuals.keys())))
+        projections.update(build_projections(relevant, season, week, id_col, stat_columns, describe_row, n_games=8))
+        actuals.update(week_actuals)
+        played_ids.extend(week_actuals.keys())
+    opp_rel = opp.filter(pl.col("player_id").is_in(played_ids))
+    opp_map = build_projections(opp_rel, season, week, "player_id", model_core.OPP_STAT_COLUMNS,
+                                describe_player, n_games=8) if opp_rel.height else {}
+    for eid, proj in projections.items():
+        if eid not in actuals:
+            continue
+        o = opp_map.get(eid)
+        c = model_core.baseline_c_stats(proj["projected_stats"], proj["position"], o["projected_stats"] if o else None)
+        pairs.append((proj["position"], c, actuals[eid]))
+    return pairs
+
+
+def build_v3(groups, opp: pl.DataFrame, schedules: pl.DataFrame, season: int, week: int,
+             projections: dict) -> tuple[dict, dict]:
+    """v3 D stat lines for every entry in `projections` + model_meta. Mirrors
+    the validated backtest: the shrink fit uses the last ROLLING_WEEKS
+    completed weeks; each of those weeks' fallback ratios uses ITS OWN as-of
+    D (fit on the 8 weeks before it), so 2x ROLLING_WEEKS weeks are built."""
+    rw = model_core.ROLLING_WEEKS
+    weeks = completed_weeks_before(schedules, season, week)[-2 * rw:]
+    pairs_by_week = {wk: _window_week_pairs(groups, opp, *wk) for wk in weeks}
+    recent = weeks[-rw:]
+
+    entries = []
+    for i, wk in enumerate(weeks):
+        if wk not in recent:
+            continue
+        params_then = model_core.fit_window([p for prior in weeks[max(0, i - rw):i] for p in pairs_by_week[prior]])
+        for pos, c, actual in pairs_by_week[wk]:
+            entries.append((pos, model_core.compute_points(model_core.apply_d(c, pos, params_then)),
+                            model_core.compute_points(actual)))
+    params = model_core.fit_window([p for wk in recent for p in pairs_by_week[wk]])
+
+    opp_cur = opp.filter(pl.col("player_id").is_in(list(projections.keys())))
+    opp_map = build_projections(opp_cur, season, week, "player_id", model_core.OPP_STAT_COLUMNS,
+                                describe_player, n_games=8) if opp_cur.height else {}
+    d_stats = {}
+    for eid, entry in projections.items():
+        o = opp_map.get(eid)
+        c = model_core.baseline_c_stats(entry["projected_stats"], entry["position"], o["projected_stats"] if o else None)
+        d_stats[eid] = model_core.apply_d(c, entry["position"], params)
+
+    pools = model_core.build_ratio_pools(entries)
+    meta = {
+        "model_version": model_core.MODEL_VERSION,
+        "season": season,
+        "week": week,
+        "window_weeks": [list(wk) for wk in recent],
+        "params": {pos: {k: p[k] for k in ("beta", "m_act", "m_c", "n_pairs")} for pos, p in params.items()},
+        "ratio_bin_edges": model_core.RATIO_BIN_EDGES,
+        "ratio_min_pool": model_core.RATIO_MIN_POOL,
+        "pooling_k": model_core.POOLING_K,
+        "ratio_pools": {},
+    }
+    for (pos, b), ratios in sorted(pools.items()):
+        meta["ratio_pools"].setdefault(pos, {})[str(b)] = [round(r, 4) for r in ratios]
+    return d_stats, meta
+
+
 def main() -> None:
     season = current_season()
     schedules = nfl.load_schedules(seasons=season)
@@ -428,9 +519,10 @@ def main() -> None:
     projections.update(build_projections(kickers, season, week, "player_id", K_STAT_COLUMNS, describe_player))
     history.update(build_history(kickers, season, week, "player_id", K_STAT_COLUMNS))
 
+    lookback_schedules = nfl.load_schedules(seasons=lookback_seasons)
     team_stats = add_def_stat_columns(
         nfl.load_team_stats(seasons=lookback_seasons, summary_level="week"),
-        nfl.load_schedules(seasons=lookback_seasons),
+        lookback_schedules,
     )
     def_projections = build_projections(
         team_stats, season, week, "def_id", DEF_STAT_COLUMNS, describe_defense
@@ -440,14 +532,43 @@ def main() -> None:
     projections.update(def_projections)
     history.update(def_history)
 
-    injuries, active, reserve = load_availability(season, week)
-    apply_availability(projections, schedules, season, week, injuries, active, reserve)
-
     out_dir = DATA_DIR / f"week_{week:02d}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    # v3 model (PRODUCTION_MODEL_SPEC.md). projected_stats becomes the v3 line;
+    # the old last-8 line is kept as projected_stats_v2 for the in-app toggle
+    # and rollback. If anything in the v3 build fails (e.g. the nflverse
+    # opportunity feed is unavailable), today's v2 output ships unchanged and
+    # no model_meta.json is written -- the frontend then runs v2 regardless
+    # of the toggle.
+    meta = None
+    try:
+        skill = stats.filter(pl.col("position").is_in(["QB", "RB", "WR", "TE"]))
+        groups = [
+            (skill, "player_id", STAT_COLUMNS, describe_player),
+            (kickers, "player_id", K_STAT_COLUMNS, describe_player),
+            (team_stats, "def_id", DEF_STAT_COLUMNS, describe_defense),
+        ]
+        opp = model_core.load_opportunity_frame(lookback_seasons)
+        d_stats, meta = build_v3(groups, opp, lookback_schedules, season, week, projections)
+        for eid, entry in projections.items():
+            entry["projected_stats_v2"] = entry["projected_stats"]
+            entry["projected_stats"] = {k: round(v, 4) for k, v in d_stats[eid].items()}
+            entry["model_version"] = model_core.MODEL_VERSION
+    except Exception as exc:  # noqa: BLE001 -- v3 is optional; never break the daily job over it
+        print(f"WARNING: v3 model build failed ({exc!r}); shipping v2 projections only")
+        meta = None
+
+    injuries, active, reserve = load_availability(season, week)
+    apply_availability(projections, schedules, season, week, injuries, active, reserve)
+
     (out_dir / "projections.json").write_text(json.dumps(projections, indent=2))
     (out_dir / "history.json").write_text(json.dumps(history, indent=2))
+    meta_path = out_dir / "model_meta.json"
+    if meta is not None:
+        meta_path.write_text(json.dumps(meta, indent=2))
+    elif meta_path.exists():
+        meta_path.unlink()  # a stale meta from an earlier run must not pair with v2-only projections
 
     # The frontend is static and has no other way to know which week
     # folder is current -- it fetches this manifest first, then
@@ -465,6 +586,7 @@ def main() -> None:
                 "season": season,
                 "week": week,
                 "espnSync": (out_dir / "espn-sync.json").exists(),
+                "modelMeta": meta is not None,
             },
             indent=2,
         )

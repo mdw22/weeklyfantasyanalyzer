@@ -1,6 +1,78 @@
-import { computeFantasyPoints } from "./scoring.js";
+import { SCORING_PRESETS, computeFantasyPoints } from "./scoring.js";
 
 const DEFAULT_TRIALS = 10000;
+// Fallback bins are defined in default (full-PPR) points, as in the pipeline.
+const DEFAULT_VALUES = SCORING_PRESETS.full_ppr.values;
+
+function populationVariance(xs) {
+  const mean = xs.reduce((a, b) => a + b, 0) / xs.length;
+  return xs.reduce((a, x) => a + (x - mean) ** 2, 0) / xs.length;
+}
+
+/** Per-position mean population variance of history points, under the user's
+ * scoring, over active players with >= 2 games (PRODUCTION_MODEL_SPEC.md 3d).
+ * Computed once per (data, scoring) by the caller. */
+export function computePositionVariance(projections, history, scoringValues) {
+  const sums = {};
+  for (const [id, entry] of Object.entries(projections)) {
+    const games = history[id];
+    if (!games || games.length < 2) continue;
+    if (!entry.active && entry.position !== "DEF") continue;
+    const v = populationVariance(games.map((g) => computeFantasyPoints(g, scoringValues)));
+    const s = (sums[entry.position] ??= { total: 0, n: 0 });
+    s.total += v;
+    s.n += 1;
+  }
+  const out = {};
+  for (const [pos, { total, n }] of Object.entries(sums)) out[pos] = total / n;
+  return out;
+}
+
+function ratioBin(points, edges) {
+  return edges.reduce((b, edge) => b + (points >= edge ? 1 : 0), 0);
+}
+
+/** Same bin; else merge with adjacent bins; else the whole position pool. */
+function ratioPool(pools, minPool, bin) {
+  if (!pools) return null;
+  const own = pools[String(bin)];
+  if (own && own.length >= minPool) return own;
+  const merged = [bin - 1, bin, bin + 1].flatMap((b) => pools[String(b)] ?? []);
+  if (merged.length >= minPool) return merged;
+  const all = Object.values(pools).flat();
+  return all.length >= minPool ? all : null;
+}
+
+/** v3 per-player outcome set (spec section 2.4), as an array to resample from:
+ * the player's own history shape rescaled to a pooled + predictive-scaled SD
+ * and centered on his projection; with no usable shape (s = 0 or n < 2), his
+ * projection times same-position, same-bin actual/projected ratios
+ * (mean-normalized, so the center stays exactly the projection). */
+export function v3Outcomes(entry, games, scoringValues, posVar, modelMeta) {
+  const target = computeFantasyPoints(entry.projected_stats, scoringValues);
+  const points = (games ?? []).map((g) => computeFantasyPoints(g, scoringValues));
+  const n = points.length;
+  const s2 = n ? populationVariance(points) : 0;
+  const pv = posVar[entry.position];
+  const w = n / (n + modelMeta.pooling_k);
+  const variance = pv === undefined ? s2 : w * s2 + (1 - w) * pv;
+  const sd = n >= 2 ? Math.sqrt((variance * (n + 1)) / (n - 1)) : Math.sqrt(variance);
+
+  if (s2 > 0 && n >= 2) {
+    const mean = points.reduce((a, b) => a + b, 0) / n;
+    const scale = sd / Math.sqrt(s2);
+    return points.map((p) => target + (p - mean) * scale);
+  }
+  const defaultTarget = computeFantasyPoints(entry.projected_stats, DEFAULT_VALUES);
+  const pool = ratioPool(
+    modelMeta.ratio_pools[entry.position],
+    modelMeta.ratio_min_pool,
+    ratioBin(defaultTarget, modelMeta.ratio_bin_edges)
+  );
+  if (!pool) return [target];
+  const meanRatio = pool.reduce((a, b) => a + b, 0) / pool.length;
+  return meanRatio ? pool.map((r) => (target * r) / meanRatio) : [target];
+}
 
 /** Builds a function that returns one bootstrap-sampled stat line for a
  * player: a real past game picked at random (with replacement) from
@@ -36,19 +108,36 @@ function summarize(totals) {
   };
 }
 
-/** Player outcomes are treated as independent for v2 (no shared game-script
- * correlation between teammates) -- an approved simplification, see
- * CLAUDE.md. */
+function buildV3Sampler(playerId, projections, history, scoringValues, posVar, modelMeta) {
+  const entry = projections[playerId];
+  if (!entry) return () => 0; // same as v2: a roster id missing from this week's data contributes 0
+  const outcomes = v3Outcomes(entry, history[playerId], scoringValues, posVar, modelMeta);
+  return () => outcomes[Math.floor(Math.random() * outcomes.length)];
+}
+
+/** Player outcomes are treated as independent (no shared game-script
+ * correlation between teammates) -- measured as second-order, see
+ * MODEL_ROADMAP.md. model "v2" is today's raw bootstrap; "v3" needs
+ * modelMeta + posVar (PRODUCTION_MODEL_SPEC.md). v3 samplers return points
+ * directly; v2 samplers return stat lines scored per trial, as before. */
 export function simulateMatchup({
   myPlayerIds,
   opponentPlayerIds,
   projections,
   history,
   scoringValues,
+  model = "v2",
+  modelMeta = null,
+  posVar = null,
   trials = DEFAULT_TRIALS,
 }) {
-  const mySamplers = myPlayerIds.map((id) => buildSampler(id, projections, history));
-  const oppSamplers = opponentPlayerIds.map((id) => buildSampler(id, projections, history));
+  const useV3 = model === "v3" && modelMeta && posVar;
+  const score = useV3 ? (x) => x : (line) => computeFantasyPoints(line, scoringValues);
+  const sampler = useV3
+    ? (id) => buildV3Sampler(id, projections, history, scoringValues, posVar, modelMeta)
+    : (id) => buildSampler(id, projections, history);
+  const mySamplers = myPlayerIds.map(sampler);
+  const oppSamplers = opponentPlayerIds.map(sampler);
 
   const myTotals = new Array(trials);
   const oppTotals = new Array(trials);
@@ -56,9 +145,9 @@ export function simulateMatchup({
 
   for (let t = 0; t < trials; t++) {
     let myTotal = 0;
-    for (const sample of mySamplers) myTotal += computeFantasyPoints(sample(), scoringValues);
+    for (const sample of mySamplers) myTotal += score(sample());
     let oppTotal = 0;
-    for (const sample of oppSamplers) oppTotal += computeFantasyPoints(sample(), scoringValues);
+    for (const sample of oppSamplers) oppTotal += score(sample());
 
     myTotals[t] = myTotal;
     oppTotals[t] = oppTotal;

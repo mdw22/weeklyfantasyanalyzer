@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useApp } from "../lib/AppContext.jsx";
 import { effectivePoints, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
-import { simulateMatchup } from "../lib/monteCarlo.js";
+import { computePositionVariance, simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
 import { ScoringBadge } from "./ScoringBadge.jsx";
 import { currentRisk, isExpectedOut } from "../lib/lineupAdvisor.js";
@@ -30,7 +30,7 @@ function simulatedIds(roster, projections, live) {
 }
 
 export function MatchupComparison({ onEditTeam }) {
-  const { weekData, scoringSettings, myRoster, opponentRoster } = useApp();
+  const { weekData, effectiveModel, scoringSettings, myRoster, opponentRoster } = useApp();
 
   const ready = weekData.status === "ready";
   const projections = ready ? weekData.projections : {};
@@ -56,6 +56,13 @@ export function MatchupComparison({ onEditTeam }) {
   const mySimIds = useMemo(() => simulatedIds(myRoster, projections, live), [myRoster, projections, live]);
   const oppSimIds = useMemo(() => simulatedIds(opponentRoster, projections, live), [opponentRoster, projections, live]);
 
+  const isV3 = effectiveModel === "v3";
+  const posVar = useMemo(
+    () => (ready && isV3 ? computePositionVariance(projections, history, scoringSettings.values) : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [ready, isV3, weekData, scoringSettings]
+  );
+
   const simulation = useMemo(() => {
     if (!ready || !bothTeamsFilled) return null;
     return simulateMatchup({
@@ -64,9 +71,12 @@ export function MatchupComparison({ onEditTeam }) {
       projections,
       history,
       scoringValues: scoringSettings.values,
+      model: effectiveModel,
+      modelMeta: weekData.modelMeta,
+      posVar,
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, bothTeamsFilled, myRoster, opponentRoster, scoringSettings, weekData]);
+  }, [ready, bothTeamsFilled, myRoster, opponentRoster, scoringSettings, weekData, effectiveModel, posVar]);
 
   if (weekData.status === "loading") {
     return <div className="state-message">Loading matchup…</div>;
@@ -76,6 +86,11 @@ export function MatchupComparison({ onEditTeam }) {
   }
 
   const winPct = simulation ? Math.round(simulation.winProbability * 100) : null;
+  // v3 only: the extremes aren't calibrated to the point, so don't show false precision there.
+  const winLabel = winPct === null ? null
+    : isV3 && winPct > 90 ? ">90%"
+    : isV3 && winPct < 10 ? "<10%"
+    : `${winPct}%`;
 
   return (
     <div className="page">
@@ -93,7 +108,7 @@ export function MatchupComparison({ onEditTeam }) {
         <div className="win-hero">
           {simulation ? (
             <>
-              <div className="win-hero__pct">{winPct}%</div>
+              <div className="win-hero__pct">{winLabel}</div>
               <div className="win-hero__label">Win Probability</div>
               <div className="win-bar">
                 <div className="win-bar__segment--mine" style={{ width: `${winPct}%` }} />

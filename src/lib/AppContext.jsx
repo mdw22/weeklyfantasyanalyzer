@@ -13,8 +13,40 @@ function emptyRoster() {
   return roster;
 }
 
+// Dark-launch default (PRODUCTION_MODEL_SPEC.md section 5): v2 until the flip.
+const DEFAULT_PROJECTION_MODEL = "v2";
+
+/** Serves the selected model's projection line as `projected_stats`, so every
+ * consumer (tables, advisor, roster moves, live scores, matchup) follows the
+ * toggle without knowing about it. v3 is only possible when the pipeline
+ * shipped it (projected_stats_v2 present + model_meta loaded); otherwise
+ * everything runs v2. */
+function withProjectionModel(rawWeekData, requestedModel) {
+  if (rawWeekData.status !== "ready") return { weekData: rawWeekData, effectiveModel: "v2" };
+  const hasV3 = !!rawWeekData.modelMeta;
+  if (requestedModel === "v3" && hasV3) return { weekData: rawWeekData, effectiveModel: "v3" };
+  if (!hasV3) return { weekData: rawWeekData, effectiveModel: "v2" };
+  const projections = {};
+  for (const [id, entry] of Object.entries(rawWeekData.projections)) {
+    projections[id] = entry.projected_stats_v2 ? { ...entry, projected_stats: entry.projected_stats_v2 } : entry;
+  }
+  return { weekData: { ...rawWeekData, projections }, effectiveModel: "v2" };
+}
+
 export function AppProvider({ children }) {
-  const weekData = useWeekData();
+  const rawWeekData = useWeekData();
+  const [projectionModel, setProjectionModelState] = useState(() =>
+    loadJSON("projectionModel", DEFAULT_PROJECTION_MODEL)
+  );
+  const { weekData, effectiveModel } = useMemo(
+    () => withProjectionModel(rawWeekData, projectionModel),
+    [rawWeekData, projectionModel]
+  );
+
+  function setProjectionModel(next) {
+    setProjectionModelState(next);
+    saveJSON("projectionModel", next);
+  }
 
   // Merge over defaults so stat fields added after the user last saved
   // settings (e.g. kicker/defense fields) get their default point values
@@ -132,6 +164,9 @@ export function AppProvider({ children }) {
   const value = useMemo(
     () => ({
       weekData,
+      projectionModel,
+      setProjectionModel,
+      effectiveModel,
       scoringSettings,
       setScoringSettings,
       myRoster,
@@ -142,7 +177,7 @@ export function AppProvider({ children }) {
       isSynced: weekData.status === "ready" && !!weekData.espnSync,
       syncedAt: weekData.status === "ready" ? weekData.espnSync?.syncedAt ?? null : null,
     }),
-    [weekData, scoringSettings, myRoster, opponentRoster, myOverrides, opponentOverrides]
+    [weekData, projectionModel, effectiveModel, scoringSettings, myRoster, opponentRoster, myOverrides, opponentOverrides]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

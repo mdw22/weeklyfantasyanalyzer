@@ -34,7 +34,7 @@ export function useWeekData() {
       try {
         const latest = await fetchJSON("data/latest.json");
         const weekStr = String(latest.week).padStart(2, "0");
-        const [projections, history, espnSync] = await Promise.all([
+        const [projections, history, espnSync, modelMeta] = await Promise.all([
           fetchJSON(`data/week_${weekStr}/projections.json`),
           fetchJSON(`data/week_${weekStr}/history.json`),
           // latest.json says whether espn-sync.json actually exists this
@@ -43,6 +43,11 @@ export function useWeekData() {
           // every browser, no matter how the rejection is caught).
           latest.espnSync
             ? fetchJSONOptional(`data/week_${weekStr}/espn-sync.json`)
+            : Promise.resolve(null),
+          // v3 model parameters + fallback ratio pools; absent when the
+          // pipeline couldn't build v3 that day (then v2 runs regardless).
+          latest.modelMeta
+            ? fetchJSONOptional(`data/week_${weekStr}/model_meta.json`)
             : Promise.resolve(null),
         ]);
         if (!cancelled) {
@@ -53,6 +58,7 @@ export function useWeekData() {
             projections,
             history,
             espnSync,
+            modelMeta,
           });
         }
       } catch (error) {
