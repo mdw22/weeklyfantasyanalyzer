@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-04T20:07:58Z",
+  "updatedAt": "2026-10-04T20:13:03Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q4 1:37",
+      "clock": "Q4 1:10",
       "stats": {
         "rushing_yards": 2.0,
         "rushing_tds": 1.0,
@@ -13,17 +13,16 @@
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q4 1:37",
+      "clock": "Q4 1:10",
       "stats": {
-        "rushing_yards": 69.0,
-        "rushing_tds": 1.0,
+        "rushing_yards": 80.0,
+        "rushing_tds": 2.0,
         "receiving_yards": 66.0,
         "receptions": 10.0
       }
     },
     "00-0039064": {
-      "status": "in_progress",
-      "clock": "Q4 1:12",
+      "status": "final",
       "stats": {
         "receiving_yards": 118.0,
         "receiving_tds": 1.0,
@@ -31,8 +30,7 @@
       }
     },
     "00-0040715": {
-      "status": "in_progress",
-      "clock": "Q4 0:26",
+      "status": "final",
       "stats": {
         "rushing_yards": 58.0,
         "receiving_yards": 8.0,
@@ -40,8 +38,7 @@
       }
     },
     "00-0035261": {
-      "status": "in_progress",
-      "clock": "Q4 1:12",
+      "status": "final",
       "stats": {
         "rushing_yards": 48.0,
         "rushing_tds": 1.0,
@@ -51,7 +48,7 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q4 1:05",
+      "clock": "End Q4",
       "stats": {
         "receiving_yards": 82.0,
         "receptions": 7.0,
@@ -72,7 +69,7 @@
     },
     "00-0037816": {
       "status": "in_progress",
-      "clock": "Q4 1:05",
+      "clock": "End Q4",
       "stats": {
         "receiving_yards": 58.0,
         "receiving_tds": 2.0,
@@ -100,18 +97,18 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q1 13:55",
+      "clock": "Q1 12:20",
       "stats": {}
     },
     "DEF_BUF": {
       "status": "in_progress",
-      "clock": "Q4 1:05",
+      "clock": "End Q4",
       "stats": {
         "def_interceptions": 1.0,
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
         "def_points_allowed_bonus": -1,
-        "def_yards_allowed_bonus": -1
+        "def_yards_allowed_bonus": -3
       }
     },
     "00-0038551": {
@@ -119,7 +116,7 @@
     },
     "00-0036358": {
       "status": "in_progress",
-      "clock": "Q4 0:40",
+      "clock": "Q4 0:16",
       "stats": {
         "rushing_yards": -6.0,
         "receiving_yards": 189.0,
@@ -129,11 +126,11 @@
     },
     "00-0036554": {
       "status": "in_progress",
-      "clock": "Q4 0:40",
+      "clock": "Q4 0:16",
       "stats": {
-        "receiving_yards": 110.0,
+        "receiving_yards": 118.0,
         "receiving_tds": 2.0,
-        "receptions": 6.0
+        "receptions": 7.0
       }
     },
     "00-0036973": {
@@ -169,7 +166,7 @@
     },
     "00-0040867": {
       "status": "in_progress",
-      "clock": "Q4 1:37",
+      "clock": "Q4 1:10",
       "stats": {
         "receiving_yards": 27.0,
         "receptions": 3.0
@@ -177,17 +174,16 @@
     },
     "00-0037525": {
       "status": "in_progress",
-      "clock": "Q1 13:55",
+      "clock": "Q1 12:20",
       "stats": {}
     },
     "00-0035229": {
       "status": "in_progress",
-      "clock": "Q1 13:55",
+      "clock": "Q1 12:20",
       "stats": {}
     },
     "00-0034975": {
-      "status": "in_progress",
-      "clock": "Q4 1:12",
+      "status": "final",
       "stats": {
         "rushing_yards": 3.0,
         "receiving_yards": 22.0,
@@ -202,16 +198,15 @@
     },
     "00-0039163": {
       "status": "in_progress",
-      "clock": "Q4 0:40",
+      "clock": "Q4 0:16",
       "stats": {
-        "passing_yards": 328.0,
+        "passing_yards": 347.0,
         "passing_tds": 2.0,
         "rushing_yards": 12.0
       }
     },
     "DEF_TEN": {
-      "status": "in_progress",
-      "clock": "Q4 1:12",
+      "status": "final",
       "stats": {
         "def_sacks": 2.0,
         "def_points_allowed_bonus": 0,
@@ -231,51 +226,47 @@
   "teams": {
     "BUF": {
       "status": "in_progress",
-      "clock": "Q4 1:05"
+      "clock": "End Q4"
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q4 1:05"
+      "clock": "End Q4"
     },
     "CIN": {
       "status": "in_progress",
-      "clock": "Q4 1:56"
+      "clock": "Q4 1:01"
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 1:56"
+      "clock": "Q4 1:01"
     },
     "NYG": {
-      "status": "in_progress",
-      "clock": "Q4 0:26"
+      "status": "final"
     },
     "ARI": {
-      "status": "in_progress",
-      "clock": "Q4 0:26"
+      "status": "final"
     },
     "PHI": {
       "status": "in_progress",
-      "clock": "Q4 1:37"
+      "clock": "Q4 1:10"
     },
     "LA": {
       "status": "in_progress",
-      "clock": "Q4 1:37"
+      "clock": "Q4 1:10"
     },
     "BAL": {
-      "status": "in_progress",
-      "clock": "Q4 1:12"
+      "status": "final"
     },
     "TEN": {
-      "status": "in_progress",
-      "clock": "Q4 1:12"
+      "status": "final"
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q4 0:40"
+      "clock": "Q4 0:16"
     },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q4 0:40"
+      "clock": "Q4 0:16"
     },
     "WAS": {
       "status": "final"
@@ -297,11 +288,11 @@
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q1 13:55"
+      "clock": "Q1 12:20"
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q1 13:55"
+      "clock": "Q1 12:20"
     },
     "LV": {
       "status": "not_started"
