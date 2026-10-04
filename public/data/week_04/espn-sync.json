@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-04T06:43:38Z",
+  "syncedAt": "2026-10-04T17:15:34Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -106,7 +106,7 @@
       },
       {
         "slot": "DEF",
-        "playerId": "DEF_TEN"
+        "playerId": "DEF_GB"
       },
       {
         "slot": "K",
@@ -135,6 +135,10 @@
       {
         "slot": "BN6",
         "playerId": "00-0038563"
+      },
+      {
+        "slot": "BN7",
+        "playerId": "DEF_TEN"
       },
       {
         "slot": "IR",
@@ -1064,6 +1068,10 @@
       "espnTeamId": 14
     },
     "DEF_TEN": {
+      "owned": true,
+      "espnTeamId": 14
+    },
+    "DEF_GB": {
       "owned": true,
       "espnTeamId": 14
     }

@@ -737,7 +737,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0030386": {
@@ -9278,8 +9277,7 @@
       "receiving_tds": 0.12,
       "receiving_2pt_conversions": 0.25,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0035537": {
     "player_name": "Ty Johnson",
@@ -9628,7 +9626,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0035663": {
@@ -16467,7 +16464,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037258": {
@@ -17731,7 +17727,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037627": {
@@ -23206,8 +23201,7 @@
       "receiving_tds": 0.38,
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0039356": {
     "player_name": "Ja'Tavion Sanders",
@@ -23603,8 +23597,7 @@
       "receiving_tds": 0.0,
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0039424": {
     "player_name": "Devaughn Vele",
@@ -24852,7 +24845,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039911": {
@@ -27133,7 +27125,6 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036619": {
@@ -43949,8 +43940,7 @@
       "receiving_tds": 0.0,
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0039835": {
     "player_name": "Justin Eboigbe",
@@ -50114,8 +50104,7 @@
       "receiving_tds": 0.0,
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
-    },
-    "active": true
+    }
   },
   "00-0040182": {
     "player_name": "Dante Trader Jr.",
@@ -64775,7 +64764,7 @@
   },
   "00-0040560": {
     "player_name": "Sebastian Valdez",
-    "position": "DL",
+    "position": "DT",
     "team": "SF",
     "games_used": 1,
     "projected_stats": {
