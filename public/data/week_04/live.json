@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T23:15:45Z",
+  "updatedAt": "2026-10-04T23:20:49Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -54,7 +54,7 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 3:21",
+      "clock": "Q4 3:02",
       "stats": {
         "passing_yards": 225.0,
         "passing_tds": 2.0,
@@ -96,7 +96,7 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 4:05",
+      "clock": "Q4 2:15",
       "stats": {
         "rushing_yards": 13.0
       }
@@ -157,10 +157,11 @@
     },
     "00-0033288": {
       "status": "in_progress",
-      "clock": "Q4 4:05",
+      "clock": "Q4 2:15",
       "stats": {
-        "receiving_yards": 14.0,
-        "receptions": 3.0
+        "receiving_yards": 70.0,
+        "receiving_tds": 1.0,
+        "receptions": 4.0
       }
     },
     "00-0040667": {
@@ -174,7 +175,7 @@
     },
     "00-0036158": {
       "status": "in_progress",
-      "clock": "Q4 4:05",
+      "clock": "Q4 2:15",
       "stats": {
         "rushing_yards": 40.0,
         "receiving_yards": 12.0,
@@ -209,7 +210,7 @@
     },
     "00-0038563": {
       "status": "in_progress",
-      "clock": "Q4 3:21",
+      "clock": "Q4 3:02",
       "stats": {
         "receiving_yards": 13.0,
         "receptions": 2.0
@@ -245,35 +246,29 @@
     }
   },
   "teams": {
-    "MIN": {
-      "status": "final"
-    },
-    "MIA": {
-      "status": "final"
-    },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 3:21"
+      "clock": "Q4 3:02"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 3:21"
+      "clock": "Q4 3:02"
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 4:05"
+      "clock": "Q4 2:15"
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 4:05"
+      "clock": "Q4 2:15"
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q4 7:48"
+      "clock": "Q4 5:38"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 7:48"
+      "clock": "Q4 5:38"
     },
     "WAS": {
       "status": "final"
@@ -329,6 +324,12 @@
     "DAL": {
       "status": "final"
     },
+    "MIN": {
+      "status": "final"
+    },
+    "MIA": {
+      "status": "final"
+    },
     "CAR": {
       "status": "not_started"
     },
@@ -370,6 +371,7 @@
     "00-0041032": "ACTIVE",
     "00-0039875": "ACTIVE",
     "00-0038685": "QUESTIONABLE",
+    "00-0038104": "OUT",
     "00-0040177": "OUT",
     "00-0038705": "OUT",
     "00-0040134": "QUESTIONABLE",
