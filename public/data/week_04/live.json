@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T20:23:10Z",
+  "updatedAt": "2026-10-04T20:28:14Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -53,7 +53,9 @@
       }
     },
     "00-0033873": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:39",
+      "stats": {}
     },
     "00-0040236": {
       "status": "final",
@@ -89,11 +91,13 @@
       "status": "not_started"
     },
     "00-0041052": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:21",
+      "stats": {}
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q1 7:54",
+      "clock": "Q1 5:30",
       "stats": {}
     },
     "DEF_BUF": {
@@ -143,7 +147,9 @@
       "stats": {}
     },
     "00-0033288": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:21",
+      "stats": {}
     },
     "00-0040667": {
       "status": "final",
@@ -155,7 +161,9 @@
       }
     },
     "00-0036158": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:21",
+      "stats": {}
     },
     "00-0040867": {
       "status": "final",
@@ -166,12 +174,12 @@
     },
     "00-0037525": {
       "status": "in_progress",
-      "clock": "Q1 7:54",
+      "clock": "Q1 5:30",
       "stats": {}
     },
     "00-0035229": {
       "status": "in_progress",
-      "clock": "Q1 7:54",
+      "clock": "Q1 5:30",
       "stats": {}
     },
     "00-0034975": {
@@ -183,7 +191,9 @@
       }
     },
     "00-0038563": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:39",
+      "stats": {}
     },
     "00-0039172": {
       "status": "not_started"
@@ -217,11 +227,11 @@
   "teams": {
     "MIN": {
       "status": "in_progress",
-      "clock": "Q1 7:54"
+      "clock": "Q1 5:30"
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q1 7:54"
+      "clock": "Q1 5:30"
     },
     "WAS": {
       "status": "final"
@@ -278,22 +288,28 @@
       "status": "final"
     },
     "LV": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:39"
     },
     "KC": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:39"
     },
     "SF": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:21"
     },
     "DEN": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:21"
     },
     "SEA": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:46"
     },
     "LAC": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:46"
     },
     "CAR": {
       "status": "not_started"
@@ -324,6 +340,7 @@
     "00-0034827": "DOUBTFUL",
     "00-0031408": "ACTIVE",
     "00-0035700": "QUESTIONABLE",
+    "00-0040236": "QUESTIONABLE",
     "00-0039032": "ACTIVE",
     "00-0039165": "OUT",
     "00-0030279": "OUT",
