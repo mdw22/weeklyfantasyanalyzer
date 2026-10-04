@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T20:38:22Z",
+  "updatedAt": "2026-10-04T20:43:26Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -54,7 +54,7 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q1 8:17",
+      "clock": "Q1 8:04",
       "stats": {
         "passing_yards": 5.0
       }
@@ -94,14 +94,14 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q1 9:31",
+      "clock": "Q1 5:51",
       "stats": {
         "rushing_yards": 1.0
       }
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q1 1:23",
+      "clock": "Q2 15:00",
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 1.0
@@ -155,7 +155,7 @@
     },
     "00-0033288": {
       "status": "in_progress",
-      "clock": "Q1 9:31",
+      "clock": "Q1 5:51",
       "stats": {
         "receiving_yards": 3.0,
         "receptions": 1.0
@@ -172,7 +172,7 @@
     },
     "00-0036158": {
       "status": "in_progress",
-      "clock": "Q1 9:31",
+      "clock": "Q1 5:51",
       "stats": {}
     },
     "00-0040867": {
@@ -184,12 +184,12 @@
     },
     "00-0037525": {
       "status": "in_progress",
-      "clock": "Q1 1:23",
+      "clock": "Q2 15:00",
       "stats": {}
     },
     "00-0035229": {
       "status": "in_progress",
-      "clock": "Q1 1:23",
+      "clock": "Q2 15:00",
       "stats": {}
     },
     "00-0034975": {
@@ -202,7 +202,7 @@
     },
     "00-0038563": {
       "status": "in_progress",
-      "clock": "Q1 8:17",
+      "clock": "Q1 8:04",
       "stats": {}
     },
     "00-0039172": {
@@ -237,35 +237,35 @@
   "teams": {
     "MIN": {
       "status": "in_progress",
-      "clock": "Q1 1:23"
+      "clock": "Q2 15:00"
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q1 1:23"
+      "clock": "Q2 15:00"
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q1 8:17"
+      "clock": "Q1 8:04"
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q1 8:17"
+      "clock": "Q1 8:04"
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q1 9:31"
+      "clock": "Q1 5:51"
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q1 9:31"
+      "clock": "Q1 5:51"
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q1 11:54"
+      "clock": "Q1 10:07"
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q1 11:54"
+      "clock": "Q1 10:07"
     },
     "WAS": {
       "status": "final"
