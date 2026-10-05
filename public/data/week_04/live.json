@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T23:46:08Z",
+  "updatedAt": "2026-10-05T00:16:23Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -240,24 +240,6 @@
     }
   },
   "teams": {
-    "LV": {
-      "status": "final"
-    },
-    "KC": {
-      "status": "final"
-    },
-    "SF": {
-      "status": "final"
-    },
-    "DEN": {
-      "status": "final"
-    },
-    "SEA": {
-      "status": "final"
-    },
-    "LAC": {
-      "status": "final"
-    },
     "WAS": {
       "status": "final"
     },
@@ -318,6 +300,24 @@
     "MIA": {
       "status": "final"
     },
+    "LV": {
+      "status": "final"
+    },
+    "KC": {
+      "status": "final"
+    },
+    "SF": {
+      "status": "final"
+    },
+    "DEN": {
+      "status": "final"
+    },
+    "SEA": {
+      "status": "final"
+    },
+    "LAC": {
+      "status": "final"
+    },
     "CAR": {
       "status": "not_started"
     },
@@ -342,7 +342,6 @@
     "00-0034844": "QUESTIONABLE",
     "00-0039067": "QUESTIONABLE",
     "00-0039064": "ACTIVE",
-    "00-0039915": "OUT",
     "00-0036410": "QUESTIONABLE",
     "00-0034796": "QUESTIONABLE",
     "00-0035659": "OUT",
@@ -359,7 +358,7 @@
     "00-0041032": "ACTIVE",
     "00-0039875": "ACTIVE",
     "00-0038685": "QUESTIONABLE",
-    "00-0038104": "OUT",
+    "00-0038104": "DOUBTFUL",
     "00-0040177": "OUT",
     "00-0038705": "OUT",
     "00-0040134": "QUESTIONABLE",
