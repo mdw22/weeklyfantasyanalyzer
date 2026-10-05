@@ -21,11 +21,15 @@ simulation RNGs), both seeds, realistic top-K and all-players pools:
   merges with its adjacent bin(s), then the whole position pool; only if
   even that is thin does the player stay a point mass (counted).
 
-Ship bar (spec section 4.1, clarified 2026-10-04): Var(z') within 0.9-1.15;
-per-position bias within +/-0.2; every bucket passes, where a bucket FAILS
-only if v3's actual win rate is outside v3's own 95% Wilson CI AND v3's
-|actual - predicted| gap is larger than production's. Also: the fallback's
-share of draws below zero vs. the real share for those players.
+Ship bar (spec section 4.1; multiplicity-corrected 2026-10-05): Var(z')
+within 0.9-1.15 on every run; per-position bias within +/-0.2. A bucket
+MISSES in one run if v3's actual win rate is outside v3's own 95% Wilson CI
+AND v3's |actual - predicted| gap is larger than production's; a bucket
+FAILS only if it misses on >= 2 of the 4 pool x seed runs in the SAME
+direction (a perfectly calibrated model misses ~1 of 20 buckets per run by
+chance). Plus a pooled check: per bucket, pooled across the four runs, the
+predicted rate must be inside the pooled Wilson CI. Also reported: the
+fallback's share of draws below zero vs. the real share for those players.
 
 `--bucket-stage expanding|N` runs the same check with the n-aware second
 stage for thin histories (model_core.fit_bucket_stage), and adds the two
@@ -67,6 +71,7 @@ POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"]
 MIN_BIN = 10
 VAR_Z_RANGE = (0.9, 1.15)
 BIAS_LIMIT = 0.2
+MAX_SAME_DIRECTION_MISSES = 1  # a bucket fails at 2+ same-direction misses across the 4 runs
 
 
 def wilson_ci(successes: int, n: int, z: float = 1.96):
@@ -221,6 +226,8 @@ def main() -> None:
     }
     stats = {"neg": {}, "point_mass": 0}
     sections, verdicts = [], []
+    misses = {}  # (lo, hi) -> ["under" | "over", ...], one entry per run where the bucket missed
+    pooled = {}  # (lo, hi) -> [n, wins, sum of predicted]
     for pool_name, make_pool in pools.items():
         for seed in RNG_SEEDS:
             rng_py = random.Random(seed)
@@ -268,12 +275,19 @@ def main() -> None:
                     continue
                 g3, gp = abs(wr3 - mp3), (abs(wrpr - mppr) if npr else float("inf"))
                 in_ci = ci3[0] <= mp3 <= ci3[1]
-                ok = in_ci or g3 <= gp  # fails only if outside its own CI AND worse than production
+                ok = in_ci or g3 <= gp  # misses only if outside its own CI AND worse than production
                 no_worse &= ok
+                if not ok:
+                    # actual above predicted = under-confident
+                    misses.setdefault((lo, hi), []).append("under" if wr3 > mp3 else "over")
+                acc = pooled.setdefault((lo, hi), [0, 0, 0.0])
+                acc[0] += n3
+                acc[1] += round(wr3 * n3)
+                acc[2] += mp3 * n3
                 prod_cell = f"{npr}, {mppr:.1%}→{wrpr:.1%} ({gp*100:.1f})" if npr else "0"
                 lines.append(f"| {lo:.0%}-{hi:.0%} | {prod_cell} | {n3}, {mp3:.1%}→{wr3:.1%} ({g3*100:.1f}) | "
                              f"[{ci3[0]:.1%}, {ci3[1]:.1%}] | {'yes' if in_ci else 'no'} | "
-                             f"{'yes' if g3 <= gp else 'no'} | {'pass' if ok else 'FAIL'} |")
+                             f"{'yes' if g3 <= gp else 'no'} | {'pass' if ok else 'miss'} |")
             var_ok = VAR_Z_RANGE[0] <= vz3 <= VAR_Z_RANGE[1]
             verdicts.append((pool_name, seed, no_worse, var_ok))
             head = (f"### {pool_name}, seed {seed} ({len(rows)} matchups)\n\n"
@@ -292,9 +306,26 @@ def main() -> None:
                          f"{np.mean(r) if r else float('nan'):.1%} (n={len(r)}) |")
     neg_lines.append(f"\nPoint-mass fallbacks (bin too thin): {stats['point_mass']}")
 
-    verdict_lines = [f"- {p}, seed {s}: every bucket passes (fails only if outside v3's Wilson CI AND gap > "
-                     f"production's) = {'PASS' if nw else 'FAIL'}; "
-                     f"Var(z') in range = {'PASS' if vo else 'FAIL'}" for p, s, nw, vo in verdicts]
+    verdict_lines = [f"- {p}, seed {s}: Var(z') in range = {'PASS' if vo else 'FAIL'}; "
+                     f"bucket misses this run (outside v3's Wilson CI AND gap > production's): "
+                     f"{'none' if nw else 'some (see table)'}" for p, s, nw, vo in verdicts]
+    bucket_fail = {k: d for k, v in misses.items() for d in ("under", "over")
+                   if v.count(d) > MAX_SAME_DIRECTION_MISSES}
+    miss_desc = ", ".join(f"{lo:.0%}-{hi:.0%}: {len(v)} ({'/'.join(v)})" for (lo, hi), v in sorted(misses.items()))
+    verdict_lines.append(f"- Buckets missing on 2+ of {len(verdicts)} runs in the same direction = "
+                         f"{'PASS (none)' if not bucket_fail else 'FAIL ' + str(sorted(bucket_fail))}"
+                         f"{f'; misses by bucket: {miss_desc}' if misses else ''}")
+    pooled_lines = ["| Bucket | Pooled n | Mean predicted | Actual | Pooled Wilson 95% CI | Pred in CI? |",
+                    "|---|---|---|---|---|---|"]
+    pooled_ok = True
+    for (lo, hi), (n, wins, sum_pred) in sorted(pooled.items()):
+        mp, (cl, ch) = sum_pred / n, wilson_ci(wins, n)
+        ok = cl <= mp <= ch
+        pooled_ok &= ok
+        pooled_lines.append(f"| {lo:.0%}-{hi:.0%} | {n} | {mp:.1%} | {wins / n:.1%} | [{cl:.1%}, {ch:.1%}] | "
+                            f"{'yes' if ok else 'NO'} |")
+    verdict_lines.append(f"- Pooled across runs, every bucket's prediction inside its Wilson CI = "
+                         f"{'PASS' if pooled_ok else 'FAIL'}")
     verdict_lines.append(f"- Per-position bias within ±0.2 = {'PASS' if bias_ok else 'FAIL'}")
     thin_lines = []
     thin_ok = True
@@ -302,11 +333,12 @@ def main() -> None:
         thin_ok, thin_lines = thin_bars(pair_log)
         verdict_lines.append(f"- Thin-history bars (aggregate RMSE+|bias| vs shipped v3; every cell |bias| <= 1.0) = "
                              f"{'PASS' if thin_ok else 'FAIL'}")
-    overall = bias_ok and thin_ok and all(nw and vo for _, _, nw, vo in verdicts)
+    overall = bias_ok and thin_ok and pooled_ok and not bucket_fail and all(vo for _, _, _, vo in verdicts)
     verdict_lines.insert(0, f"**Overall: {'MEETS' if overall else 'MISSES'} the ship bar.**\n")
 
     print("\n" + "\n".join(bias_lines))
     print("\n" + "\n".join(neg_lines))
+    print("\n" + "\n".join(pooled_lines))
     print("\n" + "\n".join(verdict_lines))
 
     report = f"""# Phase 4 Ship Check (PRODUCTION_MODEL_SPEC.md section 4, item 1)
@@ -325,6 +357,10 @@ scored weeks {targets[0]} .. {targets[-1]}, no exclusions.
 ## Per-position point accuracy (v3)
 
 {chr(10).join(bias_lines)}
+
+## Calibration pooled across the four runs
+
+{chr(10).join(pooled_lines)}
 
 ## Calibration, paired vs. production
 
