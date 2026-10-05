@@ -269,19 +269,47 @@ def _clock_text(status: dict) -> str:
     return f"{label} {status.get('displayClock', '')}".strip()
 
 
+REGULATION_SECONDS = 3600
+OT_FRACTION_REMAINING = 0.05  # overtime: a small constant, not modeled further
+
+
+def fraction_remaining(status: dict) -> float:
+    """Share of the game still to play, for the live-aware win probability:
+    1 not started, 0 final; in progress = regulation seconds left / 3,600
+    (halftime exactly 0.5, overtime a small constant)."""
+    state = status.get("type", {}).get("state")
+    if state == "post":
+        return 0.0
+    if state != "in":
+        return 1.0
+    if status.get("type", {}).get("name") == "STATUS_HALFTIME":
+        return 0.5
+    period = status.get("period", 0) or 0
+    if period > 4:
+        return OT_FRACTION_REMAINING
+    try:
+        minutes, seconds = str(status.get("displayClock", "15:00")).split(":")
+        clock = int(minutes) * 60 + float(seconds)
+    except ValueError:
+        clock = 900.0
+    left = (4 - max(period, 1)) * 900 + min(max(clock, 0.0), 900.0)
+    return round(left / REGULATION_SECONDS, 4)
+
+
 def game_status_by_team(scoreboard: dict) -> dict:
-    """{nflverse team abbr: {"status": ..., "clock"?: ...}} from the public
-    scoreboard's per-game state."""
+    """{nflverse team abbr: {"status": ..., "fraction_remaining": ..., "clock"?: ...}}
+    from the public scoreboard's per-game state."""
     out = {}
     for event in scoreboard.get("events", []):
         status = event.get("status", {})
         state = status.get("type", {}).get("state")
         if state == "post":
-            info = {"status": "final"}
+            info = {"status": "final", "fraction_remaining": 0.0}
         elif state == "in":
-            info = {"status": "in_progress", "clock": _clock_text(status)}
+            info = {"status": "in_progress", "clock": _clock_text(status),
+                    "fraction_remaining": fraction_remaining(status)}
         else:
-            info = {"status": "not_started"}
+            info = {"status": "not_started", "fraction_remaining": 1.0}
         for comp in event.get("competitions", [{}])[0].get("competitors", []):
             abbr = comp.get("team", {}).get("abbreviation")
             if abbr:

@@ -115,6 +115,25 @@ function buildV3Sampler(playerId, projections, history, scoringValues, posVar, m
   return () => outcomes[Math.floor(Math.random() * outcomes.length)];
 }
 
+/** Wraps one player's full-game points draw with what has already happened
+ * (live.json's entry for him; PRODUCTION_MODEL_SPEC live-aware addendum):
+ *   final        -> fixed at his actual points
+ *   in progress  -> actual so far + the rest of the game: f*t + sqrt(f)*(x - t)
+ *                   for a v3 draw x around center t (the remaining mean scales
+ *                   with f, the spread with sqrt(f)); f*x on the v2 path
+ *   not started / no live entry -> the full draw, unchanged.
+ * f = fraction of the game remaining; an older live.json without it counts
+ * an in-progress game as half played. */
+export function liveAwareDraw(draw, liveEntry, { scoringValues, center = null }) {
+  if (!liveEntry || liveEntry.status === "not_started") return draw;
+  const actual = computeFantasyPoints(liveEntry.stats, scoringValues);
+  if (liveEntry.status === "final") return () => actual;
+  const f = Math.min(Math.max(liveEntry.fraction_remaining ?? 0.5, 0), 1);
+  if (center === null) return () => actual + f * draw();
+  const rootF = Math.sqrt(f);
+  return () => actual + f * center + rootF * (draw() - center);
+}
+
 /** Player outcomes are treated as independent (no shared game-script
  * correlation between teammates) -- measured as second-order, see
  * MODEL_ROADMAP.md. model "v2" is today's raw bootstrap; "v3" needs
@@ -129,13 +148,22 @@ export function simulateMatchup({
   model = "v2",
   modelMeta = null,
   posVar = null,
+  live = null,
   trials = DEFAULT_TRIALS,
 }) {
   const useV3 = model === "v3" && modelMeta && posVar;
   const score = useV3 ? (x) => x : (line) => computeFantasyPoints(line, scoringValues);
-  const sampler = useV3
+  const baseSampler = useV3
     ? (id) => buildV3Sampler(id, projections, history, scoringValues, posVar, modelMeta)
     : (id) => buildSampler(id, projections, history);
+  // Every sampler returns points; live results (if any) fix or shorten the draw.
+  const sampler = (id) => {
+    const base = baseSampler(id);
+    const draw = () => score(base());
+    const entry = projections[id];
+    const center = useV3 && entry ? computeFantasyPoints(entry.projected_stats, scoringValues) : null;
+    return liveAwareDraw(draw, live?.players?.[id], { scoringValues, center });
+  };
   const mySamplers = myPlayerIds.map(sampler);
   const oppSamplers = opponentPlayerIds.map(sampler);
 
@@ -145,13 +173,14 @@ export function simulateMatchup({
 
   for (let t = 0; t < trials; t++) {
     let myTotal = 0;
-    for (const sample of mySamplers) myTotal += score(sample());
+    for (const sample of mySamplers) myTotal += sample();
     let oppTotal = 0;
-    for (const sample of oppSamplers) oppTotal += score(sample());
+    for (const sample of oppSamplers) oppTotal += sample();
 
     myTotals[t] = myTotal;
     oppTotals[t] = oppTotal;
     if (myTotal > oppTotal) myWins += 1;
+    else if (myTotal === oppTotal) myWins += 0.5;
   }
 
   return {

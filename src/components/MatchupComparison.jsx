@@ -24,9 +24,13 @@ function starterIds(roster) {
 }
 
 /** Starters who can actually contribute -- expected-out players are dropped
- * from the win-probability simulation (they contribute 0), matching the totals. */
+ * from the win-probability simulation (they contribute 0), matching the totals.
+ * Only before their game starts: once it has, their real points count, as in effectivePoints. */
 function simulatedIds(roster, projections, live) {
-  return starterIds(roster).filter((id) => !isExpectedOut(projections[id], live.injuries?.[id]));
+  return starterIds(roster).filter((id) => {
+    const started = (live.players?.[id]?.status ?? "not_started") !== "not_started";
+    return started || !isExpectedOut(projections[id], live.injuries?.[id]);
+  });
 }
 
 function TeamTotal({ totals, live, side }) {
@@ -108,9 +112,10 @@ export function MatchupComparison({ onEditTeam }) {
       model: effectiveModel,
       modelMeta: weekData.modelMeta,
       posVar,
+      live,
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, bothTeamsFilled, myRoster, opponentRoster, scoringSettings, weekData, effectiveModel, posVar]);
+  }, [ready, bothTeamsFilled, mySimIds, oppSimIds, scoringSettings, weekData, effectiveModel, posVar, live]);
 
   if (weekData.status === "loading") {
     return <div className="state-message">Loading matchup…</div>;
