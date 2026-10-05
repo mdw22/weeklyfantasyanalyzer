@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T21:18:19Z",
+  "updatedAt": "2026-10-05T21:58:41Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -414,6 +414,7 @@
   "injuries": {
     "00-0036900": "QUESTIONABLE",
     "00-0034844": "QUESTIONABLE",
+    "00-0041027": "QUESTIONABLE",
     "00-0039067": "QUESTIONABLE",
     "00-0039064": "ACTIVE",
     "00-0036410": "QUESTIONABLE",
