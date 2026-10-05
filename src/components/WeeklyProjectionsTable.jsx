@@ -15,7 +15,7 @@ const COLUMNS = [
 ];
 
 export function WeeklyProjectionsTable() {
-  const { weekData, scoringSettings, myRoster } = useApp();
+  const { weekData, effectiveModel, scoringSettings, myRoster } = useApp();
   const [search, setSearch] = useState("");
   const [position, setPosition] = useState("All");
   const [sortBy, setSortBy] = useState("points");
@@ -87,6 +87,11 @@ export function WeeklyProjectionsTable() {
           <ScoringBadge />
         </span>
       </div>
+      {position === "K" && effectiveModel === "v3" && (
+        <div className="stat-note">
+          Kicker projections are nearly flat: a kicker's recent games barely predict his next one.
+        </div>
+      )}
 
       <div className="card table-wrap">
         <table className="players-table">
