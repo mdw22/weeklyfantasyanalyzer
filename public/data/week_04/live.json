@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T01:17:05Z",
+  "updatedAt": "2026-10-05T01:22:09Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -91,7 +91,7 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q2 9:36",
+      "clock": "Q2 8:08",
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 3.0
@@ -217,7 +217,7 @@
     },
     "00-0039172": {
       "status": "in_progress",
-      "clock": "Q2 9:36",
+      "clock": "Q2 8:08",
       "stats": {
         "fg_made_50_plus": 1.0,
         "fg_made_40_49": 1.0
@@ -252,11 +252,11 @@
   "teams": {
     "CAR": {
       "status": "in_progress",
-      "clock": "Q2 9:36"
+      "clock": "Q2 8:08"
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Q2 9:36"
+      "clock": "Q2 8:08"
     },
     "WAS": {
       "status": "final"
