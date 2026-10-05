@@ -120,7 +120,7 @@ def resid_bin(target: float) -> int:
     return model_core.ratio_bin(target)
 
 
-def build_state(extra_history_seasons: int = 0):
+def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
     """Loads the backtest window and builds every week's deterministic state
     (projections, actuals, history, Baseline A/D points, pooled variances,
     residual shapes, projection-binned residual pools). Returns
@@ -129,7 +129,11 @@ def build_state(extra_history_seasons: int = 0):
     `extra_history_seasons` loads that many earlier seasons as HISTORY ONLY:
     they feed every fit (rolling shrink window, pos_var, residual pools,
     player histories) but are never scored or returned as targets -- the
-    production-like setup where week 1 always has prior-season history."""
+    production-like setup where week 1 always has prior-season history.
+
+    `return_pair_log=True` adds a 4th return value: every processed week's
+    (season, week, scored, position, C points, actual points, D points), oldest
+    first, history-only weeks included -- for offline fit ablations."""
     season = current_season()
     schedules_now = nfl.load_schedules(seasons=season)
     current_s, current_w = get_current_season_and_week(schedules_now)
@@ -172,6 +176,7 @@ def build_state(extra_history_seasons: int = 0):
     prior_resid = {p: [] for p in POSITIONS}
     point_results = {"Baseline A -- last 8": [], "Baseline C -- opportunity blend": [], "Combined stack (D-rolling)": []}
     weekly_state = {}
+    pair_log = []
 
     for season, week in targets:
         actuals, projections, history = {}, {}, {}
@@ -234,6 +239,7 @@ def build_state(extra_history_seasons: int = 0):
             week_pairs.append((pos, c_stats[eid], actual_row))
             prior_resid[pos].append(actual_pts - baseline_d[eid])
             week_entries.append((pos, baseline_d[eid], actual_pts))
+            pair_log.append((season, week, scored, pos, baseline_c[eid], actual_pts, baseline_d[eid]))
             games = history.get(eid)
             if games and len(games) >= 2:
                 prior_var_data.setdefault(pos, []).append(
@@ -253,6 +259,8 @@ def build_state(extra_history_seasons: int = 0):
             }
         print(f"  (state) done: season {season} week {week}", end="\r")
     print()
+    if return_pair_log:
+        return scored_targets, weekly_state, point_results, pair_log
     return scored_targets, weekly_state, point_results
 
 

@@ -17,7 +17,7 @@ Pipeline, per player-week, fit under default (full-PPR) scoring:
   D: per position, from the last ROLLING_WEEKS completed weeks of
      (C stat line, actual stat line) pairs:
        D_stats = mean_actual_stats + beta * (C_stats - mean_C_stats)
-     beta = OLS slope of actual points on C points. Under default scoring
+     beta = OLS slope of actual points on C points, clamped to [0, 1]. Under default scoring
      points(D_stats) == mean_actual_pts + beta*(C_pts - mean_C_pts) exactly;
      in stat space it stays coherent under any linear custom scoring.
      Fewer than MIN_SAMPLE pairs for a position -> D = C.
@@ -130,6 +130,9 @@ def fit_window(pairs: list) -> dict:
         m_c, m_act = sum(c_pts) / n, sum(a_pts) / n
         var_c = sum((x - m_c) ** 2 for x in c_pts)
         beta = sum((x - m_c) * (y - m_act) for x, y in zip(c_pts, a_pts)) / var_c if var_c else 1.0
+        # Clamp to [0, 1]: a negative slope would invert the position's ranking and one above 1 would
+        # amplify it -- neither is a real effect, just noise in an 8-week window (mostly K/DEF).
+        beta = min(max(beta, 0.0), 1.0)
         keys = set()
         for c, _ in rows:
             keys.update(c)
