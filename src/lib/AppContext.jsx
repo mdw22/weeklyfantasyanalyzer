@@ -13,8 +13,11 @@ function emptyRoster() {
   return roster;
 }
 
-// Dark-launch default (PRODUCTION_MODEL_SPEC.md section 5): v2 until the flip.
-const DEFAULT_PROJECTION_MODEL = "v2";
+// v3 is the default since the 2026-10-05 flip (PRODUCTION_MODEL_SPEC.md section 5);
+// v2 stays selectable for rollback. The storage key was renamed at the flip so
+// choices saved while comparing during the dark launch don't pin anyone to v2.
+const DEFAULT_PROJECTION_MODEL = "v3";
+const PROJECTION_MODEL_KEY = "projectionModel.v3default";
 
 /** Serves the selected model's projection line as `projected_stats`, so every
  * consumer (tables, advisor, roster moves, live scores, matchup) follows the
@@ -36,7 +39,7 @@ function withProjectionModel(rawWeekData, requestedModel) {
 export function AppProvider({ children }) {
   const rawWeekData = useWeekData();
   const [projectionModel, setProjectionModelState] = useState(() =>
-    loadJSON("projectionModel", DEFAULT_PROJECTION_MODEL)
+    loadJSON(PROJECTION_MODEL_KEY, DEFAULT_PROJECTION_MODEL)
   );
   const { weekData, effectiveModel } = useMemo(
     () => withProjectionModel(rawWeekData, projectionModel),
@@ -45,7 +48,7 @@ export function AppProvider({ children }) {
 
   function setProjectionModel(next) {
     setProjectionModelState(next);
-    saveJSON("projectionModel", next);
+    saveJSON(PROJECTION_MODEL_KEY, next);
   }
 
   // Merge over defaults so stat fields added after the user last saved
