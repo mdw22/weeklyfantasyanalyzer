@@ -70,7 +70,8 @@ POOLING_K = 3
 RATIO_BIN_EDGES = [2.0, 5.0, 10.0]  # default points: <2, 2-5, 5-10, >=10
 RATIO_CAP = 200
 RATIO_MIN_D = 0.5
-RATIO_MIN_POOL = 10  # bin thinner than this merges with neighbors, then the position pool
+RATIO_MIN_POOL = 10
+BUCKET_STAGE_BUCKETS = ("1-3", "4-6")  # n-aware second stage; 7-8 is already calibrated  # bin thinner than this merges with neighbors, then the position pool
 
 EXP_COLUMN_MAP = {
     "pass_completions_exp": "completions",
@@ -114,6 +115,31 @@ def baseline_c_stats(a_stats: dict, position: str, opp_stats: dict | None) -> di
     return {k: (1 - weight) * (v or 0.0) + weight * (opp_stats.get(k) or 0.0) for k, v in a_stats.items()}
 
 
+def _linear_fit(rows: list) -> dict:
+    """rows: (x_stats, actual_stats). OLS slope of actual points on x points,
+    clamped to [0, 1] (a negative slope would invert a ranking and one above
+    1 would amplify it -- window noise, never a real effect), plus both mean
+    stat lines over the same rows."""
+    n = len(rows)
+    x_pts = [compute_points(x) for x, _ in rows]
+    a_pts = [compute_points(a) for _, a in rows]
+    m_x, m_act = sum(x_pts) / n, sum(a_pts) / n
+    var_x = sum((v - m_x) ** 2 for v in x_pts)
+    slope = sum((v - m_x) * (y - m_act) for v, y in zip(x_pts, a_pts)) / var_x if var_x else 1.0
+    keys = set()
+    for x, _ in rows:
+        keys.update(x)
+    return {
+        "slope": min(max(slope, 0.0), 1.0), "m_x": m_x, "m_act": m_act, "n_pairs": n,
+        "mean_x_stats": {k: sum(x.get(k) or 0.0 for x, _ in rows) / n for k in keys},
+        "mean_actual_stats": {k: sum(a.get(k) or 0.0 for _, a in rows) / n for k in keys},
+    }
+
+
+def _shrink(stats: dict, slope: float, mean_x: dict, mean_act: dict) -> dict:
+    return {k: mean_act.get(k, 0.0) + slope * ((v or 0.0) - mean_x.get(k, 0.0)) for k, v in stats.items()}
+
+
 def fit_window(pairs: list) -> dict:
     """pairs: (position, C_stats, actual_stats) from the rolling window.
     Returns {position: params} for positions with >= MIN_SAMPLE pairs."""
@@ -122,24 +148,12 @@ def fit_window(pairs: list) -> dict:
         by_pos.setdefault(position, []).append((c_stats, actual_stats))
     params = {}
     for position, rows in by_pos.items():
-        n = len(rows)
-        if position not in SHRINK_POSITIONS or n < MIN_SAMPLE:
+        if position not in SHRINK_POSITIONS or len(rows) < MIN_SAMPLE:
             continue
-        c_pts = [compute_points(c) for c, _ in rows]
-        a_pts = [compute_points(a) for _, a in rows]
-        m_c, m_act = sum(c_pts) / n, sum(a_pts) / n
-        var_c = sum((x - m_c) ** 2 for x in c_pts)
-        beta = sum((x - m_c) * (y - m_act) for x, y in zip(c_pts, a_pts)) / var_c if var_c else 1.0
-        # Clamp to [0, 1]: a negative slope would invert the position's ranking and one above 1 would
-        # amplify it -- neither is a real effect, just noise in an 8-week window (mostly K/DEF).
-        beta = min(max(beta, 0.0), 1.0)
-        keys = set()
-        for c, _ in rows:
-            keys.update(c)
+        f = _linear_fit(rows)
         params[position] = {
-            "beta": beta, "m_act": m_act, "m_c": m_c, "n_pairs": n,
-            "mean_c_stats": {k: sum(c.get(k) or 0.0 for c, _ in rows) / n for k in keys},
-            "mean_actual_stats": {k: sum(a.get(k) or 0.0 for _, a in rows) / n for k in keys},
+            "beta": f["slope"], "m_act": f["m_act"], "m_c": f["m_x"], "n_pairs": f["n_pairs"],
+            "mean_c_stats": f["mean_x_stats"], "mean_actual_stats": f["mean_actual_stats"],
         }
     return params
 
@@ -148,8 +162,33 @@ def apply_d(c_stats: dict, position: str, params: dict) -> dict:
     p = params.get(position)
     if p is None:
         return dict(c_stats)
-    beta, m_act, m_c = p["beta"], p["mean_actual_stats"], p["mean_c_stats"]
-    return {k: m_act.get(k, 0.0) + beta * ((v or 0.0) - m_c.get(k, 0.0)) for k, v in c_stats.items()}
+    return _shrink(c_stats, p["beta"], p["mean_c_stats"], p["mean_actual_stats"])
+
+
+def history_bucket(games_used: int) -> str:
+    return "1-3" if games_used <= 3 else ("4-6" if games_used <= 6 else "7-8")
+
+
+def fit_bucket_stage(pairs: list) -> dict:
+    """Second stage for thin histories (n-aware shrinkage). pairs: (position,
+    games_used, D_stats, actual_stats) from strictly-prior weeks (the caller
+    picks the window). Returns {(position, bucket): params} for the 1-3 and
+    4-6 buckets with >= MIN_SAMPLE pairs. Each cell shrinks toward ITS OWN
+    mean -- thin-history players are mostly backups, so the position mean
+    would be the wrong anchor."""
+    cells = {}
+    for position, games_used, d_stats, actual_stats in pairs:
+        b = history_bucket(games_used)
+        if position in SHRINK_POSITIONS and b in BUCKET_STAGE_BUCKETS:
+            cells.setdefault((position, b), []).append((d_stats, actual_stats))
+    return {k: _linear_fit(rows) for k, rows in cells.items() if len(rows) >= MIN_SAMPLE}
+
+
+def apply_bucket_stage(d_stats: dict, position: str, games_used: int, params: dict) -> dict:
+    p = params.get((position, history_bucket(games_used)))
+    if p is None:
+        return dict(d_stats)
+    return _shrink(d_stats, p["slope"], p["mean_x_stats"], p["mean_actual_stats"])
 
 
 def ratio_bin(d_points: float) -> int:

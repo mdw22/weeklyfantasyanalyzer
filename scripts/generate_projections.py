@@ -78,6 +78,7 @@ N_GAMES = 8
 # there's still a usable history window early in a new season -- the
 # current season alone has zero "past" games near week 1.
 LOOKBACK_SEASONS = 2
+V3_EXTRA_HISTORY_SEASONS = 1  # v3 fit history only; never feeds the v2 line
 
 # Verified against nflreadpy 0.1.5's actual `stats.columns` output.
 STAT_COLUMNS = [
@@ -429,8 +430,8 @@ def completed_weeks_before(schedules: pl.DataFrame, season: int, week: int) -> l
 
 
 def _window_week_pairs(groups, opp: pl.DataFrame, season: int, week: int) -> list:
-    """(position, C stats, actual stats) for everyone who played (season, week),
-    with C built from games strictly before that week."""
+    """(position, games used, C stats, actual stats) for everyone who played
+    (season, week), with C built from games strictly before that week."""
     pairs = []
     played_ids = []
     projections, actuals = {}, {}
@@ -451,47 +452,71 @@ def _window_week_pairs(groups, opp: pl.DataFrame, season: int, week: int) -> lis
             continue
         o = opp_map.get(eid)
         c = model_core.baseline_c_stats(proj["projected_stats"], proj["position"], o["projected_stats"] if o else None)
-        pairs.append((proj["position"], c, actuals[eid]))
+        pairs.append((proj["position"], proj["games_used"], c, actuals[eid]))
     return pairs
 
 
 def build_v3(groups, opp: pl.DataFrame, schedules: pl.DataFrame, season: int, week: int,
-             projections: dict) -> tuple[dict, dict]:
-    """v3 D stat lines for every entry in `projections` + model_meta. Mirrors
-    the validated backtest: the shrink fit uses the last ROLLING_WEEKS
-    completed weeks; each of those weeks' fallback ratios uses ITS OWN as-of
-    D (fit on the 8 weeks before it), so 2x ROLLING_WEEKS weeks are built."""
+             projections: dict, current_opp: pl.DataFrame | None = None) -> tuple[dict, dict]:
+    """v3 projections for every entry in `projections` + model_meta. Mirrors
+    the validated backtest by walking EVERY completed week in the loaded
+    frames, oldest first:
+    - stage 1 (D-rolling): fit on the ROLLING_WEEKS weeks before each week;
+    - stage 2 (n-aware, thin histories): fit on the EXPANDING window of
+      (stage-1 D, actual) pairs from all strictly-prior loaded weeks;
+    - fallback ratios for the last ROLLING_WEEKS weeks use each week's own
+      as-of final projection.
+    `current_opp` (defaults to `opp`) builds this week's C; main() passes the
+    v2 lookback slice so the current-week line sees the same seasons as v2."""
     rw = model_core.ROLLING_WEEKS
-    weeks = completed_weeks_before(schedules, season, week)[-2 * rw:]
+    weeks = completed_weeks_before(schedules, season, week)
     pairs_by_week = {wk: _window_week_pairs(groups, opp, *wk) for wk in weeks}
-    recent = weeks[-rw:]
 
-    entries = []
+    stage_pairs, entries_by_week = [], {}
     for i, wk in enumerate(weeks):
-        if wk not in recent:
-            continue
-        params_then = model_core.fit_window([p for prior in weeks[max(0, i - rw):i] for p in pairs_by_week[prior]])
-        for pos, c, actual in pairs_by_week[wk]:
-            entries.append((pos, model_core.compute_points(model_core.apply_d(c, pos, params_then)),
-                            model_core.compute_points(actual)))
-    params = model_core.fit_window([p for wk in recent for p in pairs_by_week[wk]])
+        shrink = model_core.fit_window([(pos, c, a) for prior in weeks[max(0, i - rw):i]
+                                        for pos, _, c, a in pairs_by_week[prior]])
+        stage = model_core.fit_bucket_stage(stage_pairs)
+        week_stage, week_entries = [], []
+        for pos, games_used, c, actual in pairs_by_week[wk]:
+            d1 = model_core.apply_d(c, pos, shrink)
+            final = model_core.apply_bucket_stage(d1, pos, games_used, stage)
+            week_entries.append((pos, model_core.compute_points(final), model_core.compute_points(actual)))
+            week_stage.append((pos, games_used, d1, actual))
+        entries_by_week[wk] = week_entries
+        stage_pairs.extend(week_stage)  # appended only after this week is projected: strictly prior
 
-    opp_cur = opp.filter(pl.col("player_id").is_in(list(projections.keys())))
+    recent = weeks[-rw:]
+    params = model_core.fit_window([(pos, c, a) for wk in recent for pos, _, c, a in pairs_by_week[wk]])
+    stage = model_core.fit_bucket_stage(stage_pairs)
+
+    opp_cur = (opp if current_opp is None else current_opp).filter(pl.col("player_id").is_in(list(projections.keys())))
     opp_map = build_projections(opp_cur, season, week, "player_id", model_core.OPP_STAT_COLUMNS,
                                 describe_player, n_games=8) if opp_cur.height else {}
     d_stats = {}
     for eid, entry in projections.items():
         o = opp_map.get(eid)
         c = model_core.baseline_c_stats(entry["projected_stats"], entry["position"], o["projected_stats"] if o else None)
-        d_stats[eid] = model_core.apply_d(c, entry["position"], params)
+        d1 = model_core.apply_d(c, entry["position"], params)
+        d_stats[eid] = model_core.apply_bucket_stage(d1, entry["position"], entry["games_used"], stage)
 
-    pools = model_core.build_ratio_pools(entries)
+    pools = model_core.build_ratio_pools([e for wk in recent for e in entries_by_week[wk]])
     meta = {
         "model_version": model_core.MODEL_VERSION,
         "season": season,
         "week": week,
         "window_weeks": [list(wk) for wk in recent],
         "params": {pos: {k: p[k] for k in ("beta", "m_act", "m_c", "n_pairs")} for pos, p in params.items()},
+        # n-aware second stage: D2 = mean_actual_stats + lambda * (D - mean_d_stats), per position x
+        # history bucket (games used), fit on the expanding window starting at stage_window_start.
+        "stage_window_start": list(weeks[0]) if weeks else None,
+        "bucket_stage": {
+            pos: {b: {"lambda": p["slope"], "m_d": p["m_x"], "m_act": p["m_act"], "n_pairs": p["n_pairs"],
+                      "mean_d_stats": {k: round(v, 4) for k, v in sorted(p["mean_x_stats"].items())},
+                      "mean_actual_stats": {k: round(v, 4) for k, v in sorted(p["mean_actual_stats"].items())}}
+                  for (pp, b), p in sorted(stage.items()) if pp == pos}
+            for pos in sorted({pos for pos, _ in stage})
+        },
         "ratio_bin_edges": model_core.RATIO_BIN_EDGES,
         "ratio_min_pool": model_core.RATIO_MIN_POOL,
         "pooling_k": model_core.POOLING_K,
@@ -543,14 +568,22 @@ def main() -> None:
     # of the toggle.
     meta = None
     try:
-        skill = stats.filter(pl.col("position").is_in(["QB", "RB", "WR", "TE"]))
+        # One extra season as fit history only (V3_EXTRA_HISTORY_SEASONS): the n-aware stage's expanding
+        # window then starts where the validated backtest's did (build_state(extra_history_seasons=1)).
+        v3_seasons = list(range(season - LOOKBACK_SEASONS - V3_EXTRA_HISTORY_SEASONS, season + 1))
+        v3_stats = nfl.load_player_stats(seasons=v3_seasons, summary_level="week")
+        v3_schedules = nfl.load_schedules(seasons=v3_seasons)
         groups = [
-            (skill, "player_id", STAT_COLUMNS, describe_player),
-            (kickers, "player_id", K_STAT_COLUMNS, describe_player),
-            (team_stats, "def_id", DEF_STAT_COLUMNS, describe_defense),
+            (v3_stats.filter(pl.col("position").is_in(["QB", "RB", "WR", "TE"])), "player_id", STAT_COLUMNS,
+             describe_player),
+            (add_k_stat_columns(v3_stats.filter((pl.col("position") == "K").fill_null(False))), "player_id",
+             K_STAT_COLUMNS, describe_player),
+            (add_def_stat_columns(nfl.load_team_stats(seasons=v3_seasons, summary_level="week"), v3_schedules),
+             "def_id", DEF_STAT_COLUMNS, describe_defense),
         ]
-        opp = model_core.load_opportunity_frame(lookback_seasons)
-        d_stats, meta = build_v3(groups, opp, lookback_schedules, season, week, projections)
+        opp = model_core.load_opportunity_frame(v3_seasons)
+        d_stats, meta = build_v3(groups, opp, v3_schedules, season, week, projections,
+                                 current_opp=opp.filter(pl.col("season") >= lookback_seasons[0]))
         for eid, entry in projections.items():
             entry["projected_stats_v2"] = entry["projected_stats"]
             entry["projected_stats"] = {k: round(v, 4) for k, v in d_stats[eid].items()}

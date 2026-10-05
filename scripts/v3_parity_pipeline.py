@@ -4,7 +4,8 @@ v3_parity_pipeline.py
 PRODUCTION_MODEL_SPEC.md section 4, item 2 -- pipeline parity. For three
 past weeks, the production path (generate_projections.build_v3, which
 assembles its own rolling window from schedules) vs. the validated backtest
-(phase4_combined_stack.build_state, 2023 loaded as history only). Both see
+(phase4_combined_stack.build_state, 2023 loaded as history only, n-aware
+stage on its expanding window -- the shipped configuration). Both see
 identical source data. Pass: max |D points diff| < 1e-6 per player under
 default scoring. Also compares the fallback ratio pools (pipeline rounds
 them to 4 dp for the JSON, so that comparison uses a 1e-4 tolerance).
@@ -40,7 +41,7 @@ TOLERANCE = 1e-6
 
 
 def main() -> None:
-    _, weekly_state, _ = build_state(extra_history_seasons=1)
+    _, weekly_state, _ = build_state(extra_history_seasons=1, bucket_stage="expanding")
 
     current_s, _ = get_current_season_and_week(nfl.load_schedules(seasons=current_season()))
     seasons = list(range(current_s - LOOKBACK_SEASONS - 1, current_s + 1))  # same frames build_state loaded
@@ -61,6 +62,10 @@ def main() -> None:
         d_stats, meta = build_v3(groups, opp, schedules, season, week, st["projections"])
         diffs = [abs(model_core.compute_points(d_stats[e]) - st["baseline_d"][e]) for e in st["projections"]]
         max_d = max(diffs)
+        staged = sum(1 for e, p in st["projections"].items()
+                     if model_core.history_bucket(p["games_used"]) in model_core.BUCKET_STAGE_BUCKETS
+                     and (p["position"], model_core.history_bucket(p["games_used"])) in
+                     {(pos, b) for pos, cells in meta["bucket_stage"].items() for b in cells})
 
         pool_diff, pool_mismatch = 0.0, 0
         for (pos, b), arr in st["ratio_bins"].items():
@@ -75,7 +80,8 @@ def main() -> None:
 
         ok = max_d < TOLERANCE and pool_mismatch == 0 and pool_diff < 1e-4
         all_pass &= ok
-        print(f"({season}, {week}): {len(diffs)} players, max |D diff| = {max_d:.2e}; "
+        print(f"({season}, {week}): {len(diffs)} players ({staged} through the n-aware stage), "
+              f"max |final diff| = {max_d:.2e}; "
               f"ratio pools: max |diff| = {pool_diff:.1e}, bin/length mismatches = {pool_mismatch} -> "
               f"{'PASS' if ok else 'FAIL'}")
     print(f"\nPipeline parity: {'PASS' if all_pass else 'FAIL'}")

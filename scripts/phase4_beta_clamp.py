@@ -39,7 +39,7 @@ def stats(errors):
 def main() -> None:
     _, _, _, log = build_state(extra_history_seasons=1, return_pair_log=True)
     by_week = defaultdict(list)
-    for s, w, scored, pos, c, a, d in log:
+    for s, w, scored, pos, c, a, d, *_ in log:
         by_week[(s, w)].append((scored, pos, c, a, d))
 
     rolling = []

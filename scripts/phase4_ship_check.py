@@ -27,9 +27,17 @@ only if v3's actual win rate is outside v3's own 95% Wilson CI AND v3's
 |actual - predicted| gap is larger than production's. Also: the fallback's
 share of draws below zero vs. the real share for those players.
 
-Run: POLARS_SKIP_CPU_CHECK=1 python3 scripts/phase4_ship_check.py
+`--bucket-stage expanding|N` runs the same check with the n-aware second
+stage for thin histories (model_core.fit_bucket_stage), and adds the two
+thin-specific bars (designer, 2026-10-05): thin-history (1-6 games)
+aggregate must improve on BOTH RMSE and |bias| vs. shipped v3, and no
+position x bucket cell may have |bias| > 1.0. Shipped v3 is the pair log's
+stage-1 D, so both sides come from the same run.
+
+Run: POLARS_SKIP_CPU_CHECK=1 python3 scripts/phase4_ship_check.py [--bucket-stage expanding|16]
 """
 
+import argparse
 import math
 import random
 import sys
@@ -52,6 +60,7 @@ from phase4_combined_stack import (  # noqa: E402
 )
 from phase4_tail_attribution import production_distribution  # noqa: E402
 from phase4_variance_pooling import K  # noqa: E402
+import model_core  # noqa: E402
 
 OUT_PATH = Path(__file__).parent.parent / "PHASE4_SHIP_CHECK_REPORT.md"  # gitignored
 POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"]
@@ -139,8 +148,45 @@ def buckets(rows, prob_key):
     return out
 
 
+def thin_bars(log) -> tuple[bool, list]:
+    """Designer's thin-history bars, from one pair log: final D vs. shipped v3 (stage-1 D)."""
+    def m(rows):
+        n = len(rows)
+        e = [p - a for p, a in rows]
+        return sum(abs(x) for x in e) / n, math.sqrt(sum(x * x for x in e) / n), sum(e) / n
+    scored = [r for r in log if r[2]]
+    thin_new = [(r[6], r[5]) for r in scored if r[7] <= 6]
+    thin_old = [(r[8], r[5]) for r in scored if r[7] <= 6]
+    (mae_n, rmse_n, bias_n), (mae_o, rmse_o, bias_o) = m(thin_new), m(thin_old)
+    agg_ok = rmse_n < rmse_o and abs(bias_n) < abs(bias_o)
+    lines = [f"Thin histories (1-6 games), n={len(thin_new)}: shipped v3 MAE {mae_o:.3f} / RMSE {rmse_o:.3f} / "
+             f"bias {bias_o:+.3f} -> candidate {mae_n:.3f} / {rmse_n:.3f} / {bias_n:+.3f}: improves RMSE AND |bias| = "
+             f"{'PASS' if agg_ok else 'FAIL'}", "",
+             "| Position | Bucket | n | Shipped v3 bias | Candidate bias | |bias| <= 1.0? |", "|---|---|---|---|---|---|"]
+    cells_ok = True
+    for pos in POSITIONS:
+        for b in ("1-3", "4-6", "7-8"):
+            rows = [r for r in scored if r[3] == pos and model_core.history_bucket(r[7]) == b]
+            if not rows:
+                continue
+            bn, bo = m([(r[6], r[5]) for r in rows])[2], m([(r[8], r[5]) for r in rows])[2]
+            ok = abs(bn) <= 1.0
+            cells_ok &= ok
+            lines.append(f"| {pos} | {b} | {len(rows)} | {bo:+.3f} | {bn:+.3f} | {'yes' if ok else 'NO'} |")
+    lines.append(f"\nNo position x bucket cell with |bias| > 1.0 = {'PASS' if cells_ok else 'FAIL'}")
+    return agg_ok and cells_ok, lines
+
+
 def main() -> None:
-    targets, weekly_state, point_results = build_state(extra_history_seasons=1)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bucket-stage", default=None,
+                        help="n-aware second stage window: 'expanding' or a number of weeks")
+    args = parser.parse_args()
+    stage = args.bucket_stage if args.bucket_stage in (None, "expanding") else int(args.bucket_stage)
+    out_path = OUT_PATH if stage is None else OUT_PATH.with_name(f"PHASE4_SHIP_CHECK_NAWARE_{stage}.md")
+    targets, weekly_state, point_results, pair_log = build_state(
+        extra_history_seasons=1, return_pair_log=True, bucket_stage=stage)
+    print(f"bucket_stage = {stage!r}")
     print(f"Scored window: {targets[0]} .. {targets[-1]} ({len(targets)} weeks)")
 
     # Per-position bias (ship bar), scored weeks only.
@@ -250,7 +296,13 @@ def main() -> None:
                      f"production's) = {'PASS' if nw else 'FAIL'}; "
                      f"Var(z') in range = {'PASS' if vo else 'FAIL'}" for p, s, nw, vo in verdicts]
     verdict_lines.append(f"- Per-position bias within ±0.2 = {'PASS' if bias_ok else 'FAIL'}")
-    overall = bias_ok and all(nw and vo for _, _, nw, vo in verdicts)
+    thin_lines = []
+    thin_ok = True
+    if stage is not None:
+        thin_ok, thin_lines = thin_bars(pair_log)
+        verdict_lines.append(f"- Thin-history bars (aggregate RMSE+|bias| vs shipped v3; every cell |bias| <= 1.0) = "
+                             f"{'PASS' if thin_ok else 'FAIL'}")
+    overall = bias_ok and thin_ok and all(nw and vo for _, _, nw, vo in verdicts)
     verdict_lines.insert(0, f"**Overall: {'MEETS' if overall else 'MISSES'} the ship bar.**\n")
 
     print("\n" + "\n".join(bias_lines))
@@ -266,6 +318,10 @@ scored weeks {targets[0]} .. {targets[-1]}, no exclusions.
 
 {chr(10).join(verdict_lines)}
 
+## Thin-history bars
+
+{chr(10).join(thin_lines) if thin_lines else 'n/a (no bucket stage)'}
+
 ## Per-position point accuracy (v3)
 
 {chr(10).join(bias_lines)}
@@ -278,8 +334,9 @@ scored weeks {targets[0]} .. {targets[-1]}, no exclusions.
 
 {chr(10).join(neg_lines)}
 """
-    OUT_PATH.write_text(report)
-    print(f"\nFull report written to {OUT_PATH}")
+    out_path.write_text(report)
+    print("\n" + "\n".join(thin_lines))
+    print(f"\nFull report written to {out_path}")
 
 
 if __name__ == "__main__":

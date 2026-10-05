@@ -120,7 +120,7 @@ def resid_bin(target: float) -> int:
     return model_core.ratio_bin(target)
 
 
-def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
+def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False, bucket_stage=None):
     """Loads the backtest window and builds every week's deterministic state
     (projections, actuals, history, Baseline A/D points, pooled variances,
     residual shapes, projection-binned residual pools). Returns
@@ -132,8 +132,14 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
     production-like setup where week 1 always has prior-season history.
 
     `return_pair_log=True` adds a 4th return value: every processed week's
-    (season, week, scored, position, C points, actual points, D points), oldest
-    first, history-only weeks included -- for offline fit ablations."""
+    (season, week, scored, position, C points, actual points, D points, games used), oldest
+    first, history-only weeks included -- for offline fit ablations.
+
+    `bucket_stage` (None, "expanding", or a week count) adds the n-aware second
+    stage for thin histories (model_core.fit_bucket_stage), fit only on
+    (stage-1 D, actual) pairs from strictly-prior weeks in that window. The
+    final projection then replaces D everywhere downstream (fallback pools,
+    residuals, scoring); the pair log keeps stage-1 D as a 9th field."""
     season = current_season()
     schedules_now = nfl.load_schedules(seasons=season)
     current_s, current_w = get_current_season_and_week(schedules_now)
@@ -172,6 +178,7 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
     # Per week, last ROLLING_WEEKS weeks: (position, C stats, actual stats) pairs for the shrink fit,
     # and (position, D points, actual points) entries for the fallback ratio pools.
     rolling_pair_weeks, rolling_entry_weeks = deque(), deque()
+    stage_pair_weeks = []  # per week: (position, games_used, stage-1 D stats, actual stats)
     prior_var_data = {}
     prior_resid = {p: [] for p in POSITIONS}
     point_results = {"Baseline A -- last 8": [], "Baseline C -- opportunity blend": [], "Combined stack (D-rolling)": []}
@@ -203,6 +210,9 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
 
         # Fits from strictly-prior data, taken BEFORE this week's data is added below.
         shrink = model_core.fit_window([pair for wk in rolling_pair_weeks for pair in wk])
+        stage_window = (stage_pair_weeks if bucket_stage == "expanding"
+                        else stage_pair_weeks[-bucket_stage:] if bucket_stage else [])
+        stage = model_core.fit_bucket_stage([p for wk in stage_window for p in wk]) if bucket_stage else {}
         pos_var = fit_pos_var(prior_var_data)
         resid_shape = {}
         for p in POSITIONS:
@@ -212,7 +222,7 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
         ratio_bins = {k: np.array(v) for k, v in
                       model_core.build_ratio_pools([e for wk in rolling_entry_weeks for e in wk]).items()}
 
-        baseline_a, baseline_c, baseline_d, c_stats = {}, {}, {}, {}
+        baseline_a, baseline_c, baseline_d, c_stats, d_stats, d1_points = {}, {}, {}, {}, {}, {}
         for eid, proj in projections.items():
             pos = proj["position"]
             opp_entry = opp_map.get(eid)
@@ -220,10 +230,13 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
                                                        opp_entry["projected_stats"] if opp_entry else None)
             baseline_a[eid] = compute_points(proj["projected_stats"])
             baseline_c[eid] = compute_points(c_stats[eid])
-            baseline_d[eid] = compute_points(model_core.apply_d(c_stats[eid], pos, shrink))
+            d_stats[eid] = model_core.apply_d(c_stats[eid], pos, shrink)
+            d1_points[eid] = compute_points(d_stats[eid])
+            final = model_core.apply_bucket_stage(d_stats[eid], pos, proj["games_used"], stage) if stage else d_stats[eid]
+            baseline_d[eid] = compute_points(final)
 
         scored = season >= scored_from
-        week_pairs, week_entries = [], []
+        week_pairs, week_entries, week_stage = [], [], []
         for eid, proj in projections.items():
             actual_row = actuals.get(eid)
             if actual_row is None:
@@ -237,9 +250,11 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
                                                 "projected": src[eid], "actual": actual_pts,
                                                 "error": src[eid] - actual_pts})
             week_pairs.append((pos, c_stats[eid], actual_row))
+            week_stage.append((pos, proj["games_used"], d_stats[eid], actual_row))
             prior_resid[pos].append(actual_pts - baseline_d[eid])
             week_entries.append((pos, baseline_d[eid], actual_pts))
-            pair_log.append((season, week, scored, pos, baseline_c[eid], actual_pts, baseline_d[eid]))
+            pair_log.append((season, week, scored, pos, baseline_c[eid], actual_pts, baseline_d[eid],
+                             proj["games_used"], d1_points[eid]))
             games = history.get(eid)
             if games and len(games) >= 2:
                 prior_var_data.setdefault(pos, []).append(
@@ -247,6 +262,7 @@ def build_state(extra_history_seasons: int = 0, return_pair_log: bool = False):
 
         rolling_pair_weeks.append(week_pairs)
         rolling_entry_weeks.append(week_entries)
+        stage_pair_weeks.append(week_stage)
         while len(rolling_pair_weeks) > model_core.ROLLING_WEEKS:
             rolling_pair_weeks.popleft()
             rolling_entry_weeks.popleft()
