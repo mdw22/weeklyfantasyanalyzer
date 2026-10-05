@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T00:31:32Z",
+  "updatedAt": "2026-10-05T00:36:36Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -91,7 +91,7 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q1 12:05",
+      "clock": "Q1 10:07",
       "stats": {}
     },
     "00-0041052": {
@@ -214,7 +214,7 @@
     },
     "00-0039172": {
       "status": "in_progress",
-      "clock": "Q1 12:05",
+      "clock": "Q1 10:07",
       "stats": {
         "fg_made_50_plus": 1.0
       }
@@ -246,6 +246,14 @@
     }
   },
   "teams": {
+    "CAR": {
+      "status": "in_progress",
+      "clock": "Q1 10:07"
+    },
+    "DET": {
+      "status": "in_progress",
+      "clock": "Q1 10:07"
+    },
     "WAS": {
       "status": "final"
     },
@@ -323,14 +331,6 @@
     },
     "LAC": {
       "status": "final"
-    },
-    "CAR": {
-      "status": "in_progress",
-      "clock": "Q1 12:05"
-    },
-    "DET": {
-      "status": "in_progress",
-      "clock": "Q1 12:05"
     },
     "CLE": {
       "status": "final"
