@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useApp } from "../lib/AppContext.jsx";
-import { effectivePoints, useLiveScores } from "../lib/liveScores.js";
+import { effectivePoints, teamTotals, useLiveScores } from "../lib/liveScores.js";
 import { ROSTER_SLOTS, STARTER_SLOT_IDS } from "../lib/rosterSlots.js";
 import { computePositionVariance, simulateMatchup } from "../lib/monteCarlo.js";
 import { ScoreRangeChart } from "./ScoreRangeChart.jsx";
@@ -13,9 +13,9 @@ function rosterRows(roster, projections, scoringValues, live) {
   return ROSTER_SLOTS.filter((s) => STARTER_SLOT_IDS.includes(s.id)).map((slot) => {
     const playerId = roster[slot.id];
     const player = playerId ? projections[playerId] : null;
-    if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null };
-    const { points, status, clock } = effectivePoints(playerId, player, live, scoringValues);
-    return { slot, playerId, player, points, status, clock, risk: currentRisk(playerId, player, live) };
+    if (!player) return { slot, playerId, player, points: 0, status: "not_started", clock: null, risk: null, sittingOut: false };
+    const { points, status, clock, sittingOut } = effectivePoints(playerId, player, live, scoringValues);
+    return { slot, playerId, player, points, status, clock, sittingOut, risk: currentRisk(playerId, player, live) };
   });
 }
 
@@ -27,6 +27,35 @@ function starterIds(roster) {
  * from the win-probability simulation (they contribute 0), matching the totals. */
 function simulatedIds(roster, projections, live) {
   return starterIds(roster).filter((id) => !isExpectedOut(projections[id], live.injuries?.[id]));
+}
+
+function TeamTotal({ totals, live, side }) {
+  return (
+    <>
+      <span className="team-total-label">{live ? "So far" : "Projected"}</span>
+      <span className={`team-total team-total--${side} mono`}>
+        {(live ? totals.soFar : totals.projectedFinal).toFixed(1)}
+      </span>
+      {live && totals.anyToPlay && (
+        <span className="team-total-proj mono">Proj. final {totals.projectedFinal.toFixed(1)}</span>
+      )}
+    </>
+  );
+}
+
+/** A player's number. Not-started players show a projection, tagged so it can't be read as scored points;
+ * expected-out players keep their plain 0 (the risk pill explains it). */
+function RowPoints({ row }) {
+  if (!row.player) return <span className="roster-row__pts">—</span>;
+  if (row.status !== "not_started") {
+    return <span className="roster-row__pts roster-row__pts--real">{row.points.toFixed(1)}</span>;
+  }
+  return (
+    <span className="roster-row__pts">
+      {!row.sittingOut && <span className="proj-tag">proj</span>}
+      {row.points.toFixed(1)}
+    </span>
+  );
 }
 
 export function MatchupComparison({ onEditTeam }) {
@@ -46,8 +75,13 @@ export function MatchupComparison({ onEditTeam }) {
     [opponentRoster, projections, scoringSettings, live]
   );
 
-  const myTotal = myRows.reduce((sum, r) => sum + r.points, 0);
-  const oppTotal = oppRows.reduce((sum, r) => sum + r.points, 0);
+  const my = teamTotals(myRows);
+  const opp = teamTotals(oppRows);
+  // Once any starter on either side has played, the headline is real points so far (both teams, same rule);
+  // before that it's the projection. Never a silent mix of the two.
+  const showSoFar = my.anyStarted || opp.anyStarted;
+  const myTotal = my.projectedFinal;
+  const oppTotal = opp.projectedFinal;
 
   const myPlayerIds = useMemo(() => starterIds(myRoster), [myRoster]);
   const oppPlayerIds = useMemo(() => starterIds(opponentRoster), [opponentRoster]);
@@ -102,7 +136,7 @@ export function MatchupComparison({ onEditTeam }) {
           <span className="team-label">
             <span className="dot dot--mine" /> My Team
           </span>
-          <span className="team-total team-total--mine mono">{myTotal.toFixed(1)}</span>
+          <TeamTotal totals={my} live={showSoFar} side="mine" />
         </div>
 
         <div className="win-hero">
@@ -129,7 +163,7 @@ export function MatchupComparison({ onEditTeam }) {
           <span className="team-label">
             <span className="dot dot--opponent" /> Opponent
           </span>
-          <span className="team-total team-total--opponent mono">{oppTotal.toFixed(1)}</span>
+          <TeamTotal totals={opp} live={showSoFar} side="opponent" />
         </div>
       </div>
 
@@ -152,9 +186,7 @@ export function MatchupComparison({ onEditTeam }) {
               <span className="roster-row__score">
                 {r.player && <LiveTag status={r.status} clock={r.clock} />}
                 {r.player && r.status === "not_started" && <RiskPill risk={r.risk} />}
-                <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
-                  {r.player ? r.points.toFixed(1) : "—"}
-                </span>
+                <RowPoints row={r} />
               </span>
             </div>
           ))}
@@ -178,9 +210,7 @@ export function MatchupComparison({ onEditTeam }) {
               <span className="roster-row__score">
                 {r.player && <LiveTag status={r.status} clock={r.clock} />}
                 {r.player && r.status === "not_started" && <RiskPill risk={r.risk} />}
-                <span className={`roster-row__pts${r.status !== "not_started" ? " roster-row__pts--real" : ""}`}>
-                  {r.player ? r.points.toFixed(1) : "—"}
-                </span>
+                <RowPoints row={r} />
               </span>
             </div>
           ))}

@@ -34,6 +34,31 @@ export function effectivePoints(playerId, entry, live, scoringValues) {
   return { ...resolved, points: sittingOut ? 0 : resolved.points, sittingOut };
 }
 
+/** A team's headline numbers from its starter rows (each { player, points,
+ * status, sittingOut } as effectivePoints returns them):
+ *   soFar          -- real points from started/finished players only
+ *   projectedFinal -- soFar + projections for players still to play (= the
+ *                     old mixed total; expected-out players count 0)
+ *   anyStarted     -- some starter's game has started or finished
+ *   anyToPlay      -- some starter still has a game to play */
+export function teamTotals(rows) {
+  let soFar = 0;
+  let projectedFinal = 0;
+  let anyStarted = false;
+  let anyToPlay = false;
+  for (const r of rows) {
+    if (!r.player) continue;
+    projectedFinal += r.points;
+    if (r.status === "not_started") {
+      if (!r.sittingOut) anyToPlay = true;
+    } else {
+      soFar += r.points;
+      anyStarted = true;
+    }
+  }
+  return { soFar, projectedFinal, anyStarted, anyToPlay };
+}
+
 const EMPTY_LIVE = { players: {} };
 
 const POLL_MS = 90_000;

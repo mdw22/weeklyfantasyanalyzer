@@ -183,6 +183,26 @@ svg {
   font-weight: 600;
 }
 
+.team-total-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.team-total-proj {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.proj-tag {
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-right: 4px;
+  text-transform: lowercase;
+}
+
 .team-total--mine {
   color: var(--blue);
 }
