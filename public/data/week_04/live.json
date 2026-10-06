@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T02:31:37Z",
+  "updatedAt": "2026-10-06T02:36:41Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -87,8 +87,8 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 2:11",
+      "fraction_remaining": 0.2864,
       "stats": {
         "receiving_yards": 53.0,
         "receptions": 5.0
@@ -144,8 +144,8 @@
     },
     "00-0038551": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 2:11",
+      "fraction_remaining": 0.2864,
       "stats": {
         "rushing_yards": 5.0,
         "receiving_yards": 7.0,
@@ -174,8 +174,8 @@
     },
     "00-0036973": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 2:11",
+      "fraction_remaining": 0.2864,
       "stats": {}
     },
     "00-0036275": {
@@ -301,13 +301,13 @@
   "teams": {
     "NO": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111
+      "clock": "Q3 2:11",
+      "fraction_remaining": 0.2864
     },
     "ATL": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111
+      "clock": "Q3 2:11",
+      "fraction_remaining": 0.2864
     },
     "CLE": {
       "status": "final",
@@ -446,6 +446,7 @@
     "00-0039491": "OUT",
     "00-0039032": "ACTIVE",
     "00-0039165": "OUT",
+    "00-0033906": "QUESTIONABLE",
     "00-0030279": "OUT",
     "00-0037291": "QUESTIONABLE",
     "00-0038555": "OUT",
