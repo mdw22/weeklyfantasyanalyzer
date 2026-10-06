@@ -1,4 +1,286 @@
 {
-  "updatedAt": "2026-10-06T18:45:19Z",
-  "players": {}
+  "updatedAt": "2026-10-06T18:45:47Z",
+  "players": {
+    "00-0036223": {
+      "status": "not_started"
+    },
+    "00-0037239": {
+      "status": "not_started"
+    },
+    "00-0039915": {
+      "status": "not_started"
+    },
+    "00-0035685": {
+      "status": "not_started"
+    },
+    "00-0040128": {
+      "status": "not_started"
+    },
+    "00-0033077": {
+      "status": "not_started"
+    },
+    "00-0036555": {
+      "status": "not_started"
+    },
+    "00-0039893": {
+      "status": "not_started"
+    },
+    "DEF_DEN": {
+      "status": "not_started"
+    },
+    "00-0034173": {
+      "status": "not_started"
+    },
+    "00-0039794": {
+      "status": "not_started"
+    },
+    "00-0036550": {
+      "status": "not_started"
+    },
+    "00-0039793": {
+      "status": "not_started"
+    },
+    "DEF_MIN": {
+      "status": "not_started"
+    },
+    "00-0039739": {
+      "status": "not_started"
+    },
+    "00-0039732": {
+      "status": "not_started"
+    },
+    "00-0039075": {
+      "status": "not_started"
+    },
+    "00-0037840": {
+      "status": "not_started"
+    },
+    "00-0039064": {
+      "status": "not_started"
+    },
+    "00-0040715": {
+      "status": "not_started"
+    },
+    "00-0035261": {
+      "status": "not_started"
+    },
+    "00-0037261": {
+      "status": "not_started"
+    },
+    "00-0033873": {
+      "status": "not_started"
+    },
+    "00-0040236": {
+      "status": "not_started"
+    },
+    "00-0037816": {
+      "status": "not_started"
+    },
+    "00-0036040": {
+      "status": "not_started"
+    },
+    "00-0035358": {
+      "status": "not_started"
+    },
+    "00-0030279": {
+      "status": "not_started"
+    },
+    "00-0039065": {
+      "status": "not_started"
+    },
+    "00-0041052": {
+      "status": "not_started"
+    },
+    "00-0039880": {
+      "status": "not_started"
+    },
+    "DEF_BUF": {
+      "status": "not_started"
+    }
+  },
+  "teams": {
+    "DAL": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "TB": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "JAX": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "PHI": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "GB": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "CHI": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "TEN": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "HOU": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "MIA": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "CIN": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "NE": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "LV": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "NO": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "MIN": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "NYJ": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "CLE": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "PIT": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "IND": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "WAS": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "NYG": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "LAC": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "DEN": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "ARI": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "DET": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "SEA": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "SF": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "ATL": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "BAL": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "LA": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "BUF": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    }
+  },
+  "injuries": {
+    "00-0036900": "QUESTIONABLE",
+    "00-0036322": "QUESTIONABLE",
+    "00-0034844": "QUESTIONABLE",
+    "00-0041027": "QUESTIONABLE",
+    "00-0039067": "QUESTIONABLE",
+    "00-0038120": "DOUBTFUL",
+    "00-0036912": "QUESTIONABLE",
+    "00-0039915": "QUESTIONABLE",
+    "00-0036410": "QUESTIONABLE",
+    "00-0034796": "QUESTIONABLE",
+    "00-0035659": "QUESTIONABLE",
+    "00-0034827": "QUESTIONABLE",
+    "00-0039910": "QUESTIONABLE",
+    "00-0035700": "QUESTIONABLE",
+    "00-0039344": "IR",
+    "00-0039918": "OUT",
+    "00-0036139": "QUESTIONABLE",
+    "00-0037256": "QUESTIONABLE",
+    "00-0040236": "QUESTIONABLE",
+    "00-0034351": "DOUBTFUL",
+    "00-0039491": "QUESTIONABLE",
+    "00-0039165": "OUT",
+    "00-0034855": "OUT",
+    "00-0030279": "QUESTIONABLE",
+    "00-0039890": "DOUBTFUL",
+    "00-0041523": "QUESTIONABLE",
+    "00-0037291": "QUESTIONABLE",
+    "00-0038555": "OUT",
+    "00-0038685": "QUESTIONABLE",
+    "00-0039342": "IR",
+    "00-0038104": "OUT",
+    "00-0040134": "DOUBTFUL",
+    "00-0033555": "QUESTIONABLE"
+  },
+  "espnProjections": {
+    "00-0036900": 21.8,
+    "00-0036322": 18.5,
+    "00-0034844": 0.0,
+    "00-0041027": 15.0,
+    "00-0039067": 0.0,
+    "00-0038120": 16.4,
+    "00-0036912": 0.0,
+    "00-0039915": 10.5,
+    "00-0036410": 14.2,
+    "00-0034796": 0.0,
+    "00-0035659": 13.2,
+    "00-0034827": 12.6,
+    "00-0039910": 20.5,
+    "00-0035700": 0.0,
+    "00-0036139": 7.9,
+    "00-0037256": 8.0,
+    "00-0040236": 10.6,
+    "00-0034351": 0.0,
+    "00-0039491": 0.0,
+    "00-0030279": 10.0,
+    "00-0039890": 10.1,
+    "00-0041523": 8.0,
+    "00-0037291": 5.7,
+    "00-0038685": 3.8,
+    "00-0040134": 0.0,
+    "00-0033555": 8.5
+  }
 }
