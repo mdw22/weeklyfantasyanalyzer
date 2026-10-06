@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T00:35:08Z",
+  "updatedAt": "2026-10-06T00:40:12Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -87,8 +87,8 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q1 12:50",
-      "fraction_remaining": 0.9639,
+      "clock": "Q1 10:25",
+      "fraction_remaining": 0.9236,
       "stats": {}
     },
     "00-0035358": {
@@ -141,8 +141,8 @@
     },
     "00-0038551": {
       "status": "in_progress",
-      "clock": "Q1 12:50",
-      "fraction_remaining": 0.9639,
+      "clock": "Q1 10:25",
+      "fraction_remaining": 0.9236,
       "stats": {}
     },
     "00-0036358": {
@@ -166,8 +166,8 @@
     },
     "00-0036973": {
       "status": "in_progress",
-      "clock": "Q1 12:50",
-      "fraction_remaining": 0.9639,
+      "clock": "Q1 10:25",
+      "fraction_remaining": 0.9236,
       "stats": {}
     },
     "00-0036275": {
@@ -293,13 +293,13 @@
   "teams": {
     "NO": {
       "status": "in_progress",
-      "clock": "Q1 12:50",
-      "fraction_remaining": 0.9639
+      "clock": "Q1 10:25",
+      "fraction_remaining": 0.9236
     },
     "ATL": {
       "status": "in_progress",
-      "clock": "Q1 12:50",
-      "fraction_remaining": 0.9639
+      "clock": "Q1 10:25",
+      "fraction_remaining": 0.9236
     },
     "CLE": {
       "status": "final",
