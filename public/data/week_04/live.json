@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T01:10:37Z",
+  "updatedAt": "2026-10-06T01:15:41Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -87,8 +87,8 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q2 15:00",
-      "fraction_remaining": 0.75,
+      "clock": "Q2 14:57",
+      "fraction_remaining": 0.7492,
       "stats": {
         "receiving_yards": 25.0,
         "receptions": 2.0
@@ -144,8 +144,8 @@
     },
     "00-0038551": {
       "status": "in_progress",
-      "clock": "Q2 15:00",
-      "fraction_remaining": 0.75,
+      "clock": "Q2 14:57",
+      "fraction_remaining": 0.7492,
       "stats": {
         "fumbles_lost_total": 1.0
       }
@@ -171,8 +171,8 @@
     },
     "00-0036973": {
       "status": "in_progress",
-      "clock": "Q2 15:00",
-      "fraction_remaining": 0.75,
+      "clock": "Q2 14:57",
+      "fraction_remaining": 0.7492,
       "stats": {}
     },
     "00-0036275": {
@@ -298,13 +298,13 @@
   "teams": {
     "NO": {
       "status": "in_progress",
-      "clock": "Q2 15:00",
-      "fraction_remaining": 0.75
+      "clock": "Q2 14:57",
+      "fraction_remaining": 0.7492
     },
     "ATL": {
       "status": "in_progress",
-      "clock": "Q2 15:00",
-      "fraction_remaining": 0.75
+      "clock": "Q2 14:57",
+      "fraction_remaining": 0.7492
     },
     "CLE": {
       "status": "final",
