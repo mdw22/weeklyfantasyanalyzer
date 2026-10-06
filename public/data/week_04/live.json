@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T01:56:14Z",
+  "updatedAt": "2026-10-06T02:16:25Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -90,8 +90,8 @@
       "clock": "Half",
       "fraction_remaining": 0.5,
       "stats": {
-        "receiving_yards": 44.0,
-        "receptions": 4.0
+        "receiving_yards": 53.0,
+        "receptions": 5.0
       }
     },
     "00-0035358": {
@@ -147,7 +147,7 @@
       "clock": "Half",
       "fraction_remaining": 0.5,
       "stats": {
-        "rushing_yards": 4.0,
+        "rushing_yards": 5.0,
         "fumbles_lost_total": 1.0
       }
     },
