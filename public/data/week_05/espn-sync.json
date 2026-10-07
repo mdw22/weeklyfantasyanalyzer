@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-10-06T18:45:20Z",
+  "syncedAt": "2026-10-07T19:11:35Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
       {
         "slot": "QB",
-        "playerId": "00-0033873"
+        "playerId": "00-0033119"
       },
       {
         "slot": "RB1",
@@ -33,11 +33,11 @@
       },
       {
         "slot": "DEF",
-        "playerId": "DEF_BUF"
+        "playerId": "DEF_LV"
       },
       {
         "slot": "K",
-        "playerId": "00-0035358"
+        "playerId": "00-0032726"
       },
       {
         "slot": "BN1",
@@ -49,18 +49,22 @@
       },
       {
         "slot": "BN3",
-        "playerId": "00-0040236"
+        "playerId": "00-0033873"
       },
       {
         "slot": "BN4",
-        "playerId": "00-0036040"
+        "playerId": "00-0040236"
       },
       {
         "slot": "BN5",
-        "playerId": "00-0041052"
+        "playerId": "00-0036040"
       },
       {
         "slot": "BN6",
+        "playerId": "00-0041052"
+      },
+      {
+        "slot": "BN7",
         "playerId": "00-0039880"
       },
       {
@@ -195,11 +199,15 @@
       "owned": true,
       "espnTeamId": 1
     },
-    "00-0039798": {
+    "00-0036893": {
       "owned": true,
       "espnTeamId": 1
     },
-    "00-0036893": {
+    "00-0033040": {
+      "owned": true,
+      "espnTeamId": 1
+    },
+    "00-0038567": {
       "owned": true,
       "espnTeamId": 1
     },
@@ -251,10 +259,6 @@
       "owned": true,
       "espnTeamId": 2
     },
-    "00-0039451": {
-      "owned": true,
-      "espnTeamId": 2
-    },
     "00-0033537": {
       "owned": true,
       "espnTeamId": 2
@@ -268,6 +272,10 @@
       "espnTeamId": 2
     },
     "00-0033555": {
+      "owned": true,
+      "espnTeamId": 2
+    },
+    "00-0039746": {
       "owned": true,
       "espnTeamId": 2
     },
@@ -403,7 +411,7 @@
       "owned": true,
       "espnTeamId": 4
     },
-    "00-0040170": {
+    "00-0033699": {
       "owned": true,
       "espnTeamId": 4
     },
@@ -579,10 +587,6 @@
       "owned": true,
       "espnTeamId": 7
     },
-    "DEF_PHI": {
-      "owned": true,
-      "espnTeamId": 7
-    },
     "00-0039404": {
       "owned": true,
       "espnTeamId": 7
@@ -591,15 +595,19 @@
       "owned": true,
       "espnTeamId": 7
     },
-    "00-0040466": {
-      "owned": true,
-      "espnTeamId": 7
-    },
     "00-0040142": {
       "owned": true,
       "espnTeamId": 7
     },
-    "00-0039874": {
+    "00-0040024": {
+      "owned": true,
+      "espnTeamId": 7
+    },
+    "00-0034829": {
+      "owned": true,
+      "espnTeamId": 7
+    },
+    "DEF_NYJ": {
       "owned": true,
       "espnTeamId": 7
     },
@@ -847,10 +855,6 @@
       "owned": true,
       "espnTeamId": 11
     },
-    "00-0038555": {
-      "owned": true,
-      "espnTeamId": 11
-    },
     "00-0039424": {
       "owned": true,
       "espnTeamId": 11
@@ -860,6 +864,10 @@
       "espnTeamId": 11
     },
     "00-0033090": {
+      "owned": true,
+      "espnTeamId": 11
+    },
+    "00-0040669": {
       "owned": true,
       "espnTeamId": 11
     },
@@ -903,10 +911,6 @@
       "owned": true,
       "espnTeamId": 12
     },
-    "00-0035358": {
-      "owned": true,
-      "espnTeamId": 12
-    },
     "00-0030279": {
       "owned": true,
       "espnTeamId": 12
@@ -923,7 +927,15 @@
       "owned": true,
       "espnTeamId": 12
     },
-    "DEF_BUF": {
+    "00-0032726": {
+      "owned": true,
+      "espnTeamId": 12
+    },
+    "00-0033119": {
+      "owned": true,
+      "espnTeamId": 12
+    },
+    "DEF_LV": {
       "owned": true,
       "espnTeamId": 12
     },

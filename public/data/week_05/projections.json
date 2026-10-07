@@ -18771,7 +18771,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0036158": {
     "player_name": "J.K. Dobbins",
@@ -27484,7 +27485,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0037129": {
     "player_name": "Josh Blackwell",
@@ -35199,7 +35201,7 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0038556": {
     "player_name": "DeMarvion Overshown",
@@ -43051,7 +43053,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0039852": {
     "player_name": "Jared Verse",
@@ -48715,7 +48717,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0037005": {
     "player_name": "Tommy Tremble",
@@ -50988,8 +50990,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038932": {
     "player_name": "Darnell Wright",
@@ -56833,8 +56834,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038608": {
     "player_name": "Kayshon Boutte",
@@ -56921,8 +56921,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038623": {
     "player_name": "Dante Stills",
@@ -61677,7 +61676,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0038574": {
     "player_name": "Isaiah McGuire",
@@ -74084,7 +74083,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0038487": {
     "player_name": "Eli Ricks",
@@ -78911,8 +78911,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039371": {
     "player_name": "Kris Abrams-Draine",
@@ -87883,7 +87882,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0040152": {
     "player_name": "Upton Stout",
@@ -88279,7 +88278,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0040165": {
     "player_name": "Malachi Moore",
@@ -93635,8 +93634,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040289": {
     "player_name": "Bam Martin-Scott",
@@ -96344,7 +96342,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0040678": {
     "player_name": "Derrick Harmon",
@@ -99491,8 +99489,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039448": {
     "player_name": "Loren Strickland",
@@ -102454,7 +102451,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0038953": {
     "player_name": "Dylan Drummond",
@@ -106018,7 +106016,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0040604": {
     "player_name": "Jahfari Harvey",
@@ -106936,7 +106935,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0040158": {
     "player_name": "David Walker",
