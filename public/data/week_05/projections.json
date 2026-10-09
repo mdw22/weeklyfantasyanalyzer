@@ -5798,9 +5798,9 @@
     "team": "ARI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 23.1198,
+      "completions": 23.1078,
       "attempts": 32.8128,
-      "passing_yards": 226.6385,
+      "passing_yards": 226.5426,
       "passing_tds": 1.7551,
       "passing_interceptions": 0.7914,
       "passing_2pt_conversions": 0.0393,
@@ -13218,7 +13218,6 @@
       "fumbles_lost_total": 0.5
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034856": {
@@ -21883,7 +21882,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036413": {
@@ -30428,7 +30426,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0037500": {
     "player_name": "Ryan Wright",
@@ -30866,7 +30865,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0037587": {
     "player_name": "Nate Landman",
@@ -31847,9 +31847,9 @@
       "rushing_yards": -0.0642,
       "rushing_tds": -0.0016,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 7.1726,
+      "receptions": 7.1594,
       "targets": 6.5377,
-      "receiving_yards": 61.6242,
+      "receiving_yards": 61.5188,
       "receiving_tds": 0.5936,
       "receiving_2pt_conversions": 0.0019,
       "fumbles_lost_total": 0.0086
@@ -32837,7 +32837,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037840": {
@@ -33363,7 +33362,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0038099": {
     "player_name": "Phidarian Mathis",
@@ -35250,7 +35250,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038557": {
@@ -36697,8 +36696,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038711": {
     "player_name": "Mohamoud Diabate",
@@ -38408,7 +38406,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039052": {
@@ -40033,8 +40030,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039169": {
     "player_name": "Devon Witherspoon",
@@ -50999,8 +50995,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038932": {
     "player_name": "Darnell Wright",
@@ -55934,7 +55929,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "injury_status": "IR"
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037260": {
     "player_name": "DJ Davidson",
@@ -61207,8 +61203,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037461": {
     "player_name": "Tristin McCollum",
@@ -74530,7 +74525,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039543": {
     "player_name": "Ramel Keyton",
@@ -74659,7 +74655,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039747": {
     "player_name": "Ainias Smith",
@@ -78923,8 +78920,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039371": {
     "player_name": "Kris Abrams-Draine",
@@ -94394,7 +94390,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040748": {
@@ -94961,8 +94956,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038958": {
     "player_name": "Markees Watts",
@@ -109191,8 +109185,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041099": {
     "player_name": "Barion Brown",

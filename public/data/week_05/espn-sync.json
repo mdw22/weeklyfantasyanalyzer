@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-09T03:38:23Z",
+  "syncedAt": "2026-10-09T18:38:31Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -53,11 +53,11 @@
       },
       {
         "slot": "BN4",
-        "playerId": "00-0040236"
+        "playerId": "00-0036040"
       },
       {
         "slot": "BN5",
-        "playerId": "00-0036040"
+        "playerId": "00-0030279"
       },
       {
         "slot": "BN6",
@@ -69,7 +69,7 @@
       },
       {
         "slot": "IR",
-        "playerId": "00-0030279"
+        "playerId": "00-0040236"
       }
     ]
   },
@@ -671,7 +671,7 @@
       "owned": true,
       "espnTeamId": 8
     },
-    "DEF_CAR": {
+    "00-0036264": {
       "owned": true,
       "espnTeamId": 8
     },
