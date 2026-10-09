@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T02:53:33Z",
+  "updatedAt": "2026-10-09T02:58:37Z",
   "players": {
     "00-0036223": {
       "status": "not_started"
@@ -18,10 +18,11 @@
     },
     "00-0033077": {
       "status": "in_progress",
-      "clock": "Q4 8:32",
-      "fraction_remaining": 0.1422,
+      "clock": "Q4 5:26",
+      "fraction_remaining": 0.0906,
       "stats": {
-        "passing_yards": 166.0,
+        "passing_yards": 255.0,
+        "passing_tds": 1.0,
         "passing_interceptions": 1.0
       }
     },
@@ -110,13 +111,13 @@
   "teams": {
     "DAL": {
       "status": "in_progress",
-      "clock": "Q4 8:32",
-      "fraction_remaining": 0.1422
+      "clock": "Q4 5:26",
+      "fraction_remaining": 0.0906
     },
     "TB": {
       "status": "in_progress",
-      "clock": "Q4 8:32",
-      "fraction_remaining": 0.1422
+      "clock": "Q4 5:26",
+      "fraction_remaining": 0.0906
     },
     "JAX": {
       "status": "not_started",
