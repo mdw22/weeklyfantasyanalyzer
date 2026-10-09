@@ -80,6 +80,9 @@ def outcomes(entry, games, values, pos_var, meta):
     var = s2 if pv is None else w * s2 + (1 - w) * pv
     sd = (var * (n + 1) / (n - 1)) ** 0.5 if n >= 2 else var ** 0.5
     if s2 > 0 and n >= 2:
+        shape = meta.get("resid_shapes", {}).get(entry["position"])
+        if shape:
+            return t + sd * np.array(shape)
         return t + (p - p.mean()) * (sd / s2 ** 0.5)
     t_default = pts(entry["projected_stats"], model_core.FULL_PPR_VALUES)
     b = sum(t_default >= e for e in meta["ratio_bin_edges"])

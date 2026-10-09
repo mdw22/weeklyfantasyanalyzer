@@ -38,7 +38,11 @@ aggregate must improve on BOTH RMSE and |bias| vs. shipped v3, and no
 position x bucket cell may have |bias| > 1.0. Shipped v3 is the pair log's
 stage-1 D, so both sides come from the same run.
 
-Run: POLARS_SKIP_CPU_CHECK=1 python3 scripts/phase4_ship_check.py [--bucket-stage expanding|16]
+`--tail smooth:C | mix:PI` (Phase 5 thin-tails candidates, designer 2026-10-05)
+gives own-history players a tail beyond their resampled games, variance- and
+mean-preserving so the calibrated spread is untouched (see tail_draws).
+
+Run: POLARS_SKIP_CPU_CHECK=1 python3 scripts/phase4_ship_check.py [--bucket-stage expanding|16] [--tail smooth:0.5]
 """
 
 import argparse
@@ -96,6 +100,55 @@ def ratio_pool(ratio_bins, position, b):
     return None
 
 
+def parse_tail(spec):
+    """None, ("smooth", c) or ("mix", pi)."""
+    if not spec:
+        return None
+    kind, value = spec.split(":")
+    assert kind in ("smooth", "mix"), spec
+    return kind, float(value)
+
+
+def v3_info(eid, target, history, pos_var, ratio_bins, position, cache, stats):
+    """(outcome set, target, pooled predictive SD, own-history branch?) for one player."""
+    if eid in cache:
+        return cache[eid]
+    games = history.get(eid)
+    n = len(games) if games else 0
+    raw = np.array([compute_points(g) for g in games]) if n else None
+    s2 = float(raw.var(ddof=0)) if n else 0.0
+    own = s2 > 0 and n >= 2
+    cache[eid] = (v3_distribution(eid, target, history, pos_var, ratio_bins, position, {}, stats), target,
+                  v3_sd(n, s2, pos_var.get(position)), own)
+    return cache[eid]
+
+
+def v3_sd(n, s2, pv):
+    var_i = s2 if pv is None else (n / (n + K)) * s2 + (1 - n / (n + K)) * pv
+    return math.sqrt(var_i * (n + 1) / (n - 1)) if n >= 2 else math.sqrt(var_i)
+
+
+def tail_draws(info, rng, size, tail, resid_shape):
+    """`size` draws for one player. Own-history players' outcome sets are centered on the target with
+    population SD = sd, so both candidates keep the mean and variance exactly:
+      smooth:C -- smoothed bootstrap: t + sqrt(1-C^2)*(x - t) + N(0, (C*sd)^2)
+      mix:PI   -- with probability PI the draw is t + sd*z, z from the position's pooled standardized
+                  residuals (real big games included; mean 0, variance 1)
+    Fallback (ratio-pool) and point-mass players are unchanged."""
+    dist, target, sd, own = info
+    x = rng.choice(dist, size=size, replace=True)
+    if tail is None or not own:
+        return x
+    kind, value = tail
+    if kind == "smooth":
+        return target + math.sqrt(1 - value * value) * (x - target) + rng.normal(0.0, value * sd, size)
+    if resid_shape is None:
+        return x
+    swap = rng.random(size) < value
+    x[swap] = target + sd * rng.choice(resid_shape, size=int(swap.sum()), replace=True)
+    return x
+
+
 def v3_distribution(eid, target, history, pos_var, ratio_bins, position, cache, stats):
     if eid in cache:
         return cache[eid]
@@ -120,11 +173,12 @@ def v3_distribution(eid, target, history, pos_var, ratio_bins, position, cache, 
     return dist
 
 
-def simulate(ids_a, ids_b, sampler, rng):
+def simulate(ids_a, ids_b, sampler, rng, draw=None):
+    """`draw(eid, rng, size)` overrides plain resampling of sampler(eid) (tail candidates)."""
     def totals(ids):
         t = np.zeros(TRIALS)
         for eid in ids:
-            t += rng.choice(sampler(eid), size=TRIALS, replace=True)
+            t += draw(eid, rng, TRIALS) if draw else rng.choice(sampler(eid), size=TRIALS, replace=True)
         return t
     a, b = totals(ids_a), totals(ids_b)
     return float(np.mean(a > b)), float(np.std(a - b))
@@ -186,12 +240,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--bucket-stage", default=None,
                         help="n-aware second stage window: 'expanding' or a number of weeks")
+    parser.add_argument("--tail", default=None, help="thin-tails candidate: smooth:C or mix:PI")
     args = parser.parse_args()
     stage = args.bucket_stage if args.bucket_stage in (None, "expanding") else int(args.bucket_stage)
+    tail = parse_tail(args.tail)
     out_path = OUT_PATH if stage is None else OUT_PATH.with_name(f"PHASE4_SHIP_CHECK_NAWARE_{stage}.md")
+    if tail:
+        out_path = OUT_PATH.with_name(f"PHASE5_SHIP_CHECK_TAIL_{tail[0]}_{tail[1]}.md")
     targets, weekly_state, point_results, pair_log = build_state(
         extra_history_seasons=1, return_pair_log=True, bucket_stage=stage)
-    print(f"bucket_stage = {stage!r}")
+    print(f"bucket_stage = {stage!r}, tail = {tail!r}")
     print(f"Scored window: {targets[0]} .. {targets[-1]} ({len(targets)} weeks)")
 
     # Per-position bias (ship bar), scored weeks only.
@@ -246,12 +304,19 @@ def main() -> None:
                 def prod_sampler(e):
                     return production_distribution(e, st["history"], st["baseline_a"], prod_cache)
 
+                info_cache = {}
+
+                def v3_draw(e, rng, size):
+                    info = v3_info(e, st["baseline_d"][e], st["history"], st["pos_var"], st["ratio_bins"],
+                                   pos_of[e], info_cache, stats)
+                    return tail_draws(info, rng, size, tail, st["resid_shape"].get(pos_of[e]))
+
                 for _ in range(MATCHUPS_PER_WEEK):
                     drawn = draw_synthetic_matchup(pool, rng_py)
                     if drawn is None:
                         continue
                     ta, tb = drawn
-                    v3_p, v3_sd = simulate(ta, tb, v3_sampler, rng_v3)
+                    v3_p, v3_sd = simulate(ta, tb, v3_sampler, rng_v3, v3_draw if tail else None)
                     pr_p, pr_sd = simulate(ta, tb, prod_sampler, rng_prod)
                     rows.append({
                         "v3_p": v3_p, "v3_sd": v3_sd, "pr_p": pr_p, "pr_sd": pr_sd,
@@ -341,7 +406,7 @@ def main() -> None:
     print("\n" + "\n".join(pooled_lines))
     print("\n" + "\n".join(verdict_lines))
 
-    report = f"""# Phase 4 Ship Check (PRODUCTION_MODEL_SPEC.md section 4, item 1)
+    report = f"""# Phase 4 Ship Check (PRODUCTION_MODEL_SPEC.md section 4, item 1){f" -- tail candidate {args.tail}" if tail else ""}
 
 Generated {datetime.now(timezone.utc).isoformat(timespec="seconds")}. OFFLINE only. 2023 loaded as history only;
 scored weeks {targets[0]} .. {targets[-1]}, no exclusions.

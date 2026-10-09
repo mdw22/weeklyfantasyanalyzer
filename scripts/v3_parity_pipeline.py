@@ -78,11 +78,23 @@ def main() -> None:
         if shipped_bins != len(st["ratio_bins"]):
             pool_mismatch += abs(shipped_bins - len(st["ratio_bins"]))
 
-        ok = max_d < TOLERANCE and pool_mismatch == 0 and pool_diff < 1e-4
+        # Pooled tail shapes: pipeline quantiles vs. the same quantiles of the backtest's residual shape.
+        shape_diff, shape_mismatch = 0.0, 0
+        for pos, arr in st["resid_shape"].items():
+            expect, shipped = model_core.residual_shape(list(arr)), meta["resid_shapes"].get(pos)
+            if shipped is None or meta["resid_n"].get(pos) != len(arr):
+                shape_mismatch += 1
+                continue
+            shape_diff = max(shape_diff, max(abs(x - y) for x, y in zip(shipped, expect)))
+        shape_mismatch += len(set(meta["resid_shapes"]) - set(st["resid_shape"]))
+
+        ok = (max_d < TOLERANCE and pool_mismatch == 0 and pool_diff < 1e-4
+              and shape_mismatch == 0 and shape_diff < 1e-4)
         all_pass &= ok
         print(f"({season}, {week}): {len(diffs)} players ({staged} through the n-aware stage), "
               f"max |final diff| = {max_d:.2e}; "
-              f"ratio pools: max |diff| = {pool_diff:.1e}, bin/length mismatches = {pool_mismatch} -> "
+              f"ratio pools: max |diff| = {pool_diff:.1e}, bin/length mismatches = {pool_mismatch}; "
+              f"tail shapes: max |diff| = {shape_diff:.1e}, n/position mismatches = {shape_mismatch} -> "
               f"{'PASS' if ok else 'FAIL'}")
     print(f"\nPipeline parity: {'PASS' if all_pass else 'FAIL'}")
 

@@ -70,8 +70,10 @@ POOLING_K = 3
 RATIO_BIN_EDGES = [2.0, 5.0, 10.0]  # default points: <2, 2-5, 5-10, >=10
 RATIO_CAP = 200
 RATIO_MIN_D = 0.5
-RATIO_MIN_POOL = 10
-BUCKET_STAGE_BUCKETS = ("1-3", "4-6")  # n-aware second stage; 7-8 is already calibrated  # bin thinner than this merges with neighbors, then the position pool
+RATIO_MIN_POOL = 10  # bin thinner than this merges with neighbors, then the position pool
+BUCKET_STAGE_BUCKETS = ("1-3", "4-6")  # n-aware second stage; 7-8 is already calibrated
+RESID_MIN = 30  # fewer prior residuals than this -> no pooled shape for the position
+RESID_QUANTILES = 200  # pooled tail shape shipped as this many quantiles per position
 
 EXP_COLUMN_MAP = {
     "pass_completions_exp": "completions",
@@ -203,3 +205,26 @@ def build_ratio_pools(entries: list) -> dict:
         if d_pts >= RATIO_MIN_D:
             pools.setdefault((position, ratio_bin(d_pts)), []).append(actual_pts / d_pts)
     return {k: v[-RATIO_CAP:] for k, v in pools.items()}
+
+
+def residual_shape(residuals: list) -> list | None:
+    """Pooled tail shape for one position (Phase 5 thin tails): RESID_QUANTILES
+    midpoint quantiles of the standardized (actual - final projection)
+    residuals from strictly-prior weeks, re-standardized to exactly mean 0 /
+    SD 1 so an own-history player's draws t + sd*z keep his mean and variance.
+    None when there are fewer than RESID_MIN residuals or no spread."""
+    n = len(residuals)
+    if n < RESID_MIN:
+        return None
+    xs = sorted(residuals)
+    q = []
+    for k in range(RESID_QUANTILES):
+        pos = (k + 0.5) / RESID_QUANTILES * (n - 1)  # linear interpolation, numpy's default definition
+        lo = int(pos)
+        hi = min(lo + 1, n - 1)
+        q.append(xs[lo] + (xs[hi] - xs[lo]) * (pos - lo))
+    mean = sum(q) / len(q)
+    sd = (sum((v - mean) ** 2 for v in q) / len(q)) ** 0.5
+    if sd == 0:
+        return None
+    return [(v - mean) / sd for v in q]

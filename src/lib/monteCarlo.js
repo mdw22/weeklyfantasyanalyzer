@@ -43,11 +43,14 @@ function ratioPool(pools, minPool, bin) {
   return all.length >= minPool ? all : null;
 }
 
-/** v3 per-player outcome set (spec section 2.4), as an array to resample from:
- * the player's own history shape rescaled to a pooled + predictive-scaled SD
- * and centered on his projection; with no usable shape (s = 0 or n < 2), his
- * projection times same-position, same-bin actual/projected ratios
- * (mean-normalized, so the center stays exactly the projection). */
+/** v3 per-player outcome set (spec section 2.4), as an array to resample from.
+ * Own-history players (s > 0, n >= 2): projection + pooled predictive SD x the
+ * position's pooled standardized residual shape (model_meta.resid_shapes,
+ * mean 0 / SD 1 -- real big games included, so a draw can exceed the player's
+ * own best game); an older meta without shapes rescales his own history
+ * instead. Otherwise his projection times same-position, same-bin
+ * actual/projected ratios (mean-normalized, so the center stays exactly the
+ * projection). */
 export function v3Outcomes(entry, games, scoringValues, posVar, modelMeta) {
   const target = computeFantasyPoints(entry.projected_stats, scoringValues);
   const points = (games ?? []).map((g) => computeFantasyPoints(g, scoringValues));
@@ -59,6 +62,8 @@ export function v3Outcomes(entry, games, scoringValues, posVar, modelMeta) {
   const sd = n >= 2 ? Math.sqrt((variance * (n + 1)) / (n - 1)) : Math.sqrt(variance);
 
   if (s2 > 0 && n >= 2) {
+    const shape = modelMeta.resid_shapes?.[entry.position];
+    if (shape) return shape.map((z) => target + sd * z);
     const mean = points.reduce((a, b) => a + b, 0) / n;
     const scale = sd / Math.sqrt(s2);
     return points.map((p) => target + (p - mean) * scale);

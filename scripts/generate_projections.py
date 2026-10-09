@@ -465,7 +465,8 @@ def build_v3(groups, opp: pl.DataFrame, schedules: pl.DataFrame, season: int, we
     - stage 2 (n-aware, thin histories): fit on the EXPANDING window of
       (stage-1 D, actual) pairs from all strictly-prior loaded weeks;
     - fallback ratios for the last ROLLING_WEEKS weeks use each week's own
-      as-of final projection.
+      as-of final projection;
+    - the pooled tail shape uses every week's (actual - final) residual.
     `current_opp` (defaults to `opp`) builds this week's C; main() passes the
     v2 lookback slice so the current-week line sees the same seasons as v2."""
     rw = model_core.ROLLING_WEEKS
@@ -501,6 +502,11 @@ def build_v3(groups, opp: pl.DataFrame, schedules: pl.DataFrame, season: int, we
         d_stats[eid] = model_core.apply_bucket_stage(d1, entry["position"], entry["games_used"], stage)
 
     pools = model_core.build_ratio_pools([e for wk in recent for e in entries_by_week[wk]])
+    residuals = {}
+    for wk in weeks:  # expanding: every strictly-prior loaded week, like the backtest's residual shapes
+        for pos, final_pts, actual_pts in entries_by_week[wk]:
+            residuals.setdefault(pos, []).append(actual_pts - final_pts)
+    resid_shapes = {pos: model_core.residual_shape(r) for pos, r in sorted(residuals.items())}
     meta = {
         "model_version": model_core.MODEL_VERSION,
         "season": season,
@@ -517,6 +523,9 @@ def build_v3(groups, opp: pl.DataFrame, schedules: pl.DataFrame, season: int, we
                   for (pp, b), p in sorted(stage.items()) if pp == pos}
             for pos in sorted({pos for pos, _ in stage})
         },
+        # Pooled tail shape: own-history players draw t + sd * z, z uniform over these standardized quantiles.
+        "resid_shapes": {pos: [round(z, 4) for z in q] for pos, q in resid_shapes.items() if q},
+        "resid_n": {pos: len(r) for pos, r in sorted(residuals.items())},
         "ratio_bin_edges": model_core.RATIO_BIN_EDGES,
         "ratio_min_pool": model_core.RATIO_MIN_POOL,
         "pooling_k": model_core.POOLING_K,
