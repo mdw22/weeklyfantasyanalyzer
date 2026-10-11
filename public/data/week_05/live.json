@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T22:58:15Z",
+  "updatedAt": "2026-10-11T23:03:19Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -20,8 +20,8 @@
     },
     "00-0039915": {
       "status": "in_progress",
-      "clock": "Q4 5:07",
-      "fraction_remaining": 0.0853,
+      "clock": "Q4 3:13",
+      "fraction_remaining": 0.0536,
       "stats": {}
     },
     "00-0035685": {
@@ -60,19 +60,20 @@
     },
     "DEF_DEN": {
       "status": "in_progress",
-      "clock": "Q4 5:07",
-      "fraction_remaining": 0.0853,
+      "clock": "Q4 3:13",
+      "fraction_remaining": 0.0536,
       "stats": {
+        "def_interceptions": 1.0,
         "def_fumble_recoveries": 2.0,
-        "def_sacks": 3.0,
+        "def_sacks": 4.0,
         "def_points_allowed_bonus": 1,
         "def_yards_allowed_bonus": 2
       }
     },
     "00-0034173": {
       "status": "in_progress",
-      "clock": "Q3 0:20",
-      "fraction_remaining": 0.2556,
+      "clock": "Q4 13:52",
+      "fraction_remaining": 0.2311,
       "stats": {
         "fg_missed_total": 1.0,
         "pat_made": 3.0
@@ -92,8 +93,8 @@
     },
     "00-0039793": {
       "status": "in_progress",
-      "clock": "Q3 0:20",
-      "fraction_remaining": 0.2556,
+      "clock": "Q4 13:52",
+      "fraction_remaining": 0.2311,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0
@@ -117,8 +118,8 @@
     },
     "00-0039732": {
       "status": "in_progress",
-      "clock": "Q4 5:07",
-      "fraction_remaining": 0.0853,
+      "clock": "Q4 3:13",
+      "fraction_remaining": 0.0536,
       "stats": {
         "passing_yards": 123.0,
         "passing_tds": 1.0,
@@ -189,20 +190,20 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q4 12:55",
-      "fraction_remaining": 0.2153,
+      "clock": "Q4 8:49",
+      "fraction_remaining": 0.1469,
       "stats": {
-        "receiving_yards": 69.0,
+        "receiving_yards": 88.0,
         "receiving_tds": 1.0,
-        "receptions": 4.0
+        "receptions": 5.0
       }
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q3 0:20",
-      "fraction_remaining": 0.2556,
+      "clock": "Q4 13:52",
+      "fraction_remaining": 0.2311,
       "stats": {
-        "rushing_yards": 5.0
+        "rushing_yards": 1.0
       }
     },
     "00-0039880": {
@@ -226,8 +227,8 @@
     },
     "00-0033119": {
       "status": "in_progress",
-      "clock": "Q4 12:55",
-      "fraction_remaining": 0.2153,
+      "clock": "Q4 8:49",
+      "fraction_remaining": 0.1469,
       "stats": {
         "passing_yards": 232.0,
         "passing_tds": 2.0,
@@ -252,33 +253,33 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 5:07",
-      "fraction_remaining": 0.0853
+      "clock": "Q4 3:13",
+      "fraction_remaining": 0.0536
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 5:07",
-      "fraction_remaining": 0.0853
+      "clock": "Q4 3:13",
+      "fraction_remaining": 0.0536
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q4 12:55",
-      "fraction_remaining": 0.2153
+      "clock": "Q4 8:49",
+      "fraction_remaining": 0.1469
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Q4 12:55",
-      "fraction_remaining": 0.2153
+      "clock": "Q4 8:49",
+      "fraction_remaining": 0.1469
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q3 0:20",
-      "fraction_remaining": 0.2556
+      "clock": "Q4 13:52",
+      "fraction_remaining": 0.2311
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q3 0:20",
-      "fraction_remaining": 0.2556
+      "clock": "Q4 13:52",
+      "fraction_remaining": 0.2311
     },
     "JAX": {
       "status": "final",
@@ -383,6 +384,7 @@
     "00-0036322": "ACTIVE",
     "00-0040122": "ACTIVE",
     "00-0039067": "QUESTIONABLE",
+    "00-0039064": "ACTIVE",
     "00-0040784": "QUESTIONABLE",
     "00-0039915": "ACTIVE",
     "00-0036410": "ACTIVE",
@@ -416,7 +418,6 @@
   },
   "espnProjections": {
     "00-0039067": 0.0,
-    "00-0039064": 14.0,
     "00-0034827": 12.6,
     "00-0039491": 0.0
   }
