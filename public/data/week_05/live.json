@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T23:28:59Z",
+  "updatedAt": "2026-10-11T23:34:03Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -70,9 +70,10 @@
     },
     "00-0034173": {
       "status": "in_progress",
-      "clock": "Q4 3:22",
-      "fraction_remaining": 0.0561,
+      "clock": "Q4 1:56",
+      "fraction_remaining": 0.0322,
       "stats": {
+        "fg_made_40_49": 1.0,
         "fg_missed_total": 1.0,
         "pat_made": 3.0
       }
@@ -91,8 +92,8 @@
     },
     "00-0039793": {
       "status": "in_progress",
-      "clock": "Q4 3:22",
-      "fraction_remaining": 0.0561,
+      "clock": "Q4 1:56",
+      "fraction_remaining": 0.0322,
       "stats": {
         "receiving_yards": 20.0,
         "receptions": 3.0
@@ -196,10 +197,10 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 3:22",
-      "fraction_remaining": 0.0561,
+      "clock": "Q4 1:56",
+      "fraction_remaining": 0.0322,
       "stats": {
-        "rushing_yards": 17.0
+        "rushing_yards": 16.0
       }
     },
     "00-0039880": {
@@ -256,13 +257,13 @@
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q4 3:22",
-      "fraction_remaining": 0.0561
+      "clock": "Q4 1:56",
+      "fraction_remaining": 0.0322
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 3:22",
-      "fraction_remaining": 0.0561
+      "clock": "Q4 1:56",
+      "fraction_remaining": 0.0322
     },
     "JAX": {
       "status": "final",
