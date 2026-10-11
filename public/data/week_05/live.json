@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T23:13:27Z",
+  "updatedAt": "2026-10-11T23:18:31Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -19,9 +19,8 @@
       }
     },
     "00-0039915": {
-      "status": "in_progress",
-      "clock": "Q4 1:02",
-      "fraction_remaining": 0.0172,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {}
     },
     "00-0035685": {
@@ -59,21 +58,20 @@
       "stats": {}
     },
     "DEF_DEN": {
-      "status": "in_progress",
-      "clock": "Q4 1:02",
-      "fraction_remaining": 0.0172,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "def_interceptions": 1.0,
         "def_fumble_recoveries": 2.0,
-        "def_sacks": 4.0,
+        "def_sacks": 5.0,
         "def_points_allowed_bonus": 1,
         "def_yards_allowed_bonus": 2
       }
     },
     "00-0034173": {
       "status": "in_progress",
-      "clock": "Q4 11:02",
-      "fraction_remaining": 0.1839,
+      "clock": "Q4 10:38",
+      "fraction_remaining": 0.1772,
       "stats": {
         "fg_missed_total": 1.0,
         "pat_made": 3.0
@@ -93,8 +91,8 @@
     },
     "00-0039793": {
       "status": "in_progress",
-      "clock": "Q4 11:02",
-      "fraction_remaining": 0.1839,
+      "clock": "Q4 10:38",
+      "fraction_remaining": 0.1772,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0
@@ -117,9 +115,8 @@
       "stats": {}
     },
     "00-0039732": {
-      "status": "in_progress",
-      "clock": "Q4 1:02",
-      "fraction_remaining": 0.0172,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "passing_yards": 123.0,
         "passing_tds": 1.0,
@@ -190,8 +187,8 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q4 4:51",
-      "fraction_remaining": 0.0808,
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397,
       "stats": {
         "receiving_yards": 88.0,
         "receiving_tds": 1.0,
@@ -200,8 +197,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q4 11:02",
-      "fraction_remaining": 0.1839,
+      "clock": "Q4 10:38",
+      "fraction_remaining": 0.1772,
       "stats": {
         "rushing_yards": 1.0
       }
@@ -227,13 +224,13 @@
     },
     "00-0033119": {
       "status": "in_progress",
-      "clock": "Q4 4:51",
-      "fraction_remaining": 0.0808,
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397,
       "stats": {
-        "passing_yards": 248.0,
+        "passing_yards": 283.0,
         "passing_tds": 2.0,
         "passing_interceptions": 1.0,
-        "rushing_yards": 1.0,
+        "rushing_yards": 19.0,
         "receiving_yards": 7.0,
         "receptions": 1.0
       }
@@ -251,35 +248,25 @@
     }
   },
   "teams": {
-    "LAC": {
-      "status": "in_progress",
-      "clock": "Q4 1:02",
-      "fraction_remaining": 0.0172
-    },
-    "DEN": {
-      "status": "in_progress",
-      "clock": "Q4 1:02",
-      "fraction_remaining": 0.0172
-    },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q4 4:51",
-      "fraction_remaining": 0.0808
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Q4 4:51",
-      "fraction_remaining": 0.0808
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q4 11:02",
-      "fraction_remaining": 0.1839
+      "clock": "Q4 10:38",
+      "fraction_remaining": 0.1772
     },
     "SF": {
       "status": "in_progress",
-      "clock": "Q4 11:02",
-      "fraction_remaining": 0.1839
+      "clock": "Q4 10:38",
+      "fraction_remaining": 0.1772
     },
     "JAX": {
       "status": "final",
@@ -350,6 +337,14 @@
       "fraction_remaining": 0.0
     },
     "NYG": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "LAC": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "DEN": {
       "status": "final",
       "fraction_remaining": 0.0
     },
