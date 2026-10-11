@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T22:07:34Z",
+  "updatedAt": "2026-10-11T22:12:38Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -20,8 +20,8 @@
     },
     "00-0039915": {
       "status": "in_progress",
-      "clock": "Q3 4:08",
-      "fraction_remaining": 0.3189,
+      "clock": "Q3 2:50",
+      "fraction_remaining": 0.2972,
       "stats": {}
     },
     "00-0035685": {
@@ -60,8 +60,8 @@
     },
     "DEF_DEN": {
       "status": "in_progress",
-      "clock": "Q3 4:08",
-      "fraction_remaining": 0.3189,
+      "clock": "Q3 2:50",
+      "fraction_remaining": 0.2972,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -116,8 +116,8 @@
     },
     "00-0039732": {
       "status": "in_progress",
-      "clock": "Q3 4:08",
-      "fraction_remaining": 0.3189,
+      "clock": "Q3 2:50",
+      "fraction_remaining": 0.2972,
       "stats": {
         "passing_yards": 86.0,
         "rushing_yards": 1.0
@@ -248,13 +248,13 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q3 4:08",
-      "fraction_remaining": 0.3189
+      "clock": "Q3 2:50",
+      "fraction_remaining": 0.2972
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 4:08",
-      "fraction_remaining": 0.3189
+      "clock": "Q3 2:50",
+      "fraction_remaining": 0.2972
     },
     "ARI": {
       "status": "in_progress",
@@ -400,6 +400,7 @@
     "00-0035229": "QUESTIONABLE",
     "00-0030279": "ACTIVE",
     "00-0041032": "QUESTIONABLE",
+    "00-0040727": "QUESTIONABLE",
     "00-0039874": "ACTIVE",
     "00-0039342": "IR",
     "00-0038104": "OUT",
