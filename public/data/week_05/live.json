@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T23:54:15Z",
+  "updatedAt": "2026-10-12T00:24:29Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -87,7 +87,10 @@
       }
     },
     "00-0036550": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 15:00",
+      "fraction_remaining": 1.0,
+      "stats": {}
     },
     "00-0039793": {
       "status": "final",
@@ -130,7 +133,10 @@
       "status": "not_started"
     },
     "00-0039064": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 15:00",
+      "fraction_remaining": 1.0,
+      "stats": {}
     },
     "00-0040715": {
       "status": "final",
@@ -244,14 +250,6 @@
     }
   },
   "teams": {
-    "SEA": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "SF": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "JAX": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -340,12 +338,22 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "SEA": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "SF": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "ATL": {
-      "status": "not_started",
+      "status": "in_progress",
+      "clock": "Q1 15:00",
       "fraction_remaining": 1.0
     },
     "BAL": {
-      "status": "not_started",
+      "status": "in_progress",
+      "clock": "Q1 15:00",
       "fraction_remaining": 1.0
     },
     "DAL": {
