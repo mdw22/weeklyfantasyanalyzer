@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T03:06:20Z",
+  "updatedAt": "2026-10-12T03:11:23Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -88,8 +88,8 @@
     },
     "00-0036550": {
       "status": "in_progress",
-      "clock": "Q4 2:31",
-      "fraction_remaining": 0.0419,
+      "clock": "Q4 2:02",
+      "fraction_remaining": 0.0339,
       "stats": {
         "receiving_yards": 19.0,
         "receptions": 1.0
@@ -137,8 +137,8 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q4 2:31",
-      "fraction_remaining": 0.0419,
+      "clock": "Q4 2:02",
+      "fraction_remaining": 0.0339,
       "stats": {
         "rushing_yards": 13.0,
         "receiving_yards": 42.0,
@@ -259,13 +259,13 @@
   "teams": {
     "ATL": {
       "status": "in_progress",
-      "clock": "Q4 2:31",
-      "fraction_remaining": 0.0419
+      "clock": "Q4 2:02",
+      "fraction_remaining": 0.0339
     },
     "BAL": {
       "status": "in_progress",
-      "clock": "Q4 2:31",
-      "fraction_remaining": 0.0419
+      "clock": "Q4 2:02",
+      "fraction_remaining": 0.0339
     },
     "JAX": {
       "status": "final",
