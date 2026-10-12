@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T03:51:51Z",
+  "updatedAt": "2026-10-12T21:32:32Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -255,11 +255,19 @@
     }
   },
   "teams": {
-    "ATL": {
+    "LA": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "BUF": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "DAL": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "BAL": {
+    "TB": {
       "status": "final",
       "fraction_remaining": 0.0
     },
@@ -359,38 +367,29 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "DAL": {
+    "ATL": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "TB": {
+    "BAL": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "LA": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
-    },
-    "BUF": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
     }
   },
   "injuries": {
     "00-0036900": "ACTIVE",
+    "00-0038543": "QUESTIONABLE",
     "00-0036358": "QUESTIONABLE",
     "00-0036322": "ACTIVE",
     "00-0040122": "ACTIVE",
     "00-0039067": "QUESTIONABLE",
     "00-0039064": "ACTIVE",
     "00-0040784": "QUESTIONABLE",
-    "00-0039915": "ACTIVE",
     "00-0036410": "ACTIVE",
     "00-0035659": "ACTIVE",
-    "00-0035685": "QUESTIONABLE",
+    "00-0035685": "DOUBTFUL",
     "00-0040734": "QUESTIONABLE",
     "00-0041438": "ACTIVE",
-    "00-0039849": "OUT",
     "00-0036875": "ACTIVE",
     "00-0035700": "QUESTIONABLE",
     "00-0039344": "IR",
@@ -398,7 +397,7 @@
     "00-0036139": "OUT",
     "00-0038994": "OUT",
     "00-0039491": "QUESTIONABLE",
-    "00-0035719": "QUESTIONABLE",
+    "00-0035719": "OUT",
     "00-0041547": "QUESTIONABLE",
     "00-0039165": "OUT",
     "00-0033906": "ACTIVE",
@@ -408,11 +407,9 @@
     "00-0040727": "QUESTIONABLE",
     "00-0039874": "ACTIVE",
     "00-0039342": "IR",
-    "00-0038104": "OUT",
+    "00-0038104": "IR",
     "00-0039299": "ACTIVE",
-    "00-0039746": "QUESTIONABLE",
-    "00-0040886": "OUT",
-    "00-0041096": "OUT"
+    "00-0039746": "DOUBTFUL"
   },
   "espnProjections": {
     "00-0039067": 0.0,
