@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T01:14:27Z",
+  "updatedAt": "2026-10-13T01:19:30Z",
   "players": {
     "00-0036223": {
       "status": "final",
@@ -130,20 +130,20 @@
     },
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 5:09",
-      "fraction_remaining": 0.5858,
+      "clock": "Q2 2:26",
+      "fraction_remaining": 0.5406,
       "stats": {
         "rushing_yards": 9.0,
-        "receiving_yards": 32.0,
-        "receptions": 5.0
+        "receiving_yards": 47.0,
+        "receptions": 6.0
       }
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 5:09",
-      "fraction_remaining": 0.5858,
+      "clock": "Q2 2:26",
+      "fraction_remaining": 0.5406,
       "stats": {
-        "rushing_yards": 18.0,
+        "rushing_yards": 25.0,
         "receptions": 1.0
       }
     },
@@ -175,8 +175,8 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q2 5:09",
-      "fraction_remaining": 0.5858,
+      "clock": "Q2 2:26",
+      "fraction_remaining": 0.5406,
       "stats": {
         "receiving_yards": 6.0,
         "receptions": 1.0
@@ -276,13 +276,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 5:09",
-      "fraction_remaining": 0.5858
+      "clock": "Q2 2:26",
+      "fraction_remaining": 0.5406
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q2 5:09",
-      "fraction_remaining": 0.5858
+      "clock": "Q2 2:26",
+      "fraction_remaining": 0.5406
     },
     "DAL": {
       "status": "final",
