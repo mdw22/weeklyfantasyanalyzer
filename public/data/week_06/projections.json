@@ -24386,7 +24386,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036875": {
     "player_name": "Rhamondre Stevenson",
@@ -27016,7 +27017,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037007": {
     "player_name": "Patrick Jones II",
@@ -35075,7 +35077,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0038553": {
     "player_name": "Daiyan Henley",
@@ -37225,7 +37228,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0038933": {
     "player_name": "Dalton Kincaid",
@@ -55289,7 +55293,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036603": {
     "player_name": "Alaric Jackson",
@@ -55333,7 +55338,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0036620": {
     "player_name": "Dee Eskridge",
@@ -69460,7 +69465,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "injury_status": "IR"
+    "active": true
   },
   "00-0035118": {
     "player_name": "Matthew Orzech",
@@ -117697,7 +117702,8 @@
       "fg_missed_total": 0.25,
       "pat_made": 1.75
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039172": {
     "player_name": "Jake Bates",
