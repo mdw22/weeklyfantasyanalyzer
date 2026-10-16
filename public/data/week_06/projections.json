@@ -14272,7 +14272,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0035133": {
     "player_name": "Keisean Nixon",
@@ -17073,7 +17073,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0035667": {
     "player_name": "Greg Gaines",
@@ -24386,7 +24387,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036875": {
@@ -27017,7 +27017,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037007": {
@@ -31923,7 +31922,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0037746": {
     "player_name": "Brian Robinson",
@@ -37228,7 +37228,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038933": {
@@ -46248,7 +46247,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0034808": {
     "player_name": "John Kelly",
@@ -49389,8 +49389,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037304": {
     "player_name": "Connor Heyward",
@@ -55293,7 +55292,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036603": {
@@ -56861,8 +56859,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038608": {
     "player_name": "Kayshon Boutte",
@@ -61879,8 +61876,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038710": {
     "player_name": "Blake Whiteheart",
@@ -90919,8 +90915,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.33
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040676": {
     "player_name": "Cam Ward",
@@ -107213,8 +107208,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040785": {
     "player_name": "Dohnte Meyers",
@@ -113369,8 +113363,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041402": {
     "player_name": "Quintayvious Hutchins",
@@ -116654,7 +116647,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0041070": {
     "player_name": "Reggie Virgil",
