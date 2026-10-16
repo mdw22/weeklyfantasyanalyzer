@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T03:26:15Z",
+  "updatedAt": "2026-10-16T03:31:19Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -84,7 +84,7 @@
     },
     "DEF_SEA": {
       "status": "in_progress",
-      "clock": "OT 9:55",
+      "clock": "OT 6:26",
       "fraction_remaining": 0.05,
       "stats": {
         "def_sacks": 2.0,
@@ -114,12 +114,12 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "OT 9:55",
+      "clock": "OT 6:26",
       "fraction_remaining": 0.05
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "OT 9:55",
+      "clock": "OT 6:26",
       "fraction_remaining": 0.05
     },
     "JAX": {
