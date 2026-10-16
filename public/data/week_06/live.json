@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T00:18:38Z",
+  "updatedAt": "2026-10-16T00:23:42Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -84,8 +84,8 @@
     },
     "DEF_SEA": {
       "status": "in_progress",
-      "clock": "Q1 13:51",
-      "fraction_remaining": 0.9808,
+      "clock": "Q1 9:59",
+      "fraction_remaining": 0.9164,
       "stats": {
         "def_points_allowed_bonus": 5,
         "def_yards_allowed_bonus": 5
@@ -113,13 +113,13 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q1 13:51",
-      "fraction_remaining": 0.9808
+      "clock": "Q1 9:59",
+      "fraction_remaining": 0.9164
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q1 13:51",
-      "fraction_remaining": 0.9808
+      "clock": "Q1 9:59",
+      "fraction_remaining": 0.9164
     },
     "JAX": {
       "status": "not_started",
@@ -230,7 +230,6 @@
     "00-0039040": "IR",
     "00-0034844": "QUESTIONABLE",
     "00-0041027": "QUESTIONABLE",
-    "00-0039338": "QUESTIONABLE",
     "00-0037239": "QUESTIONABLE",
     "00-0039067": "QUESTIONABLE",
     "00-0038120": "DOUBTFUL",
@@ -278,7 +277,6 @@
   "espnProjections": {
     "00-0034844": 0.0,
     "00-0041027": 11.4,
-    "00-0039338": 19.8,
     "00-0037239": 17.3,
     "00-0039067": 0.0,
     "00-0038120": 0.0,
