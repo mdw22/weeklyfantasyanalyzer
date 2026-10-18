@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T23:11:29Z",
+  "updatedAt": "2026-10-18T23:16:34Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -41,8 +41,8 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q4 4:43",
-      "fraction_remaining": 0.0786,
+      "clock": "Q4 3:29",
+      "fraction_remaining": 0.0581,
       "stats": {
         "receiving_yards": 31.0,
         "receiving_tds": 1.0,
@@ -51,8 +51,8 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 4:38",
-      "fraction_remaining": 0.0772,
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397,
       "stats": {
         "passing_yards": 272.0,
         "passing_interceptions": 1.0,
@@ -170,8 +170,8 @@
     },
     "00-0039894": {
       "status": "in_progress",
-      "clock": "Q4 4:38",
-      "fraction_remaining": 0.0772,
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397,
       "stats": {
         "receiving_yards": 73.0,
         "receptions": 7.0
@@ -213,8 +213,8 @@
     },
     "00-0036162": {
       "status": "in_progress",
-      "clock": "Q4 4:43",
-      "fraction_remaining": 0.0786,
+      "clock": "Q4 3:29",
+      "fraction_remaining": 0.0581,
       "stats": {
         "fg_made_40_49": 2.0,
         "fg_made_0_39": 1.0,
@@ -228,8 +228,8 @@
     },
     "00-0029604": {
       "status": "in_progress",
-      "clock": "Q4 4:43",
-      "fraction_remaining": 0.0786,
+      "clock": "Q4 3:29",
+      "fraction_remaining": 0.0581,
       "stats": {
         "passing_yards": 269.0,
         "passing_tds": 1.0,
@@ -243,23 +243,23 @@
   "teams": {
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 4:38",
-      "fraction_remaining": 0.0772
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 4:38",
-      "fraction_remaining": 0.0772
+      "clock": "Q4 2:23",
+      "fraction_remaining": 0.0397
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 4:43",
-      "fraction_remaining": 0.0786
+      "clock": "Q4 3:29",
+      "fraction_remaining": 0.0581
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q4 4:43",
-      "fraction_remaining": 0.0786
+      "clock": "Q4 3:29",
+      "fraction_remaining": 0.0581
     },
     "JAX": {
       "status": "final",
