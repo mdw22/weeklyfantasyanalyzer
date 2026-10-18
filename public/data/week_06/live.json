@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T16:30:32Z",
+  "updatedAt": "2026-10-18T16:35:36Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -45,8 +45,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q4 3:53",
-      "fraction_remaining": 0.0647,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
         "fg_made_0_39": 1.0,
         "pat_made": 4.0
@@ -87,8 +87,8 @@
     },
     "00-0040583": {
       "status": "in_progress",
-      "clock": "Q4 3:53",
-      "fraction_remaining": 0.0647,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
         "rushing_yards": 52.0
       }
@@ -124,13 +124,13 @@
   "teams": {
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 3:53",
-      "fraction_remaining": 0.0647
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q4 3:53",
-      "fraction_remaining": 0.0647
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "ATL": {
       "status": "not_started",
