@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-10-18T20:28:59Z",
+  "updatedAt": "2026-10-18T20:34:04Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342,
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342,
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097,
       "stats": {
-        "rushing_yards": 3.0,
+        "rushing_yards": 8.0,
         "receiving_yards": 3.0,
         "receptions": 1.0
       }
@@ -40,16 +40,16 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q1 14:04",
-      "fraction_remaining": 0.9844,
+      "clock": "Q1 10:12",
+      "fraction_remaining": 0.92,
       "stats": {}
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q1 13:09",
-      "fraction_remaining": 0.9692,
+      "clock": "Q1 11:12",
+      "fraction_remaining": 0.9367,
       "stats": {
-        "passing_yards": 30.0
+        "passing_yards": 46.0
       }
     },
     "00-0040236": {
@@ -109,8 +109,8 @@
     },
     "00-0033307": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342,
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097,
       "stats": {}
     },
     "00-0036963": {
@@ -118,11 +118,11 @@
     },
     "00-0037744": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342,
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097,
       "stats": {
-        "receiving_yards": 26.0,
-        "receptions": 1.0
+        "receiving_yards": 40.0,
+        "receptions": 2.0
       }
     },
     "00-0038120": {
@@ -162,8 +162,8 @@
     },
     "00-0039894": {
       "status": "in_progress",
-      "clock": "Q1 13:09",
-      "fraction_remaining": 0.9692,
+      "clock": "Q1 11:12",
+      "fraction_remaining": 0.9367,
       "stats": {
         "receiving_yards": 30.0,
         "receptions": 2.0
@@ -205,9 +205,11 @@
     },
     "00-0036162": {
       "status": "in_progress",
-      "clock": "Q1 14:04",
-      "fraction_remaining": 0.9844,
-      "stats": {}
+      "clock": "Q1 10:12",
+      "fraction_remaining": 0.92,
+      "stats": {
+        "fg_made_40_49": 1.0
+      }
     },
     "00-0031610": {
       "status": "final",
@@ -216,8 +218,8 @@
     },
     "00-0029604": {
       "status": "in_progress",
-      "clock": "Q1 14:04",
-      "fraction_remaining": 0.9844,
+      "clock": "Q1 10:12",
+      "fraction_remaining": 0.92,
       "stats": {}
     },
     "00-0033699": {
@@ -227,43 +229,43 @@
   "teams": {
     "TB": {
       "status": "in_progress",
-      "clock": "OT 6:11",
+      "clock": "OT 3:15",
       "fraction_remaining": 0.05
     },
     "PIT": {
       "status": "in_progress",
-      "clock": "OT 6:11",
+      "clock": "OT 3:15",
       "fraction_remaining": 0.05
     },
     "LA": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q1 5:03",
-      "fraction_remaining": 0.8342
+      "clock": "Q1 3:35",
+      "fraction_remaining": 0.8097
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q1 13:09",
-      "fraction_remaining": 0.9692
+      "clock": "Q1 11:12",
+      "fraction_remaining": 0.9367
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q1 13:09",
-      "fraction_remaining": 0.9692
+      "clock": "Q1 11:12",
+      "fraction_remaining": 0.9367
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q1 14:04",
-      "fraction_remaining": 0.9844
+      "clock": "Q1 10:12",
+      "fraction_remaining": 0.92
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q1 14:04",
-      "fraction_remaining": 0.9844
+      "clock": "Q1 10:12",
+      "fraction_remaining": 0.92
     },
     "JAX": {
       "status": "final",
