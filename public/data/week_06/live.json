@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T21:29:20Z",
+  "updatedAt": "2026-10-18T16:20:23Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -44,7 +44,13 @@
       "status": "not_started"
     },
     "00-0032726": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q4 9:54",
+      "fraction_remaining": 0.165,
+      "stats": {
+        "fg_made_0_39": 1.0,
+        "pat_made": 4.0
+      }
     },
     "DEF_NE": {
       "status": "not_started"
@@ -80,7 +86,12 @@
       "status": "not_started"
     },
     "00-0040583": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q4 9:54",
+      "fraction_remaining": 0.165,
+      "stats": {
+        "rushing_yards": 39.0
+      }
     },
     "DEF_SEA": {
       "status": "final",
@@ -111,21 +122,15 @@
     }
   },
   "teams": {
-    "DEN": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "SEA": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "JAX": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q4 9:54",
+      "fraction_remaining": 0.165
     },
     "HOU": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q4 9:54",
+      "fraction_remaining": 0.165
     },
     "ATL": {
       "status": "not_started",
@@ -215,6 +220,14 @@
       "status": "not_started",
       "fraction_remaining": 1.0
     },
+    "DEN": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "SEA": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "SF": {
       "status": "not_started",
       "fraction_remaining": 1.0
@@ -226,46 +239,37 @@
   },
   "injuries": {
     "00-0039040": "IR",
-    "00-0035676": "QUESTIONABLE",
-    "00-0031408": "QUESTIONABLE",
-    "00-0036389": "IR",
-    "00-0035640": "ACTIVE",
+    "00-0035676": "ACTIVE",
+    "00-0037239": "ACTIVE",
+    "00-0040784": "OUT",
+    "00-0040128": "OUT",
+    "00-0040734": "ACTIVE",
     "00-0035700": "QUESTIONABLE",
-    "00-0031588": "QUESTIONABLE",
+    "00-0039918": "ACTIVE",
+    "00-0036139": "ACTIVE",
     "00-0038994": "QUESTIONABLE",
-    "00-0040242": "OUT",
-    "00-0035719": "OUT",
+    "00-0039032": "ACTIVE",
     "00-0037525": "IR",
     "00-0039165": "OUT",
     "00-0037197": "IR",
+    "00-0033906": "ACTIVE",
     "00-0035229": "QUESTIONABLE",
     "00-0041523": "QUESTIONABLE",
-    "00-0040870": "QUESTIONABLE",
-    "00-0036894": "QUESTIONABLE",
-    "00-0041511": "QUESTIONABLE",
-    "00-0038619": "IR"
+    "00-0041032": "ACTIVE",
+    "00-0040870": "ACTIVE",
+    "00-0036894": "ACTIVE",
+    "00-0041511": "ACTIVE",
+    "00-0038951": "OUT",
+    "00-0038619": "IR",
+    "00-0040886": "OUT"
   },
   "espnProjections": {
-    "00-0035676": 12.7,
-    "00-0037239": 17.3,
-    "00-0040784": 13.5,
     "00-0034827": 13.4,
-    "00-0040128": 12.1,
-    "00-0040734": 8.7,
     "00-0031408": 14.9,
     "00-0035700": 0.0,
-    "00-0039918": 16.7,
-    "00-0036139": 6.4,
     "00-0031588": 10.6,
     "00-0038994": 0.0,
-    "00-0039032": 8.7,
-    "00-0033906": 10.1,
     "00-0035229": 0.0,
-    "00-0041523": 0.0,
-    "00-0041032": 6.3,
-    "00-0040870": 4.2,
-    "00-0036894": 11.1,
-    "00-0041511": 2.1,
-    "00-0038951": 2.6
+    "00-0041523": 0.0
   }
 }
