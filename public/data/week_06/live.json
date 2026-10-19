@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T03:49:39Z",
+  "updatedAt": "2026-10-19T18:58:22Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -241,11 +241,19 @@
     }
   },
   "teams": {
-    "GB": {
+    "SF": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "WAS": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "DEN": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "DAL": {
+    "SEA": {
       "status": "final",
       "fraction_remaining": 0.0
     },
@@ -337,21 +345,13 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "DEN": {
+    "GB": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "SEA": {
+    "DAL": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "SF": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
-    },
-    "WAS": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
     }
   },
   "injuries": {
@@ -382,10 +382,8 @@
     "00-0036894": "ACTIVE",
     "00-0041511": "ACTIVE",
     "00-0038951": "OUT",
-    "00-0038705": "OUT",
     "00-0038619": "IR",
-    "00-0040886": "OUT",
-    "00-0037801": "OUT",
+    "00-0037801": "QUESTIONABLE",
     "00-0036309": "QUESTIONABLE"
   },
   "espnProjections": {
