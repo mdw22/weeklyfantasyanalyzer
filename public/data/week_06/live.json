@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T00:42:18Z",
+  "updatedAt": "2026-10-19T00:47:21Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -157,8 +157,8 @@
     },
     "00-0038124": {
       "status": "in_progress",
-      "clock": "Q1 4:43",
-      "fraction_remaining": 0.8286,
+      "clock": "Q1 4:39",
+      "fraction_remaining": 0.8275,
       "stats": {
         "receiving_yards": 27.0,
         "receptions": 1.0
@@ -244,13 +244,13 @@
   "teams": {
     "GB": {
       "status": "in_progress",
-      "clock": "Q1 4:43",
-      "fraction_remaining": 0.8286
+      "clock": "Q1 4:39",
+      "fraction_remaining": 0.8275
     },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q1 4:43",
-      "fraction_remaining": 0.8286
+      "clock": "Q1 4:39",
+      "fraction_remaining": 0.8275
     },
     "JAX": {
       "status": "final",
