@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T02:18:17Z",
+  "updatedAt": "2026-10-19T02:23:21Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -157,11 +157,11 @@
     },
     "00-0038124": {
       "status": "in_progress",
-      "clock": "Q3 9:19",
-      "fraction_remaining": 0.4053,
+      "clock": "Q3 6:52",
+      "fraction_remaining": 0.3644,
       "stats": {
-        "receiving_yards": 55.0,
-        "receptions": 2.0
+        "receiving_yards": 64.0,
+        "receptions": 3.0
       }
     },
     "00-0037664": {
@@ -244,13 +244,13 @@
   "teams": {
     "GB": {
       "status": "in_progress",
-      "clock": "Q3 9:19",
-      "fraction_remaining": 0.4053
+      "clock": "Q3 6:52",
+      "fraction_remaining": 0.3644
     },
     "DAL": {
       "status": "in_progress",
-      "clock": "Q3 9:19",
-      "fraction_remaining": 0.4053
+      "clock": "Q3 6:52",
+      "fraction_remaining": 0.3644
     },
     "JAX": {
       "status": "final",
@@ -362,7 +362,7 @@
     "00-0035676": "ACTIVE",
     "00-0037239": "ACTIVE",
     "00-0040784": "OUT",
-    "00-0039915": "OUT",
+    "00-0039915": "QUESTIONABLE",
     "00-0034827": "OUT",
     "00-0040128": "OUT",
     "00-0040734": "ACTIVE",
@@ -388,7 +388,7 @@
     "00-0038705": "OUT",
     "00-0038619": "IR",
     "00-0040886": "OUT",
-    "00-0037801": "QUESTIONABLE",
+    "00-0037801": "OUT",
     "00-0036309": "QUESTIONABLE"
   },
   "espnProjections": {
