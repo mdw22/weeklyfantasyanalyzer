@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T16:19:59Z",
+  "syncedAt": "2026-10-19T18:58:03Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -13,7 +13,7 @@
       },
       {
         "slot": "RB2",
-        "playerId": "00-0040715"
+        "playerId": "00-0035261"
       },
       {
         "slot": "TE",
@@ -29,7 +29,7 @@
       },
       {
         "slot": "FLEX",
-        "playerId": "00-0035261"
+        "playerId": "00-0040715"
       },
       {
         "slot": "DEF",
@@ -335,15 +335,15 @@
       "owned": true,
       "espnTeamId": 3
     },
-    "00-0033110": {
-      "owned": true,
-      "espnTeamId": 3
-    },
     "00-0037258": {
       "owned": true,
       "espnTeamId": 3
     },
     "00-0031136": {
+      "owned": true,
+      "espnTeamId": 3
+    },
+    "00-0031236": {
       "owned": true,
       "espnTeamId": 3
     },
@@ -799,15 +799,15 @@
       "owned": true,
       "espnTeamId": 10
     },
-    "DEF_MIN": {
-      "owned": true,
-      "espnTeamId": 10
-    },
     "00-0039732": {
       "owned": true,
       "espnTeamId": 10
     },
     "00-0040563": {
+      "owned": true,
+      "espnTeamId": 10
+    },
+    "00-0038129": {
       "owned": true,
       "espnTeamId": 10
     },

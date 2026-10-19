@@ -1479,8 +1479,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0030564": {
     "player_name": "DeAndre Hopkins",
@@ -3571,7 +3570,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0032164": {
@@ -5448,8 +5446,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0033072": {
     "player_name": "Leonard Floyd",
@@ -6325,7 +6322,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0033293": {
@@ -7246,8 +7242,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0033589": {
     "player_name": "David Moore",
@@ -7334,8 +7329,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0033699": {
     "player_name": "Austin Ekeler",
@@ -9907,8 +9901,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0034275": {
     "player_name": "Foley Fatukasi",
@@ -10391,7 +10384,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034359": {
@@ -12095,7 +12087,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0034773": {
@@ -12228,7 +12219,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034780": {
@@ -12448,7 +12438,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034796": {
@@ -12493,7 +12482,6 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034797": {
@@ -12845,7 +12833,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0034828": {
@@ -13153,7 +13140,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034854": {
@@ -13241,7 +13227,6 @@
       "fumbles_lost_total": 0.5
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0034856": {
@@ -14161,7 +14146,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0035042": {
@@ -15077,8 +15061,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0035240": {
     "player_name": "Jahlani Tavai",
@@ -15997,7 +15980,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0035341": {
@@ -16174,7 +16156,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0035402": {
@@ -18548,7 +18529,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036087": {
@@ -18987,7 +18967,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "DOUBTFUL"
   },
   "00-0036193": {
@@ -19032,7 +19011,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036196": {
@@ -19911,7 +19889,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036268": {
@@ -20174,8 +20151,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036290": {
     "player_name": "Cole Kmet",
@@ -21579,8 +21555,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036380": {
     "player_name": "Alohi Gilman",
@@ -21755,8 +21730,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036403": {
     "player_name": "Casey Toohill",
@@ -21931,7 +21905,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036413": {
@@ -22717,7 +22690,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036502": {
@@ -23595,7 +23567,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036628": {
@@ -24514,8 +24485,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036877": {
     "player_name": "Jaelon Darden",
@@ -24998,7 +24968,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036903": {
@@ -26051,7 +26020,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036954": {
@@ -27855,7 +27823,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0037192": {
@@ -29087,7 +29054,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037256": {
@@ -32896,7 +32862,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037840": {
@@ -33863,7 +33828,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038121": {
@@ -33907,8 +33871,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038123": {
     "player_name": "Dane Belton",
@@ -35314,7 +35277,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0038557": {
@@ -36676,8 +36638,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038678": {
     "player_name": "Jordan Mims",
@@ -36763,8 +36724,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038711": {
     "player_name": "Mohamoud Diabate",
@@ -37466,7 +37426,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0038976": {
@@ -37905,8 +37864,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039000": {
     "player_name": "Deonte Banks",
@@ -38787,7 +38745,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039070": {
@@ -38876,7 +38833,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0039072": {
@@ -41073,8 +41029,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039360": {
     "player_name": "Malik Mustapha",
@@ -43051,7 +43006,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039849": {
@@ -43316,7 +43270,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039862": {
@@ -43537,7 +43490,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039893": {
@@ -46716,7 +46668,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0035234": {
@@ -47936,7 +47887,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0036618": {
@@ -48464,8 +48414,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036862": {
     "player_name": "Ben Skowronek",
@@ -48509,7 +48458,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036869": {
@@ -50260,7 +50208,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038127": {
@@ -50349,7 +50296,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0038401": {
@@ -51881,7 +51827,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039378": {
@@ -52716,8 +52661,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039825": {
     "player_name": "Jaden Hicks",
@@ -56167,8 +56111,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037299": {
     "player_name": "Keaontay Ingram",
@@ -56906,8 +56849,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038587": {
     "player_name": "Jammie Robinson",
@@ -58657,7 +58599,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039905": {
@@ -61313,8 +61254,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037461": {
     "player_name": "Tristin McCollum",
@@ -61357,8 +61297,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037526": {
     "player_name": "Marcelino McCrary-Ball",
@@ -69083,7 +69022,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0029263": {
@@ -70128,7 +70066,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036783": {
@@ -71217,7 +71154,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039792": {
@@ -72922,8 +72858,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038821": {
     "player_name": "Rakim Jarrett",
@@ -74225,8 +74160,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038487": {
     "player_name": "Eli Ricks",
@@ -75398,7 +75332,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036335": {
@@ -77838,8 +77771,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039835": {
     "player_name": "Justin Eboigbe",
@@ -81281,8 +81213,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038411": {
     "player_name": "Anthony Johnson Jr.",
@@ -82239,8 +82170,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0035665": {
     "player_name": "David Long",
@@ -85021,8 +84951,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.4
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039427": {
     "player_name": "Solomon Byrd",
@@ -86107,7 +86036,6 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036867": {
@@ -86239,8 +86167,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036989": {
     "player_name": "Malcolm Koonce",
@@ -86328,7 +86255,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "on_bye": true
   },
   "00-0037321": {
@@ -87292,7 +87218,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040118": {
@@ -87557,7 +87482,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0040129": {
@@ -89408,7 +89332,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040237": {
@@ -91170,7 +91093,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0040686": {
@@ -91789,7 +91711,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040729": {
@@ -92626,8 +92547,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036844": {
     "player_name": "Garret Wallow",
@@ -94560,7 +94480,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "DOUBTFUL"
   },
   "00-0040748": {
@@ -94693,7 +94612,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0034792": {
@@ -95133,8 +95051,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038958": {
     "player_name": "Markees Watts",
@@ -96356,8 +96273,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040547": {
     "player_name": "Nate Carter",
@@ -97185,8 +97101,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039422": {
     "player_name": "Nathan Thomas",
@@ -98233,8 +98148,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040106": {
     "player_name": "Reuben Lowery",
@@ -99896,7 +99810,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040225": {
@@ -100377,8 +100290,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.4
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040243": {
     "player_name": "Korie Black",
@@ -101471,7 +101383,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040248": {
@@ -103821,8 +103732,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0022942": {
     "player_name": "Philip Rivers",
@@ -104433,7 +104343,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036291": {
@@ -104607,8 +104516,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038126": {
     "player_name": "Perrion Winfrey",
@@ -105477,8 +105385,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037098": {
     "player_name": "Samori Toure",
@@ -106786,8 +106693,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039433": {
     "player_name": "Marcus Harris",
@@ -107269,8 +107175,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040568": {
     "player_name": "Lan Larison",
@@ -107841,7 +107746,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040880": {
@@ -108327,7 +108231,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0041028": {
@@ -108505,7 +108408,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "DOUBTFUL"
   },
   "00-0041036": {
@@ -111096,8 +110998,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041495": {
     "player_name": "Jake Golday",
@@ -111228,8 +111129,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041501": {
     "player_name": "R Mason Thomas",
@@ -112727,8 +112627,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040928": {
     "player_name": "Kapena Gushiken",
@@ -113212,7 +113111,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0041104": {
@@ -113388,8 +113286,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 1.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041370": {
     "player_name": "Wydett Williams Jr.",
@@ -113433,7 +113330,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0041381": {
@@ -113478,7 +113374,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "DOUBTFUL"
   },
   "00-0041382": {
@@ -113785,7 +113680,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0041489": {
@@ -114271,8 +114165,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.5
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037312": {
     "player_name": "Chance Campbell",
@@ -114533,8 +114426,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040341": {
     "player_name": "Doneiko Slaughter",
@@ -114885,8 +114777,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040887": {
     "player_name": "Josh Cuevas",
@@ -115457,7 +115348,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0041358": {
@@ -116070,8 +115960,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040923": {
     "player_name": "Maximus Pulley",
@@ -117081,8 +116970,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041400": {
     "player_name": "Gabe Rubio",
