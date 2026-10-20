@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T01:32:07Z",
+  "updatedAt": "2026-10-20T01:37:11Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -89,8 +89,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q2 0:58",
-      "fraction_remaining": 0.5161,
+      "clock": "Q2 0:13",
+      "fraction_remaining": 0.5036,
       "stats": {
         "rushing_yards": 25.0,
         "receiving_yards": 3.0,
@@ -245,8 +245,8 @@
     },
     "00-0033699": {
       "status": "in_progress",
-      "clock": "Q2 0:58",
-      "fraction_remaining": 0.5161,
+      "clock": "Q2 0:13",
+      "fraction_remaining": 0.5036,
       "stats": {
         "rushing_yards": 3.0
       }
@@ -255,13 +255,13 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q2 0:58",
-      "fraction_remaining": 0.5161
+      "clock": "Q2 0:13",
+      "fraction_remaining": 0.5036
     },
     "WAS": {
       "status": "in_progress",
-      "clock": "Q2 0:58",
-      "fraction_remaining": 0.5161
+      "clock": "Q2 0:13",
+      "fraction_remaining": 0.5036
     },
     "DEN": {
       "status": "final",
@@ -378,7 +378,6 @@
     "00-0034827": "OUT",
     "00-0040128": "OUT",
     "00-0040734": "ACTIVE",
-    "00-0031408": "ACTIVE",
     "00-0035700": "QUESTIONABLE",
     "00-0039918": "ACTIVE",
     "00-0036139": "ACTIVE",
