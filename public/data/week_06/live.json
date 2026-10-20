@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T00:46:32Z",
+  "updatedAt": "2026-10-20T00:51:35Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -89,8 +89,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q1 3:27",
-      "fraction_remaining": 0.8075,
+      "clock": "Q1 1:56",
+      "fraction_remaining": 0.7822,
       "stats": {
         "rushing_yards": 2.0
       }
@@ -243,8 +243,8 @@
     },
     "00-0033699": {
       "status": "in_progress",
-      "clock": "Q1 3:27",
-      "fraction_remaining": 0.8075,
+      "clock": "Q1 1:56",
+      "fraction_remaining": 0.7822,
       "stats": {
         "rushing_yards": 3.0
       }
@@ -253,13 +253,13 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q1 3:27",
-      "fraction_remaining": 0.8075
+      "clock": "Q1 1:56",
+      "fraction_remaining": 0.7822
     },
     "WAS": {
       "status": "in_progress",
-      "clock": "Q1 3:27",
-      "fraction_remaining": 0.8075
+      "clock": "Q1 1:56",
+      "fraction_remaining": 0.7822
     },
     "DEN": {
       "status": "final",
