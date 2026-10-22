@@ -5977,7 +5977,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0033156": {
     "player_name": "Joey Bosa",
@@ -12229,7 +12230,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0034780": {
     "player_name": "Isaac Yiadom",
@@ -16164,7 +16166,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "DOUBTFUL"
   },
   "00-0035402": {
     "player_name": "Carl Granderson",
@@ -24047,7 +24050,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0036716": {
     "player_name": "Amen Ogbongbemiga",
@@ -38817,7 +38821,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0039072": {
     "player_name": "Jakorian Bennett",
@@ -39256,7 +39261,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0039139": {
     "player_name": "Jahmyr Gibbs",
@@ -40396,7 +40401,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "injury_status": "IR"
   },
   "00-0039333": {
     "player_name": "Brandon Codrington",
@@ -48307,7 +48313,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0036843": {
     "player_name": "Isaiahh Loudermilk",
@@ -49006,7 +49013,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037112": {
     "player_name": "Jake Tonges",
@@ -53208,7 +53216,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0031795": {
     "player_name": "DeShawn Williams",
@@ -67412,7 +67421,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037001": {
     "player_name": "Quinn Meinerz",
@@ -73939,7 +73949,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0037422": {
     "player_name": "Kendric Pryor",
@@ -80725,7 +80736,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0035629": {
     "player_name": "Jonah Williams",
@@ -89272,7 +89284,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0040237": {
     "player_name": "Tez Johnson",
@@ -91337,7 +91350,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0040718": {
     "player_name": "Travis Hunter",
@@ -113034,7 +113048,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041104": {
     "player_name": "Demond Claiborne",
@@ -114400,26 +114415,26 @@
   },
   "00-0040390": {
     "player_name": "Jackson Meeks",
-    "position": "WR",
+    "position": "TE",
     "team": "DET",
     "games_used": 1,
     "projected_stats": {
-      "completions": 0.0016,
-      "attempts": 0.0034,
-      "passing_yards": 0.0208,
-      "passing_tds": -0.0001,
-      "passing_interceptions": -0.0001,
-      "passing_2pt_conversions": -0.0,
-      "carries": 0.0343,
-      "rushing_yards": 0.2689,
-      "rushing_tds": -0.0012,
+      "completions": -0.0,
+      "attempts": -0.0012,
+      "passing_yards": 0.0048,
+      "passing_tds": 0.0,
+      "passing_interceptions": -0.0,
+      "passing_2pt_conversions": 0.0,
+      "carries": -0.0016,
+      "rushing_yards": -0.1391,
+      "rushing_tds": -0.0029,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.388,
-      "targets": 1.8828,
-      "receiving_yards": 14.5616,
-      "receiving_tds": 0.0428,
-      "receiving_2pt_conversions": 0.0112,
-      "fumbles_lost_total": 0.0117
+      "receptions": 0.9846,
+      "targets": 1.6925,
+      "receiving_yards": 8.8138,
+      "receiving_tds": 0.0371,
+      "receiving_2pt_conversions": 0.003,
+      "fumbles_lost_total": 0.0116
     },
     "projected_stats_v2": {
       "completions": 0.0,
@@ -114483,7 +114498,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0040405": {
     "player_name": "Jamaal Pritchett",
@@ -115272,7 +115288,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0041358": {
     "player_name": "Bryson Eason",
@@ -118330,7 +118347,8 @@
       "fg_missed_total": 0.25,
       "pat_made": 2.38
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0038402": {
     "player_name": "Anders Carlson",
