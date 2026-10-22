@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T23:04:14Z",
+  "updatedAt": "2026-10-22T23:19:23Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -91,13 +91,13 @@
     "00-0032726": {
       "status": "not_started"
     },
-    "00-0033307": {
-      "status": "not_started"
-    },
     "DEF_CLE": {
       "status": "not_started"
     },
     "00-0033526": {
+      "status": "not_started"
+    },
+    "00-0040590": {
       "status": "not_started"
     }
   },
