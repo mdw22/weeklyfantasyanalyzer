@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T02:52:28Z",
+  "updatedAt": "2026-10-23T02:57:32Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -45,8 +45,8 @@
     },
     "00-0033090": {
       "status": "in_progress",
-      "clock": "Q4 7:57",
-      "fraction_remaining": 0.1325,
+      "clock": "Q4 6:22",
+      "fraction_remaining": 0.1061,
       "stats": {
         "receiving_yards": 68.0,
         "receptions": 6.0
@@ -78,8 +78,8 @@
     },
     "00-0040236": {
       "status": "in_progress",
-      "clock": "Q4 7:57",
-      "fraction_remaining": 0.1325,
+      "clock": "Q4 6:22",
+      "fraction_remaining": 0.1061,
       "stats": {}
     },
     "00-0036040": {
@@ -113,13 +113,13 @@
   "teams": {
     "CHI": {
       "status": "in_progress",
-      "clock": "Q4 7:57",
-      "fraction_remaining": 0.1325
+      "clock": "Q4 6:22",
+      "fraction_remaining": 0.1061
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q4 7:57",
-      "fraction_remaining": 0.1325
+      "clock": "Q4 6:22",
+      "fraction_remaining": 0.1061
     },
     "NO": {
       "status": "not_started",
