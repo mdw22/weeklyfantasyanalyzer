@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T16:26:20Z",
+  "updatedAt": "2026-10-24T18:48:55Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -233,6 +233,7 @@
     "00-0040242": "IR",
     "00-0038393": "QUESTIONABLE",
     "00-0040727": "QUESTIONABLE",
+    "00-0040078": "IR",
     "00-0037801": "QUESTIONABLE",
     "00-0033885": "IR"
   },
