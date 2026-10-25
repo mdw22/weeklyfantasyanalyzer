@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T23:32:10Z",
+  "updatedAt": "2026-10-25T23:37:14Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -60,9 +60,8 @@
       }
     },
     "DEF_LA": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "def_sacks": 2.0,
         "def_points_allowed_bonus": 0,
@@ -116,9 +115,8 @@
       }
     },
     "00-0039075": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "rushing_yards": 10.0,
         "receiving_yards": 68.0,
@@ -127,9 +125,8 @@
       }
     },
     "00-0037840": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "rushing_yards": 99.0,
         "rushing_tds": 1.0,
@@ -250,9 +247,8 @@
       }
     },
     "00-0040590": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "receiving_yards": 15.0,
         "receptions": 1.0
@@ -260,31 +256,13 @@
     }
   },
   "teams": {
-    "ARI": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "DEN": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "DET": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "GB": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "LV": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "LA": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "NO": {
       "status": "final",
@@ -347,6 +325,22 @@
       "fraction_remaining": 0.0
     },
     "NYG": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "ARI": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "DEN": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "DET": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "GB": {
       "status": "final",
       "fraction_remaining": 0.0
     },
