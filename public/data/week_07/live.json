@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T20:09:33Z",
+  "updatedAt": "2026-10-25T20:14:36Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -35,9 +35,8 @@
       }
     },
     "00-0036970": {
-      "status": "in_progress",
-      "clock": "Q4 0:28",
-      "fraction_remaining": 0.0078,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "receiving_yards": 22.0,
         "receiving_tds": 1.0,
@@ -119,8 +118,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q4 0:16",
-      "fraction_remaining": 0.0044,
+      "clock": "End Q4",
+      "fraction_remaining": 0.0,
       "stats": {
         "rushing_yards": 82.0,
         "rushing_tds": 1.0,
@@ -169,9 +168,8 @@
       "status": "not_started"
     },
     "00-0041052": {
-      "status": "in_progress",
-      "clock": "Q4 0:28",
-      "fraction_remaining": 0.0078,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "rushing_yards": 63.0,
         "rushing_tds": 1.0,
@@ -191,8 +189,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q4 0:16",
-      "fraction_remaining": 0.0044,
+      "clock": "End Q4",
+      "fraction_remaining": 0.0,
       "stats": {
         "fg_made_50_plus": 2.0,
         "pat_made": 1.0
@@ -223,14 +221,12 @@
   },
   "teams": {
     "ATL": {
-      "status": "in_progress",
-      "clock": "Q4 0:28",
-      "fraction_remaining": 0.0078
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "SF": {
-      "status": "in_progress",
-      "clock": "Q4 0:28",
-      "fraction_remaining": 0.0078
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "TEN": {
       "status": "final",
@@ -242,13 +238,13 @@
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q4 0:16",
-      "fraction_remaining": 0.0044
+      "clock": "End Q4",
+      "fraction_remaining": 0.0
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q4 0:16",
-      "fraction_remaining": 0.0044
+      "clock": "End Q4",
+      "fraction_remaining": 0.0
     },
     "NO": {
       "status": "final",
@@ -292,13 +288,13 @@
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q1 13:28",
-      "fraction_remaining": 0.9744
+      "clock": "Q1 11:10",
+      "fraction_remaining": 0.9361
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q1 13:28",
-      "fraction_remaining": 0.9744
+      "clock": "Q1 11:10",
+      "fraction_remaining": 0.9361
     },
     "DET": {
       "status": "not_started",
