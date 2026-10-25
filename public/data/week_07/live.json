@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T22:05:49Z",
+  "updatedAt": "2026-10-25T22:10:52Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -51,8 +51,8 @@
     },
     "00-0033106": {
       "status": "in_progress",
-      "clock": "Q3 12:21",
-      "fraction_remaining": 0.4558,
+      "clock": "Q3 12:14",
+      "fraction_remaining": 0.4539,
       "stats": {
         "passing_yards": 204.0,
         "passing_tds": 1.0,
@@ -61,7 +61,7 @@
     },
     "DEF_LA": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "def_points_allowed_bonus": 4,
@@ -116,7 +116,7 @@
     },
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "rushing_yards": 7.0,
@@ -127,7 +127,7 @@
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "rushing_yards": 51.0,
@@ -194,8 +194,8 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Q3 12:21",
-      "fraction_remaining": 0.4558,
+      "clock": "Q3 12:14",
+      "fraction_remaining": 0.4539,
       "stats": {}
     },
     "00-0041052": {
@@ -247,7 +247,7 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "receiving_yards": 15.0,
@@ -258,32 +258,32 @@
   "teams": {
     "ARI": {
       "status": "in_progress",
-      "clock": "Q3 10:36",
-      "fraction_remaining": 0.4267
+      "clock": "Q3 10:17",
+      "fraction_remaining": 0.4214
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 10:36",
-      "fraction_remaining": 0.4267
+      "clock": "Q3 10:17",
+      "fraction_remaining": 0.4214
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Q3 12:21",
-      "fraction_remaining": 0.4558
+      "clock": "Q3 12:14",
+      "fraction_remaining": 0.4539
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q3 12:21",
-      "fraction_remaining": 0.4558
+      "clock": "Q3 12:14",
+      "fraction_remaining": 0.4539
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "LA": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "NO": {
