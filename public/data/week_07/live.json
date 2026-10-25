@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T22:00:45Z",
+  "updatedAt": "2026-10-25T22:05:49Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -51,11 +51,12 @@
     },
     "00-0033106": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5,
+      "clock": "Q3 12:21",
+      "fraction_remaining": 0.4558,
       "stats": {
         "passing_yards": 204.0,
-        "passing_tds": 1.0
+        "passing_tds": 1.0,
+        "fumbles_lost_total": 1.0
       }
     },
     "DEF_LA": {
@@ -193,8 +194,8 @@
     },
     "00-0039065": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5,
+      "clock": "Q3 12:21",
+      "fraction_remaining": 0.4558,
       "stats": {}
     },
     "00-0041052": {
@@ -257,23 +258,23 @@
   "teams": {
     "ARI": {
       "status": "in_progress",
-      "clock": "Q3 12:10",
-      "fraction_remaining": 0.4528
+      "clock": "Q3 10:36",
+      "fraction_remaining": 0.4267
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 12:10",
-      "fraction_remaining": 0.4528
+      "clock": "Q3 10:36",
+      "fraction_remaining": 0.4267
     },
     "DET": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5
+      "clock": "Q3 12:21",
+      "fraction_remaining": 0.4558
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5
+      "clock": "Q3 12:21",
+      "fraction_remaining": 0.4558
     },
     "LV": {
       "status": "in_progress",
