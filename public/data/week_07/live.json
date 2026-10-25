@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T20:19:40Z",
+  "updatedAt": "2026-10-25T20:24:43Z",
   "players": {
     "00-0038543": {
       "status": "not_started"
@@ -117,11 +117,10 @@
       }
     },
     "00-0040715": {
-      "status": "in_progress",
-      "clock": "OT 8:23",
-      "fraction_remaining": 0.05,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
-        "rushing_yards": 82.0,
+        "rushing_yards": 124.0,
         "rushing_tds": 1.0,
         "receiving_yards": -3.0,
         "receptions": 1.0
@@ -188,9 +187,8 @@
       }
     },
     "00-0032726": {
-      "status": "in_progress",
-      "clock": "OT 8:23",
-      "fraction_remaining": 0.05,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "fg_made_50_plus": 2.0,
         "pat_made": 1.0
@@ -221,24 +219,22 @@
   },
   "teams": {
     "HOU": {
-      "status": "in_progress",
-      "clock": "OT 8:23",
-      "fraction_remaining": 0.05
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "NYG": {
-      "status": "in_progress",
-      "clock": "OT 8:23",
-      "fraction_remaining": 0.05
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q1 10:12",
-      "fraction_remaining": 0.92
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q1 10:12",
-      "fraction_remaining": 0.92
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042
     },
     "NO": {
       "status": "final",
