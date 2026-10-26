@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T03:19:39Z",
+  "updatedAt": "2026-10-26T19:01:12Z",
   "players": {
     "00-0038543": {
       "status": "final",
@@ -282,6 +282,22 @@
     }
   },
   "teams": {
+    "PHI": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "DAL": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "CHI": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "NE": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "NO": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -377,22 +393,6 @@
     "KC": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "CHI": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "NE": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "PHI": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
-    },
-    "DAL": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
     }
   },
   "injuries": {
@@ -413,16 +413,13 @@
     "00-0034855": "ACTIVE",
     "00-0041496": "ACTIVE",
     "00-0040878": "ACTIVE",
-    "00-0037545": "OUT",
+    "00-0037545": "QUESTIONABLE",
     "00-0034837": "OUT",
     "00-0040138": "QUESTIONABLE",
     "00-0040727": "QUESTIONABLE",
     "00-0039874": "QUESTIONABLE",
-    "00-0037666": "OUT",
     "00-0039384": "QUESTIONABLE",
-    "00-0040142": "OUT",
     "00-0040886": "OUT",
-    "00-0041104": "OUT",
     "00-0036842": "OUT",
     "00-0033885": "IR"
   },
