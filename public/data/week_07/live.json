@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-26T01:03:04Z",
+  "updatedAt": "2026-10-26T01:08:08Z",
   "players": {
     "00-0038543": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394,
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261,
       "stats": {
         "rushing_yards": 5.0,
         "receiving_yards": 52.0,
@@ -13,12 +13,12 @@
     },
     "00-0038134": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394,
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261,
       "stats": {
-        "rushing_yards": 17.0,
-        "receiving_yards": 6.0,
-        "receptions": 1.0
+        "rushing_yards": 21.0,
+        "receiving_yards": 11.0,
+        "receptions": 2.0
       }
     },
     "00-0037740": {
@@ -101,8 +101,8 @@
     },
     "00-0034869": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394,
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261,
       "stats": {
         "passing_yards": 77.0
       }
@@ -188,10 +188,10 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394,
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261,
       "stats": {
-        "passing_yards": 58.0
+        "passing_yards": 63.0
       }
     },
     "00-0040236": {
@@ -282,13 +282,13 @@
   "teams": {
     "SEA": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q2 8:22",
-      "fraction_remaining": 0.6394
+      "clock": "Q2 7:34",
+      "fraction_remaining": 0.6261
     },
     "NO": {
       "status": "final",
