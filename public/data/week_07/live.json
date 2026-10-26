@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-10-25T23:37:14Z",
+  "updatedAt": "2026-10-26T00:27:39Z",
   "players": {
     "00-0038543": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525,
+      "stats": {}
     },
     "00-0038134": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525,
+      "stats": {
+        "rushing_yards": 3.0,
+        "receiving_yards": 6.0,
+        "receptions": 1.0
+      }
     },
     "00-0037740": {
       "status": "final",
@@ -86,7 +96,10 @@
       }
     },
     "00-0034869": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525,
+      "stats": {}
     },
     "00-0033090": {
       "status": "final",
@@ -168,7 +181,12 @@
       "status": "not_started"
     },
     "00-0033873": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525,
+      "stats": {
+        "passing_yards": 24.0
+      }
     },
     "00-0040236": {
       "status": "final",
@@ -256,14 +274,6 @@
     }
   },
   "teams": {
-    "LV": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "LA": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "NO": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -344,13 +354,23 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "LV": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "LA": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "SEA": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525
     },
     "KC": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 12:09",
+      "fraction_remaining": 0.9525
     },
     "CHI": {
       "status": "final",
