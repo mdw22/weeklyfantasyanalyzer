@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T18:38:44Z",
+  "syncedAt": "2026-10-29T18:47:17Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -992,6 +992,10 @@
       "espnTeamId": 13
     },
     "DEF_SF": {
+      "owned": true,
+      "espnTeamId": 13
+    },
+    "00-0031203": {
       "owned": true,
       "espnTeamId": 13
     },
