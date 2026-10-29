@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T22:50:08Z",
+  "updatedAt": "2026-10-29T22:55:12Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -261,6 +261,7 @@
     "00-0040238": "QUESTIONABLE",
     "00-0039384": "IR",
     "00-0037252": "QUESTIONABLE",
+    "00-0040142": "OUT",
     "00-0037801": "QUESTIONABLE"
   },
   "espnProjections": {
