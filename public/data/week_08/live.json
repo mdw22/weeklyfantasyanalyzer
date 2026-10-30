@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T00:20:58Z",
+  "updatedAt": "2026-10-30T00:26:31Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -104,13 +104,13 @@
   "teams": {
     "GB": {
       "status": "in_progress",
-      "clock": "Q1 11:43",
-      "fraction_remaining": 0.9453
+      "clock": "Q1 10:54",
+      "fraction_remaining": 0.9317
     },
     "CAR": {
       "status": "in_progress",
-      "clock": "Q1 11:43",
-      "fraction_remaining": 0.9453
+      "clock": "Q1 10:54",
+      "fraction_remaining": 0.9317
     },
     "BUF": {
       "status": "not_started",
