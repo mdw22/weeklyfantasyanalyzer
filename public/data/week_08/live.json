@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T22:28:01Z",
+  "updatedAt": "2026-11-01T22:33:05Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
@@ -49,11 +49,11 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q2 10:58",
-      "fraction_remaining": 0.6828,
+      "clock": "Q2 7:40",
+      "fraction_remaining": 0.6278,
       "stats": {
-        "passing_yards": 60.0,
-        "passing_tds": 1.0,
+        "passing_yards": 148.0,
+        "passing_tds": 2.0,
         "rushing_yards": 2.0
       }
     },
@@ -85,8 +85,8 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333,
+      "clock": "Q2 1:50",
+      "fraction_remaining": 0.5306,
       "stats": {
         "receiving_yards": 34.0,
         "receptions": 3.0
@@ -151,11 +151,11 @@
     },
     "00-0036875": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333,
+      "clock": "Q2 1:50",
+      "fraction_remaining": 0.5306,
       "stats": {
         "rushing_yards": 23.0,
-        "receiving_yards": 1.0,
+        "receiving_yards": 2.0,
         "receptions": 1.0
       }
     },
@@ -183,10 +183,10 @@
     },
     "00-0033303": {
       "status": "in_progress",
-      "clock": "Q2 10:58",
-      "fraction_remaining": 0.6828,
+      "clock": "Q2 7:40",
+      "fraction_remaining": 0.6278,
       "stats": {
-        "pat_made": 1.0
+        "pat_made": 2.0
       }
     },
     "DEF_PIT": {
@@ -257,23 +257,23 @@
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q2 10:58",
-      "fraction_remaining": 0.6828
+      "clock": "Q2 7:40",
+      "fraction_remaining": 0.6278
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q2 10:58",
-      "fraction_remaining": 0.6828
+      "clock": "Q2 7:40",
+      "fraction_remaining": 0.6278
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 1:50",
+      "fraction_remaining": 0.5306
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 1:50",
+      "fraction_remaining": 0.5306
     },
     "BUF": {
       "status": "final",
