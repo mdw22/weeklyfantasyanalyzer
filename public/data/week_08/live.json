@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T22:33:05Z",
+  "updatedAt": "2026-11-01T22:38:08Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
@@ -49,8 +49,8 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q2 7:40",
-      "fraction_remaining": 0.6278,
+      "clock": "Q2 6:53",
+      "fraction_remaining": 0.6147,
       "stats": {
         "passing_yards": 148.0,
         "passing_tds": 2.0,
@@ -85,8 +85,8 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q2 1:50",
-      "fraction_remaining": 0.5306,
+      "clock": "Q2 0:34",
+      "fraction_remaining": 0.5094,
       "stats": {
         "receiving_yards": 34.0,
         "receptions": 3.0
@@ -151,8 +151,8 @@
     },
     "00-0036875": {
       "status": "in_progress",
-      "clock": "Q2 1:50",
-      "fraction_remaining": 0.5306,
+      "clock": "Q2 0:34",
+      "fraction_remaining": 0.5094,
       "stats": {
         "rushing_yards": 23.0,
         "receiving_yards": 2.0,
@@ -183,8 +183,8 @@
     },
     "00-0033303": {
       "status": "in_progress",
-      "clock": "Q2 7:40",
-      "fraction_remaining": 0.6278,
+      "clock": "Q2 6:53",
+      "fraction_remaining": 0.6147,
       "stats": {
         "pat_made": 2.0
       }
@@ -257,23 +257,23 @@
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q2 7:40",
-      "fraction_remaining": 0.6278
+      "clock": "Q2 6:53",
+      "fraction_remaining": 0.6147
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q2 7:40",
-      "fraction_remaining": 0.6278
+      "clock": "Q2 6:53",
+      "fraction_remaining": 0.6147
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q2 1:50",
-      "fraction_remaining": 0.5306
+      "clock": "Q2 0:34",
+      "fraction_remaining": 0.5094
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q2 1:50",
-      "fraction_remaining": 0.5306
+      "clock": "Q2 0:34",
+      "fraction_remaining": 0.5094
     },
     "BUF": {
       "status": "final",
@@ -386,6 +386,7 @@
     "00-0035228": "QUESTIONABLE",
     "00-0038933": "ACTIVE",
     "00-0035719": "QUESTIONABLE",
+    "00-0033090": "QUESTIONABLE",
     "00-0034837": "ACTIVE",
     "00-0040138": "IR",
     "00-0041044": "QUESTIONABLE",
