@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T00:39:49Z",
+  "updatedAt": "2026-11-02T01:25:10Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -242,14 +242,6 @@
     }
   },
   "teams": {
-    "DEN": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "KC": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "BUF": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -322,6 +314,14 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "DEN": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "KC": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "MIA": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -331,12 +331,14 @@
       "fraction_remaining": 0.0
     },
     "WAS": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 14:53",
+      "fraction_remaining": 0.9981
     },
     "PHI": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 14:53",
+      "fraction_remaining": 0.9981
     },
     "GB": {
       "status": "final",
