@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T00:34:46Z",
+  "updatedAt": "2026-11-02T00:39:49Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -47,9 +47,8 @@
       }
     },
     "00-0033873": {
-      "status": "in_progress",
-      "clock": "Q4 0:15",
-      "fraction_remaining": 0.0042,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "passing_yards": 321.0,
         "passing_tds": 3.0,
@@ -179,9 +178,8 @@
       "status": "not_started"
     },
     "00-0033303": {
-      "status": "in_progress",
-      "clock": "Q4 0:15",
-      "fraction_remaining": 0.0042,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "fg_made_40_49": 1.0,
         "fg_missed_total": 1.0,
@@ -245,14 +243,12 @@
   },
   "teams": {
     "DEN": {
-      "status": "in_progress",
-      "clock": "Q4 0:15",
-      "fraction_remaining": 0.0042
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "KC": {
-      "status": "in_progress",
-      "clock": "Q4 0:15",
-      "fraction_remaining": 0.0042
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "BUF": {
       "status": "final",
