@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T00:24:39Z",
+  "updatedAt": "2026-11-02T00:29:42Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -48,8 +48,8 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "clock": "Q4 1:46",
+      "fraction_remaining": 0.0294,
       "stats": {
         "passing_yards": 281.0,
         "passing_tds": 3.0,
@@ -84,8 +84,8 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q4 1:57",
-      "fraction_remaining": 0.0325,
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308,
       "stats": {
         "receiving_yards": 40.0,
         "receiving_tds": 1.0,
@@ -150,10 +150,10 @@
     },
     "00-0036875": {
       "status": "in_progress",
-      "clock": "Q4 1:57",
-      "fraction_remaining": 0.0325,
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308,
       "stats": {
-        "rushing_yards": 74.0,
+        "rushing_yards": 82.0,
         "receiving_yards": 8.0,
         "receptions": 3.0
       }
@@ -182,8 +182,8 @@
     },
     "00-0033303": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "clock": "Q4 1:46",
+      "fraction_remaining": 0.0294,
       "stats": {
         "fg_made_40_49": 1.0,
         "fg_missed_total": 1.0,
@@ -248,23 +248,23 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "clock": "Q4 1:46",
+      "fraction_remaining": 0.0294
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "clock": "Q4 1:46",
+      "fraction_remaining": 0.0294
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q4 1:57",
-      "fraction_remaining": 0.0325
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q4 1:57",
-      "fraction_remaining": 0.0325
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308
     },
     "BUF": {
       "status": "final",
