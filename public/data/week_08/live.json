@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T04:27:15Z",
+  "updatedAt": "2026-11-02T22:05:58Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -242,11 +242,19 @@
     }
   },
   "teams": {
-    "WAS": {
+    "SEA": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "CHI": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "GB": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "PHI": {
+    "CAR": {
       "status": "final",
       "fraction_remaining": 0.0
     },
@@ -338,21 +346,13 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "GB": {
+    "WAS": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "CAR": {
+    "PHI": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "SEA": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
-    },
-    "CHI": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
     }
   },
   "injuries": {
@@ -381,12 +381,11 @@
     "00-0033090": "QUESTIONABLE",
     "00-0034837": "ACTIVE",
     "00-0040138": "IR",
-    "00-0041044": "QUESTIONABLE",
+    "00-0041044": "OUT",
     "00-0038896": "QUESTIONABLE",
     "00-0039384": "IR",
     "00-0040142": "OUT",
-    "00-0040729": "ACTIVE",
-    "00-0041104": "OUT"
+    "00-0040729": "ACTIVE"
   },
   "espnProjections": {
     "00-0033280": 0.0,
