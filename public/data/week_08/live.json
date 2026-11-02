@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T01:45:24Z",
+  "updatedAt": "2026-11-02T01:50:27Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -244,13 +244,13 @@
   "teams": {
     "WAS": {
       "status": "in_progress",
-      "clock": "Q1 7:42",
-      "fraction_remaining": 0.8783
+      "clock": "Q1 6:10",
+      "fraction_remaining": 0.8528
     },
     "PHI": {
       "status": "in_progress",
-      "clock": "Q1 7:42",
-      "fraction_remaining": 0.8783
+      "clock": "Q1 6:10",
+      "fraction_remaining": 0.8528
     },
     "BUF": {
       "status": "final",
