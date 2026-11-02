@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T00:09:28Z",
+  "updatedAt": "2026-11-02T00:14:32Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -48,10 +48,10 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 8:55",
-      "fraction_remaining": 0.1486,
+      "clock": "Q4 7:22",
+      "fraction_remaining": 0.1228,
       "stats": {
-        "passing_yards": 259.0,
+        "passing_yards": 265.0,
         "passing_tds": 3.0,
         "rushing_yards": 6.0
       }
@@ -84,8 +84,8 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q4 6:41",
-      "fraction_remaining": 0.1114,
+      "clock": "Q4 4:01",
+      "fraction_remaining": 0.0669,
       "stats": {
         "receiving_yards": 40.0,
         "receiving_tds": 1.0,
@@ -150,8 +150,8 @@
     },
     "00-0036875": {
       "status": "in_progress",
-      "clock": "Q4 6:41",
-      "fraction_remaining": 0.1114,
+      "clock": "Q4 4:01",
+      "fraction_remaining": 0.0669,
       "stats": {
         "rushing_yards": 74.0,
         "receiving_yards": 6.0,
@@ -182,8 +182,8 @@
     },
     "00-0033303": {
       "status": "in_progress",
-      "clock": "Q4 8:55",
-      "fraction_remaining": 0.1486,
+      "clock": "Q4 7:22",
+      "fraction_remaining": 0.1228,
       "stats": {
         "fg_made_40_49": 1.0,
         "pat_made": 3.0
@@ -247,23 +247,23 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 8:55",
-      "fraction_remaining": 0.1486
+      "clock": "Q4 7:22",
+      "fraction_remaining": 0.1228
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 8:55",
-      "fraction_remaining": 0.1486
+      "clock": "Q4 7:22",
+      "fraction_remaining": 0.1228
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q4 6:41",
-      "fraction_remaining": 0.1114
+      "clock": "Q4 4:01",
+      "fraction_remaining": 0.0669
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q4 6:41",
-      "fraction_remaining": 0.1114
+      "clock": "Q4 4:01",
+      "fraction_remaining": 0.0669
     },
     "BUF": {
       "status": "final",
@@ -385,7 +385,7 @@
     "00-0035228": "QUESTIONABLE",
     "00-0038933": "ACTIVE",
     "00-0035719": "QUESTIONABLE",
-    "00-0033090": "QUESTIONABLE",
+    "00-0033090": "OUT",
     "00-0034837": "ACTIVE",
     "00-0040138": "IR",
     "00-0041044": "QUESTIONABLE",
