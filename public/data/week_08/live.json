@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T02:28:01Z",
+  "updatedAt": "2026-11-03T02:33:04Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -57,8 +57,8 @@
     },
     "00-0040236": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333,
+      "clock": "Q2 1:03",
+      "fraction_remaining": 0.5175,
       "stats": {}
     },
     "00-0036040": {
@@ -247,13 +247,13 @@
   "teams": {
     "SEA": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 1:03",
+      "fraction_remaining": 0.5175
     },
     "CHI": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 1:03",
+      "fraction_remaining": 0.5175
     },
     "GB": {
       "status": "final",
