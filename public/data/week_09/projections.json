@@ -7,7 +7,7 @@
     "projected_stats": {
       "completions": 21.9072,
       "attempts": 32.0158,
-      "passing_yards": 230.7587,
+      "passing_yards": 230.7593,
       "passing_tds": 1.5951,
       "passing_interceptions": 0.7167,
       "passing_2pt_conversions": 0.0667,
@@ -95,7 +95,7 @@
     "projected_stats": {
       "completions": 24.427,
       "attempts": 32.7861,
-      "passing_yards": 264.8072,
+      "passing_yards": 264.8079,
       "passing_tds": 1.7221,
       "passing_interceptions": 0.7741,
       "passing_2pt_conversions": 0.0667,
@@ -356,7 +356,7 @@
     "team": "PHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 11.5001,
+      "completions": 11.5,
       "attempts": 23.4115,
       "passing_yards": 117.6695,
       "passing_tds": 0.6445,
@@ -402,7 +402,7 @@
     "projected_stats": {
       "completions": 12.6555,
       "attempts": 24.8455,
-      "passing_yards": 128.2896,
+      "passing_yards": 128.2897,
       "passing_tds": 0.9395,
       "passing_interceptions": 0.5365,
       "passing_2pt_conversions": 0.1159,
@@ -661,9 +661,9 @@
     "projected_stats": {
       "completions": 21.9645,
       "attempts": 31.7618,
-      "passing_yards": 253.7036,
+      "passing_yards": 253.7042,
       "passing_tds": 2.0376,
-      "passing_interceptions": 0.6962,
+      "passing_interceptions": 0.6963,
       "passing_2pt_conversions": 0.1159,
       "carries": 2.8272,
       "rushing_yards": 3.0793,
@@ -1535,12 +1535,12 @@
     "projected_stats": {
       "completions": 19.8831,
       "attempts": 29.5082,
-      "passing_yards": 222.1421,
+      "passing_yards": 222.1426,
       "passing_tds": 1.3574,
       "passing_interceptions": 0.5037,
       "passing_2pt_conversions": 0.1691,
       "carries": 2.9829,
-      "rushing_yards": 6.6317,
+      "rushing_yards": 6.6316,
       "rushing_tds": 0.0396,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -1886,7 +1886,7 @@
     "projected_stats": {
       "completions": 19.9159,
       "attempts": 29.5574,
-      "passing_yards": 216.1929,
+      "passing_yards": 216.1933,
       "passing_tds": 1.2673,
       "passing_interceptions": 0.5283,
       "passing_2pt_conversions": 0.1159,
@@ -4239,7 +4239,7 @@
     "projected_stats": {
       "completions": 11.3004,
       "attempts": 22.3969,
-      "passing_yards": 107.678,
+      "passing_yards": 107.6781,
       "passing_tds": 0.4396,
       "passing_interceptions": 0.5882,
       "passing_2pt_conversions": 0.0577,
@@ -5544,7 +5544,7 @@
     "projected_stats": {
       "completions": 23.9558,
       "attempts": 32.7328,
-      "passing_yards": 259.2144,
+      "passing_yards": 259.215,
       "passing_tds": 1.8327,
       "passing_interceptions": 0.6389,
       "passing_2pt_conversions": 0.1159,
@@ -5719,12 +5719,12 @@
     "projected_stats": {
       "completions": 23.6731,
       "attempts": 32.1182,
-      "passing_yards": 273.3132,
+      "passing_yards": 273.3139,
       "passing_tds": 2.0826,
       "passing_interceptions": 0.4709,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.5732,
-      "rushing_yards": 3.0302,
+      "rushing_yards": 3.0301,
       "rushing_tds": 0.1134,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -5807,7 +5807,7 @@
     "projected_stats": {
       "completions": 23.5502,
       "attempts": 32.8844,
-      "passing_yards": 231.3324,
+      "passing_yards": 231.3329,
       "passing_tds": 1.7016,
       "passing_interceptions": 0.7741,
       "passing_2pt_conversions": 0.0667,
@@ -6815,9 +6815,9 @@
     "projected_stats": {
       "completions": 19.8995,
       "attempts": 30.0163,
-      "passing_yards": 209.4037,
+      "passing_yards": 209.4041,
       "passing_tds": 1.0132,
-      "passing_interceptions": 0.5487,
+      "passing_interceptions": 0.5488,
       "passing_2pt_conversions": 0.1159,
       "carries": 4.4169,
       "rushing_yards": 24.9261,
@@ -7296,12 +7296,12 @@
     "projected_stats": {
       "completions": 13.6962,
       "attempts": 25.1528,
-      "passing_yards": 140.225,
+      "passing_yards": 140.2252,
       "passing_tds": 0.538,
       "passing_interceptions": 0.7618,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.315,
-      "rushing_yards": 1.9649,
+      "rushing_yards": 1.9648,
       "rushing_tds": 0.0191,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -7776,7 +7776,7 @@
     "projected_stats": {
       "completions": 21.2762,
       "attempts": 30.5817,
-      "passing_yards": 231.7626,
+      "passing_yards": 231.7631,
       "passing_tds": 1.5049,
       "passing_interceptions": 0.5815,
       "passing_2pt_conversions": 0.0667,
@@ -10121,7 +10121,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0034333": {
     "player_name": "Daron Payne",
@@ -12445,9 +12445,9 @@
     "projected_stats": {
       "completions": 12.635,
       "attempts": 24.2801,
-      "passing_yards": 170.9629,
+      "passing_yards": 170.9632,
       "passing_tds": 1.1485,
-      "passing_interceptions": 0.3971,
+      "passing_interceptions": 0.3972,
       "passing_2pt_conversions": 0.0667,
       "carries": 3.1877,
       "rushing_yards": 17.5714,
@@ -12479,8 +12479,7 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true,
-    "injury_status": "OUT"
+    "injury_status": "IR"
   },
   "00-0034797": {
     "player_name": "Jerome Baker",
@@ -13190,7 +13189,7 @@
     "projected_stats": {
       "completions": 17.1338,
       "attempts": 27.6112,
-      "passing_yards": 182.1608,
+      "passing_yards": 182.1611,
       "passing_tds": 1.1976,
       "passing_interceptions": 0.6102,
       "passing_2pt_conversions": 0.0667,
@@ -13278,9 +13277,9 @@
     "projected_stats": {
       "completions": 19.8954,
       "attempts": 29.7623,
-      "passing_yards": 242.4319,
+      "passing_yards": 242.4325,
       "passing_tds": 1.7385,
-      "passing_interceptions": 0.7003,
+      "passing_interceptions": 0.7004,
       "passing_2pt_conversions": 0.1159,
       "carries": 5.2364,
       "rushing_yards": 30.8139,
@@ -13322,7 +13321,7 @@
     "projected_stats": {
       "completions": 19.0882,
       "attempts": 30.0163,
-      "passing_yards": 210.6001,
+      "passing_yards": 210.4899,
       "passing_tds": 1.3656,
       "passing_interceptions": 0.811,
       "passing_2pt_conversions": 0.1691,
@@ -14848,12 +14847,12 @@
     "projected_stats": {
       "completions": 18.8957,
       "attempts": 28.8404,
-      "passing_yards": 195.014,
+      "passing_yards": 195.0144,
       "passing_tds": 1.0624,
-      "passing_interceptions": 0.5405,
+      "passing_interceptions": 0.5406,
       "passing_2pt_conversions": 0.1159,
       "carries": 3.7491,
-      "rushing_yards": 22.5332,
+      "rushing_yards": 22.5333,
       "rushing_tds": 0.0929,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -15722,9 +15721,9 @@
     "team": "ARI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 12.5408,
+      "completions": 12.5407,
       "attempts": 24.3334,
-      "passing_yards": 124.2661,
+      "passing_yards": 124.2662,
       "passing_tds": 0.8207,
       "passing_interceptions": 0.3767,
       "passing_2pt_conversions": 0.0667,
@@ -17826,9 +17825,9 @@
     "projected_stats": {
       "completions": 20.7272,
       "attempts": 30.9915,
-      "passing_yards": 211.6449,
+      "passing_yards": 211.6453,
       "passing_tds": 0.9559,
-      "passing_interceptions": 0.8601,
+      "passing_interceptions": 0.8602,
       "passing_2pt_conversions": 0.0667,
       "carries": 3.0812,
       "rushing_yards": 8.9917,
@@ -19094,7 +19093,7 @@
     "projected_stats": {
       "completions": 16.0112,
       "attempts": 26.5869,
-      "passing_yards": 176.0681,
+      "passing_yards": 176.0684,
       "passing_tds": 1.1116,
       "passing_interceptions": 0.5651,
       "passing_2pt_conversions": 0.0667,
@@ -19795,12 +19794,12 @@
     "projected_stats": {
       "completions": 23.6567,
       "attempts": 33.245,
-      "passing_yards": 274.3211,
+      "passing_yards": 274.3218,
       "passing_tds": 2.0949,
       "passing_interceptions": 0.7741,
       "passing_2pt_conversions": 0.1159,
       "carries": 2.3683,
-      "rushing_yards": 2.0632,
+      "rushing_yards": 2.0631,
       "rushing_tds": 0.1052,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -20442,7 +20441,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0036309": {
@@ -21152,11 +21150,11 @@
     "team": "LAC",
     "games_used": 8,
     "projected_stats": {
-      "completions": 19.2235,
+      "completions": 19.2234,
       "attempts": 29.7131,
-      "passing_yards": 204.6098,
+      "passing_yards": 204.6103,
       "passing_tds": 0.8821,
-      "passing_interceptions": 0.8601,
+      "passing_interceptions": 0.8602,
       "passing_2pt_conversions": 0.0667,
       "carries": 4.0072,
       "rushing_yards": 25.6882,
@@ -21637,7 +21635,7 @@
     "projected_stats": {
       "completions": 18.9571,
       "attempts": 29.8647,
-      "passing_yards": 197.5707,
+      "passing_yards": 197.5711,
       "passing_tds": 1.3656,
       "passing_interceptions": 0.5078,
       "passing_2pt_conversions": 0.0667,
@@ -22152,7 +22150,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0036427": {
     "player_name": "Tyler Johnson",
@@ -22422,7 +22421,7 @@
     "projected_stats": {
       "completions": 25.3776,
       "attempts": 32.9377,
-      "passing_yards": 270.5557,
+      "passing_yards": 270.5564,
       "passing_tds": 2.267,
       "passing_interceptions": 0.7372,
       "passing_2pt_conversions": 0.0667,
@@ -23813,7 +23812,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0036653": {
     "player_name": "Stone Forsythe",
@@ -25398,8 +25398,8 @@
     "projected_stats": {
       "completions": 6.7301,
       "attempts": 19.3063,
-      "passing_yards": 69.0124,
-      "passing_tds": 0.3928,
+      "passing_yards": 69.0122,
+      "passing_tds": 0.3927,
       "passing_interceptions": 0.2439,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.6357,
@@ -25793,7 +25793,7 @@
     "projected_stats": {
       "completions": 15.1753,
       "attempts": 26.5869,
-      "passing_yards": 151.4721,
+      "passing_yards": 151.4723,
       "passing_tds": 0.8248,
       "passing_interceptions": 0.3316,
       "passing_2pt_conversions": 0.2224,
@@ -26317,7 +26317,7 @@
     "projected_stats": {
       "completions": 18.49,
       "attempts": 28.9428,
-      "passing_yards": 222.1217,
+      "passing_yards": 222.1221,
       "passing_tds": 2.1113,
       "passing_interceptions": 0.643,
       "passing_2pt_conversions": 0.0667,
@@ -32634,9 +32634,9 @@
     "projected_stats": {
       "completions": 19.8135,
       "attempts": 29.455,
-      "passing_yards": 230.2712,
+      "passing_yards": 230.2717,
       "passing_tds": 1.7344,
-      "passing_interceptions": 0.5569,
+      "passing_interceptions": 0.557,
       "passing_2pt_conversions": 0.1159,
       "carries": 3.6958,
       "rushing_yards": 18.9645,
@@ -33994,7 +33994,7 @@
     "projected_stats": {
       "completions": 16.384,
       "attempts": 27.7136,
-      "passing_yards": 193.4652,
+      "passing_yards": 193.4656,
       "passing_tds": 0.9518,
       "passing_interceptions": 0.6512,
       "passing_2pt_conversions": 0.1159,
@@ -37805,9 +37805,9 @@
     "team": "NO",
     "games_used": 8,
     "projected_stats": {
-      "completions": 5.4361,
+      "completions": 5.436,
       "attempts": 19.265,
-      "passing_yards": 61.7251,
+      "passing_yards": 61.7249,
       "passing_tds": 0.37,
       "passing_interceptions": 0.1882,
       "passing_2pt_conversions": 0.0667,
@@ -37840,8 +37840,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039000": {
     "player_name": "Deonte Banks",
@@ -39696,12 +39695,12 @@
     "projected_stats": {
       "completions": 22.8741,
       "attempts": 33.0893,
-      "passing_yards": 265.1309,
+      "passing_yards": 265.1316,
       "passing_tds": 1.8286,
       "passing_interceptions": 0.7864,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.4666,
-      "rushing_yards": 6.0212,
+      "rushing_yards": 6.0211,
       "rushing_tds": 0.1625,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -39784,7 +39783,7 @@
     "projected_stats": {
       "completions": 16.1177,
       "attempts": 27.6645,
-      "passing_yards": 185.2952,
+      "passing_yards": 185.2956,
       "passing_tds": 1.0255,
       "passing_interceptions": 0.7167,
       "passing_2pt_conversions": 0.1159,
@@ -39872,9 +39871,9 @@
     "projected_stats": {
       "completions": 22.1612,
       "attempts": 32.3231,
-      "passing_yards": 255.2278,
+      "passing_yards": 255.2284,
       "passing_tds": 1.5582,
-      "passing_interceptions": 0.6962,
+      "passing_interceptions": 0.6963,
       "passing_2pt_conversions": 0.1159,
       "carries": 2.8272,
       "rushing_yards": 10.4626,
@@ -39916,12 +39915,12 @@
     "projected_stats": {
       "completions": 11.078,
       "attempts": 24.1818,
-      "passing_yards": 136.2261,
+      "passing_yards": 136.2262,
       "passing_tds": 0.6773,
       "passing_interceptions": 0.5365,
       "passing_2pt_conversions": 0.0667,
       "carries": 4.4169,
-      "rushing_yards": 26.2003,
+      "rushing_yards": 26.2004,
       "rushing_tds": 0.4616,
       "rushing_2pt_conversions": 0.0581,
       "receptions": 0.1891,
@@ -40126,7 +40125,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0039236": {
@@ -42153,7 +42151,7 @@
     "projected_stats": {
       "completions": 19.8462,
       "attempts": 30.0696,
-      "passing_yards": 197.5215,
+      "passing_yards": 197.5219,
       "passing_tds": 1.2796,
       "passing_interceptions": 0.4709,
       "passing_2pt_conversions": 0.2224,
@@ -43821,12 +43819,12 @@
     "projected_stats": {
       "completions": 16.8757,
       "attempts": 27.9677,
-      "passing_yards": 181.3495,
+      "passing_yards": 181.3498,
       "passing_tds": 1.255,
-      "passing_interceptions": 0.4053,
+      "passing_interceptions": 0.4054,
       "passing_2pt_conversions": 0.1159,
       "carries": 4.3104,
-      "rushing_yards": 32.7437,
+      "rushing_yards": 32.7438,
       "rushing_tds": 0.3305,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -43953,12 +43951,12 @@
     "projected_stats": {
       "completions": 22.0875,
       "attempts": 31.6552,
-      "passing_yards": 258.6203,
+      "passing_yards": 258.6209,
       "passing_tds": 1.6647,
       "passing_interceptions": 0.7987,
       "passing_2pt_conversions": 0.1691,
       "carries": 3.6466,
-      "rushing_yards": 19.534,
+      "rushing_yards": 19.5341,
       "rushing_tds": 0.2117,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -44647,7 +44645,7 @@
     "projected_stats": {
       "completions": 15.2122,
       "attempts": 27.2547,
-      "passing_yards": 178.2438,
+      "passing_yards": 178.2441,
       "passing_tds": 1.2058,
       "passing_interceptions": 0.6307,
       "passing_2pt_conversions": 0.0667,
@@ -45429,8 +45427,8 @@
     "team": "BUF",
     "games_used": 8,
     "projected_stats": {
-      "completions": 7.4151,
-      "attempts": 20.2361,
+      "completions": 7.415,
+      "attempts": 20.236,
       "passing_yards": 81.5518,
       "passing_tds": 0.8166,
       "passing_interceptions": 0.1267,
@@ -50494,14 +50492,14 @@
     "team": "GB",
     "games_used": 7,
     "projected_stats": {
-      "completions": 4.5183,
-      "attempts": 18.2612,
-      "passing_yards": 44.918,
-      "passing_tds": 0.2512,
+      "completions": 4.5182,
+      "attempts": 18.2611,
+      "passing_yards": 44.9178,
+      "passing_tds": 0.2511,
       "passing_interceptions": 0.1472,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.5035,
-      "rushing_yards": 3.7841,
+      "rushing_yards": 3.784,
       "rushing_tds": 0.0232,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -53253,12 +53251,12 @@
     "projected_stats": {
       "completions": 4.7255,
       "attempts": 17.0883,
-      "passing_yards": 48.9327,
+      "passing_yards": 48.9325,
       "passing_tds": 0.2234,
       "passing_interceptions": 0.1673,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.0042,
-      "rushing_yards": 6.9481,
+      "rushing_yards": 6.948,
       "rushing_tds": -0.0001,
       "rushing_2pt_conversions": 0.0093,
       "receptions": -0.003,
@@ -53642,9 +53640,9 @@
     "team": "JAX",
     "games_used": 8,
     "projected_stats": {
-      "completions": 3.7316,
-      "attempts": 17.5196,
-      "passing_yards": 41.169,
+      "completions": 3.7315,
+      "attempts": 17.5195,
+      "passing_yards": 41.1687,
       "passing_tds": 0.2552,
       "passing_interceptions": 0.0735,
       "passing_2pt_conversions": 0.0667,
@@ -53995,7 +53993,7 @@
       "passing_tds": 0.7851,
       "passing_interceptions": 0.5004,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 5.356,
       "rushing_tds": 0.0426,
       "rushing_2pt_conversions": 0.0101,
@@ -55601,8 +55599,8 @@
     "projected_stats": {
       "completions": 14.5443,
       "attempts": 26.5869,
-      "passing_yards": 155.3932,
-      "passing_tds": 1.0092,
+      "passing_yards": 155.3934,
+      "passing_tds": 1.0091,
       "passing_interceptions": 0.3439,
       "passing_2pt_conversions": 0.1159,
       "carries": 2.6223,
@@ -56772,9 +56770,9 @@
     "team": "LV",
     "games_used": 8,
     "projected_stats": {
-      "completions": 18.6253,
+      "completions": 18.6252,
       "attempts": 29.1969,
-      "passing_yards": 199.2178,
+      "passing_yards": 199.2182,
       "passing_tds": 0.9969,
       "passing_interceptions": 0.4955,
       "passing_2pt_conversions": 0.0667,
@@ -58262,12 +58260,12 @@
     "projected_stats": {
       "completions": 19.1005,
       "attempts": 29.2501,
-      "passing_yards": 228.6937,
+      "passing_yards": 228.6942,
       "passing_tds": 1.6934,
       "passing_interceptions": 0.7495,
       "passing_2pt_conversions": 0.1159,
       "carries": 4.1588,
-      "rushing_yards": 20.8943,
+      "rushing_yards": 20.8944,
       "rushing_tds": 0.2773,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -58746,9 +58744,9 @@
     "projected_stats": {
       "completions": 17.1707,
       "attempts": 28.0742,
-      "passing_yards": 189.8063,
+      "passing_yards": 189.8067,
       "passing_tds": 1.255,
-      "passing_interceptions": 0.5405,
+      "passing_interceptions": 0.5406,
       "passing_2pt_conversions": 0.1159,
       "carries": 2.5732,
       "rushing_yards": 2.9277,
@@ -58788,9 +58786,9 @@
     "team": "WAS",
     "games_used": 7,
     "projected_stats": {
-      "completions": 7.5011,
+      "completions": 7.501,
       "attempts": 20.6007,
-      "passing_yards": 80.3759,
+      "passing_yards": 80.3758,
       "passing_tds": 0.4232,
       "passing_interceptions": 0.2701,
       "passing_2pt_conversions": 0.0667,
@@ -59652,14 +59650,14 @@
     "team": "PIT",
     "games_used": 8,
     "projected_stats": {
-      "completions": 7.2717,
+      "completions": 7.2716,
       "attempts": 20.0312,
-      "passing_yards": 71.2021,
+      "passing_yards": 71.202,
       "passing_tds": 0.4314,
       "passing_interceptions": 0.2169,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.315,
-      "rushing_yards": 1.633,
+      "rushing_yards": 1.6329,
       "rushing_tds": 0.0273,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -60305,7 +60303,7 @@
     "projected_stats": {
       "completions": 13.3807,
       "attempts": 24.4358,
-      "passing_yards": 131.3052,
+      "passing_yards": 131.3054,
       "passing_tds": 0.7428,
       "passing_interceptions": 0.2619,
       "passing_2pt_conversions": 0.0667,
@@ -60339,8 +60337,7 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true,
-    "injury_status": "OUT"
+    "injury_status": "IR"
   },
   "00-0036010": {
     "player_name": "Jalen Elliott",
@@ -62962,7 +62959,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039812": {
     "player_name": "Ty'Ron Hopper",
@@ -63232,9 +63230,9 @@
     "team": "WAS",
     "games_used": 8,
     "projected_stats": {
-      "completions": 13.602,
-      "attempts": 25.8699,
-      "passing_yards": 161.1458,
+      "completions": 13.6019,
+      "attempts": 25.8698,
+      "passing_yards": 161.146,
       "passing_tds": 1.1403,
       "passing_interceptions": 0.4791,
       "passing_2pt_conversions": 0.0667,
@@ -63842,14 +63840,14 @@
     "team": "BUF",
     "games_used": 4,
     "projected_stats": {
-      "completions": 4.3974,
+      "completions": 4.3973,
       "attempts": 16.8953,
-      "passing_yards": 46.9019,
+      "passing_yards": 46.9017,
       "passing_tds": 0.2234,
       "passing_interceptions": 0.1673,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.2938,
-      "rushing_yards": 2.5854,
+      "rushing_yards": 2.5853,
       "rushing_tds": -0.0001,
       "rushing_2pt_conversions": 0.0093,
       "receptions": -0.003,
@@ -65192,8 +65190,8 @@
     "team": "CHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 8.1526,
-      "attempts": 20.8507,
+      "completions": 8.1525,
+      "attempts": 20.8506,
       "passing_yards": 87.3044,
       "passing_tds": 0.4683,
       "passing_interceptions": 0.307,
@@ -67761,12 +67759,12 @@
     "projected_stats": {
       "completions": 7.8468,
       "attempts": 20.1121,
-      "passing_yards": 82.6723,
+      "passing_yards": 82.6722,
       "passing_tds": 0.4048,
       "passing_interceptions": 0.2529,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.6357,
-      "rushing_yards": 3.7836,
+      "rushing_yards": 3.7835,
       "rushing_tds": 0.0426,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -68412,7 +68410,7 @@
     "projected_stats": {
       "completions": 17.8836,
       "attempts": 28.0742,
-      "passing_yards": 179.9728,
+      "passing_yards": 179.9732,
       "passing_tds": 1.0378,
       "passing_interceptions": 0.5856,
       "passing_2pt_conversions": 0.0667,
@@ -68975,9 +68973,9 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 14.528,
+      "completions": 14.5279,
       "attempts": 26.4353,
-      "passing_yards": 162.5348,
+      "passing_yards": 162.535,
       "passing_tds": 0.96,
       "passing_interceptions": 0.5037,
       "passing_2pt_conversions": 0.0667,
@@ -69539,7 +69537,7 @@
     "projected_stats": {
       "completions": 7.7176,
       "attempts": 19.5978,
-      "passing_yards": 73.7458,
+      "passing_yards": 73.7457,
       "passing_tds": 0.3856,
       "passing_interceptions": 0.3218,
       "passing_2pt_conversions": 0.0577,
@@ -69583,12 +69581,12 @@
     "projected_stats": {
       "completions": 13.1881,
       "attempts": 24.5382,
-      "passing_yards": 139.6555,
+      "passing_yards": 139.6557,
       "passing_tds": 1.0665,
-      "passing_interceptions": 0.3889,
+      "passing_interceptions": 0.389,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.6223,
-      "rushing_yards": 1.7559,
+      "rushing_yards": 1.7558,
       "rushing_tds": 0.1011,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -69705,6 +69703,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
+    "active": true,
     "on_bye": true
   },
   "00-0036166": {
@@ -70321,11 +70320,11 @@
     "team": "CAR",
     "games_used": 8,
     "projected_stats": {
-      "completions": 6.3252,
+      "completions": 6.3251,
       "attempts": 19.7239,
-      "passing_yards": 62.2044,
+      "passing_yards": 62.2043,
       "passing_tds": 0.3372,
-      "passing_interceptions": 0.2455,
+      "passing_interceptions": 0.2456,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.1634,
       "rushing_yards": 5.7794,
@@ -70496,9 +70495,9 @@
     "team": "CLE",
     "games_used": 6,
     "projected_stats": {
-      "completions": 12.9104,
-      "attempts": 24.1999,
-      "passing_yards": 116.5037,
+      "completions": 12.9103,
+      "attempts": 24.1998,
+      "passing_yards": 116.5038,
       "passing_tds": 0.3933,
       "passing_interceptions": 0.7542,
       "passing_2pt_conversions": 0.0577,
@@ -71372,9 +71371,9 @@
     "projected_stats": {
       "completions": 17.3264,
       "attempts": 28.1234,
-      "passing_yards": 204.7369,
+      "passing_yards": 204.7373,
       "passing_tds": 1.3246,
-      "passing_interceptions": 0.5446,
+      "passing_interceptions": 0.5447,
       "passing_2pt_conversions": 0.2715,
       "carries": 2.778,
       "rushing_yards": 3.9807,
@@ -73415,7 +73414,7 @@
     "projected_stats": {
       "completions": 12.9259,
       "attempts": 24.5833,
-      "passing_yards": 133.2842,
+      "passing_yards": 133.2844,
       "passing_tds": 0.8412,
       "passing_interceptions": 0.7167,
       "passing_2pt_conversions": 0.0667,
@@ -74022,12 +74021,12 @@
     "projected_stats": {
       "completions": 12.3351,
       "attempts": 23.169,
-      "passing_yards": 121.9435,
-      "passing_tds": 0.5671,
-      "passing_interceptions": 0.5109,
+      "passing_yards": 121.9436,
+      "passing_tds": 0.567,
+      "passing_interceptions": 0.511,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.5061,
-      "rushing_yards": 10.3031,
+      "rushing_yards": 10.303,
       "rushing_tds": 0.023,
       "rushing_2pt_conversions": 0.0093,
       "receptions": -0.003,
@@ -75500,7 +75499,7 @@
     "team": "LAC",
     "games_used": 8,
     "projected_stats": {
-      "completions": 9.0253,
+      "completions": 9.0252,
       "attempts": 22.2847,
       "passing_yards": 92.7743,
       "passing_tds": 0.4437,
@@ -77500,9 +77499,9 @@
     "team": "NE",
     "games_used": 3,
     "projected_stats": {
-      "completions": 13.1557,
+      "completions": 13.1556,
       "attempts": 24.1353,
-      "passing_yards": 128.5686,
+      "passing_yards": 128.5687,
       "passing_tds": 0.4984,
       "passing_interceptions": 0.3857,
       "passing_2pt_conversions": 0.0538,
@@ -80500,7 +80499,7 @@
     "projected_stats": {
       "completions": 18.1418,
       "attempts": 28.7871,
-      "passing_yards": 196.8414,
+      "passing_yards": 196.8418,
       "passing_tds": 1.2468,
       "passing_interceptions": 0.5979,
       "passing_2pt_conversions": 0.1691,
@@ -80891,13 +80890,13 @@
     "team": "SEA",
     "games_used": 1,
     "projected_stats": {
-      "completions": 11.0219,
-      "attempts": 23.4321,
+      "completions": 11.0218,
+      "attempts": 23.432,
       "passing_yards": 104.4962,
-      "passing_tds": 0.426,
+      "passing_tds": 0.4259,
       "passing_interceptions": 0.6453,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 6.192,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
@@ -82804,7 +82803,7 @@
     "games_used": 6,
     "projected_stats": {
       "completions": 8.9801,
-      "attempts": 20.2735,
+      "attempts": 20.2734,
       "passing_yards": 97.0262,
       "passing_tds": 0.4705,
       "passing_interceptions": 0.372,
@@ -83323,9 +83322,9 @@
     "team": "PHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 16.1956,
+      "completions": 16.1955,
       "attempts": 27.4063,
-      "passing_yards": 164.903,
+      "passing_yards": 164.9033,
       "passing_tds": 0.7797,
       "passing_interceptions": 0.4668,
       "passing_2pt_conversions": 0.0667,
@@ -83757,10 +83756,10 @@
     "team": "LA",
     "games_used": 4,
     "projected_stats": {
-      "completions": 9.3199,
+      "completions": 9.3198,
       "attempts": 20.563,
-      "passing_yards": 98.8987,
-      "passing_tds": 0.5671,
+      "passing_yards": 98.8986,
+      "passing_tds": 0.567,
       "passing_interceptions": 0.3488,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.8729,
@@ -83843,14 +83842,14 @@
     "team": "BUF",
     "games_used": 1,
     "projected_stats": {
-      "completions": 9.3861,
+      "completions": 9.386,
       "attempts": 22.5266,
-      "passing_yards": 97.0385,
+      "passing_yards": 97.0384,
       "passing_tds": 0.4048,
       "passing_interceptions": 0.3888,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.1316,
-      "rushing_yards": 3.0653,
+      "rushing_yards": 3.0652,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -84279,7 +84278,7 @@
       "attempts": 21.9143,
       "passing_yards": 93.1152,
       "passing_tds": 0.4821,
-      "passing_interceptions": 0.2947,
+      "passing_interceptions": 0.2948,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.3903,
       "rushing_yards": 10.3378,
@@ -84493,14 +84492,14 @@
     "team": "CLE",
     "games_used": 1,
     "projected_stats": {
-      "completions": 17.2211,
+      "completions": 17.221,
       "attempts": 28.5628,
-      "passing_yards": 177.0786,
+      "passing_yards": 177.0788,
       "passing_tds": 1.0477,
       "passing_interceptions": 1.0799,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.7353,
-      "rushing_yards": 5.353,
+      "rushing_yards": 5.3529,
       "rushing_tds": 0.0426,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -84838,7 +84837,7 @@
     "team": "DAL",
     "games_used": 5,
     "projected_stats": {
-      "completions": 9.4473,
+      "completions": 9.4472,
       "attempts": 20.6981,
       "passing_yards": 104.8442,
       "passing_tds": 0.513,
@@ -85403,9 +85402,9 @@
     "team": "TB",
     "games_used": 4,
     "projected_stats": {
-      "completions": 6.0575,
+      "completions": 6.0574,
       "attempts": 18.15,
-      "passing_yards": 60.1752,
+      "passing_yards": 60.1751,
       "passing_tds": 0.2698,
       "passing_interceptions": 0.1944,
       "passing_2pt_conversions": 0.0577,
@@ -86145,14 +86144,14 @@
     "team": "MIA",
     "games_used": 4,
     "projected_stats": {
-      "completions": 5.378,
+      "completions": 5.3779,
       "attempts": 17.6674,
-      "passing_yards": 52.0136,
+      "passing_yards": 52.0134,
       "passing_tds": 0.2273,
       "passing_interceptions": 0.1905,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.1008,
-      "rushing_yards": 4.1606,
+      "rushing_yards": 4.1605,
       "rushing_tds": -0.0001,
       "rushing_2pt_conversions": 0.0093,
       "receptions": -0.003,
@@ -86757,7 +86756,7 @@
     "projected_stats": {
       "completions": 13.0447,
       "attempts": 25.0504,
-      "passing_yards": 155.8521,
+      "passing_yards": 155.8523,
       "passing_tds": 1.0337,
       "passing_interceptions": 0.5078,
       "passing_2pt_conversions": 0.1159,
@@ -87053,8 +87052,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040078": {
     "player_name": "Brashard Smith",
@@ -90843,11 +90841,11 @@
     "projected_stats": {
       "completions": 6.546,
       "attempts": 19.2067,
-      "passing_yards": 67.9138,
-      "passing_tds": 0.3928,
+      "passing_yards": 67.9136,
+      "passing_tds": 0.3927,
       "passing_interceptions": 0.2439,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 4.5803,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
@@ -90887,7 +90885,7 @@
     "projected_stats": {
       "completions": 19.4447,
       "attempts": 29.9671,
-      "passing_yards": 194.424,
+      "passing_yards": 194.4244,
       "passing_tds": 0.9887,
       "passing_interceptions": 0.6471,
       "passing_2pt_conversions": 0.1691,
@@ -94046,14 +94044,14 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 16.6586,
+      "completions": 16.6585,
       "attempts": 27.4063,
-      "passing_yards": 177.1908,
+      "passing_yards": 177.1911,
       "passing_tds": 1.1444,
       "passing_interceptions": 0.4258,
       "passing_2pt_conversions": 0.1159,
       "carries": 4.1588,
-      "rushing_yards": 26.9296,
+      "rushing_yards": 26.9297,
       "rushing_tds": 0.351,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -94136,9 +94134,9 @@
     "projected_stats": {
       "completions": 14.7697,
       "attempts": 26.5336,
-      "passing_yards": 138.0576,
+      "passing_yards": 138.0577,
       "passing_tds": 0.9067,
-      "passing_interceptions": 0.3971,
+      "passing_interceptions": 0.3972,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.5199,
       "rushing_yards": 9.7661,
@@ -94575,12 +94573,12 @@
     "projected_stats": {
       "completions": 6.546,
       "attempts": 19.2067,
-      "passing_yards": 67.9138,
-      "passing_tds": 0.3928,
+      "passing_yards": 67.9136,
+      "passing_tds": 0.3927,
       "passing_interceptions": 0.2439,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.1316,
-      "rushing_yards": 3.0653,
+      "rushing_yards": 3.0652,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -94870,7 +94868,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0038609": {
     "player_name": "Luke Wypler",
@@ -94957,8 +94955,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0038958": {
     "player_name": "Markees Watts",
@@ -96013,12 +96010,12 @@
     "projected_stats": {
       "completions": 9.0048,
       "attempts": 21.4202,
-      "passing_yards": 83.7316,
+      "passing_yards": 83.7315,
       "passing_tds": 0.329,
       "passing_interceptions": 0.3767,
       "passing_2pt_conversions": 0.0667,
       "carries": 2.2126,
-      "rushing_yards": 1.7559,
+      "rushing_yards": 1.7558,
       "rushing_tds": 0.0191,
       "rushing_2pt_conversions": 0.0089,
       "receptions": 0.0006,
@@ -96450,7 +96447,7 @@
     "projected_stats": {
       "completions": 24.6032,
       "attempts": 33.0401,
-      "passing_yards": 249.7907,
+      "passing_yards": 249.7912,
       "passing_tds": 1.5869,
       "passing_interceptions": 0.7577,
       "passing_2pt_conversions": 0.0667,
@@ -99769,12 +99766,12 @@
     "projected_stats": {
       "completions": 12.7482,
       "attempts": 23.2462,
-      "passing_yards": 141.6025,
+      "passing_yards": 141.6027,
       "passing_tds": 0.679,
       "passing_interceptions": 0.5843,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.4289,
-      "rushing_yards": 6.6431,
+      "rushing_yards": 6.643,
       "rushing_tds": -0.0001,
       "rushing_2pt_conversions": 0.0093,
       "receptions": 0.1399,
@@ -99932,8 +99929,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "injury_status": "IR"
+    "model_version": "v3"
   },
   "00-0040492": {
     "player_name": "Tyler Batty",
@@ -100159,14 +100155,14 @@
     "team": "IND",
     "games_used": 5,
     "projected_stats": {
-      "completions": 10.3198,
-      "attempts": 21.7792,
-      "passing_yards": 105.9252,
+      "completions": 10.3197,
+      "attempts": 21.7791,
+      "passing_yards": 105.9253,
       "passing_tds": 0.6829,
       "passing_interceptions": 0.5225,
       "passing_2pt_conversions": 0.0577,
       "carries": 2.2745,
-      "rushing_yards": 7.2724,
+      "rushing_yards": 7.2723,
       "rushing_tds": 0.2392,
       "rushing_2pt_conversions": 0.0093,
       "receptions": -0.003,
@@ -100512,11 +100508,11 @@
     "projected_stats": {
       "completions": 6.546,
       "attempts": 19.2067,
-      "passing_yards": 67.9138,
-      "passing_tds": 0.3928,
+      "passing_yards": 67.9136,
+      "passing_tds": 0.3927,
       "passing_interceptions": 0.2439,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 2.4616,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
@@ -101164,14 +101160,14 @@
     "team": "ARI",
     "games_used": 2,
     "projected_stats": {
-      "completions": 6.9384,
+      "completions": 6.9383,
       "attempts": 19.5085,
-      "passing_yards": 69.3746,
+      "passing_yards": 69.3744,
       "passing_tds": 0.3958,
       "passing_interceptions": 0.2469,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.1316,
-      "rushing_yards": 3.0653,
+      "rushing_yards": 3.0652,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -101199,8 +101195,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040058": {
     "player_name": "Nick Kallerup",
@@ -102253,7 +102248,7 @@
     "projected_stats": {
       "completions": 14.5812,
       "attempts": 26.4353,
-      "passing_yards": 152.353,
+      "passing_yards": 152.3532,
       "passing_tds": 0.7797,
       "passing_interceptions": 0.7331,
       "passing_2pt_conversions": 0.0667,
@@ -103115,8 +103110,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037041": {
     "player_name": "Haggai Ndubuisi",
@@ -103516,7 +103510,7 @@
     "projected_stats": {
       "completions": 18.5741,
       "attempts": 28.4197,
-      "passing_yards": 166.9986,
+      "passing_yards": 166.9989,
       "passing_tds": 0.6327,
       "passing_interceptions": 1.0051,
       "passing_2pt_conversions": 0.1349,
@@ -103647,12 +103641,12 @@
     "projected_stats": {
       "completions": 18.546,
       "attempts": 28.4632,
-      "passing_yards": 190.4397,
+      "passing_yards": 190.44,
       "passing_tds": 1.0809,
       "passing_interceptions": 0.763,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.3339,
-      "rushing_yards": 2.8661,
+      "carries": 2.3338,
+      "rushing_yards": 2.866,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -105115,7 +105109,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0040372": {
     "player_name": "Bralyn Lux",
@@ -105211,12 +105206,12 @@
     "games_used": 1,
     "projected_stats": {
       "completions": 11.3599,
-      "attempts": 23.4321,
+      "attempts": 23.432,
       "passing_yards": 124.3946,
       "passing_tds": 0.435,
-      "passing_interceptions": 0.3374,
+      "passing_interceptions": 0.3375,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 6.358,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
@@ -106029,8 +106024,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040604": {
     "player_name": "Jahfari Harvey",
@@ -106519,11 +106513,11 @@
     "projected_stats": {
       "completions": 7.7653,
       "attempts": 20.1121,
-      "passing_yards": 78.8001,
+      "passing_yards": 78.8,
       "passing_tds": 0.4048,
-      "passing_interceptions": 0.271,
+      "passing_interceptions": 0.2711,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 8.2141,
       "rushing_tds": 0.0395,
       "rushing_2pt_conversions": 0.0101,
@@ -113154,7 +113148,7 @@
     "games_used": 1,
     "projected_stats": {
       "completions": 12.3317,
-      "attempts": 23.7339,
+      "attempts": 23.7338,
       "passing_yards": 113.8584,
       "passing_tds": 0.4139,
       "passing_interceptions": 0.6181,
@@ -114033,12 +114027,12 @@
     "projected_stats": {
       "completions": 17.1848,
       "attempts": 27.2047,
-      "passing_yards": 179.2848,
+      "passing_yards": 179.2851,
       "passing_tds": 1.1925,
-      "passing_interceptions": 0.5879,
+      "passing_interceptions": 0.588,
       "passing_2pt_conversions": 0.0538,
       "carries": 2.8862,
-      "rushing_yards": 6.7504,
+      "rushing_yards": 6.7503,
       "rushing_tds": 0.2991,
       "rushing_2pt_conversions": 0.0101,
       "receptions": 0.0068,
@@ -115084,9 +115078,9 @@
     "team": "TB",
     "games_used": 5,
     "projected_stats": {
-      "completions": 13.9142,
+      "completions": 13.9141,
       "attempts": 24.1728,
-      "passing_yards": 130.7152,
+      "passing_yards": 130.7153,
       "passing_tds": 0.7099,
       "passing_interceptions": 0.7233,
       "passing_2pt_conversions": 0.0577,
@@ -115863,8 +115857,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040923": {
     "player_name": "Maximus Pulley",
@@ -116093,10 +116086,10 @@
     "games_used": 1,
     "projected_stats": {
       "completions": 17.1003,
-      "attempts": 29.1664,
-      "passing_yards": 202.6781,
+      "attempts": 29.1665,
+      "passing_yards": 202.6785,
       "passing_tds": 0.8606,
-      "passing_interceptions": 0.938,
+      "passing_interceptions": 0.9381,
       "passing_2pt_conversions": 0.0538,
       "carries": 3.0371,
       "rushing_yards": 14.9113,
@@ -117013,11 +117006,11 @@
     "projected_stats": {
       "completions": 10.0289,
       "attempts": 21.6212,
-      "passing_yards": 97.6542,
+      "passing_yards": 97.6541,
       "passing_tds": 0.4229,
       "passing_interceptions": 0.2861,
       "passing_2pt_conversions": 0.0538,
-      "carries": 2.4335,
+      "carries": 2.4334,
       "rushing_yards": 6.0894,
       "rushing_tds": 0.0727,
       "rushing_2pt_conversions": 0.0101,
@@ -118018,9 +118011,9 @@
     "team": "BAL",
     "games_used": 1,
     "projected_stats": {
-      "completions": 13.871,
+      "completions": 13.8709,
       "attempts": 25.5447,
-      "passing_yards": 135.6129,
+      "passing_yards": 135.613,
       "passing_tds": 0.5678,
       "passing_interceptions": 0.6755,
       "passing_2pt_conversions": 0.0538,
@@ -118902,7 +118895,8 @@
       "fg_missed_total": 0.25,
       "pat_made": 1.62
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0038905": {
     "player_name": "Blake Grupe",
@@ -119055,7 +119049,8 @@
       "fg_missed_total": 0.62,
       "pat_made": 2.62
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0035145": {
     "player_name": "Austin Seibert",
