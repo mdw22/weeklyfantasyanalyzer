@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T02:16:31Z",
+  "updatedAt": "2026-11-06T02:21:34Z",
   "players": {
     "00-0038542": {
       "status": "not_started"
@@ -57,8 +57,8 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q2 3:07",
-      "fraction_remaining": 0.5519,
+      "clock": "Q2 1:57",
+      "fraction_remaining": 0.5325,
       "stats": {
         "rushing_yards": 16.0,
         "receiving_yards": -3.0,
@@ -100,8 +100,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q2 3:07",
-      "fraction_remaining": 0.5519,
+      "clock": "Q2 1:57",
+      "fraction_remaining": 0.5325,
       "stats": {
         "def_sacks": 1.0,
         "def_points_allowed_bonus": 4,
@@ -118,13 +118,13 @@
   "teams": {
     "BAL": {
       "status": "in_progress",
-      "clock": "Q2 3:07",
-      "fraction_remaining": 0.5519
+      "clock": "Q2 1:57",
+      "fraction_remaining": 0.5325
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q2 3:07",
-      "fraction_remaining": 0.5519
+      "clock": "Q2 1:57",
+      "fraction_remaining": 0.5325
     },
     "ATL": {
       "status": "not_started",
