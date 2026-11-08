@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T22:41:24Z",
+  "updatedAt": "2026-11-08T22:46:28Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -40,8 +40,8 @@
     },
     "00-0039811": {
       "status": "in_progress",
-      "clock": "Q2 5:04",
-      "fraction_remaining": 0.5844,
+      "clock": "Q2 4:39",
+      "fraction_remaining": 0.5775,
       "stats": {}
     },
     "00-0038933": {
@@ -205,8 +205,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q2 0:31",
-      "fraction_remaining": 0.5086,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {
         "fg_made_50_plus": 1.0,
         "pat_made": 3.0
@@ -244,23 +244,23 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q2 0:31",
-      "fraction_remaining": 0.5086
+      "clock": "Half",
+      "fraction_remaining": 0.5
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q2 0:31",
-      "fraction_remaining": 0.5086
+      "clock": "Half",
+      "fraction_remaining": 0.5
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q2 5:04",
-      "fraction_remaining": 0.5844
+      "clock": "Q2 4:39",
+      "fraction_remaining": 0.5775
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q2 5:04",
-      "fraction_remaining": 0.5844
+      "clock": "Q2 4:39",
+      "fraction_remaining": 0.5775
     },
     "SF": {
       "status": "in_progress",
@@ -274,13 +274,13 @@
     },
     "SEA": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 0:32",
+      "fraction_remaining": 0.5089
     },
     "ARI": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 0:32",
+      "fraction_remaining": 0.5089
     },
     "ATL": {
       "status": "final",
