@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T00:38:17Z",
+  "updatedAt": "2026-11-09T00:43:21Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -39,9 +39,8 @@
       "status": "not_started"
     },
     "00-0039811": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {}
     },
     "00-0038933": {
@@ -245,14 +244,12 @@
   },
   "teams": {
     "NE": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "GB": {
-      "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "ATL": {
       "status": "final",
