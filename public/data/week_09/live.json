@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T04:36:03Z",
+  "updatedAt": "2026-11-09T04:41:07Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -36,9 +36,8 @@
       }
     },
     "00-0040735": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "receiving_yards": 97.0,
         "receiving_tds": 1.0,
@@ -91,9 +90,8 @@
       }
     },
     "DEF_CHI": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "def_interceptions": 2.0,
         "def_sacks": 4.0,
@@ -117,11 +115,10 @@
       }
     },
     "00-0031203": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
-        "fg_made_0_39": 1.0,
+        "fg_made_0_39": 2.0,
         "pat_made": 3.0
       }
     },
@@ -184,9 +181,8 @@
       }
     },
     "00-0040236": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {}
     },
     "00-0036040": {
@@ -270,14 +266,12 @@
   },
   "teams": {
     "CHI": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "TB": {
-      "status": "in_progress",
-      "clock": "Q4 0:47",
-      "fraction_remaining": 0.0131
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "ATL": {
       "status": "final",
@@ -401,6 +395,7 @@
     "00-0040715": "OUT",
     "00-0040719": "ACTIVE",
     "00-0036613": "QUESTIONABLE",
+    "00-0040735": "QUESTIONABLE",
     "00-0041438": "OUT",
     "00-0036875": "QUESTIONABLE",
     "00-0036252": "IR",
