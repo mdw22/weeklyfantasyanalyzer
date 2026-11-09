@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T00:23:06Z",
+  "updatedAt": "2026-11-09T00:28:10Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -40,8 +40,8 @@
     },
     "00-0039811": {
       "status": "in_progress",
-      "clock": "Q4 8:37",
-      "fraction_remaining": 0.1436,
+      "clock": "Q4 4:14",
+      "fraction_remaining": 0.0706,
       "stats": {}
     },
     "00-0038933": {
@@ -206,8 +206,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333,
+      "clock": "Q4 1:07",
+      "fraction_remaining": 0.0186,
       "stats": {
         "fg_made_50_plus": 1.0,
         "fg_made_40_49": 1.0,
@@ -247,23 +247,23 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "clock": "Q4 1:07",
+      "fraction_remaining": 0.0186
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q4 2:00",
-      "fraction_remaining": 0.0333
+      "clock": "Q4 1:07",
+      "fraction_remaining": 0.0186
     },
     "NE": {
       "status": "in_progress",
-      "clock": "Q4 8:37",
-      "fraction_remaining": 0.1436
+      "clock": "Q4 4:14",
+      "fraction_remaining": 0.0706
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q4 8:37",
-      "fraction_remaining": 0.1436
+      "clock": "Q4 4:14",
+      "fraction_remaining": 0.0706
     },
     "SEA": {
       "status": "final",
