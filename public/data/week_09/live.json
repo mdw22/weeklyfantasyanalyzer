@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T04:41:07Z",
+  "updatedAt": "2026-11-09T22:52:08Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -265,11 +265,19 @@
     }
   },
   "teams": {
-    "CHI": {
+    "MIN": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "BUF": {
+      "status": "not_started",
+      "fraction_remaining": 1.0
+    },
+    "BAL": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "TB": {
+    "JAX": {
       "status": "final",
       "fraction_remaining": 0.0
     },
@@ -369,25 +377,17 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "BAL": {
+    "CHI": {
       "status": "final",
       "fraction_remaining": 0.0
     },
-    "JAX": {
+    "TB": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "MIN": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
-    },
-    "BUF": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
     }
   },
   "injuries": {
-    "00-0039075": "QUESTIONABLE",
+    "00-0039075": "DOUBTFUL",
     "00-0036963": "ACTIVE",
     "00-0037247": "OUT",
     "00-0040129": "ACTIVE",
@@ -399,21 +399,26 @@
     "00-0041438": "OUT",
     "00-0036875": "QUESTIONABLE",
     "00-0036252": "IR",
-    "00-0035700": "QUESTIONABLE",
+    "00-0035700": "OUT",
     "00-0036355": "QUESTIONABLE",
+    "00-0038559": "OUT",
     "00-0039811": "OUT",
     "00-0040236": "OUT",
     "00-0033873": "QUESTIONABLE",
+    "00-0038041": "OUT",
     "00-0039894": "QUESTIONABLE",
     "00-0039032": "OUT",
     "00-0033090": "ACTIVE",
-    "00-0037746": "IR",
+    "00-0038128": "QUESTIONABLE",
     "00-0039874": "OUT",
-    "00-0037666": "OUT",
+    "00-0037809": "QUESTIONABLE",
     "00-0038896": "OUT",
+    "00-0040134": "ACTIVE",
     "00-0033537": "OUT",
+    "00-0041104": "IR",
     "00-0041096": "ACTIVE",
-    "00-0039364": "ACTIVE"
+    "00-0039364": "ACTIVE",
+    "00-0033555": "ACTIVE"
   },
   "espnProjections": {}
 }
