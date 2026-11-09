@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T00:43:21Z",
+  "updatedAt": "2026-11-09T00:48:25Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -243,14 +243,6 @@
     }
   },
   "teams": {
-    "NE": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "GB": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "ATL": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -323,6 +315,14 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "NE": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "GB": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "SF": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -374,7 +374,7 @@
     "00-0040719": "ACTIVE",
     "00-0036613": "QUESTIONABLE",
     "00-0041438": "OUT",
-    "00-0036875": "OUT",
+    "00-0036875": "QUESTIONABLE",
     "00-0036252": "IR",
     "00-0035700": "QUESTIONABLE",
     "00-0039811": "OUT",
