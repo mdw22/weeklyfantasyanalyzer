@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T02:39:14Z",
+  "updatedAt": "2026-11-10T02:44:17Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -52,8 +52,8 @@
     },
     "00-0038933": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333,
+      "clock": "Q2 0:44",
+      "fraction_remaining": 0.5122,
       "stats": {
         "receiving_yards": 12.0,
         "receptions": 1.0
@@ -175,11 +175,11 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333,
+      "clock": "Q2 0:44",
+      "fraction_remaining": 0.5122,
       "stats": {
-        "receiving_yards": 9.0,
-        "receptions": 1.0
+        "receiving_yards": 31.0,
+        "receptions": 3.0
       }
     },
     "00-0033873": {
@@ -279,13 +279,13 @@
   "teams": {
     "MIN": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 0:44",
+      "fraction_remaining": 0.5122
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q2 2:00",
-      "fraction_remaining": 0.5333
+      "clock": "Q2 0:44",
+      "fraction_remaining": 0.5122
     },
     "BAL": {
       "status": "final",
