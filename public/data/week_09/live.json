@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:52:08Z",
+  "updatedAt": "2026-11-10T00:12:42Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -418,6 +418,7 @@
     "00-0041104": "IR",
     "00-0041096": "ACTIVE",
     "00-0039364": "ACTIVE",
+    "00-0036309": "QUESTIONABLE",
     "00-0033555": "ACTIVE"
   },
   "espnProjections": {}
