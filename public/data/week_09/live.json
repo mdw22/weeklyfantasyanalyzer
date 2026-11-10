@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T01:38:31Z",
+  "updatedAt": "2026-11-10T01:43:34Z",
   "players": {
     "00-0038542": {
       "status": "final",
@@ -52,8 +52,8 @@
     },
     "00-0038933": {
       "status": "in_progress",
-      "clock": "Q1 5:30",
-      "fraction_remaining": 0.8417,
+      "clock": "Q1 4:08",
+      "fraction_remaining": 0.8189,
       "stats": {}
     },
     "00-0037838": {
@@ -172,8 +172,8 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q1 5:30",
-      "fraction_remaining": 0.8417,
+      "clock": "Q1 4:08",
+      "fraction_remaining": 0.8189,
       "stats": {
         "receiving_yards": 9.0,
         "receptions": 1.0
@@ -276,13 +276,13 @@
   "teams": {
     "MIN": {
       "status": "in_progress",
-      "clock": "Q1 5:30",
-      "fraction_remaining": 0.8417
+      "clock": "Q1 4:08",
+      "fraction_remaining": 0.8189
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q1 5:30",
-      "fraction_remaining": 0.8417
+      "clock": "Q1 4:08",
+      "fraction_remaining": 0.8189
     },
     "BAL": {
       "status": "final",
@@ -410,12 +410,13 @@
     "00-0041438": "OUT",
     "00-0036875": "QUESTIONABLE",
     "00-0036252": "IR",
-    "00-0035700": "QUESTIONABLE",
+    "00-0035700": "OUT",
     "00-0036355": "QUESTIONABLE",
     "00-0038559": "OUT",
     "00-0039811": "OUT",
     "00-0040236": "OUT",
     "00-0033873": "QUESTIONABLE",
+    "00-0038041": "OUT",
     "00-0039894": "QUESTIONABLE",
     "00-0039032": "OUT",
     "00-0033090": "ACTIVE",
