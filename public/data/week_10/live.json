@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T02:07:06Z",
+  "updatedAt": "2026-11-13T02:12:11Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -12,10 +12,10 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q2 8:13",
-      "fraction_remaining": 0.6369,
+      "clock": "Q2 4:43",
+      "fraction_remaining": 0.5786,
       "stats": {
-        "rushing_yards": 24.0,
+        "rushing_yards": 29.0,
         "receiving_yards": 37.0,
         "receptions": 2.0
       }
@@ -67,11 +67,11 @@
     },
     "00-0039337": {
       "status": "in_progress",
-      "clock": "Q2 8:13",
-      "fraction_remaining": 0.6369,
+      "clock": "Q2 4:43",
+      "fraction_remaining": 0.5786,
       "stats": {
-        "receiving_yards": 3.0,
-        "receptions": 2.0
+        "receiving_yards": 8.0,
+        "receptions": 3.0
       }
     },
     "00-0040126": {
@@ -117,13 +117,13 @@
   "teams": {
     "NYG": {
       "status": "in_progress",
-      "clock": "Q2 8:13",
-      "fraction_remaining": 0.6369
+      "clock": "Q2 4:43",
+      "fraction_remaining": 0.5786
     },
     "WAS": {
       "status": "in_progress",
-      "clock": "Q2 8:13",
-      "fraction_remaining": 0.6369
+      "clock": "Q2 4:43",
+      "fraction_remaining": 0.5786
     },
     "DET": {
       "status": "not_started",
@@ -273,6 +273,7 @@
     "00-0040727": "QUESTIONABLE",
     "00-0041044": "DOUBTFUL",
     "00-0041511": "QUESTIONABLE",
+    "00-0037809": "QUESTIONABLE",
     "00-0041525": "QUESTIONABLE",
     "00-0039746": "IR",
     "00-0037801": "QUESTIONABLE",
