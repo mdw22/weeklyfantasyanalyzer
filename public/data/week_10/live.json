@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T03:38:48Z",
+  "updatedAt": "2026-11-13T03:43:53Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -12,10 +12,10 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q4 9:04",
-      "fraction_remaining": 0.1511,
+      "clock": "Q4 8:13",
+      "fraction_remaining": 0.1369,
       "stats": {
-        "rushing_yards": 59.0,
+        "rushing_yards": 62.0,
         "rushing_tds": 2.0,
         "receiving_yards": 44.0,
         "receptions": 3.0
@@ -68,8 +68,8 @@
     },
     "00-0039337": {
       "status": "in_progress",
-      "clock": "Q4 9:04",
-      "fraction_remaining": 0.1511,
+      "clock": "Q4 8:13",
+      "fraction_remaining": 0.1369,
       "stats": {
         "receiving_yards": 44.0,
         "receptions": 5.0,
@@ -119,13 +119,13 @@
   "teams": {
     "NYG": {
       "status": "in_progress",
-      "clock": "Q4 9:04",
-      "fraction_remaining": 0.1511
+      "clock": "Q4 8:13",
+      "fraction_remaining": 0.1369
     },
     "WAS": {
       "status": "in_progress",
-      "clock": "Q4 9:04",
-      "fraction_remaining": 0.1511
+      "clock": "Q4 8:13",
+      "fraction_remaining": 0.1369
     },
     "DET": {
       "status": "not_started",
