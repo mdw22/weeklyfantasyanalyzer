@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T20:50:37Z",
+  "updatedAt": "2026-11-15T20:55:40Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -22,8 +22,8 @@
     },
     "00-0035261": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392,
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786,
       "stats": {
         "rushing_yards": 34.0,
         "receiving_yards": 60.0,
@@ -33,8 +33,8 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q4 5:25",
-      "fraction_remaining": 0.0903,
+      "clock": "Q4 4:34",
+      "fraction_remaining": 0.0761,
       "stats": {
         "rushing_yards": 29.0,
         "receiving_yards": 26.0,
@@ -43,11 +43,11 @@
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864,
+      "clock": "Q4 3:48",
+      "fraction_remaining": 0.0633,
       "stats": {
-        "passing_yards": 305.0,
-        "passing_tds": 4.0,
+        "passing_yards": 348.0,
+        "passing_tds": 5.0,
         "rushing_yards": 15.0
       }
     },
@@ -56,8 +56,8 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Q4 2:23",
-      "fraction_remaining": 0.0397,
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308,
       "stats": {
         "receiving_yards": 28.0,
         "receptions": 2.0
@@ -79,8 +79,8 @@
     },
     "00-0039880": {
       "status": "in_progress",
-      "clock": "Q4 9:09",
-      "fraction_remaining": 0.1525,
+      "clock": "Q4 6:17",
+      "fraction_remaining": 0.1047,
       "stats": {
         "passing_yards": 34.0,
         "passing_tds": 1.0,
@@ -90,8 +90,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q4 3:35",
-      "fraction_remaining": 0.0597,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
         "fg_made_40_49": 1.0,
         "pat_made": 3.0
@@ -99,8 +99,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392,
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
@@ -134,8 +134,8 @@
     },
     "00-0039849": {
       "status": "in_progress",
-      "clock": "Q4 3:35",
-      "fraction_remaining": 0.0597,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {}
     },
     "00-0035640": {
@@ -143,13 +143,13 @@
     },
     "00-0036971": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392,
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786,
       "stats": {
-        "passing_yards": 307.0,
+        "passing_yards": 338.0,
         "passing_tds": 3.0,
         "passing_interceptions": 1.0,
-        "rushing_yards": 20.0
+        "rushing_yards": 27.0
       }
     },
     "00-0037692": {
@@ -157,30 +157,30 @@
     },
     "DEF_HOU": {
       "status": "in_progress",
-      "clock": "Q4 3:35",
-      "fraction_remaining": 0.0597,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
         "def_interceptions": 1.0,
-        "def_sacks": 3.0,
+        "def_sacks": 4.0,
         "def_points_allowed_bonus": 0,
-        "def_yards_allowed_bonus": -1
+        "def_yards_allowed_bonus": 0
       }
     },
     "00-0040718": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392,
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786,
       "stats": {
         "rushing_yards": 3.0,
-        "receiving_yards": 6.0,
-        "receptions": 1.0,
+        "receiving_yards": 16.0,
+        "receptions": 2.0,
         "def_interceptions": 1.0
       }
     },
     "00-0033906": {
       "status": "in_progress",
-      "clock": "Q4 2:23",
-      "fraction_remaining": 0.0397,
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308,
       "stats": {
         "rushing_yards": 4.0,
         "rushing_tds": 1.0,
@@ -197,11 +197,11 @@
     },
     "00-0041523": {
       "status": "in_progress",
-      "clock": "Q4 9:09",
-      "fraction_remaining": 0.1525,
+      "clock": "Q4 6:17",
+      "fraction_remaining": 0.1047,
       "stats": {
-        "receiving_yards": 60.0,
-        "receptions": 2.0
+        "receiving_yards": 71.0,
+        "receptions": 3.0
       }
     },
     "00-0040870": {
@@ -214,73 +214,73 @@
   "teams": {
     "ATL": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864
+      "clock": "Q4 3:48",
+      "fraction_remaining": 0.0633
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864
+      "clock": "Q4 3:48",
+      "fraction_remaining": 0.0633
     },
     "CLE": {
       "status": "in_progress",
-      "clock": "Q4 3:35",
-      "fraction_remaining": 0.0597
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Q4 3:35",
-      "fraction_remaining": 0.0597
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q4 3:50",
-      "fraction_remaining": 0.0639
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q4 3:50",
-      "fraction_remaining": 0.0639
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "TEN": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 8:21",
-      "fraction_remaining": 0.1392
+      "clock": "Q4 4:43",
+      "fraction_remaining": 0.0786
     },
     "IND": {
       "status": "in_progress",
-      "clock": "Q4 9:09",
-      "fraction_remaining": 0.1525
+      "clock": "Q4 6:17",
+      "fraction_remaining": 0.1047
     },
     "MIA": {
       "status": "in_progress",
-      "clock": "Q4 9:09",
-      "fraction_remaining": 0.1525
+      "clock": "Q4 6:17",
+      "fraction_remaining": 0.1047
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Q4 2:23",
-      "fraction_remaining": 0.0397
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308
     },
     "CAR": {
       "status": "in_progress",
-      "clock": "Q4 2:23",
-      "fraction_remaining": 0.0397
+      "clock": "Q4 1:51",
+      "fraction_remaining": 0.0308
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q4 5:25",
-      "fraction_remaining": 0.0903
+      "clock": "Q4 4:34",
+      "fraction_remaining": 0.0761
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q4 5:25",
-      "fraction_remaining": 0.0903
+      "clock": "Q4 4:34",
+      "fraction_remaining": 0.0761
     },
     "DET": {
       "status": "final",
