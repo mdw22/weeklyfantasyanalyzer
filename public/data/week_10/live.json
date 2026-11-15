@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T19:34:44Z",
+  "updatedAt": "2026-11-15T19:39:47Z",
   "players": {
     "00-0039075": {
       "status": "not_started"
@@ -55,8 +55,8 @@
     },
     "00-0036040": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5,
+      "clock": "Q3 14:37",
+      "fraction_remaining": 0.4936,
       "stats": {
         "receiving_yards": 28.0,
         "receptions": 2.0
@@ -89,7 +89,7 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "fg_made_40_49": 1.0,
@@ -132,7 +132,7 @@
     },
     "00-0039849": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {}
     },
@@ -155,7 +155,7 @@
     },
     "DEF_HOU": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "def_points_allowed_bonus": 3,
@@ -173,8 +173,8 @@
     },
     "00-0033906": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5,
+      "clock": "Q3 14:37",
+      "fraction_remaining": 0.4936,
       "stats": {}
     },
     "00-0037263": {
@@ -209,12 +209,12 @@
     },
     "CLE": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "HOU": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "GB": {
@@ -249,13 +249,13 @@
     },
     "NO": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5
+      "clock": "Q3 14:37",
+      "fraction_remaining": 0.4936
     },
     "CAR": {
       "status": "in_progress",
-      "clock": "Half",
-      "fraction_remaining": 0.5
+      "clock": "Q3 14:37",
+      "fraction_remaining": 0.4936
     },
     "NYJ": {
       "status": "in_progress",
@@ -352,6 +352,7 @@
     "00-0041525": "OUT",
     "00-0039746": "IR",
     "00-0040886": "OUT",
+    "00-0030565": "QUESTIONABLE",
     "00-0039364": "ACTIVE"
   },
   "espnProjections": {
