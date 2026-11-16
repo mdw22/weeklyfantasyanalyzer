@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-15T19:13:50Z",
+  "syncedAt": "2026-11-16T22:43:23Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -299,10 +299,6 @@
       "owned": true,
       "espnTeamId": 3
     },
-    "00-0038559": {
-      "owned": true,
-      "espnTeamId": 3
-    },
     "00-0036919": {
       "owned": true,
       "espnTeamId": 3
@@ -344,6 +340,10 @@
       "espnTeamId": 3
     },
     "00-0039793": {
+      "owned": true,
+      "espnTeamId": 3
+    },
+    "00-0038544": {
       "owned": true,
       "espnTeamId": 3
     },
