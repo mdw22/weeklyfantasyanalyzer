@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T00:48:25Z",
+  "updatedAt": "2026-11-16T01:24:21Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -150,7 +150,10 @@
       }
     },
     "00-0038597": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:54",
+      "fraction_remaining": 0.9983,
+      "stats": {}
     },
     "00-0039337": {
       "status": "final",
@@ -170,7 +173,10 @@
       "stats": {}
     },
     "00-0035640": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:54",
+      "fraction_remaining": 0.9983,
+      "stats": {}
     },
     "00-0036971": {
       "status": "final",
@@ -243,18 +249,13 @@
       "status": "not_started"
     },
     "00-0036894": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 14:54",
+      "fraction_remaining": 0.9983,
+      "stats": {}
     }
   },
   "teams": {
-    "DAL": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "SF": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "DET": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -335,13 +336,23 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "DAL": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "SF": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "CIN": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 14:54",
+      "fraction_remaining": 0.9983
     },
     "PIT": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 14:54",
+      "fraction_remaining": 0.9983
     },
     "NYG": {
       "status": "final",
