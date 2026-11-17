@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T01:25:15Z",
+  "updatedAt": "2026-11-17T01:30:19Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -17,8 +17,8 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q1 10:39",
-      "fraction_remaining": 0.9275,
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042,
       "stats": {}
     },
     "00-0040715": {
@@ -247,8 +247,8 @@
     },
     "00-0038454": {
       "status": "in_progress",
-      "clock": "Q1 10:39",
-      "fraction_remaining": 0.9275,
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042,
       "stats": {}
     },
     "00-0041523": {
@@ -261,8 +261,8 @@
     },
     "00-0040870": {
       "status": "in_progress",
-      "clock": "Q1 10:39",
-      "fraction_remaining": 0.9275,
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042,
       "stats": {}
     },
     "00-0036894": {
@@ -278,13 +278,13 @@
   "teams": {
     "BAL": {
       "status": "in_progress",
-      "clock": "Q1 10:39",
-      "fraction_remaining": 0.9275
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q1 10:39",
-      "fraction_remaining": 0.9275
+      "clock": "Q1 9:15",
+      "fraction_remaining": 0.9042
     },
     "NYG": {
       "status": "final",
