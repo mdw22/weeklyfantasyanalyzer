@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T02:15:57Z",
+  "updatedAt": "2026-11-17T02:21:02Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -253,7 +253,7 @@
       "clock": "Q2 0:31",
       "fraction_remaining": 0.5086,
       "stats": {
-        "rushing_yards": -5.0
+        "rushing_yards": 4.0
       }
     },
     "00-0041523": {
@@ -428,8 +428,7 @@
     "00-0039299": "QUESTIONABLE",
     "00-0039746": "IR",
     "00-0030565": "QUESTIONABLE",
-    "00-0039364": "ACTIVE",
-    "00-0040189": "QUESTIONABLE"
+    "00-0039364": "ACTIVE"
   },
   "espnProjections": {
     "00-0036613": 0.0,
