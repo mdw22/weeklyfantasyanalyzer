@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T03:26:51Z",
+  "updatedAt": "2026-11-17T03:31:55Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -17,8 +17,8 @@
     },
     "00-0039064": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 3:28",
+      "fraction_remaining": 0.3078,
       "stats": {
         "receiving_yards": 19.0,
         "receptions": 2.0
@@ -250,8 +250,8 @@
     },
     "00-0038454": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 3:28",
+      "fraction_remaining": 0.3078,
       "stats": {
         "rushing_yards": 4.0
       }
@@ -266,8 +266,8 @@
     },
     "00-0040870": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111,
+      "clock": "Q3 3:28",
+      "fraction_remaining": 0.3078,
       "stats": {
         "receiving_yards": 31.0,
         "receptions": 1.0
@@ -286,13 +286,13 @@
   "teams": {
     "BAL": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111
+      "clock": "Q3 3:28",
+      "fraction_remaining": 0.3078
     },
     "LAC": {
       "status": "in_progress",
-      "clock": "Q3 3:40",
-      "fraction_remaining": 0.3111
+      "clock": "Q3 3:28",
+      "fraction_remaining": 0.3078
     },
     "NYG": {
       "status": "final",
