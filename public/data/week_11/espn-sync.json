@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-18T21:04:09Z",
+  "syncedAt": "2026-11-19T21:10:21Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -25,11 +25,11 @@
       },
       {
         "slot": "WR2",
-        "playerId": "00-0037261"
+        "playerId": "00-0038618"
       },
       {
         "slot": "FLEX",
-        "playerId": "00-0038618"
+        "playerId": "00-0037261"
       },
       {
         "slot": "DEF",
@@ -167,10 +167,6 @@
       "owned": true,
       "espnTeamId": 1
     },
-    "00-0038117": {
-      "owned": true,
-      "espnTeamId": 1
-    },
     "00-0035719": {
       "owned": true,
       "espnTeamId": 1
@@ -180,10 +176,6 @@
       "espnTeamId": 1
     },
     "DEF_PIT": {
-      "owned": true,
-      "espnTeamId": 1
-    },
-    "00-0040737": {
       "owned": true,
       "espnTeamId": 1
     },
@@ -207,11 +199,15 @@
       "owned": true,
       "espnTeamId": 1
     },
-    "00-0039917": {
+    "00-0040676": {
       "owned": true,
       "espnTeamId": 1
     },
-    "DEF_BUF": {
+    "00-0038705": {
+      "owned": true,
+      "espnTeamId": 1
+    },
+    "00-0040584": {
       "owned": true,
       "espnTeamId": 1
     },
@@ -279,7 +275,7 @@
       "owned": true,
       "espnTeamId": 2
     },
-    "00-0035704": {
+    "00-0040134": {
       "owned": true,
       "espnTeamId": 2
     },
@@ -407,15 +403,15 @@
       "owned": true,
       "espnTeamId": 4
     },
-    "00-0039798": {
-      "owned": true,
-      "espnTeamId": 4
-    },
     "00-0036162": {
       "owned": true,
       "espnTeamId": 4
     },
     "00-0033526": {
+      "owned": true,
+      "espnTeamId": 4
+    },
+    "DEF_DET": {
       "owned": true,
       "espnTeamId": 4
     },
@@ -859,10 +855,6 @@
       "owned": true,
       "espnTeamId": 11
     },
-    "00-0041125": {
-      "owned": true,
-      "espnTeamId": 11
-    },
     "DEF_TB": {
       "owned": true,
       "espnTeamId": 11
@@ -876,6 +868,10 @@
       "espnTeamId": 11
     },
     "00-0041013": {
+      "owned": true,
+      "espnTeamId": 11
+    },
+    "00-0034383": {
       "owned": true,
       "espnTeamId": 11
     },
