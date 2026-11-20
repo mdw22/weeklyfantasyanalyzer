@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T23:37:05Z",
+  "updatedAt": "2026-11-20T01:17:56Z",
   "players": {
     "00-0039139": {
       "status": "not_started"
@@ -29,7 +29,10 @@
       "status": "not_started"
     },
     "00-0038977": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 15:00",
+      "fraction_remaining": 1.0,
+      "stats": {}
     },
     "00-0041029": {
       "status": "not_started"
@@ -92,7 +95,10 @@
       "status": "not_started"
     },
     "00-0032726": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 15:00",
+      "fraction_remaining": 1.0,
+      "stats": {}
     },
     "DEF_JAX": {
       "status": "not_started"
@@ -101,16 +107,21 @@
       "status": "not_started"
     },
     "00-0038618": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 15:00",
+      "fraction_remaining": 1.0,
+      "stats": {}
     }
   },
   "teams": {
     "HOU": {
-      "status": "not_started",
+      "status": "in_progress",
+      "clock": "Q1 15:00",
       "fraction_remaining": 1.0
     },
     "IND": {
-      "status": "not_started",
+      "status": "in_progress",
+      "clock": "Q1 15:00",
       "fraction_remaining": 1.0
     },
     "BUF": {
