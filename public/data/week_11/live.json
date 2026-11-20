@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T03:14:53Z",
+  "updatedAt": "2026-11-20T03:19:56Z",
   "players": {
     "00-0039139": {
       "status": "not_started"
@@ -30,9 +30,12 @@
     },
     "00-0038977": {
       "status": "in_progress",
-      "clock": "Q3 10:15",
-      "fraction_remaining": 0.4208,
-      "stats": {}
+      "clock": "Q3 5:39",
+      "fraction_remaining": 0.3442,
+      "stats": {
+        "receiving_yards": 27.0,
+        "receptions": 3.0
+      }
     },
     "00-0041029": {
       "status": "not_started"
@@ -96,8 +99,8 @@
     },
     "00-0032726": {
       "status": "in_progress",
-      "clock": "Q3 10:15",
-      "fraction_remaining": 0.4208,
+      "clock": "Q3 5:39",
+      "fraction_remaining": 0.3442,
       "stats": {
         "fg_made_0_39": 1.0,
         "pat_made": 2.0
@@ -111,8 +114,8 @@
     },
     "00-0038618": {
       "status": "in_progress",
-      "clock": "Q3 10:15",
-      "fraction_remaining": 0.4208,
+      "clock": "Q3 5:39",
+      "fraction_remaining": 0.3442,
       "stats": {
         "receiving_yards": 13.0,
         "receptions": 2.0
@@ -122,13 +125,13 @@
   "teams": {
     "HOU": {
       "status": "in_progress",
-      "clock": "Q3 10:15",
-      "fraction_remaining": 0.4208
+      "clock": "Q3 5:39",
+      "fraction_remaining": 0.3442
     },
     "IND": {
       "status": "in_progress",
-      "clock": "Q3 10:15",
-      "fraction_remaining": 0.4208
+      "clock": "Q3 5:39",
+      "fraction_remaining": 0.3442
     },
     "BUF": {
       "status": "not_started",
