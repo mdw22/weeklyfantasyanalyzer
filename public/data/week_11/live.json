@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T21:18:19Z",
+  "updatedAt": "2026-11-22T21:23:22Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -210,6 +210,24 @@
     }
   },
   "teams": {
+    "LAC": {
+      "status": "in_progress",
+      "clock": "Q1 6:03",
+      "fraction_remaining": 0.8508
+    },
+    "NYJ": {
+      "status": "in_progress",
+      "clock": "Q1 6:03",
+      "fraction_remaining": 0.8508
+    },
+    "BUF": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "MIA": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "CHI": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -218,11 +236,27 @@
       "status": "final",
       "fraction_remaining": 0.0
     },
+    "DAL": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "TEN": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
     "DET": {
       "status": "final",
       "fraction_remaining": 0.0
     },
     "TB": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "KC": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "ARI": {
       "status": "final",
       "fraction_remaining": 0.0
     },
@@ -241,40 +275,6 @@
     "BAL": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "BUF": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "MIA": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "DAL": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "TEN": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "KC": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "ARI": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "LAC": {
-      "status": "in_progress",
-      "clock": "Q1 8:00",
-      "fraction_remaining": 0.8833
-    },
-    "NYJ": {
-      "status": "in_progress",
-      "clock": "Q1 8:00",
-      "fraction_remaining": 0.8833
     },
     "DEN": {
       "status": "not_started",
