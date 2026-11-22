@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:44:57Z",
+  "updatedAt": "2026-11-22T23:50:00Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,12 +105,12 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q3 1:10",
-      "fraction_remaining": 0.2694,
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
-        "def_points_allowed_bonus": 1,
+        "def_points_allowed_bonus": 0,
         "def_yards_allowed_bonus": 2
       }
     },
@@ -235,24 +235,22 @@
   },
   "teams": {
     "LAC": {
-      "status": "in_progress",
-      "clock": "Q4 1:37",
-      "fraction_remaining": 0.0269
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "NYJ": {
-      "status": "in_progress",
-      "clock": "Q4 1:37",
-      "fraction_remaining": 0.0269
+      "status": "final",
+      "fraction_remaining": 0.0
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 1:10",
-      "fraction_remaining": 0.2694
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q3 1:10",
-      "fraction_remaining": 0.2694
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25
     },
     "NYG": {
       "status": "in_progress",
