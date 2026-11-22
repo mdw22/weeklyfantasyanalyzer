@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:09:33Z",
+  "updatedAt": "2026-11-22T23:14:37Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -131,7 +131,7 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "rushing_yards": 15.0,
@@ -203,7 +203,7 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5,
       "stats": {
         "def_sacks": 1.0,
@@ -234,13 +234,13 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 13:01",
-      "fraction_remaining": 0.2169
+      "clock": "Q4 11:18",
+      "fraction_remaining": 0.1883
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q4 13:01",
-      "fraction_remaining": 0.2169
+      "clock": "Q4 11:18",
+      "fraction_remaining": 0.1883
     },
     "DEN": {
       "status": "in_progress",
@@ -254,12 +254,12 @@
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Half",
+      "clock": "Q3 15:00",
       "fraction_remaining": 0.5
     },
     "BUF": {
