@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:04:30Z",
+  "updatedAt": "2026-11-22T23:09:33Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -234,13 +234,13 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
-      "fraction_remaining": 0.25
+      "clock": "Q4 13:01",
+      "fraction_remaining": 0.2169
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
-      "fraction_remaining": 0.25
+      "clock": "Q4 13:01",
+      "fraction_remaining": 0.2169
     },
     "DEN": {
       "status": "in_progress",
