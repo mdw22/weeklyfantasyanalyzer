@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:34:50Z",
+  "updatedAt": "2026-11-22T23:39:53Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,8 +105,8 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q3 6:01",
-      "fraction_remaining": 0.3503,
+      "clock": "Q3 5:08",
+      "fraction_remaining": 0.3356,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
@@ -131,12 +131,13 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q3 6:13",
-      "fraction_remaining": 0.3536,
+      "clock": "Q3 3:14",
+      "fraction_remaining": 0.3039,
       "stats": {
-        "rushing_yards": 17.0,
+        "rushing_yards": 18.0,
         "receiving_yards": 14.0,
-        "receptions": 3.0
+        "receptions": 3.0,
+        "fumbles_lost_total": 1.0
       }
     },
     "00-0035261": {
@@ -203,12 +204,13 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q3 6:13",
-      "fraction_remaining": 0.3536,
+      "clock": "Q3 3:14",
+      "fraction_remaining": 0.3039,
       "stats": {
+        "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
         "def_points_allowed_bonus": 0,
-        "def_yards_allowed_bonus": 3
+        "def_yards_allowed_bonus": 2
       }
     },
     "00-0040590": {
@@ -234,33 +236,33 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 2:40",
-      "fraction_remaining": 0.0444
+      "clock": "Q4 1:58",
+      "fraction_remaining": 0.0328
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q4 2:40",
-      "fraction_remaining": 0.0444
+      "clock": "Q4 1:58",
+      "fraction_remaining": 0.0328
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 6:01",
-      "fraction_remaining": 0.3503
+      "clock": "Q3 5:08",
+      "fraction_remaining": 0.3356
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q3 6:01",
-      "fraction_remaining": 0.3503
+      "clock": "Q3 5:08",
+      "fraction_remaining": 0.3356
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q3 6:13",
-      "fraction_remaining": 0.3536
+      "clock": "Q3 3:14",
+      "fraction_remaining": 0.3039
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q3 6:13",
-      "fraction_remaining": 0.3536
+      "clock": "Q3 3:14",
+      "fraction_remaining": 0.3039
     },
     "BUF": {
       "status": "final",
