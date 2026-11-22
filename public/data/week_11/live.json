@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:39:53Z",
+  "updatedAt": "2026-11-22T23:44:57Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,8 +105,8 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q3 5:08",
-      "fraction_remaining": 0.3356,
+      "clock": "Q3 1:10",
+      "fraction_remaining": 0.2694,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
@@ -131,8 +131,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q3 3:14",
-      "fraction_remaining": 0.3039,
+      "clock": "Q3 1:03",
+      "fraction_remaining": 0.2675,
       "stats": {
         "rushing_yards": 18.0,
         "receiving_yards": 14.0,
@@ -204,8 +204,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q3 3:14",
-      "fraction_remaining": 0.3039,
+      "clock": "Q3 1:03",
+      "fraction_remaining": 0.2675,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -236,33 +236,33 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q4 1:58",
-      "fraction_remaining": 0.0328
+      "clock": "Q4 1:37",
+      "fraction_remaining": 0.0269
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q4 1:58",
-      "fraction_remaining": 0.0328
+      "clock": "Q4 1:37",
+      "fraction_remaining": 0.0269
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q3 5:08",
-      "fraction_remaining": 0.3356
+      "clock": "Q3 1:10",
+      "fraction_remaining": 0.2694
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q3 5:08",
-      "fraction_remaining": 0.3356
+      "clock": "Q3 1:10",
+      "fraction_remaining": 0.2694
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q3 3:14",
-      "fraction_remaining": 0.3039
+      "clock": "Q3 1:03",
+      "fraction_remaining": 0.2675
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q3 3:14",
-      "fraction_remaining": 0.3039
+      "clock": "Q3 1:03",
+      "fraction_remaining": 0.2675
     },
     "BUF": {
       "status": "final",
