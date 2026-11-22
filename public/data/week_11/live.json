@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:50:00Z",
+  "updatedAt": "2026-11-22T23:55:04Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,8 +105,8 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
-      "fraction_remaining": 0.25,
+      "clock": "Q4 13:01",
+      "fraction_remaining": 0.2169,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
@@ -131,8 +131,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q3 1:03",
-      "fraction_remaining": 0.2675,
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25,
       "stats": {
         "rushing_yards": 18.0,
         "receiving_yards": 14.0,
@@ -204,8 +204,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q3 1:03",
-      "fraction_remaining": 0.2675,
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -234,33 +234,25 @@
     }
   },
   "teams": {
-    "LAC": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
-    "NYJ": {
-      "status": "final",
-      "fraction_remaining": 0.0
-    },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
-      "fraction_remaining": 0.25
+      "clock": "Q4 13:01",
+      "fraction_remaining": 0.2169
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
-      "fraction_remaining": 0.25
+      "clock": "Q4 13:01",
+      "fraction_remaining": 0.2169
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q3 1:03",
-      "fraction_remaining": 0.2675
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q3 1:03",
-      "fraction_remaining": 0.2675
+      "clock": "Q4 15:00",
+      "fraction_remaining": 0.25
     },
     "BUF": {
       "status": "final",
@@ -315,6 +307,14 @@
       "fraction_remaining": 0.0
     },
     "BAL": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "LAC": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "NYJ": {
       "status": "final",
       "fraction_remaining": 0.0
     },
