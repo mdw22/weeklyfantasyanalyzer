@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T21:38:33Z",
+  "updatedAt": "2026-11-22T21:43:36Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,10 +105,10 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q1 10:08",
-      "fraction_remaining": 0.9189,
+      "clock": "Q1 8:43",
+      "fraction_remaining": 0.8953,
       "stats": {
-        "def_points_allowed_bonus": 5,
+        "def_points_allowed_bonus": 4,
         "def_yards_allowed_bonus": 5
       }
     },
@@ -129,8 +129,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:46",
+      "fraction_remaining": 0.9128,
       "stats": {
         "rushing_yards": 3.0
       }
@@ -199,8 +199,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:46",
+      "fraction_remaining": 0.9128,
       "stats": {
         "def_sacks": 1.0,
         "def_points_allowed_bonus": 5,
@@ -230,33 +230,33 @@
   "teams": {
     "LAC": {
       "status": "in_progress",
-      "clock": "Q2 13:34",
-      "fraction_remaining": 0.7261
+      "clock": "Q2 12:53",
+      "fraction_remaining": 0.7147
     },
     "NYJ": {
       "status": "in_progress",
-      "clock": "Q2 13:34",
-      "fraction_remaining": 0.7261
+      "clock": "Q2 12:53",
+      "fraction_remaining": 0.7147
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q1 10:08",
-      "fraction_remaining": 0.9189
+      "clock": "Q1 8:43",
+      "fraction_remaining": 0.8953
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q1 10:08",
-      "fraction_remaining": 0.9189
+      "clock": "Q1 8:43",
+      "fraction_remaining": 0.8953
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378
+      "clock": "Q1 9:46",
+      "fraction_remaining": 0.9128
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378
+      "clock": "Q1 9:46",
+      "fraction_remaining": 0.9128
     },
     "BUF": {
       "status": "final",
@@ -341,7 +341,6 @@
   },
   "injuries": {
     "00-0039075": "IR",
-    "00-0032764": "QUESTIONABLE",
     "00-0035676": "DOUBTFUL",
     "00-0039338": "OUT",
     "00-0037840": "QUESTIONABLE",
