@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T03:38:04Z",
+  "updatedAt": "2026-11-23T03:43:08Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -93,8 +93,8 @@
     },
     "DEF_MIN": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417,
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889,
       "stats": {
         "def_sacks": 1.0,
         "def_points_allowed_bonus": 0,
@@ -106,8 +106,8 @@
     },
     "00-0039404": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417,
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889,
       "stats": {
         "fg_made_40_49": 1.0,
         "fg_missed_total": 2.0,
@@ -116,8 +116,8 @@
     },
     "00-0036261": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417,
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889,
       "stats": {}
     },
     "DEF_LV": {
@@ -188,11 +188,11 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417,
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889,
       "stats": {
-        "receiving_yards": 17.0,
-        "receptions": 1.0
+        "receiving_yards": 25.0,
+        "receptions": 2.0
       }
     },
     "00-0039065": {
@@ -205,8 +205,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417,
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889,
       "stats": {
         "rushing_yards": 4.0
       }
@@ -261,13 +261,13 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q3 5:30",
-      "fraction_remaining": 0.3417
+      "clock": "Q3 2:20",
+      "fraction_remaining": 0.2889
     },
     "BUF": {
       "status": "final",
