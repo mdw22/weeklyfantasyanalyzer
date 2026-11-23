@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T00:45:38Z",
+  "updatedAt": "2026-11-23T00:50:42Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -104,9 +104,8 @@
       "status": "not_started"
     },
     "DEF_LV": {
-      "status": "in_progress",
-      "clock": "Q4 0:36",
-      "fraction_remaining": 0.01,
+      "status": "final",
+      "fraction_remaining": 0.0,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
@@ -131,10 +130,10 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q4 3:40",
-      "fraction_remaining": 0.0611,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
-        "rushing_yards": 21.0,
+        "rushing_yards": 34.0,
         "receiving_yards": 14.0,
         "receptions": 3.0,
         "fumbles_lost_total": 1.0
@@ -204,8 +203,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q4 3:40",
-      "fraction_remaining": 0.0611,
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -234,25 +233,15 @@
     }
   },
   "teams": {
-    "DEN": {
-      "status": "in_progress",
-      "clock": "Q4 0:36",
-      "fraction_remaining": 0.01
-    },
-    "LV": {
-      "status": "in_progress",
-      "clock": "Q4 0:36",
-      "fraction_remaining": 0.01
-    },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q4 3:40",
-      "fraction_remaining": 0.0611
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 3:40",
-      "fraction_remaining": 0.0611
+      "clock": "Q4 2:00",
+      "fraction_remaining": 0.0333
     },
     "BUF": {
       "status": "final",
@@ -315,6 +304,14 @@
       "fraction_remaining": 0.0
     },
     "NYJ": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "DEN": {
+      "status": "final",
+      "fraction_remaining": 0.0
+    },
+    "LV": {
       "status": "final",
       "fraction_remaining": 0.0
     },
