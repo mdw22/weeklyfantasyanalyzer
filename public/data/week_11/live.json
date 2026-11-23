@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T01:46:45Z",
+  "updatedAt": "2026-11-23T01:51:49Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -93,8 +93,8 @@
     },
     "DEF_MIN": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503,
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122,
       "stats": {
         "def_sacks": 1.0,
         "def_points_allowed_bonus": 3,
@@ -106,16 +106,16 @@
     },
     "00-0039404": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503,
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122,
       "stats": {
         "fg_missed_total": 1.0
       }
     },
     "00-0036261": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503,
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122,
       "stats": {}
     },
     "DEF_LV": {
@@ -186,8 +186,8 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503,
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122,
       "stats": {}
     },
     "00-0039065": {
@@ -200,8 +200,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503,
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122,
       "stats": {}
     },
     "00-0039880": {
@@ -254,13 +254,13 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q1 6:01",
-      "fraction_remaining": 0.8503
+      "clock": "Q1 3:44",
+      "fraction_remaining": 0.8122
     },
     "BUF": {
       "status": "final",
