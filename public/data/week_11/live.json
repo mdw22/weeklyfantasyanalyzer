@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T00:20:21Z",
+  "updatedAt": "2026-11-23T00:25:25Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,13 +105,13 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864,
+      "clock": "Q4 3:45",
+      "fraction_remaining": 0.0625,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
         "def_points_allowed_bonus": -1,
-        "def_yards_allowed_bonus": 0
+        "def_yards_allowed_bonus": -1
       }
     },
     "00-0039075": {
@@ -131,8 +131,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q4 9:56",
-      "fraction_remaining": 0.1656,
+      "clock": "Q4 8:22",
+      "fraction_remaining": 0.1394,
       "stats": {
         "rushing_yards": 21.0,
         "receiving_yards": 14.0,
@@ -204,8 +204,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q4 9:56",
-      "fraction_remaining": 0.1656,
+      "clock": "Q4 8:22",
+      "fraction_remaining": 0.1394,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -236,23 +236,23 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864
+      "clock": "Q4 3:45",
+      "fraction_remaining": 0.0625
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 5:11",
-      "fraction_remaining": 0.0864
+      "clock": "Q4 3:45",
+      "fraction_remaining": 0.0625
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q4 9:56",
-      "fraction_remaining": 0.1656
+      "clock": "Q4 8:22",
+      "fraction_remaining": 0.1394
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 9:56",
-      "fraction_remaining": 0.1656
+      "clock": "Q4 8:22",
+      "fraction_remaining": 0.1394
     },
     "BUF": {
       "status": "final",
