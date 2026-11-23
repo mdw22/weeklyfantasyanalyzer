@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T02:27:15Z",
+  "updatedAt": "2026-11-23T02:32:19Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -93,12 +93,12 @@
     },
     "DEF_MIN": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067,
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358,
       "stats": {
         "def_sacks": 1.0,
-        "def_points_allowed_bonus": 1,
-        "def_yards_allowed_bonus": 3
+        "def_points_allowed_bonus": 0,
+        "def_yards_allowed_bonus": 2
       }
     },
     "00-0037809": {
@@ -106,8 +106,8 @@
     },
     "00-0039404": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067,
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358,
       "stats": {
         "fg_made_40_49": 1.0,
         "fg_missed_total": 1.0,
@@ -116,8 +116,8 @@
     },
     "00-0036261": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067,
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358,
       "stats": {}
     },
     "DEF_LV": {
@@ -188,9 +188,12 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067,
-      "stats": {}
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358,
+      "stats": {
+        "receiving_yards": 17.0,
+        "receptions": 1.0
+      }
     },
     "00-0039065": {
       "status": "final",
@@ -202,9 +205,11 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067,
-      "stats": {}
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358,
+      "stats": {
+        "rushing_yards": 4.0
+      }
     },
     "00-0039880": {
       "status": "final",
@@ -256,13 +261,13 @@
   "teams": {
     "SF": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358
     },
     "MIN": {
       "status": "in_progress",
-      "clock": "Q2 6:24",
-      "fraction_remaining": 0.6067
+      "clock": "Q2 2:09",
+      "fraction_remaining": 0.5358
     },
     "BUF": {
       "status": "final",
