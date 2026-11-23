@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T00:00:07Z",
+  "updatedAt": "2026-11-23T00:05:11Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -105,12 +105,12 @@
     },
     "DEF_LV": {
       "status": "in_progress",
-      "clock": "Q4 12:12",
-      "fraction_remaining": 0.2033,
+      "clock": "Q4 9:21",
+      "fraction_remaining": 0.1558,
       "stats": {
         "def_interceptions": 1.0,
         "def_sacks": 1.0,
-        "def_points_allowed_bonus": 0,
+        "def_points_allowed_bonus": -1,
         "def_yards_allowed_bonus": 0
       }
     },
@@ -131,8 +131,8 @@
     },
     "00-0040715": {
       "status": "in_progress",
-      "clock": "Q4 12:53",
-      "fraction_remaining": 0.2147,
+      "clock": "Q4 12:26",
+      "fraction_remaining": 0.2072,
       "stats": {
         "rushing_yards": 18.0,
         "receiving_yards": 14.0,
@@ -204,8 +204,8 @@
     },
     "DEF_JAX": {
       "status": "in_progress",
-      "clock": "Q4 12:53",
-      "fraction_remaining": 0.2147,
+      "clock": "Q4 12:26",
+      "fraction_remaining": 0.2072,
       "stats": {
         "def_fumble_recoveries": 1.0,
         "def_sacks": 1.0,
@@ -236,23 +236,23 @@
   "teams": {
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 12:12",
-      "fraction_remaining": 0.2033
+      "clock": "Q4 9:21",
+      "fraction_remaining": 0.1558
     },
     "LV": {
       "status": "in_progress",
-      "clock": "Q4 12:12",
-      "fraction_remaining": 0.2033
+      "clock": "Q4 9:21",
+      "fraction_remaining": 0.1558
     },
     "NYG": {
       "status": "in_progress",
-      "clock": "Q4 12:53",
-      "fraction_remaining": 0.2147
+      "clock": "Q4 12:26",
+      "fraction_remaining": 0.2072
     },
     "JAX": {
       "status": "in_progress",
-      "clock": "Q4 12:53",
-      "fraction_remaining": 0.2147
+      "clock": "Q4 12:26",
+      "fraction_remaining": 0.2072
     },
     "BUF": {
       "status": "final",
@@ -372,6 +372,7 @@
     "00-0038608": "QUESTIONABLE",
     "00-0039299": "QUESTIONABLE",
     "00-0041125": "QUESTIONABLE",
+    "00-0040177": "ACTIVE",
     "00-0031610": "ACTIVE",
     "00-0040886": "OUT",
     "00-0039364": "ACTIVE"
@@ -380,7 +381,6 @@
     "00-0035676": 0.0,
     "00-0037840": 0.0,
     "00-0037256": 7.7,
-    "00-0039299": 0.0,
-    "00-0040177": 0.0
+    "00-0039299": 0.0
   }
 }
