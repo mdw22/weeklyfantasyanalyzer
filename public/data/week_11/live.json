@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T01:31:02Z",
+  "updatedAt": "2026-11-23T01:36:06Z",
   "players": {
     "00-0039139": {
       "status": "final",
@@ -93,8 +93,8 @@
     },
     "DEF_MIN": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158,
       "stats": {
         "def_points_allowed_bonus": 3,
         "def_yards_allowed_bonus": 5
@@ -105,14 +105,14 @@
     },
     "00-0039404": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158,
       "stats": {}
     },
     "00-0036261": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158,
       "stats": {}
     },
     "DEF_LV": {
@@ -183,8 +183,8 @@
     },
     "00-0030279": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158,
       "stats": {}
     },
     "00-0039065": {
@@ -197,8 +197,8 @@
     },
     "00-0041052": {
       "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378,
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158,
       "stats": {}
     },
     "00-0039880": {
@@ -249,6 +249,16 @@
     }
   },
   "teams": {
+    "SF": {
+      "status": "in_progress",
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158
+    },
+    "MIN": {
+      "status": "in_progress",
+      "clock": "Q1 9:57",
+      "fraction_remaining": 0.9158
+    },
     "BUF": {
       "status": "final",
       "fraction_remaining": 0.0
@@ -328,16 +338,6 @@
     "JAX": {
       "status": "final",
       "fraction_remaining": 0.0
-    },
-    "SF": {
-      "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378
-    },
-    "MIN": {
-      "status": "in_progress",
-      "clock": "Q1 11:16",
-      "fraction_remaining": 0.9378
     },
     "HOU": {
       "status": "final",
