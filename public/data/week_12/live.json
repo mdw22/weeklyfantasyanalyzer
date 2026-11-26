@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T22:21:13Z",
+  "updatedAt": "2026-11-26T22:26:16Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -78,8 +78,8 @@
     },
     "00-0040867": {
       "status": "in_progress",
-      "clock": "Q1 3:14",
-      "fraction_remaining": 0.8039,
+      "clock": "Q1 0:36",
+      "fraction_remaining": 0.76,
       "stats": {
         "receiving_yards": -5.0,
         "receptions": 1.0
@@ -158,13 +158,13 @@
   "teams": {
     "DAL": {
       "status": "in_progress",
-      "clock": "Q1 3:14",
-      "fraction_remaining": 0.8039
+      "clock": "Q1 0:36",
+      "fraction_remaining": 0.76
     },
     "PHI": {
       "status": "in_progress",
-      "clock": "Q1 3:14",
-      "fraction_remaining": 0.8039
+      "clock": "Q1 0:36",
+      "fraction_remaining": 0.76
     },
     "DET": {
       "status": "final",
@@ -297,7 +297,6 @@
     "00-0040719": "QUESTIONABLE",
     "00-0039851": "OUT",
     "00-0031408": "QUESTIONABLE",
-    "00-0040663": "QUESTIONABLE",
     "00-0038124": "QUESTIONABLE",
     "00-0038606": "QUESTIONABLE",
     "00-0035700": "OUT",
@@ -306,6 +305,7 @@
     "00-0034960": "QUESTIONABLE",
     "00-0037834": "QUESTIONABLE",
     "00-0038994": "DOUBTFUL",
+    "00-0034351": "QUESTIONABLE",
     "00-0037838": "QUESTIONABLE",
     "00-0035228": "QUESTIONABLE",
     "00-0040583": "QUESTIONABLE",
@@ -329,7 +329,6 @@
     "00-0040124": 13.4,
     "00-0040719": 18.6,
     "00-0031408": 14.9,
-    "00-0040663": 11.1,
     "00-0038606": 17.8,
     "00-0036355": 16.2,
     "00-0034960": 12.4,
