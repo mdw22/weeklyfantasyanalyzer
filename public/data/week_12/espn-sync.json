@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-25T22:07:10Z",
+  "syncedAt": "2026-11-26T22:05:39Z",
   "myTeam": {
     "espnTeamId": 12,
     "roster": [
@@ -1063,7 +1063,7 @@
       "owned": true,
       "espnTeamId": 14
     },
-    "DEF_BUF": {
+    "DEF_NYG": {
       "owned": true,
       "espnTeamId": 14
     }
