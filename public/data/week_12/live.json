@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-26T03:30:52Z",
+  "updatedAt": "2026-11-26T03:35:56Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {
         "rushing_yards": 26.0,
         "rushing_tds": 1.0,
@@ -56,8 +56,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {
         "receiving_yards": 69.0,
         "receptions": 4.0
@@ -80,8 +80,8 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {
         "passing_yards": 126.0,
         "passing_interceptions": 1.0
@@ -95,8 +95,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0,
@@ -126,8 +126,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261,
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -140,13 +140,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q3 4:34",
-      "fraction_remaining": 0.3261
+      "clock": "Q3 3:06",
+      "fraction_remaining": 0.3017
     },
     "DET": {
       "status": "not_started",
