@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-26T03:15:40Z",
+  "updatedAt": "2026-11-26T03:20:44Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {
         "rushing_yards": 12.0,
         "rushing_tds": 1.0,
@@ -56,8 +56,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {
         "receiving_yards": 69.0,
         "receptions": 4.0
@@ -80,8 +80,8 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {
         "passing_yards": 126.0
       }
@@ -94,8 +94,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0,
@@ -125,8 +125,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928,
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -139,13 +139,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q3 8:34",
-      "fraction_remaining": 0.3928
+      "clock": "Q3 6:58",
+      "fraction_remaining": 0.3661
     },
     "DET": {
       "status": "not_started",
