@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-11-25T23:53:34Z",
+  "updatedAt": "2026-11-26T01:19:12Z",
   "players": {
     "00-0039075": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "00-0037840": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "00-0039064": {
       "status": "not_started"
@@ -44,7 +50,10 @@
       "status": "not_started"
     },
     "00-0040590": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "00-0038618": {
       "status": "not_started"
@@ -62,7 +71,10 @@
       "status": "not_started"
     },
     "00-0026498": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "00-0040242": {
       "status": "not_started"
@@ -71,7 +83,10 @@
       "status": "not_started"
     },
     "00-0038996": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "00-0039150": {
       "status": "not_started"
@@ -95,7 +110,10 @@
       "status": "not_started"
     },
     "00-0036849": {
-      "status": "not_started"
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831,
+      "stats": {}
     },
     "DEF_NYJ": {
       "status": "not_started"
@@ -106,12 +124,14 @@
   },
   "teams": {
     "LA": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831
     },
     "GB": {
-      "status": "not_started",
-      "fraction_remaining": 1.0
+      "status": "in_progress",
+      "clock": "Q1 13:59",
+      "fraction_remaining": 0.9831
     },
     "DET": {
       "status": "not_started",
