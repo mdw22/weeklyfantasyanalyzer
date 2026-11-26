@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-26T01:24:17Z",
+  "updatedAt": "2026-11-26T01:29:20Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {
         "receiving_yards": 6.0,
         "receptions": 2.0
@@ -54,8 +54,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {}
     },
     "00-0038618": {
@@ -75,8 +75,8 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {
         "passing_yards": 7.0
       }
@@ -89,8 +89,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {}
     },
     "00-0039150": {
@@ -116,8 +116,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247,
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -130,13 +130,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q1 10:29",
-      "fraction_remaining": 0.9247
+      "clock": "Q1 9:28",
+      "fraction_remaining": 0.9078
     },
     "DET": {
       "status": "not_started",
