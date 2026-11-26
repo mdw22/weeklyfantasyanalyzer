@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-26T02:35:13Z",
+  "updatedAt": "2026-11-26T02:40:17Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {
         "rushing_yards": 12.0,
         "rushing_tds": 1.0,
@@ -56,8 +56,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {
         "receiving_yards": 39.0,
         "receptions": 2.0
@@ -80,8 +80,8 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {
         "passing_yards": 91.0
       }
@@ -94,8 +94,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0,
@@ -125,8 +125,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317,
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -139,13 +139,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q2 1:54",
-      "fraction_remaining": 0.5317
+      "clock": "Q2 1:44",
+      "fraction_remaining": 0.5289
     },
     "DET": {
       "status": "not_started",
@@ -281,6 +281,7 @@
     "00-0031408": "QUESTIONABLE",
     "00-0039849": "QUESTIONABLE",
     "00-0040663": "QUESTIONABLE",
+    "00-0038124": "QUESTIONABLE",
     "00-0035700": "OUT",
     "00-0036355": "QUESTIONABLE",
     "00-0031588": "QUESTIONABLE",
