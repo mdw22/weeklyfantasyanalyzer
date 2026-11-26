@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-26T02:40:17Z",
+  "updatedAt": "2026-11-26T02:45:21Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {
         "rushing_yards": 12.0,
         "rushing_tds": 1.0,
@@ -56,8 +56,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {
         "receiving_yards": 39.0,
         "receptions": 2.0
@@ -80,10 +80,10 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {
-        "passing_yards": 91.0
+        "passing_yards": 98.0
       }
     },
     "00-0040242": {
@@ -94,8 +94,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {
         "receiving_yards": 16.0,
         "receptions": 2.0,
@@ -125,8 +125,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289,
+      "clock": "Half",
+      "fraction_remaining": 0.5,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -139,13 +139,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289
+      "clock": "Half",
+      "fraction_remaining": 0.5
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q2 1:44",
-      "fraction_remaining": 0.5289
+      "clock": "Half",
+      "fraction_remaining": 0.5
     },
     "DET": {
       "status": "not_started",
