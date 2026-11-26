@@ -1,18 +1,19 @@
 {
-  "updatedAt": "2026-11-26T01:59:45Z",
+  "updatedAt": "2026-11-26T02:04:49Z",
   "players": {
     "00-0039075": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {}
     },
     "00-0037840": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {
-        "rushing_yards": 5.0,
+        "rushing_yards": 12.0,
+        "rushing_tds": 1.0,
         "receiving_yards": 19.0,
         "receptions": 4.0
       }
@@ -55,8 +56,8 @@
     },
     "00-0040590": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {
         "receiving_yards": 39.0,
         "receptions": 2.0
@@ -79,8 +80,8 @@
     },
     "00-0026498": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {
         "passing_yards": 87.0
       }
@@ -93,8 +94,8 @@
     },
     "00-0038996": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {
         "receiving_yards": 10.0,
         "receptions": 1.0,
@@ -124,8 +125,8 @@
     },
     "00-0036849": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036,
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914,
       "stats": {}
     },
     "DEF_NYJ": {
@@ -138,13 +139,13 @@
   "teams": {
     "LA": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914
     },
     "GB": {
       "status": "in_progress",
-      "clock": "Q2 12:13",
-      "fraction_remaining": 0.7036
+      "clock": "Q2 11:29",
+      "fraction_remaining": 0.6914
     },
     "DET": {
       "status": "not_started",
