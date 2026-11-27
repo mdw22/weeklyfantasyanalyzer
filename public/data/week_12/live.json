@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T01:08:01Z",
+  "updatedAt": "2026-11-27T01:13:04Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -78,11 +78,12 @@
     },
     "00-0040867": {
       "status": "in_progress",
-      "clock": "Q4 3:23",
-      "fraction_remaining": 0.0564,
+      "clock": "Q4 2:10",
+      "fraction_remaining": 0.0361,
       "stats": {
-        "receiving_yards": 27.0,
-        "receptions": 4.0
+        "receiving_yards": 51.0,
+        "receiving_tds": 1.0,
+        "receptions": 5.0
       }
     },
     "00-0035676": {
@@ -158,13 +159,13 @@
   "teams": {
     "DAL": {
       "status": "in_progress",
-      "clock": "Q4 3:23",
-      "fraction_remaining": 0.0564
+      "clock": "Q4 2:10",
+      "fraction_remaining": 0.0361
     },
     "PHI": {
       "status": "in_progress",
-      "clock": "Q4 3:23",
-      "fraction_remaining": 0.0564
+      "clock": "Q4 2:10",
+      "fraction_remaining": 0.0361
     },
     "DET": {
       "status": "final",
