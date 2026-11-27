@@ -5,14 +5,14 @@
     "team": "PIT",
     "games_used": 8,
     "projected_stats": {
-      "completions": 21.3325,
+      "completions": 21.3195,
       "attempts": 31.2523,
-      "passing_yards": 222.4794,
+      "passing_yards": 222.4103,
       "passing_tds": 1.7013,
       "passing_interceptions": 0.6975,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.4648,
-      "rushing_yards": 5.0964,
+      "rushing_yards": 5.0965,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0739,
       "receptions": -0.0038,
@@ -94,12 +94,12 @@
     "projected_stats": {
       "completions": 25.2491,
       "attempts": 33.0977,
-      "passing_yards": 267.7676,
+      "passing_yards": 267.7675,
       "passing_tds": 1.7664,
       "passing_interceptions": 0.819,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 2.3522,
+      "rushing_yards": 2.3523,
       "rushing_tds": -0.0047,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -355,14 +355,14 @@
     "team": "PHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 10.6813,
+      "completions": 10.6814,
       "attempts": 22.4596,
-      "passing_yards": 110.1231,
+      "passing_yards": 110.1244,
       "passing_tds": 0.5333,
       "passing_interceptions": 0.5976,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 3.4291,
+      "rushing_yards": 3.4292,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -399,9 +399,9 @@
     "team": "GB",
     "games_used": 8,
     "projected_stats": {
-      "completions": 10.9766,
+      "completions": 10.9767,
       "attempts": 23.328,
-      "passing_yards": 114.1743,
+      "passing_yards": 114.1755,
       "passing_tds": 0.6722,
       "passing_interceptions": 0.5368,
       "passing_2pt_conversions": 0.0447,
@@ -665,7 +665,7 @@
       "passing_interceptions": 0.8538,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.4084,
-      "rushing_yards": 2.756,
+      "rushing_yards": 2.7561,
       "rushing_tds": 0.1907,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -977,7 +977,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.986,
       "targets": 3.8402,
-      "receiving_yards": 34.7175,
+      "receiving_yards": 34.7177,
       "receiving_tds": 0.1015,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -1412,7 +1412,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.3267,
       "targets": 3.8933,
-      "receiving_yards": 43.1016,
+      "receiving_yards": 43.1017,
       "receiving_tds": 0.2696,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -1479,8 +1479,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0030564": {
     "player_name": "DeAndre Hopkins",
@@ -1533,12 +1532,12 @@
     "projected_stats": {
       "completions": 16.947,
       "attempts": 27.4009,
-      "passing_yards": 190.604,
+      "passing_yards": 190.6046,
       "passing_tds": 1.3192,
       "passing_interceptions": 0.489,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.2998,
-      "rushing_yards": 2.908,
+      "rushing_yards": 2.9081,
       "rushing_tds": -0.0047,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -1882,12 +1881,12 @@
     "projected_stats": {
       "completions": 19.6,
       "attempts": 28.9727,
-      "passing_yards": 214.5291,
+      "passing_yards": 214.5294,
       "passing_tds": 1.1933,
       "passing_interceptions": 0.5411,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.4084,
-      "rushing_yards": 6.1472,
+      "rushing_yards": 6.1473,
       "rushing_tds": 0.0604,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -2021,7 +2020,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.5182,
       "targets": 1.4577,
-      "receiving_yards": 7.8386,
+      "receiving_yards": 7.8387,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -2760,7 +2759,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0526,
       "targets": 2.2607,
-      "receiving_yards": 8.9284,
+      "receiving_yards": 8.9285,
       "receiving_tds": 0.1148,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -2977,7 +2976,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.609,
       "targets": 1.7227,
-      "receiving_yards": 5.3466,
+      "receiving_yards": 5.3467,
       "receiving_tds": 0.0813,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -3937,7 +3936,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4198,
       "targets": 2.4598,
-      "receiving_yards": 12.2245,
+      "receiving_yards": 12.2246,
       "receiving_tds": 0.0883,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -3981,7 +3980,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0924,
       "targets": 2.2386,
-      "receiving_yards": 10.03,
+      "receiving_yards": 10.0301,
       "receiving_tds": 0.1767,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -4228,14 +4227,14 @@
     "team": "TEN",
     "games_used": 4,
     "projected_stats": {
-      "completions": 10.5496,
-      "attempts": 21.5604,
-      "passing_yards": 100.4567,
+      "completions": 10.5497,
+      "attempts": 21.5605,
+      "passing_yards": 100.458,
       "passing_tds": 0.3233,
       "passing_interceptions": 0.5966,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.0069,
-      "rushing_yards": 4.2518,
+      "rushing_yards": 4.2519,
       "rushing_tds": -0.0321,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -4480,7 +4479,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0032667": {
@@ -5534,12 +5532,12 @@
     "projected_stats": {
       "completions": 24.5891,
       "attempts": 33.0456,
-      "passing_yards": 286.5472,
+      "passing_yards": 286.547,
       "passing_tds": 2.1833,
       "passing_interceptions": 0.6931,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.899,
-      "rushing_yards": 7.8059,
+      "rushing_yards": 7.806,
       "rushing_tds": 0.2037,
       "rushing_2pt_conversions": 0.1304,
       "receptions": -0.0038,
@@ -5631,7 +5629,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.9727,
       "targets": 3.3977,
-      "receiving_yards": 32.1692,
+      "receiving_yards": 32.1693,
       "receiving_tds": 0.2077,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -5698,8 +5696,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0033106": {
     "player_name": "Jared Goff",
@@ -5714,7 +5711,7 @@
       "passing_interceptions": 0.5498,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.734,
-      "rushing_yards": 3.073,
+      "rushing_yards": 3.0731,
       "rushing_tds": 0.0778,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -5796,13 +5793,13 @@
     "games_used": 8,
     "projected_stats": {
       "completions": 24.7888,
-      "attempts": 33.6405,
+      "attempts": 33.6404,
       "passing_yards": 253.3171,
       "passing_tds": 1.6318,
       "passing_interceptions": 0.9189,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.0597,
-      "rushing_yards": 8.7612,
+      "rushing_yards": 8.7569,
       "rushing_tds": 0.1516,
       "rushing_2pt_conversions": 0.0218,
       "receptions": 0.0873,
@@ -6024,9 +6021,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.4995,
+      "receptions": 1.4994,
       "targets": 2.566,
-      "receiving_yards": 11.9457,
+      "receiving_yards": 11.9458,
       "receiving_tds": 0.1989,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -6068,9 +6065,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.0261,
+      "receptions": 1.026,
       "targets": 2.1811,
-      "receiving_yards": 8.6585,
+      "receiving_yards": 8.6586,
       "receiving_tds": 0.0175,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -6245,7 +6242,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 4.6363,
       "targets": 4.725,
-      "receiving_yards": 55.5427,
+      "receiving_yards": 55.4809,
       "receiving_tds": 0.5661,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -6509,7 +6506,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1234,
       "targets": 2.3448,
-      "receiving_yards": 9.8221,
+      "receiving_yards": 9.8222,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -6802,14 +6799,14 @@
     "team": "CLE",
     "games_used": 8,
     "projected_stats": {
-      "completions": 20.8288,
+      "completions": 20.8289,
       "attempts": 30.4403,
-      "passing_yards": 220.7209,
+      "passing_yards": 220.7212,
       "passing_tds": 0.8763,
       "passing_interceptions": 0.5802,
       "passing_2pt_conversions": 0.0968,
       "carries": 4.523,
-      "rushing_yards": 25.995,
+      "rushing_yards": 25.9949,
       "rushing_tds": 0.1777,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -7282,14 +7279,14 @@
     "team": "ATL",
     "games_used": 8,
     "projected_stats": {
-      "completions": 13.0087,
+      "completions": 13.0088,
       "attempts": 24.305,
-      "passing_yards": 134.0221,
+      "passing_yards": 134.0231,
       "passing_tds": 0.4204,
       "passing_interceptions": 0.793,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.1913,
-      "rushing_yards": 1.3275,
+      "rushing_yards": 1.3276,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -7597,7 +7594,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.6587,
       "targets": 2.681,
-      "receiving_yards": 15.2861,
+      "receiving_yards": 15.2862,
       "receiving_tds": 0.0529,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -7763,12 +7760,12 @@
     "projected_stats": {
       "completions": 21.5366,
       "attempts": 30.2232,
-      "passing_yards": 243.6472,
+      "passing_yards": 243.6473,
       "passing_tds": 1.7534,
       "passing_interceptions": 0.4977,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.5169,
-      "rushing_yards": 7.858,
+      "rushing_yards": 7.8581,
       "rushing_tds": 0.0214,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -7991,7 +7988,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.4153,
       "targets": 3.3977,
-      "receiving_yards": 24.1745,
+      "receiving_yards": 24.1746,
       "receiving_tds": 0.0573,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -8121,7 +8118,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.0967,
       "targets": 2.9553,
-      "receiving_yards": 17.9053,
+      "receiving_yards": 17.9054,
       "receiving_tds": 0.2475,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -8339,7 +8336,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9066,
       "targets": 2.1235,
-      "receiving_yards": 7.4374,
+      "receiving_yards": 7.4375,
       "receiving_tds": 0.0484,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -9382,7 +9379,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.411,
       "targets": 2.5129,
-      "receiving_yards": 12.9589,
+      "receiving_yards": 12.959,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -9817,7 +9814,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0039,
       "targets": 2.1811,
-      "receiving_yards": 9.9017,
+      "receiving_yards": 9.9018,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -10298,7 +10295,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.5479,
       "targets": 3.9508,
-      "receiving_yards": 37.0491,
+      "receiving_yards": 37.0493,
       "receiving_tds": 0.1502,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -10515,7 +10512,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.4197,
       "targets": 3.3977,
-      "receiving_yards": 24.9001,
+      "receiving_yards": 24.9002,
       "receiving_tds": 0.1236,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -10907,7 +10904,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.371,
       "targets": 3.1765,
-      "receiving_yards": 24.3913,
+      "receiving_yards": 24.3914,
       "receiving_tds": 0.1546,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -11518,7 +11515,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.5924,
       "targets": 2.5129,
-      "receiving_yards": 12.1139,
+      "receiving_yards": 12.114,
       "receiving_tds": 0.1148,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -11953,7 +11950,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.0081,
       "targets": 3.619,
-      "receiving_yards": 26.2362,
+      "receiving_yards": 26.2363,
       "receiving_tds": 0.19,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -12423,9 +12420,9 @@
     "team": "BAL",
     "games_used": 8,
     "projected_stats": {
-      "completions": 11.8841,
+      "completions": 11.8842,
       "attempts": 23.3801,
-      "passing_yards": 166.7008,
+      "passing_yards": 166.7015,
       "passing_tds": 1.0804,
       "passing_interceptions": 0.4022,
       "passing_2pt_conversions": 0.0447,
@@ -12522,7 +12519,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8314,
       "targets": 1.9598,
-      "receiving_yards": 7.5878,
+      "receiving_yards": 7.5879,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -12874,7 +12871,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.1896,
       "targets": 3.1234,
-      "receiving_yards": 28.6209,
+      "receiving_yards": 28.621,
       "receiving_tds": 0.4333,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -12916,9 +12913,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.2252,
+      "receptions": 1.2251,
       "targets": 2.4509,
-      "receiving_yards": 11.2157,
+      "receiving_yards": 11.2158,
       "receiving_tds": 0.1015,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -13167,9 +13164,9 @@
     "team": "TB",
     "games_used": 8,
     "projected_stats": {
-      "completions": 15.6617,
+      "completions": 15.6618,
       "attempts": 26.6367,
-      "passing_yards": 173.0923,
+      "passing_yards": 173.0931,
       "passing_tds": 0.9892,
       "passing_interceptions": 0.5672,
       "passing_2pt_conversions": 0.0447,
@@ -13255,10 +13252,10 @@
     "team": "BUF",
     "games_used": 8,
     "projected_stats": {
-      "completions": 19.3134,
+      "completions": 19.3135,
       "attempts": 29.0813,
-      "passing_yards": 234.7416,
-      "passing_tds": 1.4277,
+      "passing_yards": 234.7418,
+      "passing_tds": 1.4278,
       "passing_interceptions": 0.806,
       "passing_2pt_conversions": 0.0968,
       "carries": 4.1452,
@@ -13299,9 +13296,9 @@
     "team": "SEA",
     "games_used": 8,
     "projected_stats": {
-      "completions": 18.7272,
+      "completions": 18.7273,
       "attempts": 29.459,
-      "passing_yards": 208.7367,
+      "passing_yards": 208.7371,
       "passing_tds": 1.3105,
       "passing_interceptions": 0.8451,
       "passing_2pt_conversions": 0.1532,
@@ -13792,7 +13789,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4773,
       "targets": 2.5129,
-      "receiving_yards": 11.3706,
+      "receiving_yards": 11.3707,
       "receiving_tds": 0.3095,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -14817,7 +14814,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0035228": {
@@ -14826,9 +14822,9 @@
     "team": "MIN",
     "games_used": 8,
     "projected_stats": {
-      "completions": 18.5188,
+      "completions": 18.5189,
       "attempts": 28.2128,
-      "passing_yards": 192.228,
+      "passing_yards": 192.2286,
       "passing_tds": 0.9892,
       "passing_interceptions": 0.5542,
       "passing_2pt_conversions": 0.0968,
@@ -15232,7 +15228,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.3844,
       "targets": 2.4598,
-      "receiving_yards": 15.2595,
+      "receiving_yards": 15.2596,
       "receiving_tds": 0.1635,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -15702,14 +15698,14 @@
     "team": "ARI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 12.848,
+      "completions": 12.8481,
       "attempts": 24.1443,
-      "passing_yards": 121.3127,
+      "passing_yards": 121.3139,
       "passing_tds": 0.8155,
       "passing_interceptions": 0.3979,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 2.4174,
+      "rushing_yards": 2.4175,
       "rushing_tds": 0.004,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -16851,7 +16847,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.6189,
       "targets": 2.5129,
-      "receiving_yards": 14.1535,
+      "receiving_yards": 14.1536,
       "receiving_tds": 0.2431,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -17094,8 +17090,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0035669": {
     "player_name": "Nick Scott",
@@ -17511,7 +17506,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.6897,
       "targets": 2.7341,
-      "receiving_yards": 14.6755,
+      "receiving_yards": 14.6756,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -17807,12 +17802,12 @@
     "projected_stats": {
       "completions": 18.6491,
       "attempts": 29.6761,
-      "passing_yards": 195.4238,
-      "passing_tds": 0.7069,
+      "passing_yards": 195.4243,
+      "passing_tds": 0.707,
       "passing_interceptions": 0.9536,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.1161,
-      "rushing_yards": 9.2909,
+      "rushing_yards": 9.291,
       "rushing_tds": 0.0995,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -18429,7 +18424,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.6896,
       "targets": 3.3977,
-      "receiving_yards": 23.4976,
+      "receiving_yards": 23.4977,
       "receiving_tds": 0.2696,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -18934,8 +18929,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036193": {
     "player_name": "Anfernee Jennings",
@@ -19073,14 +19067,14 @@
     "team": "ATL",
     "games_used": 8,
     "projected_stats": {
-      "completions": 15.462,
+      "completions": 15.4621,
       "attempts": 25.8247,
-      "passing_yards": 171.959,
+      "passing_yards": 171.9598,
       "passing_tds": 1.0283,
       "passing_interceptions": 0.5802,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.1348,
-      "rushing_yards": 1.7096,
+      "rushing_yards": 1.7097,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -19392,7 +19386,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.3578,
       "targets": 3.0084,
-      "receiving_yards": 17.3832,
+      "receiving_yards": 17.3833,
       "receiving_tds": 0.1856,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -19503,7 +19497,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "injury_status": "IR"
+    "active": true
   },
   "00-0036253": {
     "player_name": "Julian Blackmon",
@@ -19776,12 +19770,12 @@
     "projected_stats": {
       "completions": 23.1562,
       "attempts": 32.0643,
-      "passing_yards": 274.9321,
+      "passing_yards": 274.932,
       "passing_tds": 2.0443,
       "passing_interceptions": 0.7973,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.2998,
-      "rushing_yards": 2.3609,
+      "rushing_yards": 2.361,
       "rushing_tds": 0.1386,
       "rushing_2pt_conversions": 0.0739,
       "receptions": -0.0038,
@@ -20136,7 +20130,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.495,
       "targets": 2.566,
-      "receiving_yards": 14.9675,
+      "receiving_yards": 14.9676,
       "receiving_tds": 0.1812,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -20861,7 +20855,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "OUT"
   },
   "00-0036338": {
     "player_name": "Troy Dye",
@@ -21131,14 +21126,14 @@
     "team": "LAC",
     "games_used": 8,
     "projected_stats": {
-      "completions": 17.468,
+      "completions": 17.4681,
       "attempts": 27.8872,
-      "passing_yards": 183.3614,
+      "passing_yards": 183.3621,
       "passing_tds": 0.8329,
       "passing_interceptions": 0.7626,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.8716,
-      "rushing_yards": 26.6941,
+      "rushing_yards": 26.694,
       "rushing_tds": 0.1777,
       "rushing_2pt_conversions": 0.0218,
       "receptions": 0.0092,
@@ -21518,8 +21513,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0036380": {
     "player_name": "Alohi Gilman",
@@ -21615,14 +21609,14 @@
     "team": "PHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 18.5796,
+      "completions": 18.5797,
       "attempts": 29.2984,
-      "passing_yards": 194.8897,
+      "passing_yards": 194.8903,
       "passing_tds": 1.3062,
       "passing_interceptions": 0.5194,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.711,
-      "rushing_yards": 19.3299,
+      "rushing_yards": 19.3298,
       "rushing_tds": 0.1733,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -22065,7 +22059,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.2384,
       "targets": 2.4598,
-      "receiving_yards": 11.782,
+      "receiving_yards": 11.7821,
       "receiving_tds": 0.1369,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -22240,7 +22234,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7694,
       "targets": 2.0705,
-      "receiving_yards": 7.0967,
+      "receiving_yards": 7.0968,
       "receiving_tds": 0.1148,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -22402,13 +22396,13 @@
     "games_used": 8,
     "projected_stats": {
       "completions": 26.352,
-      "attempts": 32.9892,
-      "passing_yards": 290.8285,
+      "attempts": 32.9891,
+      "passing_yards": 290.8283,
       "passing_tds": 2.535,
       "passing_interceptions": 0.654,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.734,
-      "rushing_yards": 7.4064,
+      "rushing_yards": 7.4065,
       "rushing_tds": 0.2602,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -22938,7 +22932,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8579,
       "targets": 1.9421,
-      "receiving_yards": 6.6012,
+      "receiving_yards": 6.6013,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -23157,7 +23151,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8845,
       "targets": 1.7961,
-      "receiving_yards": 7.7958,
+      "receiving_yards": 7.7959,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -23549,9 +23543,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.0261,
+      "receptions": 1.026,
       "targets": 2.0705,
-      "receiving_yards": 7.6011,
+      "receiving_yards": 7.6012,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -23683,7 +23677,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.0746,
       "targets": 2.9022,
-      "receiving_yards": 22.1304,
+      "receiving_yards": 22.1306,
       "receiving_tds": 0.1192,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -24122,7 +24116,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7428,
       "targets": 2.4023,
-      "receiving_yards": 16.0824,
+      "receiving_yards": 16.0826,
       "receiving_tds": 0.0307,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -24209,7 +24203,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.3137,
       "targets": 1.628,
-      "receiving_yards": 5.1014,
+      "receiving_yards": 5.1015,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -24427,9 +24421,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.1898,
+      "receptions": 1.1897,
       "targets": 2.0705,
-      "receiving_yards": 11.8838,
+      "receiving_yards": 11.8839,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -24646,7 +24640,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.681,
       "targets": 1.9023,
-      "receiving_yards": 7.2914,
+      "receiving_yards": 7.2915,
       "receiving_tds": 0.0219,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -24777,7 +24771,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.6365,
       "targets": 3.4508,
-      "receiving_yards": 27.5104,
+      "receiving_yards": 27.5105,
       "receiving_tds": 0.3449,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -25381,14 +25375,14 @@
     "team": "TB",
     "games_used": 3,
     "projected_stats": {
-      "completions": 5.8667,
-      "attempts": 18.4386,
-      "passing_yards": 60.8416,
-      "passing_tds": 0.3011,
+      "completions": 5.8668,
+      "attempts": 18.4387,
+      "passing_yards": 60.8431,
+      "passing_tds": 0.3012,
       "passing_interceptions": 0.2432,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.5684,
-      "rushing_yards": 1.7872,
+      "rushing_yards": 1.7873,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -25777,14 +25771,14 @@
     "team": "KC",
     "games_used": 8,
     "projected_stats": {
-      "completions": 8.5841,
-      "attempts": 21.3219,
-      "passing_yards": 84.9997,
+      "completions": 8.5842,
+      "attempts": 21.322,
+      "passing_yards": 85.0012,
       "passing_tds": 0.4508,
       "passing_interceptions": 0.2242,
       "passing_2pt_conversions": 0.0968,
-      "carries": 4.0888,
-      "rushing_yards": 21.7658,
+      "carries": 4.0887,
+      "rushing_yards": 21.7657,
       "rushing_tds": 0.0908,
       "rushing_2pt_conversions": 0.0739,
       "receptions": 0.0309,
@@ -26269,7 +26263,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.2559,
       "targets": 3.7296,
-      "receiving_yards": 29.7712,
+      "receiving_yards": 29.7713,
       "receiving_tds": 0.3493,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -26303,12 +26297,12 @@
     "projected_stats": {
       "completions": 19.5132,
       "attempts": 29.7326,
-      "passing_yards": 244.0814,
+      "passing_yards": 244.0816,
       "passing_tds": 2.1181,
       "passing_interceptions": 0.7061,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.9511,
-      "rushing_yards": 11.2535,
+      "rushing_yards": 11.2536,
       "rushing_tds": 0.0083,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -27281,7 +27275,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0349,
       "targets": 2.2917,
-      "receiving_yards": 9.4593,
+      "receiving_yards": 9.4594,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -27304,8 +27298,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037091": {
     "player_name": "Bo Melton",
@@ -28862,9 +28855,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 2.9197,
+      "receptions": 2.9196,
       "targets": 3.7871,
-      "receiving_yards": 30.9657,
+      "receiving_yards": 30.9659,
       "receiving_tds": 0.0838,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0158
@@ -29590,7 +29583,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "QUESTIONABLE"
   },
   "00-0037289": {
@@ -29898,7 +29890,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0037332": {
     "player_name": "D'Anthony Bell",
@@ -29961,7 +29953,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.2915,
       "targets": 2.4598,
-      "receiving_yards": 13.7508,
+      "receiving_yards": 13.7509,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -31838,7 +31830,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 6.5741,
       "targets": 5.9992,
-      "receiving_yards": 56.4806,
+      "receiving_yards": 56.4807,
       "receiving_tds": 0.3537,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -32319,7 +32311,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.5833,
       "targets": 4.0614,
-      "receiving_yards": 36.943,
+      "receiving_yards": 36.9431,
       "receiving_tds": 0.075,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -32613,9 +32605,9 @@
     "team": "SF",
     "games_used": 8,
     "projected_stats": {
-      "completions": 19.3655,
+      "completions": 19.3656,
       "attempts": 28.6471,
-      "passing_yards": 248.163,
+      "passing_yards": 248.098,
       "passing_tds": 1.7664,
       "passing_interceptions": 0.5194,
       "passing_2pt_conversions": 0.1532,
@@ -32757,7 +32749,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 4.9548,
       "targets": 5.2205,
-      "receiving_yards": 55.1666,
+      "receiving_yards": 55.1667,
       "receiving_tds": 0.4289,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0158
@@ -33150,7 +33142,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.2693,
       "targets": 3.1234,
-      "receiving_yards": 19.3299,
+      "receiving_yards": 19.33,
       "receiving_tds": 0.3847,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -33174,7 +33166,6 @@
       "fumbles_lost_total": 0.12
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038042": {
@@ -33588,7 +33579,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4464,
       "targets": 2.566,
-      "receiving_yards": 11.1361,
+      "receiving_yards": 11.1362,
       "receiving_tds": 0.1015,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -33656,7 +33647,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038117": {
@@ -33972,14 +33962,14 @@
     "team": "MIA",
     "games_used": 8,
     "projected_stats": {
-      "completions": 15.7268,
+      "completions": 15.7269,
       "attempts": 27.2359,
-      "passing_yards": 183.4483,
-      "passing_tds": 0.7894,
+      "passing_yards": 183.4489,
+      "passing_tds": 0.7895,
       "passing_interceptions": 0.7322,
       "passing_2pt_conversions": 0.0968,
       "carries": 3.711,
-      "rushing_yards": 24.4362,
+      "rushing_yards": 24.4361,
       "rushing_tds": 0.2775,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -34028,7 +34018,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.6276,
       "targets": 3.619,
-      "receiving_yards": 26.453,
+      "receiving_yards": 26.4531,
       "receiving_tds": 0.1015,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -34140,7 +34130,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0038135": {
@@ -35303,7 +35292,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.3622,
       "targets": 3.2871,
-      "receiving_yards": 26.0946,
+      "receiving_yards": 26.0947,
       "receiving_tds": 0.3183,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -36747,7 +36736,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.5658,
       "targets": 2.566,
-      "receiving_yards": 14.1136,
+      "receiving_yards": 14.1137,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -37229,7 +37218,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.0347,
       "targets": 3.5659,
-      "receiving_yards": 37.8898,
+      "receiving_yards": 37.8899,
       "receiving_tds": 0.2343,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0689
@@ -37756,7 +37745,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.7514,
       "targets": 4.2295,
-      "receiving_yards": 35.2175,
+      "receiving_yards": 35.2176,
       "receiving_tds": 0.3847,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -37788,14 +37777,14 @@
     "team": "NO",
     "games_used": 8,
     "projected_stats": {
-      "completions": 4.255,
-      "attempts": 18.0653,
-      "passing_yards": 50.8316,
-      "passing_tds": 0.2423,
-      "passing_interceptions": 0.1807,
+      "completions": 4.2552,
+      "attempts": 18.0654,
+      "passing_yards": 50.8334,
+      "passing_tds": 0.2424,
+      "passing_interceptions": 0.1808,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 3.1555,
+      "rushing_yards": 3.1556,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -38283,7 +38272,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.1144,
       "targets": 2.7872,
-      "receiving_yards": 17.7548,
+      "receiving_yards": 17.7549,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -38526,7 +38515,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0039064": {
@@ -38591,7 +38579,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.3798,
       "targets": 4.0614,
-      "receiving_yards": 43.4157,
+      "receiving_yards": 43.4158,
       "receiving_tds": 0.2918,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -38635,7 +38623,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.3709,
       "targets": 3.7871,
-      "receiving_yards": 35.014,
+      "receiving_yards": 35.0141,
       "receiving_tds": 0.0529,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -38855,7 +38843,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4375,
       "targets": 2.5129,
-      "receiving_yards": 13.0518,
+      "receiving_yards": 13.0519,
       "receiving_tds": 0.3006,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -39469,7 +39457,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.8844,
       "targets": 2.9022,
-      "receiving_yards": 21.5509,
+      "receiving_yards": 21.551,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -39679,12 +39667,12 @@
     "projected_stats": {
       "completions": 22.4875,
       "attempts": 31.9601,
-      "passing_yards": 250.5685,
+      "passing_yards": 250.5686,
       "passing_tds": 1.5537,
       "passing_interceptions": 0.7539,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 3.1078,
+      "rushing_yards": 3.1079,
       "rushing_tds": -0.0003,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -39767,12 +39755,12 @@
     "projected_stats": {
       "completions": 15.5749,
       "attempts": 26.9667,
-      "passing_yards": 181.7852,
+      "passing_yards": 181.7859,
       "passing_tds": 0.9371,
       "passing_interceptions": 0.7409,
       "passing_2pt_conversions": 0.0968,
       "carries": 3.3853,
-      "rushing_yards": 12.161,
+      "rushing_yards": 12.1611,
       "rushing_tds": 0.004,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -39854,7 +39842,7 @@
     "projected_stats": {
       "completions": 19.8649,
       "attempts": 29.7326,
-      "passing_yards": 241.3242,
+      "passing_yards": 241.3243,
       "passing_tds": 1.9575,
       "passing_interceptions": 0.6106,
       "passing_2pt_conversions": 0.0968,
@@ -39896,19 +39884,19 @@
     "team": "IND",
     "games_used": 8,
     "projected_stats": {
-      "completions": 8.1759,
-      "attempts": 21.7561,
-      "passing_yards": 102.963,
+      "completions": 8.1761,
+      "attempts": 21.7562,
+      "passing_yards": 102.9643,
       "passing_tds": 0.4855,
       "passing_interceptions": 0.5151,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.9281,
-      "rushing_yards": 23.2942,
+      "rushing_yards": 23.2941,
       "rushing_tds": 0.2906,
       "rushing_2pt_conversions": 0.0739,
       "receptions": 0.1959,
       "targets": 0.112,
-      "receiving_yards": 0.9013,
+      "receiving_yards": 0.9012,
       "receiving_tds": -0.0017,
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0373
@@ -40477,7 +40465,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 5.4061,
       "targets": 5.5568,
-      "receiving_yards": 71.6825,
+      "receiving_yards": 71.6826,
       "receiving_tds": 0.6059,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.1264
@@ -40960,7 +40948,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.9507,
       "targets": 2.6235,
-      "receiving_yards": 13.1314,
+      "receiving_yards": 13.1315,
       "receiving_tds": 0.1192,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -42132,7 +42120,7 @@
     "projected_stats": {
       "completions": 20.234,
       "attempts": 30.2232,
-      "passing_yards": 204.5379,
+      "passing_yards": 204.5383,
       "passing_tds": 1.4321,
       "passing_interceptions": 0.5021,
       "passing_2pt_conversions": 0.2097,
@@ -42933,7 +42921,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.3092,
       "targets": 2.681,
-      "receiving_yards": 18.0513,
+      "receiving_yards": 18.0514,
       "receiving_tds": 0.1192,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -43797,14 +43785,14 @@
     "team": "WAS",
     "games_used": 8,
     "projected_stats": {
-      "completions": 19.4697,
+      "completions": 19.4698,
       "attempts": 29.4069,
-      "passing_yards": 216.7001,
+      "passing_yards": 216.7005,
       "passing_tds": 1.4321,
       "passing_interceptions": 0.4847,
       "passing_2pt_conversions": 0.0968,
-      "carries": 4.2538,
-      "rushing_yards": 32.2346,
+      "carries": 4.2537,
+      "rushing_yards": 32.2345,
       "rushing_tds": 0.1777,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -43931,7 +43919,7 @@
     "projected_stats": {
       "completions": 20.9895,
       "attempts": 30.0582,
-      "passing_yards": 247.7201,
+      "passing_yards": 247.7202,
       "passing_tds": 1.558,
       "passing_interceptions": 0.8668,
       "passing_2pt_conversions": 0.0447,
@@ -44160,7 +44148,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6135,
       "targets": 1.444,
-      "receiving_yards": 5.5368,
+      "receiving_yards": 5.5369,
       "receiving_tds": 0.0194,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -44591,7 +44579,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.5084,
       "targets": 1.7961,
-      "receiving_yards": 4.9686,
+      "receiving_yards": 4.9687,
       "receiving_tds": 0.0529,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -44623,14 +44611,14 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 11.4716,
+      "completions": 11.4717,
       "attempts": 23.5451,
-      "passing_yards": 127.0747,
-      "passing_tds": 0.9023,
+      "passing_yards": 127.0758,
+      "passing_tds": 0.9024,
       "passing_interceptions": 0.4673,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.7861,
-      "rushing_yards": 6.538,
+      "rushing_yards": 6.5381,
       "rushing_tds": 0.2254,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -45405,14 +45393,14 @@
     "team": "BUF",
     "games_used": 8,
     "projected_stats": {
-      "completions": 6.3522,
-      "attempts": 19.0944,
-      "passing_yards": 71.8431,
-      "passing_tds": 0.7156,
+      "completions": 6.3524,
+      "attempts": 19.0945,
+      "passing_yards": 71.8447,
+      "passing_tds": 0.7157,
       "passing_interceptions": 0.1156,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.8426,
-      "rushing_yards": 1.6749,
+      "rushing_yards": 1.675,
       "rushing_tds": 0.004,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -46984,7 +46972,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7074,
       "targets": 2.5129,
-      "receiving_yards": 12.4899,
+      "receiving_yards": 12.49,
       "receiving_tds": 0.1679,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -47289,7 +47277,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4508,
       "targets": 2.5129,
-      "receiving_yards": 13.0208,
+      "receiving_yards": 13.0209,
       "receiving_tds": 0.0219,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -48405,7 +48393,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "injury_status": "IR"
   },
   "00-0036869": {
     "player_name": "Dan Moore Jr.",
@@ -48686,7 +48674,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1455,
       "targets": 2.2386,
-      "receiving_yards": 10.4326,
+      "receiving_yards": 10.4327,
       "receiving_tds": 0.0263,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -48730,7 +48718,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.5746,
       "targets": 3.2296,
-      "receiving_yards": 23.4887,
+      "receiving_yards": 23.4888,
       "receiving_tds": 0.3095,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -48929,7 +48917,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "injury_status": "IR"
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0037109": {
     "player_name": "Jack Sanborn",
@@ -48991,9 +48980,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 3.3931,
+      "receptions": 3.393,
       "targets": 3.7871,
-      "receiving_yards": 32.8063,
+      "receiving_yards": 32.8064,
       "receiving_tds": 0.305,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -49298,7 +49287,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8535,
       "targets": 2.0174,
-      "receiving_yards": 7.2648,
+      "receiving_yards": 7.2649,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -49430,7 +49419,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.15,
       "targets": 1.628,
-      "receiving_yards": 1.6327,
+      "receiving_yards": 1.6328,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -49549,14 +49538,14 @@
     "team": "MIA",
     "games_used": 2,
     "projected_stats": {
-      "completions": 12.208,
+      "completions": 12.2081,
       "attempts": 23.5656,
-      "passing_yards": 122.73,
+      "passing_yards": 122.731,
       "passing_tds": 0.6372,
       "passing_interceptions": 0.3922,
       "passing_2pt_conversions": 0.0369,
-      "carries": 2.1974,
-      "rushing_yards": 4.8025,
+      "carries": 2.1975,
+      "rushing_yards": 4.8026,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -49737,7 +49726,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0205,
       "targets": 1.8112,
-      "receiving_yards": 10.4832,
+      "receiving_yards": 10.4833,
       "receiving_tds": 0.0725,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -49911,7 +49900,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7207,
       "targets": 2.5129,
-      "receiving_yards": 11.9988,
+      "receiving_yards": 11.9989,
       "receiving_tds": 0.1104,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -49998,7 +49987,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.0436,
       "targets": 2.9553,
-      "receiving_yards": 19.5599,
+      "receiving_yards": 19.56,
       "receiving_tds": 0.0263,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -50436,7 +50425,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0305,
       "targets": 2.1811,
-      "receiving_yards": 11.2644,
+      "receiving_yards": 11.2645,
       "receiving_tds": 0.0307,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -50468,14 +50457,14 @@
     "team": "GB",
     "games_used": 7,
     "projected_stats": {
-      "completions": 3.2824,
-      "attempts": 17.0015,
-      "passing_yards": 33.0203,
+      "completions": 3.2825,
+      "attempts": 17.0016,
+      "passing_yards": 33.0223,
       "passing_tds": 0.1164,
       "passing_interceptions": 0.1373,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.391,
-      "rushing_yards": 3.2597,
+      "rushing_yards": 3.2598,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -50567,7 +50556,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.3048,
       "targets": 2.4023,
-      "receiving_yards": 10.0698,
+      "receiving_yards": 10.0699,
       "receiving_tds": 0.0971,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0158
@@ -50914,7 +50903,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1809,
       "targets": 2.1811,
-      "receiving_yards": 8.8487,
+      "receiving_yards": 8.8488,
       "receiving_tds": 0.2829,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -51043,9 +51032,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 3.3754,
+      "receptions": 3.3753,
       "targets": 3.7296,
-      "receiving_yards": 38.1021,
+      "receiving_yards": 38.1022,
       "receiving_tds": 0.1236,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -51570,9 +51559,9 @@
       "rushing_yards": 1.6559,
       "rushing_tds": 0.0055,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.0261,
+      "receptions": 1.026,
       "targets": 2.0705,
-      "receiving_yards": 7.1764,
+      "receiving_yards": 7.1765,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0158
@@ -51920,7 +51909,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.0082,
       "targets": 2.9022,
-      "receiving_yards": 18.7547,
+      "receiving_yards": 18.7548,
       "receiving_tds": 0.1148,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -52052,7 +52041,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6633,
       "targets": 1.9023,
-      "receiving_yards": 6.3136,
+      "receiving_yards": 6.3137,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -52271,7 +52260,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.9462,
       "targets": 3.7296,
-      "receiving_yards": 25.0151,
+      "receiving_yards": 25.0152,
       "receiving_tds": 0.1767,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -52490,7 +52479,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.8667,
       "targets": 2.681,
-      "receiving_yards": 15.9364,
+      "receiving_yards": 15.9365,
       "receiving_tds": 0.0175,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -52578,7 +52567,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8275,
       "targets": 1.5196,
-      "receiving_yards": 6.6305,
+      "receiving_yards": 6.6306,
       "receiving_tds": 0.0179,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -52886,7 +52875,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4065,
       "targets": 2.4598,
-      "receiving_yards": 14.9454,
+      "receiving_yards": 14.9455,
       "receiving_tds": 0.0883,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -53223,9 +53212,9 @@
     "team": "LAC",
     "games_used": 4,
     "projected_stats": {
-      "completions": 3.6014,
-      "attempts": 15.9505,
-      "passing_yards": 38.3763,
+      "completions": 3.6016,
+      "attempts": 15.9506,
+      "passing_yards": 38.3781,
       "passing_tds": 0.0948,
       "passing_interceptions": 0.1519,
       "passing_2pt_conversions": 0.0365,
@@ -53613,14 +53602,14 @@
     "team": "JAX",
     "games_used": 8,
     "projected_stats": {
-      "completions": 2.4487,
-      "attempts": 16.2156,
-      "passing_yards": 29.0473,
+      "completions": 2.4489,
+      "attempts": 16.2157,
+      "passing_yards": 29.0493,
       "passing_tds": 0.1208,
       "passing_interceptions": 0.0592,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.569,
-      "rushing_yards": -1.6468,
+      "rushing_yards": -1.6467,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -53668,7 +53657,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8712,
       "targets": 1.9023,
-      "receiving_yards": 7.0436,
+      "receiving_yards": 7.0437,
       "receiving_tds": 0.0706,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -53886,7 +53875,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8093,
       "targets": 1.9598,
-      "receiving_yards": 5.2429,
+      "receiving_yards": 5.243,
       "receiving_tds": 0.1281,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -53960,14 +53949,14 @@
     "team": "NYG",
     "games_used": 3,
     "projected_stats": {
-      "completions": 11.9036,
+      "completions": 11.9037,
       "attempts": 23.6195,
-      "passing_yards": 120.0191,
+      "passing_yards": 120.0201,
       "passing_tds": 0.7133,
       "passing_interceptions": 0.5127,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
-      "rushing_yards": 5.1449,
+      "rushing_yards": 5.145,
       "rushing_tds": 0.0206,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -55014,7 +55003,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6721,
       "targets": 1.9023,
-      "receiving_yards": 5.4686,
+      "receiving_yards": 5.4687,
       "receiving_tds": 0.0971,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -55495,7 +55484,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9066,
       "targets": 2.2386,
-      "receiving_yards": 7.517,
+      "receiving_yards": 7.5171,
       "receiving_tds": 0.0838,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -55570,9 +55559,9 @@
     "team": "HOU",
     "games_used": 8,
     "projected_stats": {
-      "completions": 13.9509,
-      "attempts": 25.8811,
-      "passing_yards": 150.7044,
+      "completions": 13.951,
+      "attempts": 25.8812,
+      "passing_yards": 150.7054,
       "passing_tds": 0.9197,
       "passing_interceptions": 0.3457,
       "passing_2pt_conversions": 0.0968,
@@ -55657,14 +55646,14 @@
     "team": "SF",
     "games_used": 8,
     "projected_stats": {
-      "completions": 5.6315,
+      "completions": 5.6316,
       "attempts": 18.3346,
-      "passing_yards": 60.1889,
+      "passing_yards": 60.1906,
       "passing_tds": 0.3726,
       "passing_interceptions": 0.1677,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.6255,
-      "rushing_yards": -0.2183,
+      "rushing_yards": -0.2182,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -56234,7 +56223,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7693,
       "targets": 2.4023,
-      "receiving_yards": 18.2946,
+      "receiving_yards": 18.2947,
       "receiving_tds": 0.0263,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -56743,14 +56732,14 @@
     "team": "LV",
     "games_used": 8,
     "projected_stats": {
-      "completions": 18.2322,
+      "completions": 18.2323,
       "attempts": 28.5906,
-      "passing_yards": 196.5397,
+      "passing_yards": 196.5402,
       "passing_tds": 0.9067,
       "passing_interceptions": 0.5064,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.8426,
-      "rushing_yards": 4.241,
+      "rushing_yards": 4.2411,
       "rushing_tds": 0.0822,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -57540,7 +57529,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6544,
       "targets": 1.9023,
-      "receiving_yards": 6.6322,
+      "receiving_yards": 6.6323,
       "receiving_tds": 0.0927,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -58023,7 +58012,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0659,
       "targets": 2.1811,
-      "receiving_yards": 8.6806,
+      "receiving_yards": 8.6807,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -58231,9 +58220,9 @@
     "team": "NE",
     "games_used": 8,
     "projected_stats": {
-      "completions": 17.4333,
+      "completions": 17.4334,
       "attempts": 27.9393,
-      "passing_yards": 220.3692,
+      "passing_yards": 220.3695,
       "passing_tds": 1.7317,
       "passing_interceptions": 0.7192,
       "passing_2pt_conversions": 0.0968,
@@ -58715,14 +58704,14 @@
     "team": "CIN",
     "games_used": 8,
     "projected_stats": {
-      "completions": 16.6908,
+      "completions": 16.6909,
       "attempts": 27.4009,
-      "passing_yards": 186.5659,
-      "passing_tds": 1.1802,
+      "passing_yards": 186.5665,
+      "passing_tds": 1.1803,
       "passing_interceptions": 0.5542,
       "passing_2pt_conversions": 0.0968,
       "carries": 2.4648,
-      "rushing_yards": 2.3522,
+      "rushing_yards": 2.3523,
       "rushing_tds": 0.0778,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -58759,14 +58748,14 @@
     "team": "ARI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 7.9501,
-      "attempts": 20.7227,
-      "passing_yards": 83.3497,
+      "completions": 7.9503,
+      "attempts": 20.7228,
+      "passing_yards": 83.3512,
       "passing_tds": 0.3813,
       "passing_interceptions": 0.2806,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.6255,
-      "rushing_yards": 7.1676,
+      "rushing_yards": 7.1677,
       "rushing_tds": 0.0908,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -59626,14 +59615,14 @@
     "team": "PIT",
     "games_used": 8,
     "projected_stats": {
-      "completions": 6.1742,
+      "completions": 6.1744,
       "attempts": 18.9338,
-      "passing_yards": 60.8228,
+      "passing_yards": 60.8245,
       "passing_tds": 0.3118,
       "passing_interceptions": 0.2111,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2477,
-      "rushing_yards": 1.8789,
+      "rushing_yards": 1.879,
       "rushing_tds": -0.0047,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -60276,9 +60265,9 @@
     "team": "BAL",
     "games_used": 8,
     "projected_stats": {
-      "completions": 12.6743,
+      "completions": 12.6744,
       "attempts": 23.5451,
-      "passing_yards": 124.7951,
+      "passing_yards": 124.7962,
       "passing_tds": 0.6375,
       "passing_interceptions": 0.2589,
       "passing_2pt_conversions": 0.0447,
@@ -61861,7 +61850,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7208,
       "targets": 2.0705,
-      "receiving_yards": 7.6984,
+      "receiving_yards": 7.6985,
       "receiving_tds": 0.0661,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -63206,14 +63195,14 @@
     "team": "WAS",
     "games_used": 8,
     "projected_stats": {
-      "completions": 12.9088,
+      "completions": 12.9089,
       "attempts": 25.0648,
-      "passing_yards": 156.1972,
+      "passing_yards": 156.1981,
       "passing_tds": 1.063,
       "passing_interceptions": 0.489,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.4939,
-      "rushing_yards": 20.042,
+      "rushing_yards": 20.0419,
       "rushing_tds": 0.0431,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -63816,14 +63805,14 @@
     "team": "BUF",
     "games_used": 7,
     "projected_stats": {
-      "completions": 2.1968,
-      "attempts": 16.1331,
-      "passing_yards": 27.1585,
-      "passing_tds": 0.1077,
+      "completions": 2.197,
+      "attempts": 16.1332,
+      "passing_yards": 27.1605,
+      "passing_tds": 0.1078,
       "passing_interceptions": 0.0592,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.3302,
-      "rushing_yards": -1.3255,
+      "rushing_yards": -1.3254,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -63958,7 +63947,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.631,
       "targets": 1.6396,
-      "receiving_yards": 5.1859,
+      "receiving_yards": 5.186,
       "receiving_tds": 0.0761,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -64914,7 +64903,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.5924,
       "targets": 2.5129,
-      "receiving_yards": 12.5563,
+      "receiving_yards": 12.5564,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -65132,7 +65121,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9995,
       "targets": 2.5129,
-      "receiving_yards": 12.0917,
+      "receiving_yards": 12.0918,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -65164,14 +65153,14 @@
     "team": "CHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 7.1338,
-      "attempts": 19.7457,
-      "passing_yards": 77.9177,
+      "completions": 7.134,
+      "attempts": 19.7458,
+      "passing_yards": 77.9193,
       "passing_tds": 0.3509,
       "passing_interceptions": 0.3067,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.2998,
-      "rushing_yards": 2.5607,
+      "rushing_yards": 2.5608,
       "rushing_tds": -0.0003,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -65525,7 +65514,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6856,
       "targets": 1.3958,
-      "receiving_yards": 6.1684,
+      "receiving_yards": 6.1685,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -66220,7 +66209,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6856,
       "targets": 1.3958,
-      "receiving_yards": 6.2703,
+      "receiving_yards": 6.2704,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -66609,7 +66598,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0968,
       "targets": 2.1811,
-      "receiving_yards": 11.9988,
+      "receiving_yards": 11.9989,
       "receiving_tds": 0.1413,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -67729,14 +67718,14 @@
     "team": "DET",
     "games_used": 3,
     "projected_stats": {
-      "completions": 7.0398,
-      "attempts": 19.2852,
-      "passing_yards": 75.1921,
+      "completions": 7.0399,
+      "attempts": 19.2853,
+      "passing_yards": 75.1934,
       "passing_tds": 0.3138,
       "passing_interceptions": 0.2527,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.5684,
-      "rushing_yards": 3.493,
+      "rushing_yards": 3.4931,
       "rushing_tds": 0.0206,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -68046,7 +68035,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0128,
       "targets": 2.3226,
-      "receiving_yards": 11.3839,
+      "receiving_yards": 11.384,
       "receiving_tds": 0.0661,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -68381,9 +68370,9 @@
     "team": "NO",
     "games_used": 8,
     "projected_stats": {
-      "completions": 17.4463,
+      "completions": 17.4464,
       "attempts": 27.4009,
-      "passing_yards": 176.1448,
+      "passing_yards": 176.1455,
       "passing_tds": 0.9501,
       "passing_interceptions": 0.6019,
       "passing_2pt_conversions": 0.0447,
@@ -68947,9 +68936,9 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 13.8901,
-      "attempts": 25.664,
-      "passing_yards": 157.6648,
+      "completions": 13.8902,
+      "attempts": 25.6641,
+      "passing_yards": 157.6657,
       "passing_tds": 0.8676,
       "passing_interceptions": 0.5151,
       "passing_2pt_conversions": 0.0447,
@@ -69509,14 +69498,14 @@
     "team": "DEN",
     "games_used": 4,
     "projected_stats": {
-      "completions": 6.7634,
-      "attempts": 18.6025,
-      "passing_yards": 64.5981,
+      "completions": 6.7635,
+      "attempts": 18.6026,
+      "passing_yards": 64.5997,
       "passing_tds": 0.2662,
       "passing_interceptions": 0.3151,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.6189,
-      "rushing_yards": 9.0294,
+      "rushing_yards": 9.0295,
       "rushing_tds": -0.0198,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -69553,14 +69542,14 @@
     "team": "SEA",
     "games_used": 8,
     "projected_stats": {
-      "completions": 11.5715,
+      "completions": 11.5716,
       "attempts": 22.7288,
-      "passing_yards": 124.2827,
+      "passing_yards": 124.2839,
       "passing_tds": 0.7504,
       "passing_interceptions": 0.2589,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.7861,
-      "rushing_yards": 3.9892,
+      "rushing_yards": 3.9893,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -70293,9 +70282,9 @@
     "team": "CAR",
     "games_used": 8,
     "projected_stats": {
-      "completions": 5.1972,
+      "completions": 5.1974,
       "attempts": 18.5517,
-      "passing_yards": 51.357,
+      "passing_yards": 51.3588,
       "passing_tds": 0.2076,
       "passing_interceptions": 0.2415,
       "passing_2pt_conversions": 0.0447,
@@ -70467,10 +70456,10 @@
     "team": "CLE",
     "games_used": 6,
     "projected_stats": {
-      "completions": 12.2509,
+      "completions": 12.251,
       "attempts": 23.4658,
-      "passing_yards": 109.7835,
-      "passing_tds": 0.2743,
+      "passing_yards": 109.7847,
+      "passing_tds": 0.2744,
       "passing_interceptions": 0.772,
       "passing_2pt_conversions": 0.0365,
       "carries": 3.1288,
@@ -70894,7 +70883,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039565": {
     "player_name": "Levelle Bailey",
@@ -71342,12 +71332,12 @@
     "projected_stats": {
       "completions": 19.0182,
       "attempts": 29.0813,
-      "passing_yards": 218.1764,
-      "passing_tds": 1.4277,
+      "passing_yards": 218.1768,
+      "passing_tds": 1.4278,
       "passing_interceptions": 0.7365,
       "passing_2pt_conversions": 0.2097,
       "carries": 2.9511,
-      "rushing_yards": 9.1042,
+      "rushing_yards": 9.1043,
       "rushing_tds": -0.0047,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -72223,7 +72213,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.5407,
       "targets": 2.0035,
-      "receiving_yards": 17.354,
+      "receiving_yards": 17.3541,
       "receiving_tds": 0.1162,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -73379,14 +73369,14 @@
     "team": "CIN",
     "games_used": 7,
     "projected_stats": {
-      "completions": 12.1924,
+      "completions": 12.1925,
       "attempts": 23.7014,
-      "passing_yards": 126.6665,
+      "passing_yards": 126.6677,
       "passing_tds": 0.7417,
       "passing_interceptions": 0.7409,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.3302,
-      "rushing_yards": 4.7447,
+      "rushing_yards": 4.7448,
       "rushing_tds": 0.0995,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -73414,7 +73404,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0035229": {
     "player_name": "T.J. Hockenson",
@@ -73434,7 +73425,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.9018,
       "targets": 4.172,
-      "receiving_yards": 39.6197,
+      "receiving_yards": 39.6198,
       "receiving_tds": 0.2431,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -73651,7 +73642,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8535,
       "targets": 2.0705,
-      "receiving_yards": 8.3621,
+      "receiving_yards": 8.3622,
       "receiving_tds": 0.0794,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -73985,14 +73976,14 @@
     "team": "LV",
     "games_used": 5,
     "projected_stats": {
-      "completions": 11.643,
-      "attempts": 22.3764,
-      "passing_yards": 115.5321,
-      "passing_tds": 0.4579,
+      "completions": 11.6431,
+      "attempts": 22.3765,
+      "passing_yards": 115.5333,
+      "passing_tds": 0.458,
       "passing_interceptions": 0.515,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.4353,
-      "rushing_yards": 10.2085,
+      "rushing_yards": 10.2086,
       "rushing_tds": -0.0076,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -74430,7 +74421,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7064,
       "targets": 1.7006,
-      "receiving_yards": 8.5542,
+      "receiving_yards": 8.5543,
       "receiving_tds": 0.0238,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -74559,7 +74550,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.104,
       "targets": 1.7597,
-      "receiving_yards": 10.2038,
+      "receiving_yards": 10.2039,
       "receiving_tds": 0.0361,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -75462,9 +75453,9 @@
     "team": "LAC",
     "games_used": 8,
     "projected_stats": {
-      "completions": 8.0587,
+      "completions": 8.0588,
       "attempts": 21.2655,
-      "passing_yards": 83.7361,
+      "passing_yards": 83.7376,
       "passing_tds": 0.3205,
       "passing_interceptions": 0.3154,
       "passing_2pt_conversions": 0.0447,
@@ -75865,7 +75856,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1134,
       "targets": 1.8864,
-      "receiving_yards": 8.1516,
+      "receiving_yards": 8.1517,
       "receiving_tds": 0.0459,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -76427,7 +76418,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6819,
       "targets": 1.6396,
-      "receiving_yards": 5.6226,
+      "receiving_yards": 5.6227,
       "receiving_tds": 0.098,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -76731,7 +76722,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9818,
       "targets": 2.1811,
-      "receiving_yards": 8.9284,
+      "receiving_yards": 8.9285,
       "receiving_tds": 0.0263,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -76862,7 +76853,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6411,
       "targets": 1.628,
-      "receiving_yards": 5.6721,
+      "receiving_yards": 5.6722,
       "receiving_tds": 0.013,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -77384,7 +77375,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1632,
       "targets": 2.2917,
-      "receiving_yards": 8.5081,
+      "receiving_yards": 8.5082,
       "receiving_tds": 0.0484,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -77407,7 +77398,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0037509": {
     "player_name": "Sincere McCormick",
@@ -77458,9 +77450,9 @@
     "team": "NE",
     "games_used": 5,
     "projected_stats": {
-      "completions": 10.8637,
-      "attempts": 21.642,
-      "passing_yards": 105.7402,
+      "completions": 10.8638,
+      "attempts": 21.6421,
+      "passing_yards": 105.7415,
       "passing_tds": 0.3682,
       "passing_interceptions": 0.3885,
       "passing_2pt_conversions": 0.0365,
@@ -78256,7 +78248,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.4927,
       "targets": 1.6396,
-      "receiving_yards": 7.4856,
+      "receiving_yards": 7.4857,
       "receiving_tds": 0.0179,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -78733,7 +78725,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.1799,
       "targets": 1.3688,
-      "receiving_yards": 2.7805,
+      "receiving_yards": 2.7806,
       "receiving_tds": 0.0194,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -79907,7 +79899,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.5546,
       "targets": 1.6396,
-      "receiving_yards": 4.7711,
+      "receiving_yards": 4.7712,
       "receiving_tds": 0.0179,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -80166,7 +80158,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7119,
       "targets": 1.9023,
-      "receiving_yards": 6.4242,
+      "receiving_yards": 6.4243,
       "receiving_tds": 0.0529,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -80458,14 +80450,14 @@
     "team": "MIN",
     "games_used": 8,
     "projected_stats": {
-      "completions": 16.6951,
+      "completions": 16.6952,
       "attempts": 27.7786,
-      "passing_yards": 184.2733,
+      "passing_yards": 184.2739,
       "passing_tds": 0.9892,
       "passing_interceptions": 0.7365,
       "passing_2pt_conversions": 0.1532,
       "carries": 2.6255,
-      "rushing_yards": 7.2501,
+      "rushing_yards": 7.2502,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -80851,14 +80843,14 @@
     "team": "SEA",
     "games_used": 1,
     "projected_stats": {
-      "completions": 10.3754,
-      "attempts": 22.7729,
-      "passing_yards": 98.1192,
+      "completions": 10.3755,
+      "attempts": 22.773,
+      "passing_yards": 98.1204,
       "passing_tds": 0.336,
       "passing_interceptions": 0.6649,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
-      "rushing_yards": 6.0232,
+      "rushing_yards": 6.0233,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -81857,7 +81849,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.2957,
       "targets": 3.8933,
-      "receiving_yards": 36.3368,
+      "receiving_yards": 36.337,
       "receiving_tds": 0.2166,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -81901,7 +81893,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.4408,
       "targets": 2.1077,
-      "receiving_yards": 12.2838,
+      "receiving_yards": 12.2839,
       "receiving_tds": 0.0548,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -82758,14 +82750,14 @@
     "team": "DET",
     "games_used": 7,
     "projected_stats": {
-      "completions": 6.8168,
-      "attempts": 19.546,
-      "passing_yards": 77.9655,
+      "completions": 6.817,
+      "attempts": 19.5461,
+      "passing_yards": 77.967,
       "passing_tds": 0.3509,
       "passing_interceptions": 0.2632,
       "passing_2pt_conversions": 0.0447,
       "carries": 3.0119,
-      "rushing_yards": 3.1078,
+      "rushing_yards": 3.1079,
       "rushing_tds": 0.195,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -83277,14 +83269,14 @@
     "team": "PHI",
     "games_used": 8,
     "projected_stats": {
-      "completions": 15.6617,
+      "completions": 15.6618,
       "attempts": 26.6931,
-      "passing_yards": 160.2571,
+      "passing_yards": 160.2579,
       "passing_tds": 0.6809,
       "passing_interceptions": 0.476,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.569,
-      "rushing_yards": 4.7187,
+      "rushing_yards": 4.7188,
       "rushing_tds": -0.009,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -83331,9 +83323,9 @@
       "rushing_yards": -0.1101,
       "rushing_tds": -0.0002,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 0.5029,
+      "receptions": 0.5028,
       "targets": 1.5148,
-      "receiving_yards": 4.8289,
+      "receiving_yards": 4.829,
       "receiving_tds": 0.1831,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -83593,7 +83585,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.2107,
       "targets": 1.8864,
-      "receiving_yards": 18.3186,
+      "receiving_yards": 18.3187,
       "receiving_tds": 0.2406,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -83711,14 +83703,14 @@
     "team": "LA",
     "games_used": 4,
     "projected_stats": {
-      "completions": 8.4566,
+      "completions": 8.4567,
       "attempts": 19.6225,
-      "passing_yards": 91.1789,
-      "passing_tds": 0.4579,
-      "passing_interceptions": 0.3436,
+      "passing_yards": 91.1803,
+      "passing_tds": 0.458,
+      "passing_interceptions": 0.3437,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.8229,
-      "rushing_yards": 2.4444,
+      "rushing_yards": 2.4445,
       "rushing_tds": -0.0321,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -83797,14 +83789,14 @@
     "team": "BUF",
     "games_used": 1,
     "projected_stats": {
-      "completions": 8.6569,
-      "attempts": 21.8217,
-      "passing_yards": 90.2845,
+      "completions": 8.657,
+      "attempts": 21.8218,
+      "passing_yards": 90.2857,
       "passing_tds": 0.3138,
       "passing_interceptions": 0.3954,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.0389,
-      "rushing_yards": 2.7384,
+      "rushing_yards": 2.7385,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -84228,14 +84220,14 @@
     "team": "KC",
     "games_used": 4,
     "projected_stats": {
-      "completions": 10.1946,
+      "completions": 10.1947,
       "attempts": 21.0505,
-      "passing_yards": 85.0672,
+      "passing_yards": 85.0686,
       "passing_tds": 0.3682,
       "passing_interceptions": 0.2865,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.3129,
-      "rushing_yards": 10.2452,
+      "rushing_yards": 10.2453,
       "rushing_tds": -0.0239,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -84446,9 +84438,9 @@
     "team": "CLE",
     "games_used": 1,
     "projected_stats": {
-      "completions": 16.8879,
+      "completions": 16.888,
       "attempts": 28.1631,
-      "passing_yards": 174.3708,
+      "passing_yards": 174.3713,
       "passing_tds": 0.9892,
       "passing_interceptions": 1.1215,
       "passing_2pt_conversions": 0.0369,
@@ -84791,9 +84783,9 @@
     "team": "PHI",
     "games_used": 7,
     "projected_stats": {
-      "completions": 10.2471,
+      "completions": 10.2472,
       "attempts": 22.6463,
-      "passing_yards": 117.9997,
+      "passing_yards": 118.0009,
       "passing_tds": 0.3683,
       "passing_interceptions": 0.3848,
       "passing_2pt_conversions": 0.0447,
@@ -84891,7 +84883,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8258,
       "targets": 1.8112,
-      "receiving_yards": 10.1027,
+      "receiving_yards": 10.1028,
       "receiving_tds": 0.0459,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -85086,7 +85078,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0039707": {
     "player_name": "Dallas Gant",
@@ -85356,14 +85349,14 @@
     "team": "TB",
     "games_used": 4,
     "projected_stats": {
-      "completions": 5.009,
-      "attempts": 17.0725,
-      "passing_yards": 50.2571,
+      "completions": 5.0092,
+      "attempts": 17.0726,
+      "passing_yards": 50.2588,
       "passing_tds": 0.1438,
       "passing_interceptions": 0.1805,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.0069,
-      "rushing_yards": 4.264,
+      "rushing_yards": 4.2642,
       "rushing_tds": -0.0321,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -85411,7 +85404,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9112,
       "targets": 1.6396,
-      "receiving_yards": 5.8991,
+      "receiving_yards": 5.8992,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -86098,14 +86091,14 @@
     "team": "MIA",
     "games_used": 4,
     "projected_stats": {
-      "completions": 4.2909,
-      "attempts": 16.5625,
-      "passing_yards": 41.6321,
+      "completions": 4.2911,
+      "attempts": 16.5626,
+      "passing_yards": 41.6339,
       "passing_tds": 0.0989,
       "passing_interceptions": 0.1764,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.0069,
-      "rushing_yards": 3.7173,
+      "rushing_yards": 3.7174,
       "rushing_tds": -0.0321,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -86708,9 +86701,9 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 13.7512,
-      "attempts": 25.664,
-      "passing_yards": 171.8418,
+      "completions": 13.7513,
+      "attempts": 25.6641,
+      "passing_yards": 171.8426,
       "passing_tds": 0.6505,
       "passing_interceptions": 0.4847,
       "passing_2pt_conversions": 0.0968,
@@ -87246,7 +87239,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 4.5389,
       "targets": 4.6719,
-      "receiving_yards": 47.5834,
+      "receiving_yards": 47.5835,
       "receiving_tds": 0.3493,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -87332,9 +87325,9 @@
       "rushing_yards": 0.9038,
       "rushing_tds": 0.0807,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 4.4505,
+      "receptions": 4.4504,
       "targets": 4.725,
-      "receiving_yards": 38.3366,
+      "receiving_yards": 38.3367,
       "receiving_tds": 0.159,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -88830,7 +88823,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7119,
       "targets": 1.9023,
-      "receiving_yards": 6.4817,
+      "receiving_yards": 6.4818,
       "receiving_tds": 0.044,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -90147,7 +90140,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.2693,
       "targets": 3.1765,
-      "receiving_yards": 21.3208,
+      "receiving_yards": 21.3209,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.1194,
       "fumbles_lost_total": 0.0158
@@ -90543,7 +90536,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 4.0611,
       "targets": 4.5569,
-      "receiving_yards": 44.8713,
+      "receiving_yards": 44.8714,
       "receiving_tds": 0.3449,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.1264
@@ -90795,10 +90788,10 @@
     "team": "SEA",
     "games_used": 3,
     "projected_stats": {
-      "completions": 5.6733,
-      "attempts": 18.334,
-      "passing_yards": 59.6875,
-      "passing_tds": 0.3011,
+      "completions": 5.6734,
+      "attempts": 18.3341,
+      "passing_yards": 59.6889,
+      "passing_tds": 0.3012,
       "passing_interceptions": 0.2432,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
@@ -90839,9 +90832,9 @@
     "team": "TEN",
     "games_used": 8,
     "projected_stats": {
-      "completions": 20.768,
-      "attempts": 30.3275,
-      "passing_yards": 207.5209,
+      "completions": 20.7681,
+      "attempts": 30.3274,
+      "passing_yards": 207.5213,
       "passing_tds": 1.0717,
       "passing_interceptions": 0.7192,
       "passing_2pt_conversions": 0.1532,
@@ -91863,7 +91856,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.5967,
       "targets": 3.3446,
-      "receiving_yards": 24.493,
+      "receiving_yards": 24.4931,
       "receiving_tds": 0.1944,
       "receiving_2pt_conversions": 0.0618,
       "fumbles_lost_total": 0.0158
@@ -92283,7 +92276,8 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true
+    "active": true,
+    "injury_status": "QUESTIONABLE"
   },
   "00-0035355": {
     "player_name": "Blake Hance",
@@ -92521,7 +92515,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6975,
       "targets": 1.7006,
-      "receiving_yards": 6.8685,
+      "receiving_yards": 6.8686,
       "receiving_tds": 0.1123,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -93350,7 +93344,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.6764,
       "targets": 2.566,
-      "receiving_yards": 17.976,
+      "receiving_yards": 17.9761,
       "receiving_tds": 0.0883,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -93788,7 +93782,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8756,
       "targets": 2.0174,
-      "receiving_yards": 9.2204,
+      "receiving_yards": 9.2205,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -93996,14 +93990,14 @@
     "team": "NYG",
     "games_used": 8,
     "projected_stats": {
-      "completions": 16.148,
+      "completions": 16.1481,
       "attempts": 26.6931,
-      "passing_yards": 173.1879,
+      "passing_yards": 173.1886,
       "passing_tds": 1.0717,
       "passing_interceptions": 0.4326,
       "passing_2pt_conversions": 0.0968,
       "carries": 4.1452,
-      "rushing_yards": 27.7753,
+      "rushing_yards": 27.7751,
       "rushing_tds": 0.3383,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -94084,9 +94078,9 @@
     "team": "CLE",
     "games_used": 8,
     "projected_stats": {
-      "completions": 14.1463,
-      "attempts": 25.7682,
-      "passing_yards": 131.7251,
+      "completions": 14.1464,
+      "attempts": 25.7683,
+      "passing_yards": 131.7262,
       "passing_tds": 0.8112,
       "passing_interceptions": 0.4022,
       "passing_2pt_conversions": 0.0447,
@@ -94385,7 +94379,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040756": {
@@ -94525,14 +94518,14 @@
     "team": "CIN",
     "games_used": 1,
     "projected_stats": {
-      "completions": 5.6733,
-      "attempts": 18.334,
-      "passing_yards": 59.6875,
-      "passing_tds": 0.3011,
+      "completions": 5.6734,
+      "attempts": 18.3341,
+      "passing_yards": 59.6889,
+      "passing_tds": 0.3012,
       "passing_interceptions": 0.2432,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.0389,
-      "rushing_yards": 2.7384,
+      "rushing_yards": 2.7385,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -95538,7 +95531,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.1056,
       "targets": 3.1765,
-      "receiving_yards": 19.6351,
+      "receiving_yards": 19.6353,
       "receiving_tds": 0.1281,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -95961,14 +95954,14 @@
     "team": "MIN",
     "games_used": 8,
     "projected_stats": {
-      "completions": 7.8807,
+      "completions": 7.8808,
       "attempts": 20.18,
-      "passing_yards": 73.6885,
+      "passing_yards": 73.6901,
       "passing_tds": 0.1946,
       "passing_interceptions": 0.3501,
       "passing_2pt_conversions": 0.0447,
       "carries": 2.0306,
-      "rushing_yards": 0.9714,
+      "rushing_yards": 0.9716,
       "rushing_tds": -0.0134,
       "rushing_2pt_conversions": 0.0218,
       "receptions": -0.0038,
@@ -96171,7 +96164,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.25
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0040629": {
     "player_name": "Dalevon Campbell",
@@ -96400,7 +96394,7 @@
     "projected_stats": {
       "completions": 23.2951,
       "attempts": 31.9601,
-      "passing_yards": 232.3708,
+      "passing_yards": 232.371,
       "passing_tds": 1.4408,
       "passing_interceptions": 0.7279,
       "passing_2pt_conversions": 0.0447,
@@ -96498,7 +96492,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.7338,
       "targets": 3.672,
-      "receiving_yards": 35.8369,
+      "receiving_yards": 35.837,
       "receiving_tds": 0.2077,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -96542,7 +96536,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.7241,
       "targets": 1.7006,
-      "receiving_yards": 5.9306,
+      "receiving_yards": 5.9307,
       "receiving_tds": 0.0327,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -96713,9 +96707,9 @@
       "rushing_yards": -0.1101,
       "rushing_tds": -0.0002,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.14,
+      "receptions": 1.1399,
       "targets": 1.8997,
-      "receiving_yards": 14.1951,
+      "receiving_yards": 14.1952,
       "receiving_tds": 0.0238,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -96846,7 +96840,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.15,
       "targets": 1.628,
-      "receiving_yards": 1.6327,
+      "receiving_yards": 1.6328,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -97855,7 +97849,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 3.7058,
       "targets": 3.459,
-      "receiving_yards": 27.1496,
+      "receiving_yards": 27.1497,
       "receiving_tds": 0.1562,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -98374,7 +98368,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.8401,
       "targets": 3.1765,
-      "receiving_yards": 23.8603,
+      "receiving_yards": 23.8605,
       "receiving_tds": 0.3095,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -99535,7 +99529,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0040016": {
@@ -99688,7 +99681,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6019,
       "targets": 1.3958,
-      "receiving_yards": 11.4119,
+      "receiving_yards": 11.412,
       "receiving_tds": 0.0397,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -99720,14 +99713,14 @@
     "team": "JAX",
     "games_used": 5,
     "projected_stats": {
-      "completions": 12.0795,
-      "attempts": 22.458,
-      "passing_yards": 136.3113,
+      "completions": 12.0796,
+      "attempts": 22.4581,
+      "passing_yards": 136.3123,
       "passing_tds": 0.5763,
       "passing_interceptions": 0.5925,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.3537,
-      "rushing_yards": 6.3407,
+      "rushing_yards": 6.3408,
       "rushing_tds": -0.0321,
       "rushing_2pt_conversions": 0.025,
       "receptions": 0.1438,
@@ -99862,7 +99855,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.671,
       "targets": 1.4794,
-      "receiving_yards": 5.3289,
+      "receiving_yards": 5.329,
       "receiving_tds": 0.0194,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -100033,7 +100026,7 @@
       "rushing_yards": -0.1101,
       "rushing_tds": -0.0002,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 0.4852,
+      "receptions": 0.4851,
       "targets": 1.4573,
       "receiving_yards": 4.9263,
       "receiving_tds": 0.3247,
@@ -100110,14 +100103,14 @@
     "team": "IND",
     "games_used": 5,
     "projected_stats": {
-      "completions": 9.5133,
+      "completions": 9.5134,
       "attempts": 20.9077,
-      "passing_yards": 98.6044,
-      "passing_tds": 0.5803,
+      "passing_yards": 98.6057,
+      "passing_tds": 0.5804,
       "passing_interceptions": 0.5272,
       "passing_2pt_conversions": 0.0365,
       "carries": 2.1905,
-      "rushing_yards": 7.0058,
+      "rushing_yards": 7.0059,
       "rushing_tds": 0.2209,
       "rushing_2pt_conversions": 0.025,
       "receptions": -0.0071,
@@ -100461,14 +100454,14 @@
     "team": "SF",
     "games_used": 1,
     "projected_stats": {
-      "completions": 5.6733,
-      "attempts": 18.334,
-      "passing_yards": 59.6875,
-      "passing_tds": 0.3011,
+      "completions": 5.6734,
+      "attempts": 18.3341,
+      "passing_yards": 59.6889,
+      "passing_tds": 0.3012,
       "passing_interceptions": 0.2432,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
-      "rushing_yards": 2.1043,
+      "rushing_yards": 2.1044,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -100560,7 +100553,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.6577,
       "targets": 1.6343,
-      "receiving_yards": 6.3995,
+      "receiving_yards": 6.3996,
       "receiving_tds": 0.0194,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -101113,14 +101106,14 @@
     "team": "ARI",
     "games_used": 2,
     "projected_stats": {
-      "completions": 6.0854,
+      "completions": 6.0856,
       "attempts": 18.6511,
-      "passing_yards": 61.2221,
+      "passing_yards": 61.2235,
       "passing_tds": 0.3043,
       "passing_interceptions": 0.2464,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.0389,
-      "rushing_yards": 2.7384,
+      "rushing_yards": 2.7385,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -101169,7 +101162,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.4675,
       "targets": 1.4794,
-      "receiving_yards": 5.3908,
+      "receiving_yards": 5.3909,
       "receiving_tds": 0.2362,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -101996,7 +101989,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8845,
       "targets": 1.9023,
-      "receiving_yards": 12.2245,
+      "receiving_yards": 12.2246,
       "receiving_tds": 0.1325,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -102200,9 +102193,9 @@
     "team": "CLE",
     "games_used": 8,
     "projected_stats": {
-      "completions": 14.3634,
-      "attempts": 25.9853,
-      "passing_yards": 157.4738,
+      "completions": 14.3635,
+      "attempts": 25.9854,
+      "passing_yards": 157.4746,
       "passing_tds": 0.7417,
       "passing_interceptions": 0.7582,
       "passing_2pt_conversions": 0.0447,
@@ -102387,7 +102380,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9143,
       "targets": 1.7006,
-      "receiving_yards": 8.1825,
+      "receiving_yards": 8.1826,
       "receiving_tds": 0.4707,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -103463,7 +103456,7 @@
     "projected_stats": {
       "completions": 18.2362,
       "attempts": 27.9252,
-      "passing_yards": 163.1451,
+      "passing_yards": 163.1458,
       "passing_tds": 0.5273,
       "passing_interceptions": 1.0372,
       "passing_2pt_conversions": 0.1181,
@@ -103595,12 +103588,12 @@
     "projected_stats": {
       "completions": 18.2799,
       "attempts": 28.0585,
-      "passing_yards": 188.4074,
+      "passing_yards": 188.4078,
       "passing_tds": 1.0241,
       "passing_interceptions": 0.7886,
       "passing_2pt_conversions": 0.0369,
-      "carries": 2.2513,
-      "rushing_yards": 2.5291,
+      "carries": 2.2514,
+      "rushing_yards": 2.5292,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -103648,7 +103641,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.4672,
       "targets": 1.4577,
-      "receiving_yards": 3.6431,
+      "receiving_yards": 3.6432,
       "receiving_tds": 0.2071,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -104299,7 +104292,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8093,
       "targets": 2.0705,
-      "receiving_yards": 7.2737,
+      "receiving_yards": 7.2738,
       "receiving_tds": 0.0175,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -104733,7 +104726,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1295,
       "targets": 2.1855,
-      "receiving_yards": 10.7023,
+      "receiving_yards": 10.7024,
       "receiving_tds": 0.0579,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -104949,7 +104942,7 @@
       "rushing_yards": -0.0802,
       "rushing_tds": 0.0006,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.5662,
+      "receptions": 1.5661,
       "targets": 2.0035,
       "receiving_yards": 11.0808,
       "receiving_tds": 0.0143,
@@ -105156,14 +105149,14 @@
     "team": "KC",
     "games_used": 1,
     "projected_stats": {
-      "completions": 10.7305,
-      "attempts": 22.7729,
-      "passing_yards": 119.0235,
+      "completions": 10.7306,
+      "attempts": 22.773,
+      "passing_yards": 119.0245,
       "passing_tds": 0.3455,
       "passing_interceptions": 0.3415,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
-      "rushing_yards": 6.1976,
+      "rushing_yards": 6.1977,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -105761,8 +105754,7 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
-    "injury_status": "OUT"
+    "injury_status": "IR"
   },
   "00-0040212": {
     "player_name": "Branson Taylor",
@@ -106042,7 +106034,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1295,
       "targets": 2.0035,
-      "receiving_yards": 7.5111,
+      "receiving_yards": 7.5112,
       "receiving_tds": 0.0798,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -106326,7 +106318,6 @@
       "fumbles_lost_total": 0.0
     },
     "model_version": "v3",
-    "active": true,
     "injury_status": "OUT"
   },
   "00-0037317": {
@@ -106347,7 +106338,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9066,
       "targets": 1.7563,
-      "receiving_yards": 4.7917,
+      "receiving_yards": 4.7918,
       "receiving_tds": 0.3449,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -106467,9 +106458,9 @@
     "team": "LA",
     "games_used": 1,
     "projected_stats": {
-      "completions": 6.9542,
-      "attempts": 19.2852,
-      "passing_yards": 71.0987,
+      "completions": 6.9543,
+      "attempts": 19.2853,
+      "passing_yards": 71.1001,
       "passing_tds": 0.3138,
       "passing_interceptions": 0.2749,
       "passing_2pt_conversions": 0.0369,
@@ -106589,8 +106580,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0039518": {
     "player_name": "Treyton Welch",
@@ -106739,7 +106729,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.8402,
       "targets": 2.0705,
-      "receiving_yards": 9.1761,
+      "receiving_yards": 9.1762,
       "receiving_tds": 0.0396,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -107465,8 +107455,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040877": {
     "player_name": "Dani Dennis-Sutton",
@@ -107572,9 +107561,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.2075,
+      "receptions": 1.2074,
       "targets": 2.2607,
-      "receiving_yards": 12.2068,
+      "receiving_yards": 12.2069,
       "receiving_tds": 0.1236,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -108190,7 +108179,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.6897,
       "targets": 2.8447,
-      "receiving_yards": 15.671,
+      "receiving_yards": 15.6711,
       "receiving_tds": 0.0706,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0689
@@ -109070,7 +109059,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.5173,
       "targets": 1.7386,
-      "receiving_yards": 7.0304,
+      "receiving_yards": 7.0305,
       "receiving_tds": 0.0263,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -110079,7 +110068,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.995,
       "targets": 3.0659,
-      "receiving_yards": 24.6169,
+      "receiving_yards": 24.617,
       "receiving_tds": 0.1635,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -110694,7 +110683,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.8136,
       "targets": 2.1855,
-      "receiving_yards": 17.1175,
+      "receiving_yards": 17.1176,
       "receiving_tds": 0.2726,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -111088,9 +111077,9 @@
       "rushing_yards": -0.0076,
       "rushing_tds": 0.0011,
       "rushing_2pt_conversions": 0.0,
-      "receptions": 1.2252,
+      "receptions": 1.2251,
       "targets": 2.4023,
-      "receiving_yards": 15.8303,
+      "receiving_yards": 15.8304,
       "receiving_tds": 0.2343,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -111486,7 +111475,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9022,
       "targets": 2.1811,
-      "receiving_yards": 7.8621,
+      "receiving_yards": 7.8622,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -112673,7 +112662,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.911,
       "targets": 1.9421,
-      "receiving_yards": 6.9286,
+      "receiving_yards": 6.9287,
       "receiving_tds": 0.0086,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -113101,9 +113090,9 @@
     "team": "ATL",
     "games_used": 1,
     "projected_stats": {
-      "completions": 11.7546,
+      "completions": 11.7547,
       "attempts": 23.09,
-      "passing_yards": 108.2147,
+      "passing_yards": 108.2157,
       "passing_tds": 0.3265,
       "passing_interceptions": 0.6395,
       "passing_2pt_conversions": 0.0369,
@@ -113904,7 +113893,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0482,
       "targets": 2.1324,
-      "receiving_yards": 12.0342,
+      "receiving_yards": 12.0343,
       "receiving_tds": 0.0352,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -113982,12 +113971,12 @@
     "projected_stats": {
       "completions": 16.8372,
       "attempts": 26.7363,
-      "passing_yards": 176.6379,
+      "passing_yards": 176.6383,
       "passing_tds": 1.1572,
       "passing_interceptions": 0.6142,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.8316,
-      "rushing_yards": 6.6161,
+      "rushing_yards": 6.6162,
       "rushing_tds": 0.2774,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -114015,8 +114004,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.5
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0037312": {
     "player_name": "Chance Campbell",
@@ -114648,7 +114636,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7339,
       "targets": 2.6235,
-      "receiving_yards": 18.9494,
+      "receiving_yards": 18.9495,
       "receiving_tds": 0.1059,
       "receiving_2pt_conversions": 0.0088,
       "fumbles_lost_total": 0.0158
@@ -115032,9 +115020,9 @@
     "team": "TB",
     "games_used": 5,
     "projected_stats": {
-      "completions": 13.3035,
+      "completions": 13.3036,
       "attempts": 23.4372,
-      "passing_yards": 124.6549,
+      "passing_yards": 124.656,
       "passing_tds": 0.6171,
       "passing_interceptions": 0.7476,
       "passing_2pt_conversions": 0.0365,
@@ -115526,7 +115514,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 2.1177,
       "targets": 2.6961,
-      "receiving_yards": 20.0263,
+      "receiving_yards": 20.0265,
       "receiving_tds": 0.1565,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -115744,7 +115732,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.9112,
       "targets": 1.7597,
-      "receiving_yards": 11.4665,
+      "receiving_yards": 11.4666,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.1356
@@ -116042,7 +116030,7 @@
     "projected_stats": {
       "completions": 16.7643,
       "attempts": 28.7972,
-      "passing_yards": 201.8638,
+      "passing_yards": 201.864,
       "passing_tds": 0.7894,
       "passing_interceptions": 0.9756,
       "passing_2pt_conversions": 0.0369,
@@ -116163,7 +116151,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0041410": {
     "player_name": "Jaden Keller",
@@ -116730,8 +116719,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041089": {
     "player_name": "Lorenzo Styles Jr.",
@@ -116949,8 +116937,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0041562": {
     "player_name": "Fernando Mendoza",
@@ -116960,7 +116947,7 @@
     "projected_stats": {
       "completions": 14.9792,
       "attempts": 26.1561,
-      "passing_yards": 160.4801,
+      "passing_yards": 160.4807,
       "passing_tds": 0.7894,
       "passing_interceptions": 0.6047,
       "passing_2pt_conversions": 0.0369,
@@ -117014,7 +117001,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 0.4498,
       "targets": 1.4573,
-      "receiving_yards": 7.9126,
+      "receiving_yards": 7.9127,
       "receiving_tds": 0.0194,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -117670,7 +117657,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.0858,
       "targets": 1.8834,
-      "receiving_yards": 13.2022,
+      "receiving_yards": 13.2023,
       "receiving_tds": 0.0143,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -117966,10 +117953,10 @@
     "team": "BAL",
     "games_used": 2,
     "projected_stats": {
-      "completions": 13.137,
+      "completions": 13.1371,
       "attempts": 24.5168,
-      "passing_yards": 120.4598,
-      "passing_tds": 0.4089,
+      "passing_yards": 120.4608,
+      "passing_tds": 0.409,
       "passing_interceptions": 0.8456,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.9901,
@@ -118109,7 +118096,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.1477,
       "targets": 1.7597,
-      "receiving_yards": 10.0437,
+      "receiving_yards": 10.0438,
       "receiving_tds": 0.0179,
       "receiving_2pt_conversions": 0.0054,
       "fumbles_lost_total": 0.0155
@@ -118153,7 +118140,7 @@
       "rushing_2pt_conversions": 0.0,
       "receptions": 1.7063,
       "targets": 2.3643,
-      "receiving_yards": 12.6068,
+      "receiving_yards": 12.6069,
       "receiving_tds": 0.2318,
       "receiving_2pt_conversions": 0.0093,
       "fumbles_lost_total": 0.009
@@ -118568,8 +118555,7 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3",
-    "active": true
+    "model_version": "v3"
   },
   "00-0040464": {
     "player_name": "DJ Uiagalelei",
@@ -118577,14 +118563,14 @@
     "team": "LAC",
     "games_used": 1,
     "projected_stats": {
-      "completions": 7.6359,
+      "completions": 7.636,
       "attempts": 20.5535,
-      "passing_yards": 79.7325,
+      "passing_yards": 79.7338,
       "passing_tds": 0.8402,
       "passing_interceptions": 0.3415,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.0389,
-      "rushing_yards": 2.7384,
+      "rushing_yards": 2.7385,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -119233,9 +119219,9 @@
     "team": "MIA",
     "games_used": 2,
     "projected_stats": {
-      "completions": 16.4789,
+      "completions": 16.479,
       "attempts": 28.6387,
-      "passing_yards": 180.3919,
+      "passing_yards": 180.3924,
       "passing_tds": 0.6055,
       "passing_interceptions": 0.6934,
       "passing_2pt_conversions": 0.0369,
@@ -119408,9 +119394,9 @@
     "team": "NYJ",
     "games_used": 1,
     "projected_stats": {
-      "completions": 12.8231,
-      "attempts": 24.6753,
-      "passing_yards": 154.4812,
+      "completions": 12.8232,
+      "attempts": 24.6754,
+      "passing_yards": 154.4818,
       "passing_tds": 0.6341,
       "passing_interceptions": 0.8044,
       "passing_2pt_conversions": 0.0369,
@@ -119630,12 +119616,12 @@
     "projected_stats": {
       "completions": 12.8295,
       "attempts": 24.0412,
-      "passing_yards": 138.4661,
+      "passing_yards": 138.4669,
       "passing_tds": 0.3519,
       "passing_interceptions": 1.0485,
       "passing_2pt_conversions": 0.0369,
       "carries": 2.356,
-      "rushing_yards": 4.8691,
+      "rushing_yards": 4.8692,
       "rushing_tds": 0.0174,
       "rushing_2pt_conversions": 0.0194,
       "receptions": 0.0035,
@@ -120058,7 +120044,8 @@
       "receiving_2pt_conversions": 0.0,
       "fumbles_lost_total": 0.0
     },
-    "model_version": "v3"
+    "model_version": "v3",
+    "active": true
   },
   "00-0040761": {
     "player_name": "Ahmed Hassanein",
