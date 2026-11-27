@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T22:13:40Z",
+  "updatedAt": "2026-11-27T22:18:43Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -103,10 +103,10 @@
     },
     "00-0037228": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
+      "clock": "End Q3",
       "fraction_remaining": 0.25,
       "stats": {
-        "rushing_yards": 34.0,
+        "rushing_yards": 35.0,
         "receptions": 1.0
       }
     },
@@ -169,7 +169,7 @@
     },
     "00-0031136": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
+      "clock": "End Q3",
       "fraction_remaining": 0.25,
       "stats": {
         "fg_made_40_49": 1.0,
@@ -180,12 +180,12 @@
   "teams": {
     "PIT": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
+      "clock": "End Q3",
       "fraction_remaining": 0.25
     },
     "DEN": {
       "status": "in_progress",
-      "clock": "Q4 15:00",
+      "clock": "End Q3",
       "fraction_remaining": 0.25
     },
     "LA": {
