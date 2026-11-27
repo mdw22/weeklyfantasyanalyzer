@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T01:38:21Z",
+  "updatedAt": "2026-11-27T01:43:24Z",
   "players": {
     "00-0039075": {
       "status": "final",
@@ -27,14 +27,14 @@
     },
     "00-0037261": {
       "status": "in_progress",
-      "clock": "Q1 10:56",
-      "fraction_remaining": 0.9322,
+      "clock": "Q1 8:54",
+      "fraction_remaining": 0.8983,
       "stats": {}
     },
     "00-0033873": {
       "status": "in_progress",
-      "clock": "Q1 10:56",
-      "fraction_remaining": 0.9322,
+      "clock": "Q1 8:54",
+      "fraction_remaining": 0.8983,
       "stats": {}
     },
     "00-0040236": {
@@ -172,13 +172,13 @@
     },
     "BUF": {
       "status": "in_progress",
-      "clock": "Q1 10:56",
-      "fraction_remaining": 0.9322
+      "clock": "Q1 8:54",
+      "fraction_remaining": 0.8983
     },
     "KC": {
       "status": "in_progress",
-      "clock": "Q1 10:56",
-      "fraction_remaining": 0.9322
+      "clock": "Q1 8:54",
+      "fraction_remaining": 0.8983
     },
     "DET": {
       "status": "final",
